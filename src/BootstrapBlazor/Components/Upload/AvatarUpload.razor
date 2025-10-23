@@ -1,0 +1,56 @@
+﻿@namespace BootstrapBlazor.Components
+@typeparam TValue
+@inherits UploadBase<TValue>
+
+@if (IsShowLabel)
+{
+    <BootstrapLabel required="@Required" ShowLabelTooltip="ShowLabelTooltip" Value="@DisplayText" />
+}
+<div @attributes="@AdditionalAttributes" class="@ClassString" id="@Id" data-bb-previewer-id="@PreviewerId">
+    <div class="upload-body is-avatar">
+        @if (IsUploadButtonAtFirst && ShowAddButton())
+        {
+            @RenderAdd
+        }
+        @foreach (var item in Files)
+        {
+            <div @key="item" class="@GetItemClassString()" id="@item.ValidateId" style="@ItemStyleString">
+                <Avatar Url="@item.PrevUrl" />
+                <div class="upload-item-actions">
+                    <span class="upload-item-delete" @onclick="@(e => OnFileDelete(item))">
+                        <i class="@DeleteIcon"></i>
+                    </span>
+                    @if (GetShowProgress(item))
+                    {
+                        <span class="upload-item-spin">
+                            <i class="@LoadingIcon"></i>
+                        </span>
+                    }
+                </div>
+                @if (!IsCircle)
+                {
+                    <span class="upload-item-label">
+                        <i class="@ValidStatusIconString"></i>
+                        <i class="@InvalidStatusIconString"></i>
+                    </span>
+                }
+            </div>
+        }
+        @if (!IsUploadButtonAtFirst && ShowAddButton())
+        {
+            @RenderAdd
+        }
+    </div>
+    @if (ShowPreviewList)
+    {
+        <ImagePreviewer Id="@PreviewerId" PreviewList="PreviewList"></ImagePreviewer>
+    }
+    <InputFile AdditionalAttributes="@GetUploadAdditionalAttributes()" OnChange="OnFileChange" />
+</div>
+
+@code {
+    RenderFragment RenderAdd =>
+    @<div id="@AddId" class="@GetItemClassString("upload-item-plus upload-drop-body btn-browser")" style="@ItemStyleString">
+        <i class="@AddIcon"></i>
+    </div>;
+}

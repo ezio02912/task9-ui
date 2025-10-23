@@ -1,0 +1,59 @@
+﻿@page "/report-brand-keyword"
+@layout PageLayout
+
+
+<DemoBlock Name="ShowLoading">
+    <Tab IsCard="true" ShowClose="false"
+     TabStyle="TabStyle.Chrome"
+     ShowToolbar="true"
+     ShowExtendButtons="true">
+        <TabItem Text="Danh sách miền" Icon="fa-solid fa-chart">
+            <Table TItem="DomainCheckDailyDto" 
+            PageItemsSource="@PageItemsSource" 
+            AutoGenerateColumns="false"
+            IsPagination="true" 
+            IsStriped="true" 
+            IsBordered="true" 
+            IsMultipleSelect="true"
+            ShowColumnList="true"
+            ShowToolbar="true" 
+            ShowDefaultButtons="true" 
+            ShowExtendButtons="true" 
+            ShowLoading="true" 
+            SearchMode="SearchMode.Top"
+            CustomerSearchModel="@CustomerSearchModel" ShowSearch="true"
+            ShowCardView="true" 
+            OnQueryAsync="@OnQueryAsync"
+            OnSaveAsync="@OnSaveAsync"
+            OnDeleteAsync="@OnDeleteAsync"
+           @ref="TableRef">
+            <TableColumns>
+                <TableColumn @bind-Field="@context.Domain" Text="Tên miền" TextWrap="true" >
+                    <Template Context="value">
+                        <div class="d-flex align-items-center" style="color: @value.Row.TextColor; background-color: @value.Row.BackgroundColor; font-weight: @(value.Row.IsBold ? "bold" : "normal");">
+                            <span>@value.Row.Domain</span>
+                        </div>
+                    </Template>
+                </TableColumn>
+                <TableColumn @bind-Field="@context.Type" Text="Phân loại" TextWrap="true" />
+                <TableColumn @bind-Field="@context.IsMainsite" Text="Là mainsite"  TextWrap="true" />
+                <TableColumn IsVisibleWhenAdd="false" IsVisibleWhenEdit="false" Width="150" @bind-Field="@context.CreatedAt" Text="Ngày tạo" >
+                    <Template Context="value">
+                        <span>@value.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                    </Template>
+                </TableColumn>
+            </TableColumns>
+            </Table>
+        </TabItem>
+        <TabItem Text="Thêm dữ liệu hàng loạt" Icon="fa-solid fa-plus">
+            <section class="mb-3">
+                <Button OnClickWithoutRender="OnFillColorExcelData" Text="Tô màu"></Button>
+            </section>
+            <div class="bb-sheet-demo" id="sheetPlugin1">
+                <UniverSheet Plugins="@_plugins" @ref="_sheetPlugin" 
+                OnReadyAsync="OnReadyAsync" ></UniverSheet>
+            </div>
+        </TabItem>
+    </Tab>
+
+</DemoBlock>

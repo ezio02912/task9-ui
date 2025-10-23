@@ -1,0 +1,76 @@
+﻿@page "/textarea"
+@inject IStringLocalizer<TextAreas> Localizer
+@implements IDisposable
+
+<h3>@Localizer["TextAreaTitle"]</h3>
+
+<h4>@Localizer["TextAreaSubTitle"]</h4>
+
+<DemoBlock Title="@Localizer["TextAreaNormalTitle"]"
+           Introduction="@Localizer["TextAreaNormalIntro"]"
+           Name="Normal">
+    <Textarea PlaceHolder="@Localizer["TextAreaPlaceHolder"]" rows="4" />
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["TextAreaDisableTitle"]"
+           Introduction="@Localizer["TextAreaDisableIntro"]"
+           Name="IsDisabled">
+    <Textarea PlaceHolder="@Localizer["TextAreaPlaceHolder"]" rows="4" IsDisabled="true" />
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["TextAreaReadOnlyTitle"]"
+           Introduction="@Localizer["TextAreaReadOnlyIntro"]"
+           Name="ReadOnly">
+    <Textarea PlaceHolder="@Localizer["TextAreaPlaceHolder"]" rows="4" readonly />
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["TextAreaHeightTitle"]"
+           Introduction="@Localizer["TextAreaHeightIntro"]"
+           Name="Rows">
+    <Textarea PlaceHolder="@Localizer["TextAreaPlaceHolder"]" rows="4" />
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["TextAreaBindWayTitle"]"
+           Introduction="@Localizer["TextAreaBindWayIntro"]"
+           Name="BindValue">
+    <Textarea PlaceHolder="@Localizer["TextAreaPlaceHolder"]" rows="4" @bind-Value="@Text"></Textarea>
+    <section ignore class="row g-3">
+        <div class="col-12">
+            <label class="form-label">@Localizer["TextAreaBindWayBindValue"]</label>
+            <div class="form-control textarea-demo">@Text</div>
+        </div>
+    </section>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["TextAreaScrollTitle"]"
+           Introduction="@Localizer["TextAreaScrollIntro"]"
+           Name="IsAutoScroll">
+    <Textarea class="mb-3" PlaceHolder="@Localizer["TextAreaPlaceHolder"]" rows="10" @ref="TextareaElement" @bind-Value="@ChatText" IsAutoScroll="IsAutoScroll" />
+    <section ignore>
+        <BootstrapInputGroup>
+            <Button Text="@Localizer[ChatLocalizerName]" OnClick="MockChat" Icon="fa-fw fas fa-comments" />
+            <Button Text="@Localizer["TextAreaScrollToTop"]" OnClick="ScrollToTop" />
+            <Button Text="@Localizer["TextAreaScrollToBottom"]" OnClick="ScrollToBottom" />
+            <Button Text="@Localizer["TextAreaScrollTo"]" OnClick="ScrollTo20" />
+            <Button Text="@($"{Localizer["TextAreaAutoScroll"]}{(IsAutoScroll ? " On":" Off")}" )" OnClick="SwitchAutoScroll" />
+        </BootstrapInputGroup>
+    </section>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["TextAreaUseShiftEnterTitle"]"
+           Introduction="@Localizer["TextAreaUseShiftEnterIntro"]"
+           Name="UseShiftEnter">
+    <Textarea rows="4" autocomplete="off" autocorrect="off" spellcheck="false"
+              UseInputEvent="true" UseShiftEnter="true" PlaceHolder="@Localizer["TextAreaUseShiftEnterPlaceHolder"]"
+              @bind-Value="@KeyText"></Textarea>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["TextAreaKeyEventTitle"]"
+           Introduction="@Localizer["TextAreaKeyEventIntro"]"
+           Name="KeyEvent">
+    <Textarea rows="4" OnEnterAsync="OnEnterAsync" OnEscAsync="OnEscAsync"
+              PlaceHolder="@Localizer["TextAreaKeyEventPlaceHolder"]"></Textarea>
+    <ConsoleLogger @ref="ConsoleLogger"></ConsoleLogger>
+</DemoBlock>
+
+<AttributeTable Items="@GetAttributes()" />

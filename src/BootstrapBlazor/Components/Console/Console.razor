@@ -1,0 +1,55 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapModuleComponentBase
+@attribute [BootstrapModuleAutoLoader]
+
+<div @attributes="@AdditionalAttributes" class="@ClassString" id="@Id" data-bb-scroll="@AutoScrollString">
+    <div class="card-header">
+        @if (HeaderTemplate != null)
+        {
+            @HeaderTemplate
+        }
+        else
+        {
+            <span class="card-title">@HeaderText</span>
+            @if (ShowLight)
+            {
+                <Light IsFlash="@IsFlashLight" TooltipText="@LightTitle" Color="@LightColor"></Light>
+            }
+        }
+    </div>
+    <div class="card-body" style="@BodyStyleString">
+        <div class="console-window">
+            @foreach (var item in Items)
+            {
+                <div @key="item" class="@GetClassString(item)">
+                    @if (ItemTemplate != null)
+                    {
+                        @ItemTemplate(item)
+                    }
+                    else
+                    {
+                        @item.RenderMessage()
+                    }
+                </div>
+            }
+        </div>
+    </div>
+    @if (ShowFooter)
+    {
+        <div class="card-footer">
+            @if (FooterTemplate != null)
+            {
+                @FooterTemplate
+            }
+            else if (ShowAutoScroll)
+            {
+                <Checkbox @bind-Value="@IsAutoScroll" ShowAfterLabel="true" DisplayText="@AutoScrollText" />
+            }
+            @if (OnClear != null)
+            {
+                <Button Text="@ClearButtonText" Icon="@ClearButtonIcon" Color="@ClearButtonColor"
+                        OnClick="OnClearConsole" class="console-clear"></Button>
+            }
+        </div>
+    }
+</div>

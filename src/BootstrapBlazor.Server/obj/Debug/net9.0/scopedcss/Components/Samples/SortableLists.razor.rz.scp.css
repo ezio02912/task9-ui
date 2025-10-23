@@ -1,0 +1,43 @@
+.sl-list[b-oddk1ekxxl] {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    padding: .5rem;
+}
+
+.sl-item[b-oddk1ekxxl] {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    padding: 1rem;
+}
+
+    .sl-item:not(:last-child)[b-oddk1ekxxl] {
+        margin-bottom: 0.5rem;
+        user-select: none;
+    }
+
+    .sl-item.filter[b-oddk1ekxxl] {
+        background-color: var(--bs-danger);
+        color: var(--bs-body-bg);
+    }
+
+        .sl-item.filter i[b-oddk1ekxxl] {
+            cursor: not-allowed;
+        }
+
+    .sl-item i[b-oddk1ekxxl] {
+        cursor: pointer;
+    }
+
+    .sl-item span[b-oddk1ekxxl] {
+        margin-inline-start: 2rem;
+    }
+
+    .sl-item.sortable-chosen[b-oddk1ekxxl] {
+        background-color: var(--bs-primary);
+        color: var(--bs-body-bg);
+    }
+
+    .sl-item.sortable-ghost[b-oddk1ekxxl] {
+        background-color: var(--bs-info);
+        color: var(--bs-body-bg);
+    }

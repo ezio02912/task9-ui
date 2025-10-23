@@ -1,0 +1,27 @@
+﻿@page "/template"
+@inject PackageVersionService VersionManager
+@inject IStringLocalizer<Template> Localizer
+@inject IOptionsMonitor<WebsiteOptions> WebsiteOption
+
+<h3>@Localizer["Title"]</h3>
+
+<h4>@Localizer["SubTitle"]</h4>
+
+<p>@((MarkupString)Localizer["P1"].Value)</p>
+
+<p class="code-label">@Localizer["P2"]</p>
+<Pre class="no-highlight">dotnet new install Bootstrap.Blazor.Templates::@Version</Pre>
+
+<p class="code-label">@Localizer["P3"]</p>
+<Pre>dotnet new bbapp</Pre>
+
+<p>@((MarkupString)Localizer["P4"].Value)</p>
+
+<p class="code-label">@Localizer["P5"]</p>
+<Pre>dotnet new update</Pre>
+<p>@Localizer["P6"]</p>
+
+<p class="code-label">@Localizer["P7"]</p>
+<Pre>dotnet new uninstall Bootstrap.Blazor.Templates</Pre>
+
+<Video Name="template" />

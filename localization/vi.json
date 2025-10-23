@@ -1,0 +1,339 @@
+﻿{
+  "BootstrapBlazor.Components.AutoComplete": {
+    "NoDataTip": "Không có dữ liệu",
+    "PlaceHolder": "Nhập"
+  },
+  "BootstrapBlazor.Components.Captcha": {
+    "HeaderText": "Captcha",
+    "BarText": "Kéo sang phải để hoàn thành",
+    "FailedText": "Lỗi tải",
+    "LoadText": "Đang tải...",
+    "TryText": "Thử lại"
+  },
+  "BootstrapBlazor.Components.Camera": {
+    "DeviceLabel": "Camera",
+    "InitDevicesString": "Đang khởi tạo ...",
+    "PlayText": "Mở",
+    "StopText": "Đóng",
+    "PhotoText": "Chụp ảnh",
+    "FrontText": "Trước",
+    "BackText": "Sau",
+    "NotFoundDevicesString": "Không tìm thấy thiết bị"
+  },
+  "BootstrapBlazor.Components.Calendar": {
+    "PreviousYear": "Năm trước",
+    "PreviousMonth": "Tháng trước",
+    "Today": "Hôm nay",
+    "NextMonth": "Tháng sau",
+    "NextYear": "Năm sau",
+    "PreviousWeek": "Tuần trước",
+    "WeekText": "Tuần",
+    "NextWeek": "Tuần sau",
+    "WeekHeaderText": "",
+    "WeekLists": "CN,T2,T3,T4,T5,T6,T7",
+    "WeekNumberText": "{0} Tuần",
+    "Months": "Th1,Th2,Th3,Th4,Th5,Th6,Th7,Th8,Th9,Th10,Th11,Th12",
+    "Title": "{0} {1}"
+  },
+  "BootstrapBlazor.Components.Cascader": {
+    "PlaceHolder": "Vui lòng chọn ..."
+  },
+  "BootstrapBlazor.Components.Console": {
+    "HeaderText": "Giám sát",
+    "LightTitle": "Sáng",
+    "ClearButtonText": "Xóa",
+    "AutoScrollText": "Tự động cuộn"
+  },
+  "BootstrapBlazor.Components.DateTimePicker": {
+    "DatePlaceHolder": "Chọn ngày",
+    "TimePlaceHolder": "Chọn giờ",
+    "DateTimePlaceHolderText": "Vui lòng chọn ...",
+    "DatePlaceHolderText": "Vui lòng chọn ...",
+    "TimeFormat": "hh\\:mm\\:ss",
+    "DateFormat": "d/M/yyyy",
+    "DateTimeFormat": "d/M/yyyy HH\\:mm\\:ss",
+    "AiraPrevYearLabel": "Năm trước",
+    "AiraNextYearLabel": "Năm sau",
+    "AiraPrevMonthLabel": "Tháng trước",
+    "AiraNextMonthLabel": "Tháng sau",
+    "ClearButtonText": "Xóa",
+    "NowButtonText": "Bây giờ",
+    "ConfirmButtonText": "OK",
+    "CancelButtonText": "Hủy",
+    "YearText": "{0}",
+    "MonthText": "{0}",
+    "YearPeriodText": "{0} - {1}",
+    "Months": "Th1,Th2,Th3,Th4,Th5,Th6,Th7,Th8,Th9,Th10,Th11,Th12",
+    "MonthLists": "Th1,Th2,Th3,Th4,Th5,Th6,Th7,Th8,Th9,Th10,Th11,Th12",
+    "WeekLists": "CN,T2,T3,T4,T5,T6,T7",
+    "GenericTypeErroMessage": "Bộ chọn ngày giờ chỉ hỗ trợ DateTime DateTime? DateTimeOffset DateTimeOffset?",
+    "Today": "Hôm nay",
+    "Yesterday": "Hôm qua",
+    "Week": "Một tuần trước"
+  },
+  "BootstrapBlazor.Components.DateTimeRange": {
+    "SeparateText": "Đến",
+    "StartPlaceHolderText": "Ngày bắt đầu",
+    "EndPlaceHolderText": "Ngày kết thúc",
+    "ClearButtonText": "Xóa",
+    "TodayButtonText": "Hôm nay",
+    "ConfirmButtonText": "Xác nhận",
+    "DateTimeFormat": "d/M/yyyy hh\\:mm\\:ss tt",
+    "DateFormat": "d/M/yyyy",
+    "Last7Days": "7 ngày qua",
+    "Last30Days": "30 ngày qua",
+    "ThisMonth": "Tháng này",
+    "LastMonth": "Tháng trước"
+  },
+  "BootstrapBlazor.Components.BootstrapInputNumber": {
+    "ParsingErrorMessage": "Trường {0} phải là một số."
+  },
+  "BootstrapBlazor.Components.ResultDialogOption": {
+    "ButtonYesText": "Có",
+    "ButtonNoText": "Không",
+    "ButtonCloseText": "Đóng"
+  },
+  "BootstrapBlazor.Components.DropdownList": {
+    "PlaceHolder": "Vui lòng chọn ..."
+  },
+  "BootstrapBlazor.Components.Editor": {
+    "PlaceHolder": "Nhấp để chỉnh sửa"
+  },
+  "BootstrapBlazor.Components.EditorForm": {
+    "ModelInvalidOperationExceptionMessage": "Model ValidateForm không khớp với {0} MODEL",
+    "PlaceHolderText": "Nhập ..."
+  },
+  "BootstrapBlazor.Components.Empty": {
+    "Text": "Trống"
+  },
+  "BootstrapBlazor.Components.EqualToValidator": {
+    "ErrorMessage": "Nhập cùng giá trị"
+  },
+  "BootstrapBlazor.Components.ErrorLogger": {
+    "ToastTitle": "Lỗi ứng dụng"
+  },
+  "BootstrapBlazor.Components.GoTop": {
+    "TooltipText": "Lên đầu"
+  },
+  "BootstrapBlazor.Components.Layout": {
+    "TooltipText": "Mở rộng/Thu gọn thanh bên"
+  },
+  "BootstrapBlazor.Components.Logout": {
+    "PrefixDisplayNameText": "Chào mừng",
+    "PrefixUserNameText": "Tài khoản:"
+  },
+  "BootstrapBlazor.Components.LogoutLink": {
+    "Text": "Đăng xuất"
+  },
+  "BootstrapBlazor.Components.Menu": {
+    "InvalidOperationExceptionMessage": "Component menu bên không thể sử dụng độc lập. Sử dụng component menu với IsVertical = true"
+  },
+  "BootstrapBlazor.Components.ModalDialog": {
+    "CloseButtonText": "Đóng",
+    "SaveButtonText": "Lưu",
+    "PrintButtonText": "In"
+  },
+  "BootstrapBlazor.Components.MultiSelect": {
+    "PlaceHolder": "Nhấp để chọn ...",
+    "SelectAllText": "Tất cả",
+    "ReverseSelectText": "Đảo ngược",
+    "ClearText": "Xóa",
+    "MinErrorMessage": "Chọn ít nhất {0} mục",
+    "MaxErrorMessage": "Có thể chọn tối đa {0} mục"
+  },
+  "BootstrapBlazor.Components.Pagination": {
+    "GotoNavigatorLabelText": "Đi tới"
+  },
+  "BootstrapBlazor.Components.PopConfirmButton": {
+    "CloseButtonText": "Hủy",
+    "ConfirmButtonText": "OK",
+    "Content": "Xác nhận thực hiện?"
+  },
+  "BootstrapBlazor.Components.PrintButton": {
+    "Text": "In"
+  },
+  "BootstrapBlazor.Components.Search": {
+    "SearchButtonText": "Tìm kiếm"
+  },
+  "BootstrapBlazor.Components.Select": {
+    "PlaceHolder": "Vui lòng chọn ..."
+  },
+  "BootstrapBlazor.Components.SelectTree": {
+    "PlaceHolder": "Vui lòng chọn ..."
+  },
+  "BootstrapBlazor.Components.StringLengthValidator": {
+    "ErrorMessage": "Nhập giá trị nhỏ hơn hoặc bằng {{0}}"
+  },
+  "BootstrapBlazor.Components.SweetAlert": {
+    "CloseButtonText": "Đóng",
+    "CancelButtonText": "Hủy",
+    "ConfirmButtonText": "Xác nhận"
+  },
+  "BootstrapBlazor.Components.Switch": {
+    "OnInnerText": "Bật",
+    "OffInnerText": "Tắt"
+  },
+  "BootstrapBlazor.Components.Tab": {
+    "CloseCurrentTabText": "Đóng",
+    "CloseOtherTabsText": "Đóng các tab khác",
+    "CloseAllTabsText": "Đóng tất cả",
+    "NotFoundTabText": "Không tìm thấy trang"
+  },
+  "BootstrapBlazor.Components.Table": {
+    "AddButtonText": "Thêm",
+    "EditButtonText": "Sửa",
+    "UpdateButtonText": "Cập nhật",
+    "DeleteButtonText": "Xóa",
+    "CancelButtonText": "Hủy",
+    "SaveButtonText": "Lưu",
+    "CloseButtonText": "Đóng",
+    "CancelDeleteButtonText": "Hủy",
+    "ConfirmDeleteButtonText": "Xóa",
+    "ConfirmDeleteContentText": "Bạn có chắc chắn muốn xóa tất cả các hàng đã chọn?",
+    "RefreshButtonText": "Làm mới",
+    "CardViewButtonText": "Xem",
+    "ColumnButtonTitleText": "Hiển thị/Ẩn cột",
+    "ColumnButtonText": "Cột",
+    "ExportButtonText": "Xuất",
+    "SearchPlaceholderText": "Tìm kiếm",
+    "SearchButtonText": "Tìm kiếm",
+    "ResetSearchButtonText": "Đặt lại",
+    "AdvanceButtonText": "Tìm kiếm nâng cao",
+    "AdvancedSortModalTitle": "Sắp xếp",
+    "AdvancedSortButtonText": "Sắp xếp nâng cao",
+    "CheckboxDisplayText": "Tất cả",
+    "EditModalTitle": "Sửa",
+    "AddModalTitle": "Mới",
+    "LineNoText": "STT",
+    "ColumnButtonTemplateHeaderText": "",
+    "SearchTooltip": "<div class='search-input-tooltip'>Vui lòng nhập...</br><kbd>Enter</kbd> Tìm kiếm <kbd>ESC</kbd> Xóa</div>",
+    "SearchModalTitle": "Đang tìm kiếm",
+    "AddButtonToastTitle": "Thêm dữ liệu",
+    "AddButtonToastContent": "Lỗi thêm dữ liệu. Vui lòng cung cấp phương thức OnAddAsync",
+    "EditButtonToastTitle": "Sửa dữ liệu",
+    "EditButtonToastNotSelectContent": "Lỗi lưu dữ liệu. Vui lòng cung cấp phương thức OnSaveAsync",
+    "EditButtonToastReadonlyContent": "Dữ liệu đã chọn không thể chỉnh sửa",
+    "EditButtonToastMoreSelectContent": "Chỉ có thể SỬA một hàng",
+    "EditButtonToastNoSaveMethodContent": "Không thể SỬA dữ liệu. Vui lòng cung cấp phương thức OnSaveAsync",
+    "SaveButtonToastTitle": "Lưu dữ liệu",
+    "SaveButtonToastContent": "Lỗi lưu dữ liệu. Vui lòng cung cấp phương thức OnSaveAsync",
+    "SaveButtonToastResultContent": "Lưu dữ liệu {0}, tự động đóng sau {1} giây",
+    "SuccessText": "Thành công",
+    "FailText": "Lỗi",
+    "DeleteButtonToastTitle": "Xóa dữ liệu",
+    "DeleteButtonToastContent": "Vui lòng chọn hàng để XÓA, tự động đóng sau {0} giây",
+    "DeleteButtonToastResultContent": "Xóa dữ liệu {0}, tự động đóng sau {1} giây",
+    "DeleteButtonToastCanNotDeleteContent": "Có dữ liệu không thể xóa trong các dữ liệu đã chọn, tự động đóng sau {0} giây",
+    "DataServiceInvalidOperationText": "Dịch vụ 'BootstrapBlazor.Components.IDataService`1[{0}]' chưa được đăng ký",
+    "NotSetOnTreeExpandErrorMessage": "tham số OnTreeExpand chưa được thiết lập",
+    "UnsetText": "Tăng dần",
+    "SortAscText": "Giảm dần",
+    "SortDescText": "Hủy sắp xếp",
+    "EmptyText": "Không có dữ liệu",
+    "ExportToastTitle": "Xuất",
+    "ExportToastContent": "Xuất dữ liệu {0}, tự động đóng sau {1} giây",
+    "ExportToastInProgressContent": "Đang xuất dữ liệu, vui lòng đợi, tự động đóng sau {0} giây",
+    "ExportCsvDropdownItemText": "MS-Csv",
+    "ExportExcelDropdownItemText": "MS-Excel",
+    "ExportPdfDropdownItemText": "Pdf",
+    "PageInfoText": "{0} - {1} Tổng cộng {2}",
+    "PageItemsText": "{0}/trang",
+    "CopyColumnTooltipText": "Sao chép toàn bộ dữ liệu cột vào clipboard",
+    "CopyColumnCopiedTooltipText": "Đã sao chép!"
+  },
+  "BootstrapBlazor.Components.EditDialog": {
+    "CloseButtonText": "Đóng",
+    "SaveButtonText": "Lưu"
+  },
+  "BootstrapBlazor.Components.TableFilter": {
+    "ClearButtonText": "Xóa",
+    "FilterButtonText": "Lọc",
+    "BoolFilter.AllText": "Tất cả",
+    "BoolFilter.TrueText": "Đúng",
+    "BoolFilter.FalseText": "Sai",
+    "GreaterThanOrEqual": "Lớn hơn hoặc bằng",
+    "LessThanOrEqual": "Nhỏ hơn hoặc bằng",
+    "GreaterThan": "Lớn hơn",
+    "LessThan": "Nhỏ hơn",
+    "Equal": "Bằng",
+    "NotEqual": "Không bằng",
+    "Contains": "Chứa",
+    "NotContains": "Không chứa",
+    "EnumFilter.AllText": "Tất cả",
+    "NotSupportedMessage": "Loại bộ lọc không được hỗ trợ. Tùy chỉnh bộ lọc sử dụng FilterTemplate"
+  },
+  "BootstrapBlazor.Components.FilterLogicItem": {
+    "And": "VÀ",
+    "Or": "HOẶC"
+  },
+  "BootstrapBlazor.Components.SearchDialog": {
+    "ResetButtonText": "Đặt lại",
+    "QueryButtonText": "Truy vấn"
+  },
+  "BootstrapBlazor.Components.SwitchButton": {
+    "OnText": "Bật",
+    "OffText": "Tắt"
+  },
+  "BootstrapBlazor.Components.Timer": {
+    "PauseText": "Tạm dừng",
+    "ResumeText": "Tiếp tục",
+    "CancelText": "Hủy",
+    "StarText": "Bắt đầu"
+  },
+  "BootstrapBlazor.Components.Toggle": {
+    "OnText": "Mở rộng",
+    "OffText": "Thu gọn"
+  },
+  "BootstrapBlazor.Components.Transfer": {
+    "LeftPanelText": "Tất cả",
+    "RightPanelText": "Đã chọn"
+  },
+  "BootstrapBlazor.Components.TransferPanel": {
+    "SearchPlaceHolderString": "Nhập...",
+    "Text": "Danh sách"
+  },
+  "BootstrapBlazor.Components.Tree": {
+    "NotSetOnTreeExpandErrorMessage": "Tham số OnExpandNodeAsync chưa được gán"
+  },
+  "BootstrapBlazor.Components.TreeView": {
+    "NotSetOnTreeExpandErrorMessage": "Tham số OnExpandNodeAsync chưa được gán"
+  },
+  "BootstrapBlazor.Components.UploadBase": {
+    "DeleteButtonText": "Xóa",
+    "BrowserButtonText": "Duyệt",
+    "FileExtensions": "Tệp phải có một trong các phần mở rộng: {0}",
+    "FileSizeValidation": "Kích thước tệp phải nhỏ hơn {0}"
+  },
+  "BootstrapBlazor.Components.Handwritten": {
+    "SaveButtonText": "Lưu",
+    "ClearButtonText": "Xóa"
+  },
+  "BootstrapBlazor.Components.SignaturePad": {
+    "SignAboveLabel": "Ký tên",
+    "ClearBtnTitle": "Xóa",
+    "SignatureAlertText": "Vui lòng cung cấp chữ ký trước",
+    "ChangeColorBtnTitle": "Đổi màu",
+    "UndoBtnTitle": "Hoàn tác",
+    "CloseBtnTitle": "Đóng",
+    "SaveBase64BtnTitle": "Chấp nhận",
+    "SavePNGBtnTitle": "PNG",
+    "SaveJPGBtnTitle": "JPG",
+    "SaveSVGBtnTitle": "SVG"
+  },
+  "BootstrapBlazor.Components.NullableBoolItemsAttribute": {
+    "NullValueDisplayText": "Chọn",
+    "TrueValueDisplayText": "Đúng",
+    "FalseValueDisplayText": "Sai"
+  },
+  "BootstrapBlazor.Components.InsertRowMode": {
+    "Last": "Cuối",
+    "First": "Đầu"
+  },
+  "BootstrapBlazor.Components.IconDialog": {
+    "LabelText": "Biểu tượng",
+    "LabelFullText": "HTML",
+    "ButtonText": "Sao chép",
+    "DialogHeaderText": "Biểu tượng đã chọn",
+    "CopiedTooltipText": "Sao chép thành công"
+  }
+}

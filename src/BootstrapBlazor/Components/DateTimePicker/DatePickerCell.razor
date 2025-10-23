@@ -1,0 +1,29 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapComponentBase
+
+<span @attributes="@AdditionalAttributes" class="@ClassString" @onclick="e => OnClick(Value)">
+    @if(ShowLunar)
+    {
+        <span>@Text</span>
+        <span class="bb-picker-body-lunar-text">@GetLunarText(Value)</span>
+    }
+    else if(Template == null)
+    {
+        @Text
+    }
+    else
+    {
+        @Template(Value)
+    }
+    @if (ShowHolidays)
+    {
+        if (CalendarHolidays.IsHoliday(Value))
+        {
+            <span class="is-holiday">休</span>
+        }
+        else if (CalendarHolidays.IsWorkday(Value))
+        {
+            <span class="is-workday">班</span>
+        }
+    }
+</span>

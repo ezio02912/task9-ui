@@ -1,0 +1,28 @@
+@page "/cpd"
+@layout PageLayout
+@using BootstrapBlazor.Components
+@namespace BootstrapBlazor.Server.Components.Task9.CPD
+
+<h3>📊 CPD - Content Performance Dashboard</h3>
+
+<DemoBlock Title="Quản lý CPD" Name="CpdManagement">
+    <Tab IsCard="true" ShowClose="true"
+         TabStyle="TabStyle.Chrome"
+         AllowDrag="true"
+         ShowToolbar="true"
+         IsOnlyRenderActiveTab="true"
+         ShowExtendButtons="true">
+        <TabItem Text="Tải lên dữ liệu" Icon="fa-solid fa-upload">
+            <CpdUpload />
+        </TabItem>
+        <TabItem Text="Xem dữ liệu" Icon="fa-solid fa-table">
+            <CpdDataView />
+        </TabItem>
+        <TabItem Text="Theo dõi thay đổi" Icon="fa-solid fa-chart-line">
+            <CpdChanges />
+        </TabItem>
+        <TabItem Text="Báo cáo thống kê" Icon="fa-solid fa-chart-bar">
+            <CpdReports />
+        </TabItem>
+    </Tab>
+</DemoBlock>

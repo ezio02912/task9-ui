@@ -1,0 +1,15 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapComponentBase
+
+<li @attributes="AdditionalAttributes" class="@ClassString">
+    <div class="page-link" @onclick:preventDefault @onclick="OnClickItem">
+        @if (ChildContent != null)
+        {
+            @ChildContent
+        }
+        else
+        {
+            @Index
+        }
+    </div>
+</li>

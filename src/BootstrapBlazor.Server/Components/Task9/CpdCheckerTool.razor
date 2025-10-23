@@ -1,0 +1,163 @@
+﻿@page "/cpd-checker-tool"
+@layout PageLayout
+
+
+
+<DemoBlock Title="Thanh công cụ" Name="Filter">
+    <div class="row g-3">
+        <div class="col-12 col-sm-4">
+             <ButtonUpload  Color="Color.Info" TValue="string" IsMultiple="@false" IsDirectory="false" IsDisabled="false"
+                  ShowProgress="true"
+                  ShowUploadFileList="true"
+                  OnDelete="ClearAll"
+                  OnChange="@ImportExcel"></ButtonUpload></div>
+        <div class="col-12 col-sm-4"><Button IsBlock="true" Icon="fa-solid fa-copy" class="icon-css" Color="Color.Warning" OnClick="CopyData">Copy</Button></div>
+        <div class="col-12 col-sm-4"><Button IsBlock="true" Icon="fa-solid fa-check" class="icon-css" Color="Color.Success" OnClick="CheckAllRows">Kiểm tra</Button></div>
+
+        <div class="col-12 col-sm-3">
+            <label class="form-label">Mobile mode</label>
+            @if(IsMobileMode)
+            {
+               <Button IsBlock="true" Color="Color.Success" OnClick="()=> IsMobileMode = false">Đã bật Mobile mode</Button>
+            }
+            else
+            {
+               <Button IsBlock="true" IsOutline="true" Color="Color.Light" OnClick="()=> IsMobileMode = true">Bật Mobile mode</Button>
+            }
+        </div>
+        <div class="col-12 col-sm-3">
+            <label class="form-label">Live mode</label>
+            @if(IsLiveMode)
+            {
+                <Button IsBlock="true" Color="Color.Success" OnClick="()=> IsLiveMode = false">Đã bật Live mode</Button>
+            }
+            else
+            {
+                <Button IsBlock="true" IsOutline="true" Color="Color.Light" OnClick="()=> IsLiveMode = true">Bật Live mode</Button>
+            }
+        </div>
+        <div class="col-12 col-sm-3">
+            <label class="form-label">Redirect mode</label>
+            @if(IsRedirectMode)
+            {
+                <Button IsBlock="true" Color="Color.Success" OnClick="()=> IsRedirectMode = false">Đã bật Redirect mode</Button>
+            }
+            else
+            {
+                <Button IsBlock="true" IsOutline="true" Color="Color.Light" OnClick="()=> IsRedirectMode = true">Bật Redirect mode</Button>
+            }
+        </div>
+        
+        <div class="col-12 col-sm-3">
+            <label class="form-label">Enable Render JS</label>
+            @if(IsEnableRenderJS)
+            {
+                <Button IsBlock="true" Color="Color.Success" OnClick="()=> IsEnableRenderJS = false">Đã bật (đợi JS chạy logic website rồi mới kiểm tra) </Button>
+            }
+            else
+            {
+                <Button IsBlock="true" IsOutline="true" Color="Color.Light" OnClick="()=> IsEnableRenderJS = true">Tắt</Button>
+            }
+        </div>
+    </div>
+</DemoBlock>
+
+
+
+
+<DemoBlock Title="Dữ liệu CPD"Name="ShowLoading">
+    @if(IsChecking)
+    {
+        <div class="row g-3 mb-3">
+            <div class="col-12">
+                <BootstrapBlazor.Components.Progress IsAnimated="true" IsStriped="true" @bind-Value="@CurrentProgressPercent" Color="Color.Success" IsShowValue="true"></BootstrapBlazor.Components.Progress>
+            </div>
+        </div>
+    }
+    
+    <Table TItem="CpdCheckerToolRow" Items="ExcelDataRows" AutoGenerateColumns="false"
+           IsPagination="false" IsStriped="true" IsBordered="true" IsMultipleSelect="false"
+           ShowToolbar="true" ShowDefaultButtons="false" ShowExtendButtons="false" ShowLoading="true" 
+           ShowSearch="false" ShowCardView="true" ShowAdvancedSearch="false" >
+        <TableColumns>
+            <TableColumn @bind-Field="@context.No" Text="STT" Width="50" TextWrap="true" />
+            <TableColumn @bind-Field="@context.Pic" Text="PIC" Width="80" TextWrap="true" />
+            <TableColumn @bind-Field="@context.Publink" Text="Link Pub" Width="150" TextWrap="true">
+                <Template Context="value">  
+                    <a href="@value.Value" target="_blank" class="text-primary">@value.Value</a>
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.Brand" Text="Brand" Width="100" TextWrap="true" />
+            <TableColumn @bind-Field="@context.Position" Text="Vị trí" Width="150" TextWrap="true" />
+            <TableColumn @bind-Field="@context.OriginalLink" Text="Link Banner" Width="300" TextWrap="true">
+                <Template Context="value">  
+                    <a href="@value.Value" target="_blank" class="text-primary">@value.Value</a>
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.ShortLink" Text="Short link" Width="180" TextWrap="true">
+                <Template Context="value">  
+                    <a href="@value.Value" target="_blank" class="text-primary">@value.Value</a>
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.RedirectShortLink" Text="Pub shortlink" Width="150" TextWrap="true">
+                <Template Context="value">  
+                    <a href="@value.Value" target="_blank" class="text-primary">@value.Value</a>
+                </Template>
+            </TableColumn>
+
+
+            <TableColumn @bind-Field="@context.FolderBanner" Text="Banner Folder" Width="150" TextWrap="true" />
+            <TableColumn @bind-Field="@context.FileNameBanner" Text="Filename Banner" Width="150" TextWrap="true" />
+            <TableColumn @bind-Field="@context.DeviceCheck" Text="XPATH" Width="150" TextWrap="true" />
+            <TableColumn @bind-Field="@context.Dimension" Text="Dimension" Width="100" TextWrap="true" />
+            <TableColumn @bind-Field="@context.Title" Text="Title" Width="200" TextWrap="true" />
+            <TableColumn @bind-Field="@context.Alt" Text="Alt" Width="200" TextWrap="true" />
+            <TableColumn @bind-Field="@context.ResultShortlink" Text="Shortlink Check" Width="300" TextWrap="true" >
+                <Template Context="value">
+                    <a href="@value.Value" target="_blank" class="text-primary">@value.Value</a>
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.ResultShortlinkStatus" Text="Status" Width="150" TextWrap="true">
+                <Template Context="value">
+                    @if(value.Value == "OK")
+                    {
+                        <Badge Color="Color.Success">OK</Badge>
+                    }
+                    else if(value.Value.Contains("FAILED"))
+                    {
+                        <Badge Color="Color.Danger">FAILED</Badge>
+                    }
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.ResultAltStatus" Text="Alt Status" Width="150" TextWrap="true">
+                <Template Context="value">
+                    @if(value.Value == "OK")
+                    {
+                        <Badge Color="Color.Success">OK</Badge>
+                    }
+                    else if(value.Value.Contains("FAILED"))
+                    {
+                        <Badge Color="Color.Danger">FAILED</Badge>
+                    }
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.ResultTitleStatus" Text="Title Status" Width="150" TextWrap="true">
+                <Template Context="value">
+                    @if(value.Value == "OK")
+                    {
+                        <Badge Color="Color.Success">OK</Badge>
+                    }
+                    else if(value.Value.Contains("FAILED"))
+                    {
+                        <Badge Color="Color.Danger">FAILED</Badge>
+                    }
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.BannerCheckNote" Text="Banner check note" Width="300" TextWrap="true">
+                <Template Context="value">
+                    <span style="white-space:pre-wrap;" class="@(value.Value == "OK" ? "text-success" : "text-danger")">@value.Value</span>
+                </Template>
+            </TableColumn>
+        </TableColumns>
+    </Table>
+</DemoBlock> 

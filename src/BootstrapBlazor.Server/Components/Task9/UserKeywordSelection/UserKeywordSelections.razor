@@ -1,0 +1,124 @@
+﻿@page "/users-keyword-selections"
+@layout PageLayout
+@using BootstrapBlazor.Components
+@namespace BootstrapBlazor.Server.Components.Task9.UserKeywordSelection
+
+<h3>PIC phụ trách keywords</h3>
+<DemoBlock Title="Kết quả">
+    <Table TItem="KeywordWithUserCountDto"
+           AutoGenerateColumns="false"
+           IsPagination="true"
+           IsStriped="true"
+           IsBordered="true"
+           IsMultipleSelect="true"
+           ShowColumnList="true"
+           ShowToolbar="true"
+           ShowDefaultButtons="false"
+           ShowExtendButtons="false"
+           ShowLoading="true"
+           SearchMode="SearchMode.Top"
+           CustomerSearchModel="@CustomerSearchModel" 
+           ShowSearch="true"
+           ShowCardView="true"
+           OnQueryAsync="@OnQueryFilterAsync"
+           @ref="TableRef">
+        
+        <TableColumns>
+            <TableColumn @bind-Field="@context.BrandName" Text="Brand"/>
+            <TableColumn @bind-Field="@context.KeywordText" Text="Keyword"/>
+
+             <TableColumn Text="Search volume" @bind-Field="@context.MonthlyVolumes"> 
+                 <Template Context="item"> 
+                     @if (item.Row.MonthlyVolumes?.Any() == true) 
+                     { 
+                         <div class="d-flex align-items-center"> 
+                             @if (item.Row.MonthlyVolumes.Count > 1) 
+                             { 
+                                 var searchVolume =$"{item.Row.MonthlyVolumes.Last().SearchVolume:N0}"; 
+                                 
+                                <Tooltip Title="@GetHtmlRenderTooltip(item.Row)" IsHtml="true" Sanitize="false" Selector=".tooltip-selector">
+                                    <div>
+                                        <span class="tooltip-selector ms-2">@(searchVolume)</span>
+                                    </div>
+                                </Tooltip>
+                             } 
+                         </div> 
+                     } 
+                 </Template> 
+             </TableColumn>
+
+            <TableColumn Text="Người phụ trách"  @bind-Field="@context.UserNames">
+                <Template Context="item">
+                    <div class="d-flex align-items-center flex-wrap">
+                        @if (item.Row.UserNames?.Any() == true)
+                        {
+                            @foreach (var userName in item.Row.UserNames)
+                            {
+                                <Badge Color="Color.Primary" class="me-1 d-inline-flex align-items-center">
+                                    @userName
+                                    @if (CanRemoveUser(userName))
+                                    {
+                                        <Button Color="Color.Danger" Size="Size.Small" Icon="fa-solid fa-times" 
+                                                class="ms-1 p-1 border-0" 
+                                                style="width: 20px; height: 20px; min-width: 20px; font-size: 10px;"
+                                                OnClick="@(() => DeactivateUserFromKeyword(item.Row, userName))"
+                                                title="Gỡ người phụ trách">
+                                        </Button>
+                                    }
+                                </Badge>
+                            }
+                        }
+                        <Button Color="Color.Success" Size="Size.ExtraSmall" Icon="fa-solid fa-plus" 
+                                class="ms-1 p-1 border-0" 
+                                OnClick="@(() => OnAddUserToKeyword(item.Row))"
+                                title="Thêm chính mình vào keyword">
+                        </Button>
+                    </div>
+                </Template>
+            </TableColumn>
+           
+        </TableColumns>
+        
+        @*  *@
+        
+        <CustomerSearchTemplate>
+            @if (context is KeywordSearchFilterDto model)
+            {
+                <div class="row form-inline g-3">
+                    <div class="col-12 col-sm-6">
+                        <BootstrapInput @bind-Value="model.KeywordText" ShowLabel="true" DisplayText="Từ khóa"/>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <MultiSelectGeneric
+                                @bind-Value="model.Brands"
+                                Items="Brands"
+                                IsPopover="false"
+                                ShowSearch="true"
+                                ShowToolbar="false"
+                                IsClearable="true"
+                                ShowLabel="true"
+                                DisplayText="Brand/ngành">
+                        </MultiSelectGeneric>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                         <Select
+                            Items="PicItems"
+                            @bind-Value="model.Pic"
+                            ShowSearch="true"
+                            IsClearable="true"
+                            ShowLabel="true"
+                            DisplayText="Người phụ trách">
+                            </Select>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label class="form-label">Keyword có PIC</label>
+                        <Switch Value="@(model.OnlyWithUsers)" DisplayText="" OnColor="@Color.Success" OffColor="@Color.Secondary" OnValueChanged="@(async (bool value) => { model.OnlyWithUsers = value; await Task.CompletedTask; })"></Switch>
+                    </div>
+                    <div class="col-12 col-sm-12 btn-toolbar btn-group d-sm-inline-flex">
+                        <Button OnClick="OnTriggerFilterQueryAsync" Text="Tìm kiếm" Icon="fa-solid fa-search" class="btn btn-success"></Button>
+                    </div>
+                </div>
+            }
+        </CustomerSearchTemplate>
+    </Table>
+</DemoBlock>

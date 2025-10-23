@@ -1,0 +1,637 @@
+﻿:root {
+    --bb-font-weight: bold;
+    --bb-title-font-size: 1rem;
+    --bb-sub-font-size: .875rem;
+    --bb-primary-color: var(--bs-indigo);
+    --bb-primary-color-rgb: 112.520718,44.062154,249.437846;
+    --bb-bd-download-color: #ffe484;
+    --bb-bd-download-border-color: #ffe484;
+    --bb-bd-download-hover-color: #2a2730;
+    --bb-bd-download-hover-border-color: #ffe484;
+    --bb-bd-download-hover-bg-color: #ffe484;
+    --bb-sidebar-navbar-bg: #8548ff;
+    --bb-sidebar-navbar-bar-bg: var(--bs-indigo);
+    --bb-layout-button-bg: #562fff;
+    --bb-layout-button-hover-bg: #562fff;
+    --bb-layout-button-active-bg: #562fff;
+    --bb-layout-button-shadow: 0 0 6px #6143e2;
+    --bb-layout-button-color: var(--bs-body-color);
+    --bb-layout-button-update-bg: #8759ff;
+    --bb-button-theme-list-header-color: #fff;
+    --bb-button-theme-item-bg: #f6f6f6;
+    --bb-button-theme-item-color: var(--bs-body-color);
+    --bb-button-theme-item-hover-color: #fff;
+    --bb-button-theme-item-hover-bg: #6c4bfa;
+    --bb-button-theme-item-active-color: #fff;
+    --bb-button-theme-item-active-bg: #6c4bfa;
+    --bb-button-chat-color: #fff;
+    --bb-header-dropdown-border-color: rgba(255,255,255,.5);
+    --bb-header-dropdown-border-hover-color: rgba(255,255,255,.8);
+    --bb-header-dropdown-color: #fff;
+    --bb-header-dropdown-color-rgb: 255, 255, 255;
+    --bb-header-font-size: 1rem;
+    --bb-footer-body-bg: #404850;
+    --bb-footer-body-color: #fff;
+    --bb-footer-padding: 10px 8px;
+    --bb-main-pading: 1rem;
+    --bb-sidebar-body-hover-bg: rgba(175, 184, 193, 0.2);
+    --bb-sidebar-body-drag-hover-bg: rgb(9, 105, 218);
+    --bb-code-bg: #e9ecef;
+    --bb-mb-3: 1rem;
+    --bb-pre-margin-bottom: 1rem;
+    --bb-header-select-width: 230px;
+    --bb-header-search-margin-bottom: .5rem;
+}
+
+html .search-dialog-mask {
+    --bb-global-search-item-active-bg: rgba(var(--bb-primary-color-rgb), 0.5);
+    --bb-global-search-item-hover-bg: rgba(var(--bb-primary-color-rgb), 0.4);
+    --bb-global-search-dialog-input-focus-border-color: var(--bb-primary-color);
+    --bb-global-search-highlight-color: var(--bb-primary-color);
+    --bb-global-search-footer-kbd-bg: #6522cc;
+    --bb-global-search-main-max-height: calc(100vh - 310px);
+}
+
+.navbar {
+    --bs-navbar-color: rgba(255,255,255,.85);
+    --bs-navbar-hover-color: rgb(255,255,255);
+}
+
+h3, h4, h5 {
+    margin-bottom: var(--bb-mb-3);
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1095;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+.layout {
+    --bb-layout-menu-item-hover-bg: var(--bb-primary-color);
+}
+
+.bb-sub {
+    margin-top: .25rem;
+    font-size: 86%;
+    color: #c0c4cc;
+}
+
+.menu .nav-link.nav-table {
+    color: var(--bb-primary-color);
+    font-weight: bold;
+}
+
+    .menu .nav-link.nav-table:hover {
+        color: unset;
+    }
+
+.menu {
+    --bb-menu-active-color: var(--bb-primary-color);
+    --bb-menu-bar-bg: var(--bb-primary-color);
+    --bb-menu-item-hover-bg: var(--bb-primary-color);
+    --bb-menu-item-hover-color: #fff;
+}
+
+.custom-popover {
+    --bs-popover-border-color: var(--bs-primary);
+    --bs-popover-header-bg: var(--bs-primary);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: 1rem;
+}
+
+.custom-rate {
+    --bb-rate-font-size: 1.7rem;
+    --bb-rate-height: 30px;
+    --bb-rate-width: 30px;
+    --bb-rate-active-color: var(--bs-primary);
+}
+
+.connection-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.connection-body {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bs-body-bg);
+    padding: 1rem;
+    color: var(--bs-body-color);
+}
+
+[data-bs-theme='dark'] .connection-body {
+    background-color: #222939;
+}
+
+.connection-body-tail {
+    border-right: 1px solid var(--bs-border-color);
+    width: 1px;
+    margin-inline-start: 1rem;
+}
+
+.connection-link {
+    color: #1371C3;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-inline-start: 0.5rem;
+}
+
+.connection-box {
+    border-radius: var(--bs-border-radius);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+    .connection-box .connection-mask,
+    .connection-box .connection-body {
+        position: absolute;
+    }
+
+.connection-body img {
+    height: 110px;
+    margin-inline-start: 1rem;
+}
+
+.row-highlight {
+    --bs-table-striped-bg: #409eff;
+    --bs-table-bg: #409eff;
+    --bs-table-hover-bg: #409eff;
+    --bs-table-striped-color: #fff;
+    --bs-table-color-state: #fff;
+    --bs-table-hover-color: #fff;
+}
+
+.bb-avatar {
+    width: 46px;
+    border-radius: var(--bs-border-radius);
+}
+
+.main.dock-layout .tabs-body-content:first-child {
+    height: calc(100vh - 156px);
+}
+
+.main.dock-layout:has(.tabs-body-content:first-child:not(.d-none)) .bb-ad {
+    display: none;
+}
+
+.main.dock-layout:has(.tabs-body-content:first-child:not(.d-none)) .tabs-coms-header {
+    display: none;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: var(--bb-primary-color);
+}
+
+[data-bs-theme=dark] .hljs {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+code {
+    display: inline-block;
+    padding: 0 8px;
+    margin: 0;
+    border-radius: var(--bs-border-radius);
+    background-color: var(--bb-code-bg);
+}
+
+[data-bs-theme='dark'] code {
+    background-color: rgba(var(--bs-emphasis-color-rgb),.1);
+}
+
+.code-label + img,
+.pre-code + img {
+    margin-bottom: var(--bb-mb-3);
+}
+
+.code-quest {
+    margin-bottom: var(--bb-mb-3);
+    font-weight: bold;
+}
+
+.code-answer {
+    border: 1px solid var(--bs-border-color);
+    padding: .5rem;
+    border-radius: var(--bs-border-radius);
+    background-color: var(--bs-secondary-bg);
+}
+
+.ul-demo li:not(:last-child) {
+    margin-bottom: 0.25rem;
+}
+
+.btn-code {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-bg: var(--bs-body-bg);
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
+    position: absolute;
+    top: .65rem;
+    right: 1.5rem;
+    font-size: 65%;
+    transition: opacity .3s linear;
+}
+
+    .btn-code:not(:hover) {
+        opacity: .5;
+    }
+
+[data-bs-theme='dark'] .btn-code {
+    --bs-btn-bg: rgba(255, 255, 255, 0.12);
+    --bs-btn-color: rgba(255, 255, 255, 0.45);
+    --bs-btn-border-color: #606266;
+}
+
+[data-bs-theme='dark'] .console-logger {
+    background-color: rgba(var(--bs-emphasis-color-rgb),.1);
+}
+
+.icon-theme .icon-dark {
+    display: none;
+}
+
+[data-bs-theme='dark'] .icon-dark {
+    display: block;
+}
+
+[data-bs-theme='dark'] .icon-light {
+    display: none;
+}
+
+.layout-demo {
+    --bb-layout-sidebar-banner-background: var(--bb-primary-color);
+    --bb-layout-header-background: var(--bb-primary-color);
+}
+
+.card-body > section:not(:first-child) {
+    margin-top: var(--bb-mb-3);
+}
+
+.card-body > section:not(:last-child) {
+    margin-bottom: var(--bb-mb-3);
+}
+
+.custom-clock {
+    border: 1px solid var(--bs-border-color);
+    padding: .5rem;
+    border-radius: var(--bs-border-radius);
+    width: 320px;
+}
+
+.demo-block {
+    --bb-demo-block-margin-top: 1rem;
+    --bb-demo-block-margin-bottom: .5rem;
+}
+
+code {
+    --bb-code-line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --bs-header-height: 50px;
+        --bb-header-select-width: 196px;
+        --bb-header-search-margin-bottom: 0;
+    }
+
+    .header-img span {
+        display: none;
+    }
+
+    .chart {
+        max-width: 740px;
+    }
+
+        .chart .btn i + span {
+            display: inline;
+        }
+
+    header.hide {
+        transform: translate3d(0,calc(-100% - 2px),0);
+    }
+
+    .ms-learn {
+        right: 1rem;
+    }
+
+    .coms-demo .card {
+        cursor: pointer;
+    }
+}
+
+:root, [data-bs-theme="light"] {
+    --bd-purple: #4c0bce;
+    --bd-violet: #712cf9;
+    --bd-accent: #ffe484;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bd-accent-rgb: 255, 228, 132;
+    --bd-pink-rgb: 214, 51, 132;
+    --bd-teal-rgb: 32, 201, 151;
+    --bd-violet-bg: var(--bd-violet);
+    --bd-toc-color: var(--bd-violet);
+    --bd-sidebar-link-bg: rgba(var(--bd-violet-rgb), .1);
+    --bd-callout-link: 10, 88, 202;
+    --bd-callout-code-color: #ab296a;
+    --bd-pre-bg: var(--bs-tertiary-bg);
+}
+
+[data-bs-theme="dark"] {
+    --bd-violet: #9461fb;
+    --bd-violet-bg: #712cf9;
+    --bd-toc-color: var(--bs-emphasis-color);
+    --bd-sidebar-link-bg: rgba(84, 33, 187, .5);
+    --bd-callout-link: 110, 168, 254;
+    --bd-callout-code-color: #e685b5;
+    --bd-pre-bg: #1b1f22;
+}
+
+.icon-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    .icon-list > div {
+        padding: 1rem 30px;
+        border: 1px solid var(--bs-border-color);
+        border-radius: var(--bs-border-radius);
+        margin: 0.25rem;
+        cursor: pointer;
+        transition: background-color .3s linear;
+    }
+
+        .icon-list > div:hover {
+            background-color: var(--bb-primary-color);
+            color: #fff;
+        }
+
+    .icon-list .bb-iconpark-icon {
+        --bb-svg-icon-width: 16px;
+    }
+
+
+
+
+
+
+/* Beautiful Input Class - Target BootstrapBlazor InputNumber with custom class */
+.beautiful-input,
+.beautiful-input .form-control,
+.beautiful-input input,
+.beautiful-input input[type="number"],
+.beautiful-input input[type="text"] {
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: #374151 !important;
+    background-color: #ffffff !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    min-height: 38px !important;
+    width: 100% !important;
+}
+
+.beautiful-input:focus,
+.beautiful-input .form-control:focus,
+.beautiful-input input:focus,
+.beautiful-input input[type="number"]:focus,
+.beautiful-input input[type="text"]:focus {
+    outline: none !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+    background-color: #f8fafc !important;
+}
+
+.beautiful-input:hover,
+.beautiful-input .form-control:hover,
+.beautiful-input input:hover,
+.beautiful-input input[type="number"]:hover,
+.beautiful-input input[type="text"]:hover {
+    border-color: #cbd5e1 !important;
+    background-color: #f8fafc !important;
+}
+
+.beautiful-input:disabled,
+.beautiful-input .form-control:disabled,
+.beautiful-input input:disabled,
+.beautiful-input input[type="number"]:disabled,
+.beautiful-input input[type="text"]:disabled {
+    background-color: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+    color: #94a3b8 !important;
+    cursor: not-allowed !important;
+}
+
+/* Remove number input spinners for beautiful-input */
+.beautiful-input input[type="number"]::-webkit-outer-spin-button,
+.beautiful-input input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.beautiful-input input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+
+/*AI CHAT*/
+
+/* Table styling for messages - Force apply to all tables in message body */
+.msg-body table,
+.msg-stack .msg-body table,
+.msg-stack-assistant .msg-body table,
+.msg-stack.msg-stack-assistant .msg-body table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1rem 0 !important;
+    background-color: transparent !important;
+    font-size: 0.9rem !important;
+    table-layout: fixed !important;
+}
+
+.msg-body table th,
+.msg-stack .msg-body table th,
+.msg-stack-assistant .msg-body table th,
+.msg-stack.msg-stack-assistant .msg-body table th {
+    background-color: #f8f9fa !important;
+    color: #495057 !important;
+    font-weight: 600 !important;
+    padding: 0.75rem !important;
+    text-align: left !important;
+    border: 1px solid #dee2e6 !important;
+    font-size: 0.85rem !important;
+}
+
+.msg-body table td,
+.msg-stack .msg-body table td,
+.msg-stack-assistant .msg-body table td,
+.msg-stack.msg-stack-assistant .msg-body table td {
+    padding: 0.75rem !important;
+    border: 1px solid #dee2e6 !important;
+    color: inherit !important;
+    background-color: transparent !important;
+    font-size: 0.85rem !important;
+}
+
+/* Specific styling for user message tables (white text) - only when NOT assistant */
+.msg-stack:not(.msg-stack-assistant) .msg-body table th {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.msg-stack:not(.msg-stack-assistant) .msg-body table td {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Specific styling for bot message tables (dark text) - including combined classes */
+.msg-stack-assistant .msg-body table th,
+.msg-stack.msg-stack-assistant .msg-body table th {
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+    border-color: #dee2e6 !important;
+}
+
+.msg-stack-assistant .msg-body table td,
+.msg-stack.msg-stack-assistant .msg-body table td {
+    color: #495057 !important;
+    border-color: #dee2e6 !important;
+}
+
+/* Table responsive - Fixed for proper display */
+.msg-body table {
+    overflow-x: auto !important;
+    display: table !important;
+    white-space: normal !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+}
+
+.msg-body table thead,
+.msg-body table tbody,
+.msg-body table tr {
+    display: table-row !important;
+    width: 100% !important;
+}
+
+.msg-body table thead th,
+.msg-body table tbody td {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+}
+
+/* Force table styling on dynamic content */
+.msg-body * table,
+.msg-body * th,
+.msg-body * td {
+    border-collapse: collapse !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+/* Additional force styling for tables with combined classes */
+.msg-stack.msg-stack-assistant .msg-body table,
+.msg-stack.msg-stack-assistant .msg-body th,
+.msg-stack.msg-stack-assistant .msg-body td {
+    border-collapse: collapse !important;
+    border: 1px solid #dee2e6 !important;
+    padding: 0.75rem !important;
+    font-size: 0.85rem !important;
+}
+
+.msg-stack.msg-stack-assistant .msg-body table {
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.msg-stack.msg-stack-assistant .msg-body table th {
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+    font-weight: 600 !important;
+}
+
+.msg-stack.msg-stack-assistant .msg-body table td {
+    background-color: transparent !important;
+    color: #495057 !important;
+}
+
+/* Markdown content table styling */
+::deep .markdown-body table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1rem 0 !important;
+    font-size: 0.9rem !important;
+    table-layout: fixed !important;
+}
+
+::deep .markdown-body table th {
+    background-color: #f8f9fa !important;
+    color: #495057 !important;
+    font-weight: 600 !important;
+    padding: 0.75rem !important;
+    text-align: left !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+::deep .markdown-body table td {
+    padding: 0.75rem !important;
+    border: 1px solid #dee2e6 !important;
+    color: inherit !important;
+}
+
+/* Specific styling for user message markdown tables - only when NOT assistant */
+.msg-stack:not(.msg-stack-assistant) ::deep .markdown-body table th {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.msg-stack:not(.msg-stack-assistant) ::deep .markdown-body table td {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Specific styling for bot message markdown tables - including combined classes */
+.msg-stack-assistant ::deep .markdown-body table th,
+.msg-stack.msg-stack-assistant ::deep .markdown-body table th {
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+    border-color: #dee2e6 !important;
+}
+
+.msg-stack-assistant ::deep .markdown-body table td,
+.msg-stack.msg-stack-assistant ::deep .markdown-body table td {
+    color: #495057 !important;
+    border-color: #dee2e6 !important;
+}

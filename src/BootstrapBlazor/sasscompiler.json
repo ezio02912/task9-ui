@@ -1,0 +1,6 @@
+﻿{
+  "Source": "wwwroot/scss/theme/bootstrapblazor.scss",
+  "Target": "wwwroot/css/bootstrapblazor.min.css",
+  "Arguments": "--style=compressed --no-source-map",
+  "GenerateScopedCss": false
+}

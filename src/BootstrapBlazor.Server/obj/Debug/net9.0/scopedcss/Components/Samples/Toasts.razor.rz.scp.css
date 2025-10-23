@@ -1,0 +1,8 @@
+[b-7t7s5nrt1r] .d-toast {
+    display: block;
+    position: relative;
+}
+
+    [b-7t7s5nrt1r] .d-toast .toast-progress {
+        width: 100%;
+    }

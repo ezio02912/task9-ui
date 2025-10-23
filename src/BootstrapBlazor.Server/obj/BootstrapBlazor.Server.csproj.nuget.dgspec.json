@@ -1,0 +1,609 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/BootstrapBlazor.Server.csproj": {}
+  },
+  "projects": {
+    "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/BootstrapBlazor.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/BootstrapBlazor.Server.csproj",
+        "projectName": "BootstrapBlazor.Server",
+        "projectPath": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/BootstrapBlazor.Server.csproj",
+        "packagesPath": "/Users/admin/.nuget/packages/",
+        "outputPath": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/admin/Documents/Projects/task9-ui/NuGet.Config",
+          "/Users/admin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/BootstrapBlazor.csproj": {
+                "projectPath": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/BootstrapBlazor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "BootstrapBlazor.AntDesignIcon": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.Authenticator": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.AzureOpenAI": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.AzureTranslator": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.BaiduOcr": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.BaiduSpeech": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.BarCode": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.BarcodeGenerator": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.BootstrapIcon": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "BootstrapBlazor.Chart": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.ChatBot": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.CherryMarkdown": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.Dock": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.DockView": {
+              "target": "Package",
+              "version": "[9.1.17, )"
+            },
+            "BootstrapBlazor.DriverJs": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.ElementIcon": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.FileViewer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.FontAwesome": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "BootstrapBlazor.Gantt": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "BootstrapBlazor.Holiday": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.Html2Image": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "BootstrapBlazor.Html2Pdf": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "BootstrapBlazor.IP2Region": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.IconPark": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.ImageCropper": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.JitsiMeet": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.JuHeIpLocatorProvider": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.Live2DDisplay": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.Markdown": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "BootstrapBlazor.MaterialDesign": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.MeiliSearch": {
+              "target": "Package",
+              "version": "[9.1.9, )"
+            },
+            "BootstrapBlazor.Mermaid": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "BootstrapBlazor.Middleware": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.MindMap": {
+              "target": "Package",
+              "version": "[9.1.6, )"
+            },
+            "BootstrapBlazor.MouseFollower": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.OctIcon": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "BootstrapBlazor.OfficeViewer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.OnScreenKeyboard": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.PdfReader": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.PdfViewer": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.Player": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.RDKit": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "BootstrapBlazor.SignaturePad": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.SmilesDrawer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "BootstrapBlazor.Sortable": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "BootstrapBlazor.Splitting": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.SummerNote": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "BootstrapBlazor.SvgEditor": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.TableExport": {
+              "target": "Package",
+              "version": "[9.2.6, )"
+            },
+            "BootstrapBlazor.Topology": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.UniverIcon": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "BootstrapBlazor.UniverSheet": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "BootstrapBlazor.Vditor": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "BootstrapBlazor.VideoPlayer": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "BootstrapBlazor.WinBox": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.12.2, )"
+            },
+            "Longbow.Logging": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Longbow.Tasks": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.13.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/BootstrapBlazor.csproj": {
+      "version": "9.8.1",
+      "restore": {
+        "projectUniqueName": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/BootstrapBlazor.csproj",
+        "projectName": "BootstrapBlazor",
+        "projectPath": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/BootstrapBlazor.csproj",
+        "packagesPath": "/Users/admin/.nuget/packages/",
+        "outputPath": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/admin/Documents/Projects/task9-ui/NuGet.Config",
+          "/Users/admin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0",
+          "net7.0",
+          "net8.0",
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          },
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          },
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          },
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[6.0.*, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[6.0.*, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[6.0.*, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/RuntimeIdentifierGraph.json"
+        },
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[7.0.*, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[7.0.*, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[7.0.*, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/RuntimeIdentifierGraph.json"
+        },
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        },
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AspNetCore.SassCompiler": {
+              "target": "Package",
+              "version": "[1.79.5, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[9.0.*, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[9.0.*, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[9.0.*, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.*, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.*, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[9.0.*, )"
+            },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[9.0.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

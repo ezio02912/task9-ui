@@ -1,0 +1,33 @@
+﻿@namespace BootstrapBlazor.Components
+@typeparam TValue
+@inherits ValidateBase<TValue>
+
+@if (IsShowLabel)
+{
+    <BootstrapLabel required="@Required" for="@Id" ShowLabelTooltip="ShowLabelTooltip" Value="@DisplayText" />
+}
+<div @attributes="AdditionalAttributes" class="@ClassString">
+    <input type="checkbox" id="@Id" class="@InputClassString" disabled="@Disabled" checked="@CheckedString"
+           @onclick="OnToggleClick" @onclick:stopPropagation="StopPropagation" @onclick:preventDefault="false" />
+    @if(ChildContent != null)
+    {
+        <label class="form-check-label" for="@Id">
+            @ChildContent
+        </label>
+    }
+    else if (IsShowAfterLabel)
+    {
+        <label class="form-check-label" for="@Id">
+            @if (ShowLabelTooltip is true)
+            {
+                <Tooltip Title="@DisplayText">
+                    @DisplayText
+                </Tooltip>
+            }
+            else
+            {
+                @DisplayText
+            }
+        </label>
+    }
+</div>

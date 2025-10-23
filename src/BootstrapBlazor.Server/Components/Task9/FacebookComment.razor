@@ -1,0 +1,75 @@
+﻿@page "/profile-crawler-manager"
+@layout PageLayout
+
+<DemoBlock Title="Bộ lọc báo cáo">
+    <div class="row g-3">
+        <div class="col-12 col-sm-4">
+           <DateTimeRange @bind-Value="@MonthRangeValue"
+            DateFormat="dd/MM/yyyy"
+            ShowLabel="true"
+            DisplayText="Thời gian"
+            ShowSidebar="true"
+            OnValueChanged="v => TriggerSearch(v, 1)"
+            AutoCloseClickSideBar="true" >
+            </DateTimeRange>
+        </div>
+
+        <div class="col-12  col-sm-4">
+              <label class="form-label">Hành động</label>
+              <Button IsBlock="true" Icon="fa-solid fa-file-excel" class="icon-css" Color="Color.Success" OnClick="OnExportExcel">Xuất Excel</Button></div>
+    </div>
+</DemoBlock>
+
+<DemoBlock Title="Quản lý nhóm facebook"Name="ShowLoading">
+    <Table TItem="FacebookCommentDto" PageItemsSource="@PageItemsSource" AutoGenerateColumns="false"
+           IsPagination="true" IsStriped="true" IsBordered="true" IsMultipleSelect="true"
+           ShowColumnList="true"
+           ShowToolbar="true" ShowDefaultButtons="false" ShowExtendButtons="true" ShowLoading="true" 
+           ShowSearch="true" ShowCardView="true" ShowAdvancedSearch="false" 
+           HeaderTextWrap="true"
+           OnQueryAsync="@OnQueryAsync"
+           OnSaveAsync="@OnSaveAsync"
+           OnDeleteAsync="@OnDeleteAsync"
+           @ref="TableRef">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.profilePicture" Text="Thông tin người dùng" Width="100">
+                <Template Context="value">
+                    <div class="d-flex disabled">
+                        <div>
+                            <ImageViewer Url="@value.Row.profilePicture" class="bb-avatar"  PreviewList="new List<string> { value.Value }" ZoomSpeed="0.5" >
+                                <ErrorTemplate>
+                                    <div class="bb-img-holder">
+                                        <div class="bb-img-loading">Load failed</div>
+                                    </div>
+                                </ErrorTemplate>
+                            </ImageViewer>
+                        </div>
+                        <div class="ps-2">
+                            <a href="@value.Row.profileUrl" target="_blank">@value.Row.profileName</a>
+                        </div>
+                    </div>
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.groupTitle" Text="Tiêu đề Nhóm/Trang" Width="300" TextWrap="true" />
+
+            <TableColumn @bind-Field="@context.postTitle" Text="Tiêu đề bài viết" Width="300" TextWrap="true">
+                 <Template Context="value">
+                    <div >
+                        <div class="ps-2">
+                          @value.Row.postTitle
+                        </div>
+                        <div class="ps-2">
+                            <a href="@value.Row.inputUrl" target="_blank">Link bài viết</a>
+                        </div>
+                    </div>
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.comment" Text="Nội dung bình luận" Width="300" TextWrap="true" />
+            <TableColumn IsVisibleWhenAdd="false" IsVisibleWhenEdit="false" Width="150" @bind-Field="@context.createdAt" Text="Ngày tạo" >
+                <Template Context="value">
+                    <span>@value.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                </Template>
+            </TableColumn>
+        </TableColumns>
+    </Table>
+</DemoBlock>

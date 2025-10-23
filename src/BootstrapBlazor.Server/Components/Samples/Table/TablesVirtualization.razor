@@ -1,0 +1,74 @@
+﻿@inherits BootstrapComponentBase
+@page "/table/virtualization"
+@inject IStringLocalizer<NavMenu> NavMenuLocalizer
+@inject IStringLocalizer<Tables> BaseLocalizer
+@inject IStringLocalizer<TablesVirtualization> Localizer
+@inject IStringLocalizer<Foo> LocalizerFoo
+
+<h3>@BaseLocalizer["TableBaseTitle"] - @NavMenuLocalizer["TableVirtualization"]</h3>
+<h4>@Localizer["TablesVirtualizationDescription"]</h4>
+
+<HeadContent>
+    <style>
+        .table-virtualize-demo {
+            height: 400px;
+        }
+
+            .table-virtualize-demo .table-cell {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .table-virtualize-demo .table-fixed-body {
+                overflow-x: hidden !important;
+            }
+    </style>
+</HeadContent>
+
+<DemoBlock Title="@Localizer["VirtualizationNormalTitle"]"
+           Introduction="@Localizer["VirtualizationNormalIntro"]"
+           Name="Normal">
+    <section ignore>
+        @((MarkupString)Localizer["VirtualizationNormalDescription"].Value)
+        <BootstrapInputGroup>
+            <BootstrapInputGroupLabel DisplayText="@Localizer["TablesFooterFixedLabel"]"></BootstrapInputGroupLabel>
+            <Segmented Items="_fixedFooterSegments" @bind-Value="_isFixedFooter"></Segmented>
+        </BootstrapInputGroup>
+    </section>
+    <Table TItem="Foo" class="table-virtualize-demo"
+           IsBordered="true" IsStriped="true" IsFixedFooter="_isFixedFooter"
+           Items="Items" ScrollMode="ScrollMode.Virtual"
+           ShowFooter="true">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.DateTime" Width="180" />
+            <TableColumn @bind-Field="@context.Name" />
+            <TableColumn @bind-Field="@context.Address" Readonly="true" />
+            <TableColumn @bind-Field="@context.Education" />
+            <TableColumn @bind-Field="@context.Count" />
+            <TableColumn @bind-Field="@context.Complete" />
+        </TableColumns>
+        <TableFooter>
+            <TableFooterCell colspan="4" Text="@Localizer["TablesFooterInfo"]" Align="Alignment.Left" />
+            <TableFooterCell colspan="2" Aggregate="AggregateType.Average" Field="@nameof(Foo.Count)" />
+        </TableFooter>
+    </Table>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["VirtualizationDynamicTitle"]"
+           Introduction="@Localizer["VirtualizationDynamicIntro"]"
+           Name="Dynamic">
+    <section ignore>@Localizer["VirtualizationDynamicDescription"]</section>
+    <Table TItem="Foo" class="table-virtualize-demo"
+           IsBordered="true" IsStriped="true"
+           ScrollMode="ScrollMode.Virtual" OnQueryAsync="OnQueryAsync">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.DateTime" Width="180" />
+            <TableColumn @bind-Field="@context.Name" />
+            <TableColumn @bind-Field="@context.Address" Readonly="true" />
+            <TableColumn @bind-Field="@context.Education" />
+            <TableColumn @bind-Field="@context.Count" />
+            <TableColumn @bind-Field="@context.Complete" />
+        </TableColumns>
+    </Table>
+</DemoBlock>

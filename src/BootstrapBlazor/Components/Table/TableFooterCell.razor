@@ -1,0 +1,16 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapComponentBase
+
+@if (IsMobileMode)
+{
+    <div @attributes="@AdditionalAttributes" class="@ClassString">@_value</div>
+}
+else
+{
+    if (CheckShownWithBreakpoint)
+    {
+        <td @attributes="@AdditionalAttributes" colspan="@GetColspanValue()">
+            <div class="@ClassString">@_value</div>
+        </td>
+    }
+}

@@ -1,0 +1,498 @@
+﻿@page "/report-seo-performance-by-pic"
+@layout PageLayout
+@using BootstrapBlazor.Components
+
+<h3>Báo cáo SEO theo PIC</h3>
+
+
+
+<DemoBlock Title="Bộ lọc báo cáo">
+    <div class="row g-3">
+        <div class="col-12 col-sm-4">
+           <DateTimeRange @bind-Value="@MonthRangeValue"
+            ViewMode="DatePickerViewMode.Month"
+            DateFormat="MM-yyyy"
+            ShowLabel="true"
+            DisplayText="Thời gian"
+            ShowSidebar="true"
+            AutoCloseClickSideBar="true" >
+            </DateTimeRange>
+        </div>
+        <div class="col-12 col-sm-4">
+            <Select @bind-Value="SelectedReportType" ShowLabel="true" DisplayText="Loại báo cáo">
+            </Select>
+        </div>
+        <div class="col-12 col-sm-4">
+            <MultiSelectGeneric
+                    @bind-Value="SelectedBrands"
+                    Items="Brands"
+                    IsPopover="true"
+                    ShowSearch="true"
+                    ShowToolbar="true"
+                    IsClearable="true"
+                    ShowLabel="true"
+                    DisplayText="Brand/ngành">
+            </MultiSelectGeneric>
+        </div>
+        <div class="col-12 col-sm-4">
+            <MultiSelect
+            Items="PicItems"
+            @bind-Value="SelectedPics"
+            OnSelectedItemsChanged="OnSelectedPicsChanged"
+            ShowSearch="true"
+            IsClearable="@(Role != "SEO")"
+            ShowLabel="true"
+            DisplayText="Người phụ trách">
+            </MultiSelect>
+        </div>
+        <div class="col-12 col-sm-4">
+            <label class="form-label">Hiển thị chi tiết</label>
+            <Switch Value="@ViewDetail" DisplayText="Chi tiết"  OnColor="@Color.Success" OffColor="@Color.Secondary"  OnValueChanged="OnViewDetailChanged"></Switch>
+        </div>
+        <div class="col-12"><Button IsBlock="true" Color="Color.Primary" OnClick="OnViewReport">Xem báo cáo</Button></div>
+    </div>
+</DemoBlock>
+
+<DemoBlock>
+    <Tab IsCard="true" ShowClose="true"
+     TabStyle="TabStyle.Chrome"
+     AllowDrag="true"
+     ShowToolbar="true"
+     IsOnlyRenderActiveTab="true"
+     ShowExtendButtons="true">
+        <TabItem Text="Hiệu suất SEO theo độ khó" Icon="fa-solid fa-chart">
+            @if (!IsLoading)
+            {
+                <div class="table-container">
+                    @if(!ViewDetail)
+                    {
+                        <table class="table-domain red">
+                            <thead>
+                                <tr>
+                                    <th>Nhân viên</th>
+                                    <th>Độ khó</th>
+                                    @if(!ViewDetail)
+                                    {
+                                        <th style="width: 200px;">Số @(Filter.ReportType == ReportType.Keyword ? "Từ khoá" : "Domain") unique</th>
+
+                                    }else{
+                                        <th style="width: 200px;">@(Filter.ReportType == ReportType.Keyword ? "Từ khoá" : "Domain") chi tiết</th>
+                                    }
+                                    <th>Top 1</th>
+                                    <th>Top 2 & 3</th>
+                                    <th>Top 4 & 5</th>
+                                    <th>Top 6 & 7</th>
+                                    <th>Top 8 - 10</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Data)
+                                {
+                                    <tr>
+                                        <td rowspan="8" class="pic-name"><strong>@item.PicName</strong></td>
+                                        <td class="volume">@item.VeryEasyTitle</td>
+                                        <td class="keyword">@item.VeryEasy</td>
+                                        <td class="main-site">@item.VeryEasyTop1</td>
+                                        <td class="main-site">@(item.VeryEasyTop2 + item.VeryEasyTop3)</td>
+                                        <td class="domains">@(item.VeryEasyTop4 + item.VeryEasyTop5)</td>
+                                        <td class="domains">@(item.VeryEasyTop6 + item.VeryEasyTop7)</td>
+                                        <td class="domains">@(item.VeryEasyTop8 + item.VeryEasyTop9 + item.VeryEasyTop10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="volume">@item.EasyTitle</td>
+                                        <td class="keyword">@item.Easy</td>
+                                        <td class="main-site">@item.EasyTop1</td>
+                                        <td class="main-site">@(item.EasyTop2 + item.EasyTop3)</td>
+                                        <td class="domains">@(item.EasyTop4 + item.EasyTop5)</td>
+                                        <td class="domains">@(item.EasyTop6 + item.EasyTop7)</td>
+                                        <td class="domains">@(item.EasyTop8 + item.EasyTop9 + item.EasyTop10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="volume">@item.MediumTitle</td>
+                                        <td class="keyword">@item.Medium</td>
+                                        <td class="main-site">@item.MediumTop1</td>
+                                        <td class="main-site">@(item.MediumTop2 + item.MediumTop3)</td>
+                                        <td class="domains">@(item.MediumTop4 + item.MediumTop5)</td>
+                                        <td class="domains">@(item.MediumTop6 + item.MediumTop7)</td>
+                                        <td class="domains">@(item.MediumTop8 + item.MediumTop9 + item.MediumTop10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="volume">@item.HardTitle</td>
+                                        <td class="keyword">@item.Hard</td>
+                                        <td class="main-site">@item.HardTop1</td>
+                                        <td class="main-site">@(item.HardTop2 + item.HardTop3)</td>
+                                        <td class="domains">@(item.HardTop4 + item.HardTop5)</td>
+                                        <td class="domains">@(item.HardTop6 + item.HardTop7)</td>
+                                        <td class="domains">@(item.HardTop8 + item.HardTop9 + item.HardTop10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="volume">@item.VeryHardTitle</td>
+                                        <td class="keyword">@item.VeryHard</td>
+                                        <td class="main-site">@item.VeryHardTop1</td>
+                                        <td class="main-site">@(item.VeryHardTop2 + item.VeryHardTop3)</td>
+                                        <td class="domains">@(item.VeryHardTop4 + item.VeryHardTop5)</td>
+                                        <td class="domains">@(item.VeryHardTop6 + item.VeryHardTop7)</td>
+                                        <td class="domains">@(item.VeryHardTop8 + item.VeryHardTop9 + item.VeryHardTop10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="volume">@item.ExtremeHardTitle</td>
+                                        <td class="keyword">@item.ExtremeHard</td>
+                                        <td class="main-site">@item.ExtremeHardTop1</td>
+                                        <td class="main-site">@(item.ExtremeHardTop2 + item.ExtremeHardTop3)</td>
+                                        <td class="domains">@(item.ExtremeHardTop4 + item.ExtremeHardTop5)</td>
+                                        <td class="domains">@(item.ExtremeHardTop6 + item.ExtremeHardTop7)</td>
+                                        <td class="domains">@(item.ExtremeHardTop8 + item.ExtremeHardTop9 + item.ExtremeHardTop10)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="volume">@item.HardLevel4Title</td>
+                                        <td class="keyword">@item.HardLevel4</td>
+                                        <td class="main-site">@item.HardLevel4Top1</td>
+                                        <td class="main-site">@(item.HardLevel4Top2 + item.HardLevel4Top3)</td>
+                                        <td class="domains">@(item.HardLevel4Top4 + item.HardLevel4Top5)</td>
+                                        <td class="domains">@(item.HardLevel4Top6 + item.HardLevel4Top7)</td>
+                                        <td class="domains">@(item.HardLevel4Top8 + item.HardLevel4Top9 + item.HardLevel4Top10)</td>
+                                    </tr> <tr>
+                                        <td class="volume">@item.HardLevel5Title</td>
+                                        <td class="keyword">@item.HardLevel5</td>
+                                        <td class="main-site">@item.HardLevel5Top1</td>
+                                        <td class="main-site">@(item.HardLevel5Top2 + item.HardLevel5Top3)</td>
+                                        <td class="domains">@(item.HardLevel5Top4 + item.HardLevel5Top5)</td>
+                                        <td class="domains">@(item.HardLevel5Top6 + item.HardLevel5Top7)</td>
+                                        <td class="domains">@(item.HardLevel5Top8 + item.HardLevel5Top9 + item.HardLevel5Top10)</td>
+                                    </tr>
+                                }
+                                
+                            </tbody>
+                        </table>
+                    }
+                    else{
+                        <table class="table-domain red">
+                            <thead>
+                                <tr>
+                                    <th>Nhân viên</th>
+                                    <th>Độ khó</th>
+                                    @if(!ViewDetail)
+                                    {
+                                        <th style="width: 200px;">Số @(Filter.ReportType == ReportType.Keyword ? "Từ khoá" : "Domain") unique</th>
+
+                                    }else{
+                                        <th style="width: 200px;">@(Filter.ReportType == ReportType.Keyword ? "Từ khoá" : "Domain") chi tiết</th>
+                                    }
+                                    <th class="w-50px">Top 1</th>
+                                    <th class="w-50px">Top 2 & 3</th>
+                                    <th class="w-50px">Top 4 & 5</th>
+                                    <th class="w-50px">Top 6 & 7</th>
+                                    <th class="w-50px">Top 8 - 10</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in DataDetail)
+                                {
+                                    <tr class="vertical-align-top">
+                                        <td rowspan="8" class="pic-name"><strong>@item.PicName</strong></td>
+                                        <td class="volume">@item.VeryEasyTitle</td>
+                                        @RenderTr(item.VeryEasyResults)
+                                    </tr>
+                                    <tr>
+                                        <td class="volume">@item.EasyTitle</td>
+                                        @RenderTr(item.EasyResults)
+                                    </tr>
+                                    <tr>
+                                        <td class="volume">@item.MediumTitle</td>
+                                        @RenderTr(item.MediumResults)
+                                    </tr>    
+                                    <tr>
+                                        <td class="volume">@item.HardTitle</td>
+                                        @RenderTr(item.HardResults)
+                                    </tr>   
+                                    <tr>
+                                        <td class="volume">@item.VeryHardTitle</td>
+                                        @RenderTr(item.VeryHardResults)
+                                    </tr>   
+                                    <tr>
+                                        <td class="volume">@item.ExtremeHardTitle</td>
+                                        @RenderTr(item.ExtremeHardResults)
+                                    </tr>       
+                                    <tr>
+                                        <td class="volume">@item.HardLevel4Title</td>
+                                        @RenderTr(item.HardLevel4Results)
+                                    </tr>   
+                                    <tr>
+                                        <td class="volume">@item.HardLevel5Title</td>
+                                        @RenderTr(item.HardLevel5Results)
+                                    </tr>   
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <i class="fa-solid fa-spinner fa-spin-pulse fa-2x"></i>
+                        <p class="mt-2">Đang tải dữ liệu mới...</p>
+                    </div>
+                </div>
+            }
+        </TabItem>
+        <TabItem Text="So sánh nhân viên" Icon="fa-solid fa-gauge-high">
+            @if (!IsLoading)
+            {
+                <div class="table-container">
+                    <table class="table-domain red">
+                        <thead>
+                            <tr>
+                                <th colspan="2" style="width: 20%;">Trọng số so sánh</th>
+                                @if(Filter.PicNames.Count > 0)
+                                {
+                                    @for (var i = 0; i < Filter.PicNames.Count; i++)
+                                    {
+                                        var pic = Filter.PicNames[i];
+                                        <th style="width: auto;">@pic @(i != 0 ? $"(So sánh với {Filter.PicNames[0]})" : "")</th>
+                                    }
+                                }
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Data.Count > 0)
+                            {
+                                var firstItem = Data.FirstOrDefault();
+                                @foreach (var rankGroup in new[] {
+                                    new { Title = "Top 1", GetValue = new Func<SeoPerformanceDetailDto, string, double>(GetTop1Value) },
+                                    new { Title = "Top 2-3", GetValue = new Func<SeoPerformanceDetailDto, string, double>(GetTop2To3Value) },
+                                    new { Title = "Top 4-5", GetValue = new Func<SeoPerformanceDetailDto, string, double>(GetTop4To5Value) },
+                                    new { Title = "Top 6-7", GetValue = new Func<SeoPerformanceDetailDto, string, double>(GetTop6To7Value) },
+                                    new { Title = "Top 8-10", GetValue = new Func<SeoPerformanceDetailDto, string, double>(GetTop8To10Value) }
+                                })
+                                {
+                                    @foreach (var difficulty in new[] {
+                                        new { Title = firstItem.VeryEasyTitle, Type = "VeryEasy" },
+                                        new { Title = firstItem.EasyTitle, Type = "Easy" },
+                                        new { Title = firstItem.MediumTitle, Type = "Medium" },
+                                        new { Title = firstItem.HardTitle, Type = "Hard" },
+                                        new { Title = firstItem.VeryHardTitle, Type = "VeryHard" },
+                                        new { Title = firstItem.ExtremeHardTitle, Type = "ExtremeHard" },
+                                        new { Title = firstItem.HardLevel4Title, Type = "HardLevel4" },
+                                        new { Title = firstItem.HardLevel5Title, Type = "HardLevel5" }
+                                    })
+                                    {
+                                        <tr>
+                                            @if (difficulty.Type == "VeryEasy")
+                                            {
+                                                <td rowspan="8" class="pic-name">@rankGroup.Title</td>
+                                            }
+                                            <td class="pic-name">@difficulty.Title</td>
+                                            @for (var i = 0; i < Filter.PicNames.Count; i++)
+                                            {
+                                                var pic = Filter.PicNames[i];
+                                                var itemCompare = Data.FirstOrDefault(x => x.PicName.ToLower() == pic.ToLower() &&
+                                                    GetTitleByType(x, difficulty.Type) == difficulty.Title);
+
+                                                if(i != 0)
+                                                {
+                                                    var itemCompareFirst = Data.FirstOrDefault(x => x.PicName.ToLower() == Filter.PicNames[0].ToLower() &&
+                                                        GetTitleByType(x, difficulty.Type) == difficulty.Title);
+
+                                                    var currentValue = rankGroup.GetValue(itemCompare, difficulty.Type);
+                                                    var firstValue = rankGroup.GetValue(itemCompareFirst, difficulty.Type);
+
+                                                    double? percentDiff = 0;
+                                                    if(itemCompareFirst != null && itemCompare != null && firstValue != 0)
+                                                    {
+                                                        percentDiff = ((currentValue - firstValue) / firstValue) * 100;
+                                                    }
+
+                                                    <td class="volume">
+                                                        <span>@currentValue</span>
+                                                        <span class="text-muted">
+                                                            @if(percentDiff > 0)
+                                                            {
+                                                                <span class="text-success">
+                                                                    <i class="fa-solid fa-arrow-up"></i>
+                                                                    @percentDiff.Value.ToString("N0")%
+                                                                </span>
+                                                            }else if(percentDiff == 0 && firstValue == 0 && currentValue !=0)
+                                                            {
+                                                                <span class="text-success">
+                                                                    <i class="fa-solid fa-arrow-up"></i>
+                                                                </span>
+                                                            }
+                                                            else if(percentDiff < 0)
+                                                            {
+                                                                <span class="text-danger">
+                                                                    <i class="fa-solid fa-arrow-down"></i>
+                                                                    @percentDiff.Value.ToString("N0")%
+                                                                </span>
+                                                            }
+                                                        </span>
+                                                    </td>
+                                                }
+                                                else
+                                                {
+                                                    <td class="volume">@rankGroup.GetValue(itemCompare, difficulty.Type)</td>
+                                                }
+                                            }
+                                        </tr>
+                                    }
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <i class="fa-solid fa-spinner fa-spin-pulse fa-2x"></i>
+                        <p class="mt-2">Đang tải dữ liệu mới...</p>
+                    </div>
+                </div>
+            }
+        </TabItem>
+    </Tab>
+
+</DemoBlock>
+
+
+
+@code {
+    RenderFragment RenderTr(Dictionary<string, Dictionary<int, int>>  item) => __builder =>
+    {
+        <!-- Domain/Keyword detail column -->
+        int countKey = item.Count;
+        <td style="width: 200px; padding: 0px;" class="td-inner">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@result.Key</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(1) ? result.Value[1].ToString() : "0")</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(2) || result.Value.ContainsKey(3) ? (result.Value[2] + result.Value[3]).ToString() : "0")</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(4) || result.Value.ContainsKey(5) ? (result.Value[4] + result.Value[5]).ToString() : "0")</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(6) || result.Value.ContainsKey(7) ? (result.Value[6] + result.Value[7]).ToString() : "0")</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(8) || result.Value.ContainsKey(9) || result.Value.ContainsKey(10) ? (result.Value[8] + result.Value[9] + result.Value[10]).ToString() : "0")</div>
+            }
+        </td>
+    };
+
+        
+    private string GetTitleByType(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item.VeryEasyTitle,
+            "Easy" => item.EasyTitle,
+            "Medium" => item.MediumTitle,
+            "Hard" => item.HardTitle,
+            "VeryHard" => item.VeryHardTitle,
+            "ExtremeHard" => item.ExtremeHardTitle,
+            "HardLevel4" => item.HardLevel4Title,
+            _ => string.Empty
+        };
+    }
+
+    private double GetTop1Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop1 : 0,
+            "Easy" => item != null ? (double)item.EasyTop1 : 0,
+            "Medium" => item != null ? (double)item.MediumTop1 : 0,
+            "Hard" => item != null ? (double)item.HardTop1 : 0,
+            "VeryHard" => item != null ? (double)item.VeryHardTop1 : 0,
+            "ExtremeHard" => item != null ? (double)item.ExtremeHardTop1 : 0,
+            "HardLevel4" => item != null ? (double)item.HardLevel4Top1 : 0,
+            _ => 0
+        };
+    }
+
+    private double GetTop2To3Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop2 + (double)item.VeryEasyTop3 : 0,
+            "Easy" => item != null ? (double)item.EasyTop2 + (double)item.EasyTop3 : 0,
+            "Medium" => item != null ? (double)item.MediumTop2 + (double)item.MediumTop3 : 0,
+            "Hard" => item != null ? (double)item.HardTop2 + (double)item.HardTop3 : 0,
+            "VeryHard" => item != null ? (double)item.VeryHardTop2 + (double)item.VeryHardTop3 : 0,
+            "ExtremeHard" => item != null ? (double)item.ExtremeHardTop2 + (double)item.ExtremeHardTop3 : 0,
+            "HardLevel4" => item != null ? (double)item.HardLevel4Top2 + (double)item.HardLevel4Top3 : 0,
+            _ => 0
+        };
+    }
+
+    private double GetTop4To5Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop4 + (double)item.VeryEasyTop5 : 0,
+            "Easy" => item != null ? (double)item.EasyTop4 + (double)item.EasyTop5 : 0,
+            "Medium" => item != null ? (double)item.MediumTop4 + (double)item.MediumTop5 : 0,
+            "Hard" => item != null ? (double)item.HardTop4 + (double)item.HardTop5 : 0,
+            "VeryHard" => item != null ? (double)item.VeryHardTop4 + (double)item.VeryHardTop5 : 0,
+            "ExtremeHard" => item != null ? (double)item.ExtremeHardTop4 + (double)item.ExtremeHardTop5 : 0,
+            "HardLevel4" => item != null ? (double)item.HardLevel4Top4 + (double)item.HardLevel4Top5 : 0,
+            _ => 0
+        };
+    }
+
+    private double GetTop6To7Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop6 + (double)item.VeryEasyTop7 : 0,
+            "Easy" => item != null ? (double)item.EasyTop6 + (double)item.EasyTop7  : 0,
+            "Medium" => item != null ? (double)item.MediumTop6 + (double)item.MediumTop7 : 0,
+            "Hard" => item != null ? (double)item.HardTop6 + (double)item.HardTop7 : 0,
+            "VeryHard" => item != null ? (double)item.VeryHardTop6 + (double)item.VeryHardTop7 : 0,
+            "ExtremeHard" => item != null ? (double)item.ExtremeHardTop6 + (double)item.ExtremeHardTop7 : 0,
+            "HardLevel4" => item != null ? (double)item.HardLevel4Top6 + (double)item.HardLevel4Top7 : 0,
+            _ => 0
+        };
+    }
+    private double GetTop8To10Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop8 + (double)item.VeryEasyTop9 + (double)item.VeryEasyTop10 : 0,
+            "Easy" => item != null ?  (double)item.EasyTop8 + (double)item.EasyTop9 + (double)item.EasyTop10 : 0,
+            "Medium" => item != null ? (double)item.MediumTop8 + (double)item.MediumTop9 + (double)item.MediumTop10 : 0,
+            "Hard" => item != null ? (double)item.HardTop8 + (double)item.HardTop9 + (double)item.HardTop10 : 0,
+            "VeryHard" => item != null ?  (double)item.VeryHardTop8 + (double)item.VeryHardTop9 + (double)item.VeryHardTop10 : 0,
+            "ExtremeHard" => item != null ?  (double)item.ExtremeHardTop8 + (double)item.ExtremeHardTop9 + (double)item.ExtremeHardTop10 : 0,
+            "HardLevel4" => item != null ?  (double)item.HardLevel4Top8 + (double)item.HardLevel4Top9 + (double)item.HardLevel4Top10 : 0,
+            _ => 0
+        };
+    }
+}

@@ -1,0 +1,61 @@
+﻿.layout-demo ::deep .layout {
+    --bb-layout-height: 400px;
+    --bb-layout-header-background: #7dbcea;
+    --bb-layout-footer-background: #7dbcea;
+    --bb-layout-footer-color: #fff;
+    --bb-layout-sidebar-background: #3ba0e9;
+    --bb-layout-sidebar-color: #fff;
+    height: var(--bb-layout-height);
+}
+
+.layout-demo ::deep .layout-header div {
+    text-align: center;
+    flex: 1;
+}
+
+.layout-demo ::deep .layout-main div {
+    text-align: center;
+    flex: 1;
+}
+
+.layout-demo ::deep .layout-footer {
+    border-top: none;
+}
+
+    .layout-demo ::deep .layout-footer div {
+        text-align: center;
+        flex: 1 1 auto;
+        width: 1%;
+        min-width: 0;
+    }
+
+.layout-demo ::deep .layout-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .layout-demo ::deep .layout-side .layout-menu {
+        border-right: none;
+    }
+
+.layout-demo ::deep main {
+    background-color: #108ee9;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-demo1 ::deep .layout,
+.layout-demo2 ::deep .layout {
+    --bb-layout-sidebar-background: #fff;
+}
+
+.layout-demo1 ::deep .layout-side .layout-menu {
+    height: calc(400px - var(--bb-layout-header-height) - var(--bb-layout-footer-height));
+}
+
+.layout-demo2 ::deep .layout {
+    height: auto;
+}

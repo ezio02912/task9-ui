@@ -1,0 +1,16 @@
+.bb-result[b-qu0zwk5qcq] {
+    margin-top: 1rem;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    min-height: 160px;
+    padding: .5rem;
+}
+
+.final[b-qu0zwk5qcq] {
+    color: #000;
+}
+
+.temp[b-qu0zwk5qcq] {
+    color: gray;
+    margin-inline-start: 1rem;
+}

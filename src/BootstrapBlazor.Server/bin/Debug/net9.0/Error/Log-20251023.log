@@ -1,0 +1,41 @@
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 23/10/2025 14:55:06
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'h3uaWf-8nFSgV_0cBHHgABAcYe2HQcF8GxBU4J0tNzs'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSException
+      TargetSite: Void Throw()
+      Message: Cannot read properties of null (reading 'classList')
+      TypeError: Cannot read properties of null (reading 'classList')
+          at Module.init (https://localhost:5053/_content/BootstrapBlazor/Components/Modal/ModalDialog.razor.js:12:27)
+          at https://localhost:5053/_framework/blazor.web.js:1:2900
+          at new Promise (<anonymous>)
+          at w.beginInvokeJSFromDotNet (https://localhost:5053/_framework/blazor.web.js:1:2857)
+          at vn._invokeClientMethod (https://localhost:5053/_framework/blazor.web.js:1:65750)
+          at vn._processIncomingData (https://localhost:5053/_framework/blazor.web.js:1:63139)
+          at Rn.onreceive (https://localhost:5053/_framework/blazor.web.js:1:56780)
+          at WebSocket.<anonymous> (https://localhost:5053/_framework/blazor.web.js:1:80728)
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Private.CoreLib
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.JSInterop.JSObjectReferenceExtensions.InvokeVoidAsync(IJSObjectReference jsObjectReference, String identifier, CancellationToken cancellationToken, Object[] args)
+         at BootstrapBlazor.Components.JSModule.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Utils/JSModule.cs:line 54
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 145
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.OnAfterRenderAsync(Boolean firstRender) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 73
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      

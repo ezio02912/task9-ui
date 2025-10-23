@@ -1,0 +1,16 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits ToggleBase<bool>
+
+@if (IsShowLabel)
+{
+    <BootstrapLabel required="@Required" @onclick="@OnClick" ShowLabelTooltip="ShowLabelTooltip" Value="@DisplayText" />
+}
+<div @attributes="AdditionalAttributes" class="@WrapperClassString">
+    <div class="@ClassName" style="@StyleName" @onclick="@OnClick">
+        <div class="toggle-group">
+            <div class="@ToggleOnClassString">@OnText</div>
+            <div class="toggle off">@OffText</div>
+            <span class="bar"></span>
+        </div>
+    </div>
+</div>

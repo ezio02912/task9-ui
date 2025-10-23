@@ -1,0 +1,481 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Anchor/Anchor.razor.js",
+      "PackagePath": "staticwebassets/Components/Anchor/Anchor.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/AnchorLink/AnchorLink.razor.js",
+      "PackagePath": "staticwebassets/Components/AnchorLink/AnchorLink.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/AutoComplete/AutoComplete.razor.js",
+      "PackagePath": "staticwebassets/Components/AutoComplete/AutoComplete.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/Button.razor.js",
+      "PackagePath": "staticwebassets/Components/Button/Button.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/DialButton.razor.js",
+      "PackagePath": "staticwebassets/Components/Button/DialButton.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/PopConfirmButton.razor.js",
+      "PackagePath": "staticwebassets/Components/Button/PopConfirmButton.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/PopConfirmButtonContent.razor.js",
+      "PackagePath": "staticwebassets/Components/Button/PopConfirmButtonContent.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/SlideButton.razor.js",
+      "PackagePath": "staticwebassets/Components/Button/SlideButton.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Camera/Camera.razor.js",
+      "PackagePath": "staticwebassets/Components/Camera/Camera.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Captcha/Captcha.razor.js",
+      "PackagePath": "staticwebassets/Components/Captcha/Captcha.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Card/Card.razor.js",
+      "PackagePath": "staticwebassets/Components/Card/Card.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Carousel/Carousel.razor.js",
+      "PackagePath": "staticwebassets/Components/Carousel/Carousel.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Checkbox/Checkbox.razor.js",
+      "PackagePath": "staticwebassets/Components/Checkbox/Checkbox.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ClockPicker/ClockPicker.razor.js",
+      "PackagePath": "staticwebassets/Components/ClockPicker/ClockPicker.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ColorPicker/ColorPicker.razor.js",
+      "PackagePath": "staticwebassets/Components/ColorPicker/ColorPicker.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Console/Console.razor.js",
+      "PackagePath": "staticwebassets/Components/Console/Console.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ContextMenu/ContextMenu.razor.js",
+      "PackagePath": "staticwebassets/Components/ContextMenu/ContextMenu.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/CountUp/CountUp.razor.js",
+      "PackagePath": "staticwebassets/Components/CountUp/CountUp.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/DateTimePicker/DateTimePicker.razor.js",
+      "PackagePath": "staticwebassets/Components/DateTimePicker/DateTimePicker.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Dialog/EditDialog.razor.js",
+      "PackagePath": "staticwebassets/Components/Dialog/EditDialog.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Dialog/IconDialog.razor.js",
+      "PackagePath": "staticwebassets/Components/Dialog/IconDialog.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Drawer/Drawer.razor.js",
+      "PackagePath": "staticwebassets/Components/Drawer/Drawer.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Dropdown/Dropdown.razor.js",
+      "PackagePath": "staticwebassets/Components/Dropdown/Dropdown.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/DropdownWidget/DropdownWidget.razor.js",
+      "PackagePath": "staticwebassets/Components/DropdownWidget/DropdownWidget.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Filters/MultiFilter.razor.js",
+      "PackagePath": "staticwebassets/Components/Filters/MultiFilter.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Filters/TableColumnFilter.razor.js",
+      "PackagePath": "staticwebassets/Components/Filters/TableColumnFilter.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/FlipClock/FlipClock.razor.js",
+      "PackagePath": "staticwebassets/Components/FlipClock/FlipClock.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/GoTop/GoTop.razor.js",
+      "PackagePath": "staticwebassets/Components/GoTop/GoTop.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Handwritten/Handwritten.razor.js",
+      "PackagePath": "staticwebassets/Components/Handwritten/Handwritten.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/IFrame/IFrame.razor.js",
+      "PackagePath": "staticwebassets/Components/IFrame/IFrame.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ImagePreviewer/ImagePreviewer.razor.js",
+      "PackagePath": "staticwebassets/Components/ImagePreviewer/ImagePreviewer.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ImageViewer/ImageViewer.razor.js",
+      "PackagePath": "staticwebassets/Components/ImageViewer/ImageViewer.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Input/BootstrapInput.razor.js",
+      "PackagePath": "staticwebassets/Components/Input/BootstrapInput.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Input/OtpInput.razor.js",
+      "PackagePath": "staticwebassets/Components/Input/OtpInput.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/IntersectionObserver/IntersectionObserver.razor.js",
+      "PackagePath": "staticwebassets/Components/IntersectionObserver/IntersectionObserver.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/IpAddress/IpAddress.razor.js",
+      "PackagePath": "staticwebassets/Components/IpAddress/IpAddress.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Layout/Layout.razor.js",
+      "PackagePath": "staticwebassets/Components/Layout/Layout.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Layout/LayoutSplitBar.razor.js",
+      "PackagePath": "staticwebassets/Components/Layout/LayoutSplitBar.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Mask/Mask.razor.js",
+      "PackagePath": "staticwebassets/Components/Mask/Mask.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Menu/Menu.razor.js",
+      "PackagePath": "staticwebassets/Components/Menu/Menu.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Message/Message.razor.js",
+      "PackagePath": "staticwebassets/Components/Message/Message.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Modal/Modal.razor.js",
+      "PackagePath": "staticwebassets/Components/Modal/Modal.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Modal/ModalDialog.razor.js",
+      "PackagePath": "staticwebassets/Components/Modal/ModalDialog.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Popover/Popover.razor.js",
+      "PackagePath": "staticwebassets/Components/Popover/Popover.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Print/PrintButton.razor.js",
+      "PackagePath": "staticwebassets/Components/Print/PrintButton.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Reconnector/ReconnectorContent.razor.js",
+      "PackagePath": "staticwebassets/Components/Reconnector/ReconnectorContent.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/RibbonTab/RibbonTab.razor.js",
+      "PackagePath": "staticwebassets/Components/RibbonTab/RibbonTab.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Row/Row.razor.js",
+      "PackagePath": "staticwebassets/Components/Row/Row.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Scroll/Scroll.razor.js",
+      "PackagePath": "staticwebassets/Components/Scroll/Scroll.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Segmented/Segmented.razor.js",
+      "PackagePath": "staticwebassets/Components/Segmented/Segmented.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/MultiSelect.razor.js",
+      "PackagePath": "staticwebassets/Components/Select/MultiSelect.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/Select.razor.js",
+      "PackagePath": "staticwebassets/Components/Select/Select.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/SelectObject.razor.js",
+      "PackagePath": "staticwebassets/Components/Select/SelectObject.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/SelectTable.razor.js",
+      "PackagePath": "staticwebassets/Components/Select/SelectTable.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/SelectTree.razor.js",
+      "PackagePath": "staticwebassets/Components/Select/SelectTree.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Split/Split.razor.js",
+      "PackagePath": "staticwebassets/Components/Split/Split.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Tab/Tab.razor.js",
+      "PackagePath": "staticwebassets/Components/Tab/Tab.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Table/Table.razor.js",
+      "PackagePath": "staticwebassets/Components/Table/Table.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Textarea/Textarea.razor.js",
+      "PackagePath": "staticwebassets/Components/Textarea/Textarea.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ThemeProvider/ThemeProvider.razor.js",
+      "PackagePath": "staticwebassets/Components/ThemeProvider/ThemeProvider.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/TimePicker/TimePickerCell.razor.js",
+      "PackagePath": "staticwebassets/Components/TimePicker/TimePickerCell.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Toast/Toast.razor.js",
+      "PackagePath": "staticwebassets/Components/Toast/Toast.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Tooltip/Tooltip.razor.js",
+      "PackagePath": "staticwebassets/Components/Tooltip/Tooltip.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Transition/Transition.razor.js",
+      "PackagePath": "staticwebassets/Components/Transition/Transition.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/TreeView/TreeView.razor.js",
+      "PackagePath": "staticwebassets/Components/TreeView/TreeView.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Typed/Typed.razor.js",
+      "PackagePath": "staticwebassets/Components/Typed/Typed.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ValidateForm/ValidateForm.razor.js",
+      "PackagePath": "staticwebassets/Components/ValidateForm/ValidateForm.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Waterfall/Waterfall.razor.js",
+      "PackagePath": "staticwebassets/Components/Waterfall/Waterfall.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Watermark/Watermark.razor.js",
+      "PackagePath": "staticwebassets/Components/Watermark/Watermark.razor.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/animate.min.css",
+      "PackagePath": "staticwebassets/css/animate.min.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.blazor.bundle.min.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.rtl.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.blazor.bundle.rtl.min.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrapblazor.min.css",
+      "PackagePath": "staticwebassets/css/bootstrapblazor.min.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/motronic.min.css",
+      "PackagePath": "staticwebassets/css/motronic.min.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/nano.min.css",
+      "PackagePath": "staticwebassets/css/nano.min.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/rtl.css",
+      "PackagePath": "staticwebassets/css/rtl.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/sweetalert2.css",
+      "PackagePath": "staticwebassets/css/sweetalert2.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/js/bootstrap.blazor.bundle.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.blazor.bundle.min.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/countUp/countUp.min.js",
+      "PackagePath": "staticwebassets/lib/countUp/countUp.min.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.core.esm.js",
+      "PackagePath": "staticwebassets/lib/floating-ui/floating-ui.core.esm.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.dom.esm.js",
+      "PackagePath": "staticwebassets/lib/floating-ui/floating-ui.dom.esm.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/pickr/pickr.es5.min.js",
+      "PackagePath": "staticwebassets/lib/pickr/pickr.es5.min.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/typedjs/typed.module.js",
+      "PackagePath": "staticwebassets/lib/typedjs/typed.module.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/ajax.js",
+      "PackagePath": "staticwebassets/modules/ajax.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/autoredirect.js",
+      "PackagePath": "staticwebassets/modules/autoredirect.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/base-popover.js",
+      "PackagePath": "staticwebassets/modules/base-popover.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/base-select.js",
+      "PackagePath": "staticwebassets/modules/base-select.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/browser.js",
+      "PackagePath": "staticwebassets/modules/browser.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/bt.js",
+      "PackagePath": "staticwebassets/modules/bt.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/client.js",
+      "PackagePath": "staticwebassets/modules/client.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/data.js",
+      "PackagePath": "staticwebassets/modules/data.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/debounce.js",
+      "PackagePath": "staticwebassets/modules/debounce.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/download.js",
+      "PackagePath": "staticwebassets/modules/download.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/drag.js",
+      "PackagePath": "staticwebassets/modules/drag.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/event-handler.js",
+      "PackagePath": "staticwebassets/modules/event-handler.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/eye-dropper.js",
+      "PackagePath": "staticwebassets/modules/eye-dropper.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/floating-ui.js",
+      "PackagePath": "staticwebassets/modules/floating-ui.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/fullscreen.js",
+      "PackagePath": "staticwebassets/modules/fullscreen.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/geo.js",
+      "PackagePath": "staticwebassets/modules/geo.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/hub.js",
+      "PackagePath": "staticwebassets/modules/hub.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/input.js",
+      "PackagePath": "staticwebassets/modules/input.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/media.js",
+      "PackagePath": "staticwebassets/modules/media.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/net.js",
+      "PackagePath": "staticwebassets/modules/net.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/noti.js",
+      "PackagePath": "staticwebassets/modules/noti.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/recognition.js",
+      "PackagePath": "staticwebassets/modules/recognition.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/responsive.js",
+      "PackagePath": "staticwebassets/modules/responsive.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/serial.js",
+      "PackagePath": "staticwebassets/modules/serial.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/synthesis.js",
+      "PackagePath": "staticwebassets/modules/synthesis.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/upload.js",
+      "PackagePath": "staticwebassets/modules/upload.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/utility.js",
+      "PackagePath": "staticwebassets/modules/utility.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/validate.js",
+      "PackagePath": "staticwebassets/modules/validate.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/viewer.js",
+      "PackagePath": "staticwebassets/modules/viewer.js"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.BootstrapBlazor.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.BootstrapBlazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.BootstrapBlazor.props",
+      "PackagePath": "build\\BootstrapBlazor.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.BootstrapBlazor.props",
+      "PackagePath": "buildMultiTargeting\\BootstrapBlazor.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.BootstrapBlazor.props",
+      "PackagePath": "buildTransitive\\BootstrapBlazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

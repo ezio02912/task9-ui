@@ -1,0 +1,54 @@
+﻿@inherits LayoutComponentBase
+@inject IOptionsMonitor<WebsiteOptions> WebsiteOption
+
+<HeadContent>
+    <link href="@WebsiteOption.CurrentValue.GetAssetUrl("css/layout.css")" rel="stylesheet" />
+</HeadContent>
+<BootstrapBlazorRoot>
+    <CascadingValue Value="this" IsFixed="true">
+        <Layout IsPage="true" IsFullSide="@IsFullSide" IsFixedHeader="@IsFixedHeader"
+                IsFixedFooter="@IsFixedFooter" IsFixedTabHeader="IsFixedTabHeader"
+                ShowFooter="@ShowFooter" ShowGotoTop="true" ShowCollapseBar="true" Menus="@Menus"
+                UseTabSet="@UseTabSet" TabDefaultUrl="/" AdditionalAssemblies="new[] { GetType().Assembly }"
+                class="@LayoutClassString">
+            <Header>
+                <span class="ms-3 flex-fill">TASK9.PRO</span>
+                @* <Widget></Widget> *@
+
+                @* <CultureChooser class="flex-md d-none"  /> *@
+                <Logout ImageUrl="@WebsiteOption.CurrentValue.GetAssetUrl("images/Argo-C.png")"
+                DisplayName="@UserName" UserName="@UserName">
+                    <LinkTemplate>
+                        <a href="#" @onclick="ShowModal"><i class="fa-solid fa-cog"></i>Đổi mật khẩu</a>
+                        <a href="#" @onclick="Logout"><i class="fa-solid fa-key"></i>Đăng xuất</a>
+                    </LinkTemplate>
+                </Logout>
+            </Header>
+            <Side>
+                <div class="layout-banner">
+                    <img alt="logo" class="layout-logo" src="@WebsiteOption.CurrentValue.GetAssetUrl("images/logo.png")" />
+                    <div class="layout-title">
+                        <span>TASK9.PRO</span>
+                    </div>
+                </div>
+            </Side>
+                <Main>
+                    @Body
+                </Main>
+               
+            <Footer>
+                <Modal @ref="Modal" Size="Size.Small" ShowResize="true" IsKeyboard="true">
+                    <ModalDialog Title="Đổi mật khẩu" ShowSaveButton="true" OnSaveAsync="OnChangePasswordAsync">
+                        <BodyTemplate>
+                            <BootstrapInput PlaceHolder="Nhập mật khẩu mới" @bind-Value="@NewPassword.NewPassword"
+                                            DisplayText="Mật khẩu mới" ShowLabel="true" />
+                        </BodyTemplate>
+                    </ModalDialog>
+                </Modal>
+                <div class="text-center flex-fill">
+                    <a class="page-layout-demo-footer-link" href="@WebsiteOption.CurrentValue.BootstrapAdminLink" target="_blank">Task9.pro</a>
+                </div>
+            </Footer>
+        </Layout>
+    </CascadingValue>
+</BootstrapBlazorRoot>

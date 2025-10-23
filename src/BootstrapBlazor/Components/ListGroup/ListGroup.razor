@@ -1,0 +1,29 @@
+﻿@namespace BootstrapBlazor.Components
+@typeparam TItem
+@inherits ValidateBase<TItem>
+
+<div @attributes="AdditionalAttributes" class="@ClassString">
+    @if (HeaderTemplate != null)
+    {
+        @HeaderTemplate
+    }
+    @if (!string.IsNullOrEmpty(HeaderText))
+    {
+        <div class="list-group-header">@HeaderText</div>
+    }
+    <div class="list-group-body scroll">
+        @foreach (var item in Items)
+        {
+            <div @key="item" class="@GetItemClassString(item)" @onclick="() => OnClick(item)">
+                @if (ItemTemplate != null)
+                {
+                    @ItemTemplate(item)
+                }
+                else
+                {
+                    @GetItemText(item)
+                }
+            </div>
+        }
+    </div>
+</div>

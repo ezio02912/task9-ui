@@ -1,0 +1,83 @@
+﻿@page "/cpd-banners"
+@layout PageLayout
+
+
+
+
+<DemoBlock Title="Thanh công cụ" Name="Filter">
+    <div class="row g-3">
+        <div class="col-12">
+            <DropUpload 
+                @ref="DropUpload"
+                FooterText="Kéo thả ảnh vào đây để tải lên"
+                IsDisabled="false"
+                IsMultiple="true"
+                ShowProgress="true"
+                ShowUploadFileList="true"
+                ShowDeleteButton="true"
+                ShowFooter="true"></DropUpload>
+        </div>
+        <div class="col-12">
+            <Button IsBlock="true" Icon="fa-solid fa-upload" class="icon-css" Color="Color.Success" OnClick="OnUpload">Tải lên</Button>
+        </div>
+    </div>
+</DemoBlock>
+
+
+
+<DemoBlock Title="Danh sách thư mục/ảnh" Name="Data">
+    <div class="row g-3">
+                 <div class="col-3">
+             <TreeView TItem="FolderNode"
+                 Items="@FolderTrees" 
+                 OnTreeItemClick="@OnTreeItemClick" 
+                 ShowToolbar="true"></TreeView>
+         </div>
+        <div class="col-9">
+            <div class="row g-3">
+                <div class="col-12">
+                    <BootstrapInput PlaceHolder="Nhập tên ảnh để tìm kiếm"
+                                    TValue="string"
+                                    IsAutoFocus="true"
+                                    IsSelectAllTextOnFocus="true"
+                                    ShowLabel="true"
+                                    UseInputEvent="true" OnValueChanged="OnSearchImageValueChanged"
+                                    DisplayText="Tìm kiếm ảnh" />
+                </div>
+                <div class="col-12">
+                    <ListView TItem="FileInfoDto" Items="@ItemsSearch" Height="620px">
+                        <HeaderTemplate>
+                            <div>Danh sách ảnh</div>
+                        </HeaderTemplate>
+                        <BodyTemplate>
+                            @if(IsLoading)
+                            {
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="text-center">
+                                        <i class="fa-solid fa-spinner fa-spin-pulse fa-2x"></i>
+                                        <p class="mt-2">Đang tải ảnh...</p>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <Card>
+                                    <BodyTemplate>
+                                        <ImageViewer FitMode="ObjectFitMode.Contain"  Url="@context.Url" PreviewList="new List<string> { context.Url }" ZoomSpeed="0.5" >
+                                            <ErrorTemplate>
+                                                <div class="bb-img-holder">
+                                                    <div class="bb-img-loading">Tải ảnh thất bại</div>
+                                                </div>
+                                            </ErrorTemplate>
+                                        </ImageViewer>
+                                        <div class="lv-demo-desc">@context.Name</div>
+                                    </BodyTemplate>
+                                </Card>
+                            }
+                        </BodyTemplate>
+                    </ListView>
+                </div>
+            </div>
+        </div>
+    </div>
+</DemoBlock>

@@ -1,0 +1,184 @@
+.kpi-card {
+    border: 1px solid #e6eef6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(17, 24, 39, .08);
+    background: #ffffff;
+}
+
+.kpi-header-bar {
+    background: linear-gradient(90deg, #0ea5e9, #2563eb);
+    color: #fff;
+    padding: .6rem .9rem;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.kpi-header-bar h6 { 
+    font-weight: 600; 
+    letter-spacing: .2px; 
+}
+
+.kpi-card .table {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.kpi-card .table th,
+.kpi-card .table td {
+    border-color: #d7e2ec !important;
+}
+
+.kpi-card .table thead th { 
+    font-weight: 700; 
+}
+
+.kpi-card .table thead.table-primary th {
+    background: linear-gradient(90deg, #1ea7fd, #0d6efd) !important;
+    color: #fff !important;
+}
+
+.kpi-card .table thead.table-danger th {
+    background: linear-gradient(90deg, #f43f5e, #ef4444) !important;
+    color: #fff !important;
+}
+
+.kpi-card .table thead.table-light th {
+    background: #eef6ff !important;
+    color: #0f172a !important;
+}
+
+.kpi-card .table tbody th {
+    background-color: #f8fbff;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.kpi-card .table tbody tr:hover td,
+.kpi-card .table tbody tr:hover th {
+    background-color: #f1f6ff;
+}
+
+.kpi-card input.form-control,
+.kpi-card .form-control { 
+    border-radius: 8px; 
+}
+
+/* Total row emphasis */
+.kpi-total-row th {
+    background: linear-gradient(90deg, #f43f5e, #fb7185) !important;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.kpi-total-row td {
+    background: #fff !important;
+}
+
+.kpi-total-row .kpi-total-value {
+    background: linear-gradient(90deg, #ef4444, #fb7185) !important;
+    color: #fff !important;
+    font-weight: 800;
+    font-size: 1.35rem;
+    letter-spacing: .3px;
+}
+
+/* Column alignment for both tables */
+.kpi-align { 
+    --col-label-w: 22%; 
+    --col-top-w: 14%; 
+    --col-total-w: 8%; 
+}
+
+.kpi-align .col-label { 
+    width: var(--col-label-w); 
+}
+
+.kpi-align .col-top { 
+    width: var(--col-top-w); 
+}
+
+.kpi-align .col-total { 
+    width: var(--col-total-w); 
+}
+
+/* Reduce inputs padding for compact columns */
+.kpi-input .form-control { 
+    padding: .3rem .5rem; 
+}
+
+/* Make total column text red */
+.kpi-result td:last-child,
+.kpi-result th:last-child { 
+    color: #dc2626; 
+    font-weight: 700; 
+}
+
+/* spacing between input and result tables */
+.kpi-result { 
+    margin-top: 10px; 
+}
+
+/* highlight input when value > 0 */
+.kpi-card .kpi-pos,
+.kpi-card .kpi-pos input {
+    color: #dc2626 !important;
+}
+
+.kpi-card .kpi-pos { 
+    border-color: #f87171 !important; 
+}
+
+/* Beautiful number input styling for BootstrapBlazor InputNumber */
+.kpi-card .form-control,
+.kpi-card input[type="number"],
+.kpi-card input[type="text"],
+.kpi-card .bb-input-number,
+.kpi-card .bb-input-number .form-control,
+.kpi-card .bb-input-number input {
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: #374151 !important;
+    background-color: #ffffff !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    min-height: 38px !important;
+}
+
+.kpi-card .form-control:focus,
+.kpi-card input[type="number"]:focus,
+.kpi-card input[type="text"]:focus,
+.kpi-card .bb-input-number:focus,
+.kpi-card .bb-input-number .form-control:focus,
+.kpi-card .bb-input-number input:focus {
+    outline: none !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+    background-color: #f8fafc !important;
+}
+
+.kpi-card .form-control:hover,
+.kpi-card input[type="number"]:hover,
+.kpi-card input[type="text"]:hover,
+.kpi-card .bb-input-number:hover,
+.kpi-card .bb-input-number .form-control:hover,
+.kpi-card .bb-input-number input:hover {
+    border-color: #cbd5e1 !important;
+    background-color: #f8fafc !important;
+}
+
+.kpi-card .form-control:disabled,
+.kpi-card input[type="number"]:disabled,
+.kpi-card input[type="text"]:disabled,
+.kpi-card .bb-input-number:disabled,
+.kpi-card .bb-input-number .form-control:disabled,
+.kpi-card .bb-input-number input:disabled {
+    background-color: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+    color: #94a3b8 !important;
+    cursor: not-allowed !important;
+}

@@ -1,0 +1,20 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapModuleComponentBase
+@attribute [BootstrapModuleAutoLoader(JSObjectReference = true)]
+
+<div @attributes="@AdditionalAttributes" id="@Id" class="@HeaderClassString">
+    <RibbonTabHeader Items="Items" IsSupportAnchor="IsSupportAnchor" ShowFloatButton="ShowFloatButton" @ref="_header"
+                     OnItemClickAsync="OnItemClickAsync!" OnMenuClickAsync="OnMenuClickAsync!" OnFloatChanged="OnFloatChanged!"
+                     EncodeAnchorCallback="EncodeAnchorCallback!" DecodeAnchorCallback="DecodeAnchorCallback!"
+                     RightButtonsTemplate="RightButtonsTemplate!"
+                     RibbonArrowUpIcon="@RibbonArrowUpIcon" RibbonArrowDownIcon="@RibbonArrowDownIcon"
+                     RibbonArrowPinIcon="@RibbonArrowPinIcon"></RibbonTabHeader>
+    @if (ChildContent != null)
+    {
+        <div class="ribbon-body">
+            <CascadingValue Value="this" IsFixed="true">
+                @ChildContent
+            </CascadingValue>
+        </div>
+    }
+</div>

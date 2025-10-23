@@ -1,0 +1,9 @@
+﻿@page "/online"
+@layout MainLayout
+@inject IStringLocalizer<Online> Localizer
+
+<h4>@Localizer["SubTitle"]：@ConnectionService.Connections.Count</h4>
+
+<section class="mt-3">
+    <Table TItem="DynamicObject" DynamicContext="DataTableDynamicContext" IsBordered="true" IsStriped="true" SetRowClassFormatter="SetRowClassFormatter"></Table>
+</section>

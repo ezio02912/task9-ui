@@ -1,0 +1,10 @@
+.tooltip-demo[b-74o9db4j4s] {
+    height: 240px;
+}
+
+@media (min-width: 576px) {
+    .tooltip-demo input[b-74o9db4j4s] {
+        width: 144px;
+        text-align: center;
+    }
+}

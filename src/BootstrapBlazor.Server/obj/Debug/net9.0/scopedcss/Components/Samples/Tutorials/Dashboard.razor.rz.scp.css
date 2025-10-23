@@ -1,0 +1,22 @@
+[b-z3ugn8aoh4] .card-header {
+    border-bottom-width: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+[b-z3ugn8aoh4] .card-title {
+    color: var(--bs-primary);
+    font-weight: bold;
+}
+
+.db-progress[b-z3ugn8aoh4] {
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+    .db-progress[b-z3ugn8aoh4]  .progress {
+        flex: 1;
+    }

@@ -1,0 +1,23 @@
+﻿@namespace BootstrapBlazor.Components
+@typeparam TValue
+@inherits DisplayBase<TValue>
+
+@if (IsShowLabel)
+{
+    <BootstrapLabel class="is-display" ShowLabelTooltip="(ShowLabelTooltip ?? false)" Value="@DisplayText" />
+}
+@if (ShowTooltip)
+{
+    <Tooltip Title="@_displayText">
+        @RenderContent
+    </Tooltip>
+}
+else
+{
+    @RenderContent
+}
+
+@code {
+    RenderFragment RenderContent =>
+    @<div @attributes="AdditionalAttributes" class="@ClassString">@_displayText</div>;
+}

@@ -1,0 +1,139 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapComponentBase
+
+<div @attributes="AdditionalAttributes" class="@ClassString">
+    @if (ViewMode == CalendarViewMode.Month)
+    {
+        <div class="calendar-header">
+            <div class="calendar-title">@GetTitle()</div>
+            <div class="calendar-button-group">
+                <div class="btn-group">
+                    @if (ShowYearButtons)
+                    {
+                        <button type="button" class="btn btn-sm" @onclick="() => OnChangeYear(-1)">
+                            <span>@PreviousYear</span>
+                        </button>
+                    }
+                    <button type="button" class="btn btn-sm" @onclick="() => OnChangeMonth(-1)">
+                        <span>@PreviousMonth</span>
+                    </button>
+                    <button type="button" class="btn btn-sm" @onclick="() => OnChangeMonth(0)">
+                        <span>@Today</span>
+                    </button>
+                    <button type="button" class="btn btn-sm" @onclick="() => OnChangeMonth(1)">
+                        <span>@NextMonth</span>
+                    </button>
+                    @if (ShowYearButtons)
+                    {
+                        <button type="button" class="btn btn-sm" @onclick="() => OnChangeYear(1)">
+                            <span>@NextYear</span>
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="calendar-body">
+            <table cellspacing="0" cellpadding="0" class="calendar-table">
+                <thead>
+                    @if (HeaderTemplate != null)
+                    {
+                        @HeaderTemplate
+                    }
+                    else
+                    {
+                        <tr>
+                            @foreach (var w in WeekLists)
+                            {
+                                <th>@w</th>
+                            }
+                        </tr>
+                    }
+                </thead>
+                <tbody>
+                    @for (var week = StartDate; week < EndDate; week = week.AddDays(7))
+                    {
+                        <tr class="calendar-table-row">
+                            @if (BodyTemplate != null)
+                            {
+                                @BodyTemplate(GetBodyTemplateContext(week))
+                            }
+                            else
+                            {
+                                @for (var index = 0; index < 7; index++)
+                                {
+                                    var cellValue = CreateCellValue(week.AddDays(index));
+                                    if (CellTemplate == null)
+                                    {
+                                        @RenderCell(cellValue)
+                                    }
+                                    else
+                                    {
+                                        @CellTemplate(cellValue)
+                                    }
+                                }
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="calendar-header">
+            <div class="calendar-title"><span class="d-none d-sm-inline-block">@GetTitle()</span> <span>@WeekNumberText</span></div>
+            <div class="calendar-button-group">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm" @onclick="() => OnChangeWeek(-7)">
+                        <span>@PreviousWeek</span>
+                    </button>
+                    <button type="button" class="btn btn-sm" @onclick="() => OnChangeWeek(0)">
+                        <span>@WeekText</span>
+                    </button>
+                    <button type="button" class="btn btn-sm" @onclick="() => OnChangeWeek(7)">
+                        <span>@NextWeek</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="calendar-body">
+            <table cellspacing="0" cellpadding="0" class="calendar-table table-week">
+                <thead>
+                    @if (HeaderTemplate != null)
+                    {
+                        @HeaderTemplate
+                    }
+                    else
+                    {
+                        <tr>
+                            @for (var index = 0; index < 7; index++)
+                            {
+                                @RenderWeekHeader(index)
+                            }
+                        </tr>
+                    }
+                </thead>
+                <tbody>
+                    @ChildContent
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    RenderFragment<CalendarCellValue> RenderCell => item =>
+    @<td class="@GetCalendarCellString(item)" @onclick="() => OnCellClickCallback(item.CellValue)">
+        <div class="calendar-day">
+            <span>@item.CellValue.Day</span>
+        </div>
+    </td>;
+
+    RenderFragment<int> RenderWeekHeader => index =>
+    @<th>
+        <div class="@GetWeekDayClassString(index)">
+            <div><span class="d-none d-sm-inline-block">@WeekHeaderText</span>@WeekLists.ElementAtOrDefault(index)</div>
+            <div>@GetWeekDayString(index)</div>
+        </div>
+    </th>;
+}

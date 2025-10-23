@@ -1,0 +1,44 @@
+/* Keyword List Styling */
+
+::deep .table-toolbar {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.375rem 0.375rem 0 0;
+}
+
+::deep .btn-group-sm .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+::deep .badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+::deep .table {
+    font-size: 0.875rem;
+}
+
+::deep .table td {
+    vertical-align: middle;
+}
+
+::deep .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+::deep .table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Action buttons */
+::deep .btn-group .btn {
+    border-radius: 0.25rem;
+}
+
+::deep .btn-group .btn + .btn {
+    margin-left: 0.25rem;
+}
+

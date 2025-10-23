@@ -1,0 +1,37 @@
+.datetime-picker {
+    --bb-dt-picker-bar-color: #{$bb-dt-picker-bar-color};
+    --bb-dt-picker-input-padding: #{$bb-dt-form-control-padding};
+    --bb-dt-picker-input-icon-padding: #{$bb-dt-form-control-icon-padding};
+    position: relative;
+
+    .form-control {
+        cursor: pointer;
+        --bb-form-control-padding: var(--bb-dt-picker-input-padding);
+
+        &[readonly]:not([disabled]) {
+            background-color: var(--bs-body-bg);
+        }
+
+        &.has-icon {
+            --bb-form-control-padding: var(--bb-dt-picker-input-icon-padding);
+        }
+    }
+
+    .picker-panel {
+        display: none
+    }
+}
+
+.datetime-picker-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: var(--bb-height);
+    cursor: pointer;
+    padding: 0 .75rem;
+    color: var(--bb-dt-picker-bar-color);
+}
+
+.popover .picker-panel {
+    box-shadow: none;
+}

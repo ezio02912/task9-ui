@@ -1,0 +1,60 @@
+fail: BootstrapBlazor.Server.Services.DomainCheckDaily.SeoDailyDataService[0]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 20/10/2025 15:52:29
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Error getting SEO daily data
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: System.InvalidOperationException
+      TargetSite: Void PrepareRequestMessage(System.Net.Http.HttpRequestMessage)
+      Message: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Net.Http
+      HResult: -2146233079
+      
+      StackTrace Information
+      *********************************************
+         at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+         at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+         at BootstrapBlazor.Server.Services.DomainCheckDaily.SeoDailyDataService.GetDataAsync(GetSeoDailyDataRequest request) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Services/DomainCheckDaily/SeoDailyDataService.cs:line 52
+      
+      
+fail: BootstrapBlazor.Server.Services.DomainCheckDaily.SeoDailyDataService[0]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 20/10/2025 15:52:43
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Error getting SEO daily data
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: System.InvalidOperationException
+      TargetSite: Void PrepareRequestMessage(System.Net.Http.HttpRequestMessage)
+      Message: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Net.Http
+      HResult: -2146233079
+      
+      StackTrace Information
+      *********************************************
+         at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+         at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+         at BootstrapBlazor.Server.Services.DomainCheckDaily.SeoDailyDataService.GetDataAsync(GetSeoDailyDataRequest request) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Services/DomainCheckDaily/SeoDailyDataService.cs:line 52
+      
+      

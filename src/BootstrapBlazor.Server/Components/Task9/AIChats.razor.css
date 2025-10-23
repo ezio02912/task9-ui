@@ -1,0 +1,566 @@
+﻿.bb-ad {
+    display: none;
+}
+
+.msg-body table th, 
+.msg-body table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0;
+}
+.chat-title {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.chat-body {
+    min-height: 210px;
+    max-height: calc(100vh - 350px);
+    overflow-y: auto;
+    background-color: #faf9f8;
+}
+
+.chat-welcome {
+    background-color: #fff;
+    border-radius: .5rem;
+    display: flex;
+    margin: 1rem 1rem 0 1rem;
+    padding: 0.5rem;
+    box-shadow: rgb(210, 208, 206) 0 2px 4px, rgb(237, 235, 233) 0 0 2px;
+}
+
+.chat-welcome-icon {
+    font-size: 2rem;
+}
+
+.chat-welcome-body {
+    flex: 1;
+    margin-inline-start: .75rem;
+}
+
+.chat-welcome-title {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.chat-footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: rgb(210, 208, 206) 0 2px 4px, rgb(237, 235, 233) 0 0 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .chat-footer .chat-info {
+        margin-bottom: .25rem;
+        font-size: 80%;
+        color: rgba(var(--bs-body-color-rgb), 0.6);
+    }
+
+::deep .chat-footer-tx {
+    resize: none;
+    flex: 1;
+}
+
+::deep div:has(pre) {
+    overflow: hidden;
+}
+
+::deep pre {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: var(--bs-border-radius);
+    padding: 4px 10px;
+}
+
+.chat-auth {
+    margin-top: .5rem;
+}
+
+.chat-buttons {
+    margin-inline-start: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+    .chat-buttons ::deep .btn {
+        padding: 0 4px;
+        width: 3rem;
+        height: 35px;
+        border-radius: 8px;
+    }
+
+::deep .btn-clear {
+    margin-top: 7px;
+}
+
+/* User messages - Right side (icon right, message right) */
+.msg-stack {
+    display: flex !important;
+    flex-flow: row-reverse nowrap !important;
+    margin: 1rem .75rem !important;
+    justify-content: flex-end !important;
+}
+
+.msg-stack .msg-role {
+    min-width: 3rem !important;
+    margin-inline-start: 1rem !important;
+    margin-inline-end: 0 !important;
+    text-align: center !important;
+}
+
+.msg-stack .msg-body {
+    order: 1 !important;
+    border-radius: .5rem !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    padding: 1rem !important;
+    position: relative !important;
+    filter: drop-shadow(rgba(0, 0, 0, 0.14) 0 4px 8px) drop-shadow(rgba(0, 0, 0, 0.12) 0 0 2px) !important;
+    max-width: 70% !important;
+    margin-left: auto !important;
+}
+
+.msg-stack .msg-body:after {
+    content: "" !important;
+    position: absolute !important;
+    left: auto !important;
+    right: -15px !important;
+    top: 12px !important;
+    border-top: 15px solid transparent !important;
+    border-right: none !important;
+    border-left: 15px solid #667eea !important;
+    border-bottom: 15px solid transparent !important;
+    margin-inline-end: 5px !important;
+}
+
+/* Bot messages - Left side (original gray style) */
+.msg-stack-assistant {
+    display: flex !important;
+    flex-flow: row nowrap !important;
+    margin: 1rem .75rem !important;
+    justify-content: flex-start !important;
+}
+
+.msg-stack-assistant .msg-role {
+    min-width: 3rem !important;
+    margin-inline-start: 0 !important;
+    margin-inline-end: 1rem !important;
+    text-align: center !important;
+    order: 1 !important;
+}
+
+.msg-stack-assistant .msg-body {
+    order: 2 !important;
+    border-radius: .5rem !important;
+    background: #e9ecef !important;
+    color: #000000 !important;
+    padding: 1rem !important;
+    position: relative !important;
+    filter: drop-shadow(rgba(0, 0, 0, 0.14) 0 4px 8px) drop-shadow(rgba(0, 0, 0, 0.12) 0 0 2px) !important;
+    max-width: 70% !important;
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+.msg-stack-assistant .msg-body:after {
+    content: "" !important;
+    position: absolute !important;
+    left: -15px !important;
+    right: auto !important;
+    top: 12px !important;
+    border-top: 15px solid transparent !important;
+    border-right: 15px solid #e9ecef !important;
+    border-left: none !important;
+    border-bottom: 15px solid transparent !important;
+    margin-inline-start: 5px !important;
+}
+
+.msg-role i {
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+    color: #6c757d;
+}
+
+.msg-role img {
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid #e9ecef;
+}
+
+/* User message time and description (white text on blue background) */
+.msg-stack .msg-time {
+    font-size: 80%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: .25rem;
+}
+
+.msg-stack .msg-desc {
+    font-size: 80%;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: .5rem;
+    font-style: italic;
+}
+
+/* Bot message time and description (dark text on gray background) */
+.msg-stack-assistant .msg-time {
+    font-size: 80%;
+    color: #707070;
+    margin-bottom: .25rem;
+}
+
+.msg-stack-assistant .msg-desc {
+    font-size: 80%;
+    color: #707070;
+    margin-top: .5rem;
+    font-style: italic;
+}
+
+/* Table styling for messages - Force apply to all tables in message body */
+.msg-body table,
+.msg-stack .msg-body table,
+.msg-stack-assistant .msg-body table,
+.msg-stack.msg-stack-assistant .msg-body table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1rem 0 !important;
+    background-color: transparent !important;
+    font-size: 0.9rem !important;
+    table-layout: fixed !important;
+}
+
+.msg-body table th,
+.msg-stack .msg-body table th,
+.msg-stack-assistant .msg-body table th,
+.msg-stack.msg-stack-assistant .msg-body table th {
+    background-color: #f8f9fa !important;
+    color: #495057 !important;
+    font-weight: 600 !important;
+    padding: 0.75rem !important;
+    text-align: left !important;
+    border: 1px solid #dee2e6 !important;
+    font-size: 0.85rem !important;
+}
+
+.msg-body table td,
+.msg-stack .msg-body table td,
+.msg-stack-assistant .msg-body table td,
+.msg-stack.msg-stack-assistant .msg-body table td {
+    padding: 0.75rem !important;
+    border: 1px solid #dee2e6 !important;
+    color: inherit !important;
+    background-color: transparent !important;
+    font-size: 0.85rem !important;
+}
+
+/* Specific styling for user message tables (white text) - only when NOT assistant */
+.msg-stack:not(.msg-stack-assistant) .msg-body table th {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.msg-stack:not(.msg-stack-assistant) .msg-body table td {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Specific styling for bot message tables (dark text) - including combined classes */
+.msg-stack-assistant .msg-body table th,
+.msg-stack.msg-stack-assistant .msg-body table th {
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+    border-color: #dee2e6 !important;
+}
+
+.msg-stack-assistant .msg-body table td,
+.msg-stack.msg-stack-assistant .msg-body table td {
+    color: #495057 !important;
+    border-color: #dee2e6 !important;
+}
+
+/* Table responsive - Fixed for proper display */
+.msg-body table {
+    overflow-x: auto !important;
+    display: table !important;
+    white-space: normal !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+}
+
+.msg-body table thead,
+.msg-body table tbody,
+.msg-body table tr {
+    display: table-row !important;
+    width: 100% !important;
+}
+
+.msg-body table thead th,
+.msg-body table tbody td {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+}
+
+/* Force table styling on dynamic content */
+.msg-body * table,
+.msg-body * th,
+.msg-body * td {
+    border-collapse: collapse !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+/* Additional force styling for tables with combined classes */
+.msg-stack.msg-stack-assistant .msg-body table,
+.msg-stack.msg-stack-assistant .msg-body th,
+.msg-stack.msg-stack-assistant .msg-body td {
+    border-collapse: collapse !important;
+    border: 1px solid #dee2e6 !important;
+    padding: 0.75rem !important;
+    font-size: 0.85rem !important;
+}
+
+.msg-stack.msg-stack-assistant .msg-body table {
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.msg-stack.msg-stack-assistant .msg-body table th {
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+    font-weight: 600 !important;
+}
+
+.msg-stack.msg-stack-assistant .msg-body table td {
+    background-color: transparent !important;
+    color: #495057 !important;
+}
+
+/* Markdown content table styling */
+::deep .markdown-body table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1rem 0 !important;
+    font-size: 0.9rem !important;
+    table-layout: fixed !important;
+}
+
+::deep .markdown-body table th {
+    background-color: #f8f9fa !important;
+    color: #495057 !important;
+    font-weight: 600 !important;
+    padding: 0.75rem !important;
+    text-align: left !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+::deep .markdown-body table td {
+    padding: 0.75rem !important;
+    border: 1px solid #dee2e6 !important;
+    color: inherit !important;
+}
+
+/* Specific styling for user message markdown tables - only when NOT assistant */
+.msg-stack:not(.msg-stack-assistant) ::deep .markdown-body table th {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.msg-stack:not(.msg-stack-assistant) ::deep .markdown-body table td {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Specific styling for bot message markdown tables - including combined classes */
+.msg-stack-assistant ::deep .markdown-body table th,
+.msg-stack.msg-stack-assistant ::deep .markdown-body table th {
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+    border-color: #dee2e6 !important;
+}
+
+.msg-stack-assistant ::deep .markdown-body table td,
+.msg-stack.msg-stack-assistant ::deep .markdown-body table td {
+    color: #495057 !important;
+    border-color: #dee2e6 !important;
+}
+
+/* List styling in messages */
+.msg-body ul,
+.msg-body ol {
+    margin: 1rem 0 !important;
+    padding-left: 2rem !important;
+}
+
+.msg-body li {
+    margin: 0.5rem 0 !important;
+    line-height: 1.6 !important;
+}
+
+/* Code blocks in messages */
+.msg-body pre,
+.msg-body code {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    padding: 0.5rem !important;
+    border-radius: 4px !important;
+    font-family: 'Courier New', monospace !important;
+    font-size: 0.85rem !important;
+}
+
+.msg-stack .msg-body pre,
+.msg-stack .msg-body code {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.msg-stack-assistant .msg-body pre,
+.msg-stack-assistant .msg-body code {
+    background-color: #f8f9fa !important;
+    color: #495057 !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+    .msg-stack .msg-body,
+    .msg-stack-assistant .msg-body {
+        max-width: 85%;
+        font-size: 0.9rem;
+    }
+    
+    .msg-role {
+        min-width: 2.5rem;
+    }
+    
+    .msg-role i {
+        font-size: 1.2rem;
+    }
+    
+    .msg-role img {
+        width: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .chat-welcome {
+        padding: 1rem;
+        margin: 2rem 2rem 0 2rem;
+    }
+
+    .chat-welcome-body {
+        margin-inline-start: 2rem;
+    }
+    
+    .msg-stack .msg-body,
+    .msg-stack-assistant .msg-body {
+        max-width: 60%;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .chat-body {
+        background-color: #1a1a1a;
+    }
+    
+    .chat-welcome {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+    
+    .msg-role i {
+        color: #adb5bd;
+    }
+}
+@keyframes jump-char {
+    0%, 100% { 
+        transform: translateY(0);
+    }
+    50% { 
+        transform: translateY(-3px);
+    }
+}
+
+.jumping-line {
+    padding: 8px 12px;
+    background: linear-gradient(45deg, #f0f8ff, #e6f3ff);
+    border-radius: 8px;
+    margin: 4px 0;
+    position: relative;
+}
+
+.jumping-line .markdown-body {
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+}
+
+.jumping-line .markdown-body * {
+    display: inline;
+}
+
+.jumping-line .markdown-body p {
+    display: inline;
+}
+
+/* Hiệu ứng jumping cho từng ký tự */
+.jump-char {
+    display: inline-block;
+    animation: jump-char 0.6s ease-in-out infinite;
+}
+
+.jump-char:nth-child(1) { animation-delay: 0s; }
+.jump-char:nth-child(2) { animation-delay: 0.1s; }
+.jump-char:nth-child(3) { animation-delay: 0.2s; }
+.jump-char:nth-child(4) { animation-delay: 0.3s; }
+.jump-char:nth-child(5) { animation-delay: 0.4s; }
+.jump-char:nth-child(6) { animation-delay: 0.5s; }
+.jump-char:nth-child(7) { animation-delay: 0.6s; }
+.jump-char:nth-child(8) { animation-delay: 0.7s; }
+.jump-char:nth-child(9) { animation-delay: 0.8s; }
+.jump-char:nth-child(10) { animation-delay: 0.9s; }
+.jump-char:nth-child(11) { animation-delay: 1.0s; }
+.jump-char:nth-child(12) { animation-delay: 1.1s; }
+.jump-char:nth-child(13) { animation-delay: 1.2s; }
+.jump-char:nth-child(14) { animation-delay: 1.3s; }
+.jump-char:nth-child(15) { animation-delay: 1.4s; }
+.jump-char:nth-child(16) { animation-delay: 1.5s; }
+.jump-char:nth-child(17) { animation-delay: 1.6s; }
+.jump-char:nth-child(18) { animation-delay: 1.7s; }
+.jump-char:nth-child(19) { animation-delay: 1.8s; }
+.jump-char:nth-child(20) { animation-delay: 1.9s; }
+
+/* Cho các ký tự từ 21 trở đi, lặp lại delay */
+.jump-char:nth-child(n+21) { 
+    animation-delay: calc((var(--char-index, 0) % 20) * 0.1s); 
+}
+
+/* Hiệu ứng loading dots cho jumping text */
+.jumping-line::after {
+    content: '●●●';
+    display: inline-block;
+    margin-left: 8px;
+    animation: loading-dots 1.4s infinite ease-in-out;
+    color: #007bff;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+@keyframes loading-dots {
+    0%, 20% { 
+        opacity: 0.2;
+    }
+    50% { 
+        opacity: 1;
+    }
+    80%, 100% { 
+        opacity: 0.2;
+    }
+}
+
+/* Khi đã được processed, ẩn loading dots */
+.jumping-line[data-jumping-processed]::after {
+    display: none;
+}

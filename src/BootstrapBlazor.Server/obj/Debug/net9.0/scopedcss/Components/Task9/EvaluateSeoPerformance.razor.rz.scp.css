@@ -1,0 +1,184 @@
+.kpi-card[b-888s7c7x33] {
+    border: 1px solid #e6eef6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(17, 24, 39, .08);
+    background: #ffffff;
+}
+
+.kpi-header-bar[b-888s7c7x33] {
+    background: linear-gradient(90deg, #0ea5e9, #2563eb);
+    color: #fff;
+    padding: .6rem .9rem;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.kpi-header-bar h6[b-888s7c7x33] { 
+    font-weight: 600; 
+    letter-spacing: .2px; 
+}
+
+.kpi-card .table[b-888s7c7x33] {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.kpi-card .table th[b-888s7c7x33],
+.kpi-card .table td[b-888s7c7x33] {
+    border-color: #d7e2ec !important;
+}
+
+.kpi-card .table thead th[b-888s7c7x33] { 
+    font-weight: 700; 
+}
+
+.kpi-card .table thead.table-primary th[b-888s7c7x33] {
+    background: linear-gradient(90deg, #1ea7fd, #0d6efd) !important;
+    color: #fff !important;
+}
+
+.kpi-card .table thead.table-danger th[b-888s7c7x33] {
+    background: linear-gradient(90deg, #f43f5e, #ef4444) !important;
+    color: #fff !important;
+}
+
+.kpi-card .table thead.table-light th[b-888s7c7x33] {
+    background: #eef6ff !important;
+    color: #0f172a !important;
+}
+
+.kpi-card .table tbody th[b-888s7c7x33] {
+    background-color: #f8fbff;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.kpi-card .table tbody tr:hover td[b-888s7c7x33],
+.kpi-card .table tbody tr:hover th[b-888s7c7x33] {
+    background-color: #f1f6ff;
+}
+
+.kpi-card input.form-control[b-888s7c7x33],
+.kpi-card .form-control[b-888s7c7x33] { 
+    border-radius: 8px; 
+}
+
+/* Total row emphasis */
+.kpi-total-row th[b-888s7c7x33] {
+    background: linear-gradient(90deg, #f43f5e, #fb7185) !important;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.kpi-total-row td[b-888s7c7x33] {
+    background: #fff !important;
+}
+
+.kpi-total-row .kpi-total-value[b-888s7c7x33] {
+    background: linear-gradient(90deg, #ef4444, #fb7185) !important;
+    color: #fff !important;
+    font-weight: 800;
+    font-size: 1.35rem;
+    letter-spacing: .3px;
+}
+
+/* Column alignment for both tables */
+.kpi-align[b-888s7c7x33] { 
+    --col-label-w: 22%; 
+    --col-top-w: 14%; 
+    --col-total-w: 8%; 
+}
+
+.kpi-align .col-label[b-888s7c7x33] { 
+    width: var(--col-label-w); 
+}
+
+.kpi-align .col-top[b-888s7c7x33] { 
+    width: var(--col-top-w); 
+}
+
+.kpi-align .col-total[b-888s7c7x33] { 
+    width: var(--col-total-w); 
+}
+
+/* Reduce inputs padding for compact columns */
+.kpi-input .form-control[b-888s7c7x33] { 
+    padding: .3rem .5rem; 
+}
+
+/* Make total column text red */
+.kpi-result td:last-child[b-888s7c7x33],
+.kpi-result th:last-child[b-888s7c7x33] { 
+    color: #dc2626; 
+    font-weight: 700; 
+}
+
+/* spacing between input and result tables */
+.kpi-result[b-888s7c7x33] { 
+    margin-top: 10px; 
+}
+
+/* highlight input when value > 0 */
+.kpi-card .kpi-pos[b-888s7c7x33],
+.kpi-card .kpi-pos input[b-888s7c7x33] {
+    color: #dc2626 !important;
+}
+
+.kpi-card .kpi-pos[b-888s7c7x33] { 
+    border-color: #f87171 !important; 
+}
+
+/* Beautiful number input styling for BootstrapBlazor InputNumber */
+.kpi-card .form-control[b-888s7c7x33],
+.kpi-card input[type="number"][b-888s7c7x33],
+.kpi-card input[type="text"][b-888s7c7x33],
+.kpi-card .bb-input-number[b-888s7c7x33],
+.kpi-card .bb-input-number .form-control[b-888s7c7x33],
+.kpi-card .bb-input-number input[b-888s7c7x33] {
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: #374151 !important;
+    background-color: #ffffff !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    min-height: 38px !important;
+}
+
+.kpi-card .form-control:focus[b-888s7c7x33],
+.kpi-card input[type="number"]:focus[b-888s7c7x33],
+.kpi-card input[type="text"]:focus[b-888s7c7x33],
+.kpi-card .bb-input-number:focus[b-888s7c7x33],
+.kpi-card .bb-input-number .form-control:focus[b-888s7c7x33],
+.kpi-card .bb-input-number input:focus[b-888s7c7x33] {
+    outline: none !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+    background-color: #f8fafc !important;
+}
+
+.kpi-card .form-control:hover[b-888s7c7x33],
+.kpi-card input[type="number"]:hover[b-888s7c7x33],
+.kpi-card input[type="text"]:hover[b-888s7c7x33],
+.kpi-card .bb-input-number:hover[b-888s7c7x33],
+.kpi-card .bb-input-number .form-control:hover[b-888s7c7x33],
+.kpi-card .bb-input-number input:hover[b-888s7c7x33] {
+    border-color: #cbd5e1 !important;
+    background-color: #f8fafc !important;
+}
+
+.kpi-card .form-control:disabled[b-888s7c7x33],
+.kpi-card input[type="number"]:disabled[b-888s7c7x33],
+.kpi-card input[type="text"]:disabled[b-888s7c7x33],
+.kpi-card .bb-input-number:disabled[b-888s7c7x33],
+.kpi-card .bb-input-number .form-control:disabled[b-888s7c7x33],
+.kpi-card .bb-input-number input:disabled[b-888s7c7x33] {
+    background-color: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+    color: #94a3b8 !important;
+    cursor: not-allowed !important;
+}

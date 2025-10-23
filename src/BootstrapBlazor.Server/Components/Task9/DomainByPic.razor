@@ -1,0 +1,126 @@
+﻿@page "/filter-domain-by-pic"
+@layout PageLayout
+@attribute [JSModuleAutoLoader("Task9/DomainByPic.razor.js")]
+
+
+<DemoBlock Name="ShowLoading">
+  
+    <Tab IsCard="true" ShowClose="false"
+     TabStyle="TabStyle.Chrome"
+     ShowToolbar="true"
+     ShowExtendButtons="true">
+        <TabItem Text="Lọc domain" Icon="fa-solid fa-chart">
+            <Table TItem="DomainSearchDto"
+                   AutoGenerateColumns="false"
+                   IsPagination="false"
+                   IsStriped="true"
+                   IsBordered="true"
+                   IsMultipleSelect="true"
+                   ShowColumnList="true"
+                   ShowToolbar="false"
+                   ShowDefaultButtons="false"
+                   ShowExtendButtons="false"
+                   ShowLoading="true"
+                   SearchMode="SearchMode.Top"
+                   CustomerSearchModel="@CustomerFilterSearchModel" ShowSearch="true"
+                   ShowCardView="true"
+                   OnQueryAsync="@OnQueryFilterAsync"
+                   @ref="TableFilterRef">
+
+                <TableColumns>
+                    <TableColumn @bind-Field="@context.Domain" Text="Tên miền" TextWrap="true">
+                        <Template Context="value">
+                            <span style="@(value.Row.IsMainSite ? "font-weight: bold;" : "")">@value.Row.Domain</span>
+                        </Template>
+                    </TableColumn>
+                    
+                    <TableColumn @bind-Field="@context.Team" Text="Thuộc team" TextWrap="true"/>
+                    <TableColumn @bind-Field="@context.Pic" Text="Người phụ trách" TextWrap="true"/>
+                    <TableColumn IsVisibleWhenAdd="false" IsVisibleWhenEdit="false" Width="150" @bind-Field="@context.CreatedAt" Text="Ngày tạo">
+                        <Template Context="value">
+                            <span>@value.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                        </Template>
+                    </TableColumn>
+                </TableColumns>
+                <CustomerSearchTemplate>
+                    @if (context is DomainSearchFilterDto model)
+                    {
+                        <div class="row form-inline g-3">
+                            <div class="col-12 col-sm-12">
+                                <Textarea rows="4"  @bind-Value="model.Domain" ShowLabel="true" DisplayText="Tên miền" />
+                            </div>
+                            <div class="col-12 col-sm-12 btn-toolbar btn-group d-sm-inline-flex">
+                                <Button OnClick="OnTriggerFilterQueryAsync" Text="Tìm kiếm" Icon="fa-solid fa-search" class="btn btn-success"></Button>
+                                <Button OnClick="CopyFilterData" Text="Copy dữ liệu" Icon="fa-solid fa-copy"></Button>
+                            </div>
+                        </div>
+                    }
+                </CustomerSearchTemplate>
+            </Table>
+        </TabItem>
+        <TabItem Text="Dữ liệu tên miền" Icon="fa-solid fa-chart">
+           
+            <Table TItem="DomainSearchDto"
+                   PageItemsSource="@PageItemsSource"
+                   AutoGenerateColumns="false"
+                   IsPagination="true"
+                   IsStriped="true"
+                   IsBordered="true"
+                   IsMultipleSelect="true"
+                   ShowColumnList="true"
+                   ShowToolbar="true"
+                   ShowDefaultButtons="true"
+                   ShowExtendButtons="true"
+                   ShowLoading="true"
+                   SearchMode="SearchMode.Top"
+                   CustomerSearchModel="@CustomerSearchModel" ShowSearch="true"
+                   ShowCardView="true"
+                   OnQueryAsync="@OnQueryAsync"
+                   OnSaveAsync="@OnSaveAsync"
+                   OnDeleteAsync="@OnDeleteAsync"
+                   @ref="TableRef">
+
+                <TableColumns>
+                    <TableColumn @bind-Field="@context.Domain" Text="Tên miền" TextWrap="true"/>
+                    <TableColumn @bind-Field="@context.Team" Text="Thuộc team" TextWrap="true"/>
+                    <TableColumn @bind-Field="@context.Pic" Text="Người phụ trách" TextWrap="true"/>
+                    <TableColumn IsVisibleWhenAdd="false" IsVisibleWhenEdit="false" Width="150" @bind-Field="@context.CreatedAt" Text="Ngày tạo">
+                        <Template Context="value">
+                            <span>@value.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                        </Template>
+                    </TableColumn>
+                </TableColumns>
+                <CustomerSearchTemplate>
+                    @if (context is DomainSearchFilterDto model)
+                    {
+                        <div class="row form-inline g-3">
+                            <div class="col-12 col-sm-6">
+                                <BootstrapInput @bind-Value="model.Team" ShowLabel="true" DisplayText="Team"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <BootstrapInput @bind-Value="model.Pic" ShowLabel="true" DisplayText="Người phụ trách"/>
+                            </div>
+                            <div class="col-12 col-sm-12">
+                                <Textarea rows="4"  @bind-Value="model.Domain" ShowLabel="true" DisplayText="Tên miền" />
+                            </div>
+                            <div class="col-12 col-sm-12 btn-toolbar btn-group d-sm-inline-flex">
+                                <Button OnClick="OnTriggerQueryAsync" Text="Tìm kiếm" Icon="fa-solid fa-search" class="btn btn-success"></Button>
+                                <Button OnClick="CopyData" Text="Copy dữ liệu" Icon="fa-solid fa-copy"></Button>
+                            </div>
+                        </div>
+                    }
+                </CustomerSearchTemplate>
+            </Table>
+        </TabItem>
+        <TabItem Text="Thêm dữ liệu hàng loạt" Icon="fa-solid fa-plus">
+            <section class="mb-3">
+                <Button OnClickWithoutRender="OnSaveExcelData" Text="Lưu"></Button>
+            </section>
+            <div class="bb-sheet-demo" id="sheetPlugin1">
+                <UniverSheet @ref="_sheetPlugin" 
+                OnReadyAsync="OnReadyAsync" ></UniverSheet>
+            </div>
+        </TabItem>
+    </Tab>
+
+</DemoBlock>

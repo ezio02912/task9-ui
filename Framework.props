@@ -1,0 +1,9 @@
+<Project>
+
+  <Import Project="Version.props"/>
+
+  <PropertyGroup>
+    <TargetFramework>$(RunTargetFramework)</TargetFramework>
+  </PropertyGroup>
+
+</Project>

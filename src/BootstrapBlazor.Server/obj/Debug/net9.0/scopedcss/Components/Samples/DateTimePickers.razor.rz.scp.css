@@ -1,0 +1,13 @@
+.custom-cell[b-inqt8v9eua] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+    .custom-cell > .mark[b-inqt8v9eua] {
+        border-radius: 50%;
+        width: 6px !important;
+        height: 6px !important;
+        left: 9px;
+        background-color: var(--bs-danger);
+    }

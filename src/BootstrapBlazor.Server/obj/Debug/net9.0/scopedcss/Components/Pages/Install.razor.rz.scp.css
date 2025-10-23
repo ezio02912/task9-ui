@@ -1,0 +1,32 @@
+.git img[b-cq8kpqfmzb] {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+.git .git-fork[b-cq8kpqfmzb] {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.git a[b-cq8kpqfmzb] {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    display: block;
+    padding: 6px 10px;
+    border-radius: var(--bs-border-radius);
+}
+
+.git .git-fork img[b-cq8kpqfmzb] {
+    height: 56px;
+}
+
+.git .git-fork span[b-cq8kpqfmzb] {
+    font-size: 1.8rem;
+    color: #1c3949;
+    margin-inline-start: 38px;
+}
+
+[data-bs-theme='dark'] .git .git-fork span[b-cq8kpqfmzb] {
+    color: var(--bs-body-color);
+}

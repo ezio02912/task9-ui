@@ -1,0 +1,107 @@
+﻿@page "/slider"
+
+@inject IStringLocalizer<Sliders> Localizer
+
+<h3>@Localizer["SlidersTitle"]</h3>
+
+<h4>@Localizer["SlidersDescription"]</h4>
+
+<DemoBlock Title="@Localizer["SlidersNormalTitle"]" Introduction="@Localizer["SlidersNormalIntro"]" Name="Normal">
+    <section ignore>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4 xl-3">
+                <BootstrapInputGroup>
+                    <BootstrapInputGroupLabel DisplayText="CurrentValue"></BootstrapInputGroupLabel>
+                    <BootstrapInput @bind-Value="@CurrentValue"></BootstrapInput>
+                </BootstrapInputGroup>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 xl-3">
+                <BootstrapInputGroup>
+                    <BootstrapInputGroupLabel DisplayText="MinValue"></BootstrapInputGroupLabel>
+                    <BootstrapInput @bind-Value="@MinValue"></BootstrapInput>
+                </BootstrapInputGroup>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 xl-3">
+                <BootstrapInputGroup>
+                    <BootstrapInputGroupLabel DisplayText="MaxValue"></BootstrapInputGroupLabel>
+                    <BootstrapInput @bind-Value="@MaxValue"></BootstrapInput>
+                </BootstrapInputGroup>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 xl-3">
+                <BootstrapInputGroup>
+                    <BootstrapInputGroupLabel DisplayText="DisplayText"></BootstrapInputGroupLabel>
+                    <BootstrapInput @bind-Value="@DisplayText"></BootstrapInput>
+                </BootstrapInputGroup>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 xl-3">
+                <BootstrapInputGroup>
+                    <BootstrapInputGroupLabel DisplayText="Step"></BootstrapInputGroupLabel>
+                    <BootstrapInput @bind-Value="@Step"></BootstrapInput>
+                </BootstrapInputGroup>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 xl-3">
+                <BootstrapInputGroup>
+                    <BootstrapInputGroupLabel DisplayText="IsDisabled"></BootstrapInputGroupLabel>
+                    <Checkbox @bind-Value="@IsDisabled"></Checkbox>
+                </BootstrapInputGroup>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 xl-3">
+                <BootstrapInputGroup>
+                    <BootstrapInputGroupLabel DisplayText="UseInput"></BootstrapInputGroupLabel>
+                    <Checkbox @bind-Value="@UseInput"></Checkbox>
+                </BootstrapInputGroup>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 xl-3">
+                <BootstrapInputGroup>
+                    <BootstrapInputGroupLabel DisplayText="ShowLabel"></BootstrapInputGroupLabel>
+                    <Checkbox @bind-Value="@ShowLabel"></Checkbox>
+                </BootstrapInputGroup>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 xl-3">
+                <BootstrapInputGroup>
+                    <BootstrapInputGroupLabel DisplayText="UseGroup"></BootstrapInputGroupLabel>
+                    <Checkbox @bind-Value="@UseGroup"></Checkbox>
+                </BootstrapInputGroup>
+            </div>
+        </div>
+    </section>
+    @if (UseGroup)
+    {
+        <BootstrapInputGroup>
+            <BootstrapInputGroupLabel DisplayText="@DisplayText" Width="100"></BootstrapInputGroupLabel>
+            <Slider @bind-Value="@CurrentValue" Max="MaxValue" Min="MinValue" Step="Step" UseInputEvent="UseInput"
+                    DisplayText="@DisplayText" ShowLabel="ShowLabel" IsDisabled="IsDisabled" OnValueChanged="OnRangeSliderValueChanged"></Slider>
+        </BootstrapInputGroup>
+    }
+    else
+    {
+        <Slider @bind-Value="@CurrentValue" Max="MaxValue" Min="MinValue" Step="Step" UseInputEvent="UseInput"
+                DisplayText="@DisplayText" ShowLabel="ShowLabel" IsDisabled="IsDisabled" OnValueChanged="OnRangeSliderValueChanged"></Slider>
+    }
+    <section ignore>
+        <ConsoleLogger @ref="Logger"></ConsoleLogger>
+    </section>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["SlidersRangeTitle"]" Introduction="@Localizer["SlidersRangeIntro"]" Name="Range">
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <Slider @bind-Value="@RangeValue" Step="1" UseInputEvent="true"></Slider>
+        </div>
+        <div class="col-12 col-sm-6">
+            <Display Value="@RangeValue"></Display>
+        </div>
+    </div>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["SlidersIsDisabledTitle"]" Introduction="@Localizer["SlidersIsDisabledIntro"]" Name="IsDisabled">
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <Slider TValue="double" Step="1" IsDisabled="true"></Slider>
+        </div>
+    </div>
+</DemoBlock>
+
+<AttributeTable Items="@GetAttributes()"></AttributeTable>
+
+<EventTable Items="@GetEvents()"></EventTable>

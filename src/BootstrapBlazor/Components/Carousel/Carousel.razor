@@ -1,0 +1,53 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapModuleComponentBase
+@attribute [BootstrapModuleAutoLoader(JSObjectReference = true)]
+
+<div @attributes="@AdditionalAttributes" id="@Id" class="@ClassName" style="@StyleName" data-bs-ride="@PlayMode.ToDescriptionString()" data-bs-touch="@DisableTouchSwipingString" data-bs-pause="@PauseString">
+    <CascadingValue Value="this" IsFixed="true">
+        @ChildContent
+    </CascadingValue>
+    <RenderTemplate>
+        @if (ShowIndicators)
+        {
+            <div class="carousel-indicators">
+                @for (var index = 0; index < Items.Count; index++)
+                {
+                    <button data-bs-slide-to="@index" class="@CheckActive(index)" data-bs-target="@TargetId"></button>
+                }
+            </div>
+        }
+        <div class="carousel-inner">
+            @for (var index = 0; index < Items.Count; index++)
+            {
+                var item = Items[index];
+                <div class="@CheckActive(index, "carousel-item")" data-bs-interval="@item.IntervalString">
+                    @item.ChildContent
+                    @if (item.ShowCaption)
+                    {
+                        <div class="@item.GetCaptionClassString">
+                            @if (item.CaptionTemplate != null)
+                            {
+                                @item.CaptionTemplate
+                            }
+                            else
+                            {
+                                @item.Caption
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+        @if (ShowControls)
+        {
+            <a class="carousel-control-prev" data-bs-slide="prev" @onclick:preventDefault href="@TargetId">
+                <i class="@PreviousIcon"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" data-bs-slide="next" @onclick:preventDefault href="@TargetId">
+                <i class="@NextIcon"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        }
+    </RenderTemplate>
+</div>

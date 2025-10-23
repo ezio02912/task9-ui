@@ -1,0 +1,103 @@
+﻿.bd-masthead {
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bd-pink-rgb: 214, 51, 132;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bd-accent-rgb: 255, 228, 132;
+    padding-top: 3rem;
+    background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
+}
+
+    .bd-masthead h1 {
+        --bs-heading-color: var(--bs-emphasis-color);
+        font-size: calc(1rem + 3vw);
+        line-height: 1.2;
+    }
+
+    .bd-masthead .lead {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--bs-secondary-color);
+    }
+
+    .bd-masthead .text-body-secondary {
+        font-size: 1rem;
+    }
+
+        .bd-masthead .text-body-secondary a {
+            text-decoration: underline;
+        }
+
+    .bd-masthead .bb-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+.bd-gutter {
+    --bs-gutter-x: 3rem;
+}
+
+.masthead-notice {
+    background-color: var(--bd-accent);
+    box-shadow: inset 0 -1px 1px rgba(var(--bs-body-color-rgb), 0.15), 0 0.25rem 1.5rem rgba(var(--bs-body-bg-rgb), 0.75);
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-btn-lg {
+    --bs-btn-border-radius: .5rem;
+    padding: .8125rem 2rem;
+}
+
+.btn-group-lg > .btn, .btn-lg {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+}
+
+.donate {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: solid 1px var(--bs-border-color);
+    position: relative;
+}
+
+    .donate h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .donate .barcode {
+        width: 280px;
+        height: 178.84px;
+    }
+
+@media (min-width: 768px) {
+    .bd-masthead .lead {
+        font-size: calc(1.275rem + .3vw);
+    }
+
+    .welcome-header {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .donate .barcode {
+        width: 480px;
+        height: 306.59px;
+    }
+}

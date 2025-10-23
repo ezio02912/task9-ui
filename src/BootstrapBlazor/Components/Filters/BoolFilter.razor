@@ -1,0 +1,12 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits FilterBase
+
+@if (IsHeaderRow)
+{
+    <Select Items="@Items" @bind-Value="@_value" ShowLabel="false" SkipValidate="true"
+            OnSelectedItemChanged="_ => OnFilterAsync()" IsPopover="true"></Select>
+}
+else
+{
+    <Select Items="@Items" @bind-Value="@_value" ShowLabel="false" SkipValidate="true"></Select>
+}

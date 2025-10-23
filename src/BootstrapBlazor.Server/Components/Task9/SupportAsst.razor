@@ -1,0 +1,73 @@
+﻿@page "/support-asst"
+@layout PageLayout
+<DemoBlock Title="Hỗ trợ xử lý phiếu">
+    <div class="row g-3">
+        <div class="col-12">
+            <Textarea rows="4"  @bind-Value="DomainListTextArea" ShowLabel="true" DisplayText="" />
+        </div>
+        <div class="col-12"><Button IsBlock="true" Color="Color.Primary" OnClick="OnCheck">Xử lý thông tin phiếu</Button></div>
+        <div class="col-4"><Button IsBlock="true" Icon="fa-solid fa-copy" class="icon-css" Color="Color.Warning" OnClick="CopyData">Copy</Button></div>
+        <div class="col-4"><Button IsBlock="true" Icon="fa-solid fa-download" Color="Color.Success" OnClick="DownloadCsv">Tải CSV</Button></div>
+        <div class="col-4"><Button IsBlock="true" Icon="fa-solid fa-clear" Color="Color.Danger" OnClick="Reset">Reset bảng xử lý</Button></div>
+    </div>
+</DemoBlock>
+<DemoBlock Title="Phiếu đã được xử lý" Name="ShowLoading">
+    <Tab IsCard="true" ShowClose="false"
+     TabStyle="TabStyle.Chrome"
+     ShowToolbar="true"
+     ShowExtendButtons="true">
+        <TabItem Text="Thông tin phiếu" Icon="fa-solid fa-file-excel">
+            <Table TItem="TicketInfo"
+                   Items="Datas" AutoGenerateColumns="false"
+                   IsPagination="false"
+                   IsStriped="true"
+                   IsBordered="true"
+                   IsMultipleSelect="true"
+                   ShowColumnList="true"
+                   ShowToolbar="false"
+                   ShowDefaultButtons="false"
+                   ShowExtendButtons="false"
+                   ShowLoading="true"
+                   SearchMode="SearchMode.Top"
+                   ShowCardView="true">
+                <TableColumns>
+                    <TableColumn @bind-Field="@context.NgayKT" Text="Ngày KT" Width="100" />
+                    <TableColumn @bind-Field="@context.IDPhieu" Text="ID Phiếu" Width="100" />
+                    <TableColumn @bind-Field="@context.NguoiTao" Text="Người tạo" Width="150" TextWrap="true" />
+                    <TableColumn @bind-Field="@context.NhaCungCap" Text="Nhà cung cấp" Width="300" TextWrap="true" />
+                    <TableColumn @bind-Field="@context.SoTaiKhoan" Text="Số tài khoản" Width="150" TextWrap="true" />
+                    <TableColumn @bind-Field="@context.NoiDungPhieu" Text="Nội dung phiếu" Width="300" TextWrap="true">
+                        <Template Context="value">
+                            <div class="ps-2">
+                                @value.Row.NoiDungPhieu
+                            </div>
+                        </Template>
+                    </TableColumn>
+                    <TableColumn @bind-Field="@context.Brand" Text="Brand" Width="100" TextWrap="true" >
+                         <Template Context="value">
+                            <div class="ps-2">
+                                @value.Row.Brand
+                            </div>
+                        </Template>
+                    </TableColumn>
+                    <TableColumn @bind-Field="@context.SoTien" Text="Số tiền" Width="150"  />
+                </TableColumns>
+            </Table>
+        </TabItem>
+    </Tab>
+</DemoBlock>
+
+<script>
+    window.__downloadCsv = function (fileName, contentBase64) {
+        try {
+            var link = document.createElement('a');
+            link.href = 'data:text/csv;charset=utf-8;base64,' + contentBase64;
+            link.download = fileName || 'data.csv';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } catch (e) {
+            console.error('Download CSV failed', e);
+        }
+    };
+</script>

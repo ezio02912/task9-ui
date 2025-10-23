@@ -1,0 +1,25 @@
+﻿@page "/table/lookup"
+@inject IStringLocalizer<NavMenu> NavMenuLocalizer
+@inject IStringLocalizer<Foo> LocalizerFoo
+@inject IStringLocalizer<TablesLookup> Localizer
+
+<h3>@Localizer["TablesLookupTitle"] - @NavMenuLocalizer["TableLookup"]</h3>
+
+<h4>@((MarkupString)Localizer["TablesLookupDescription"].Value)</h4>
+
+<DemoBlock Title="@Localizer["TableLookupNormalTitle"]"
+           Introduction="@Localizer["TableLookupNormalIntro"]"
+           Name="Lookup">
+    <section ignore>
+        <p>@((MarkupString)Localizer["TableLookupNormalTips2"].Value)</p>
+        <p>@((MarkupString)Localizer["TableLookupNormalTips3"].Value)</p>
+        <div>@((MarkupString)Localizer["TableLookupNormalTips1"].Value)</div>
+    </section>
+    <Table TItem="Foo" Items="@Items">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.DateTime" Width="180" />
+            <TableColumn @bind-Field="@context.Name" />
+            <TableColumn @bind-Field="@context.Complete" LookupServiceKey="Foo.Complete" />
+        </TableColumns>
+    </Table>
+</DemoBlock>

@@ -1,0 +1,59 @@
+@using BootstrapBlazor.Components
+@namespace BootstrapBlazor.Server.Components.Task9.UserKeywordSelection
+@implements IResultDialog
+
+<div class="p-3">
+    <div class="text-center mb-3">
+        <i class="fa-solid fa-question-circle text-warning" style="font-size: 3rem;"></i>
+    </div>
+    <div class="text-center">
+        <p class="mb-0">@Message</p>
+    </div>
+</div>
+
+<div class="modal-footer">
+    <Button Color="Color.Secondary" OnClick="OnCancel">Hủy</Button>
+    <Button Color="Color.Danger" OnClick="OnConfirm">Xác nhận</Button>
+</div>
+
+@code {
+    [CascadingParameter(Name = "BodyContext")]
+    private dynamic? BodyContext { get; set; }
+    
+    [CascadingParameter(Name = "ResultDialogContext")]
+    private Func<DialogResult, Task>? SetResultAsync { get; set; }
+    
+    private string Message => BodyContext?.Message ?? string.Empty;
+    
+    private async Task OnConfirm()
+    {
+        System.Console.WriteLine("ConfirmDialog OnConfirm called");
+        if (SetResultAsync != null)
+        {
+            System.Console.WriteLine("Calling SetResultAsync(DialogResult.Yes)");
+            await SetResultAsync(DialogResult.Yes);
+        }
+        else
+        {
+            System.Console.WriteLine("SetResultAsync is null!");
+        }
+    }
+    
+    private async Task OnCancel()
+    {
+        if (SetResultAsync != null)
+        {
+            await SetResultAsync(DialogResult.No);
+        }
+    }
+
+    public Task<bool> OnClosing(DialogResult result)
+    {
+        return Task.FromResult(true);
+    }
+
+    public Task OnClose(DialogResult result)
+    {
+        return Task.CompletedTask;
+    }
+}

@@ -1,0 +1,107 @@
+﻿@page "/login"
+@layout TutorialsLoginLayout
+
+<HeadContent>
+    <style>
+        .main:has(.background-image) {
+            height: calc(100vh);
+        }
+
+        @@media (min-width: 768px) {
+            .main:has(.background-image) {
+                height: calc(100vh);
+            }
+
+            .login-box {
+                width: 350px !important;
+            }
+        }
+    </style>
+</HeadContent>
+
+<div class="background-image">
+    <div class="login-container">
+        <div class="login-box animate-fade-in">
+            <div class="header-row">
+                <div class="logo-container">
+                    <h1 class="blazor-text">Task9.pro</h1>
+                </div>
+            </div>
+            <FloatingLabel DisplayText="Tài khoản" TValue="string" IsGroupBox="true"  @bind-Value="email" />
+            <FloatingLabel DisplayText="Mật khẩu" TValue="string" type="password" IsGroupBox="true"  @bind-Value="password" />
+            <Button class="button" Color="Color.Primary" OnClick="OnLogin">Đăng nhập</Button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool isEmailEntered = false;
+    private string email = "";
+    private string password = "";
+    private bool showEmailError = false;
+    [Inject]
+    [NotNull]
+    private ToastService? Toast { get; set; }
+    [Inject]
+    [NotNull]
+    private NavigationManager? NavigationManager { get; set; }
+    [Inject]
+    [NotNull]
+    private IUserManagerService? UserManagerService { get; set; }
+    private void OnEmailSubmit()
+    {
+        if (string.IsNullOrWhiteSpace(email))
+        {
+            showEmailError = true;
+        }
+        else
+        {
+            showEmailError = false;
+            isEmailEntered = true;
+        }
+    }
+
+    async Task  OnLogin()
+    {
+        try{
+            await Toast.Show(new ToastOption()
+            {
+                Title = "Đang kiểm tra thông tin đăng nhập...",
+                Category = ToastCategory.Information,
+                Delay = 30 * 1000,
+                ForceDelay = true
+            });
+            var userModel = new UserModel() {UserName = email, Password = password};
+            var result = await  UserManagerService.SignInAsync(userModel);
+            if(!string.IsNullOrEmpty(result.AccessToken))
+            {
+                NavigationManager.NavigateTo("/",true);
+            }
+            else
+            {
+                await Toast.Show(new ToastOption()
+                {
+                    Title = "Tài khoản hoặc mật khẩu không đúng.",
+                    Category = ToastCategory.Error,
+                    Delay = 30 * 1000,
+                    ForceDelay = true
+                });
+            }
+        }
+        catch(Exception ex)
+        {
+           await Toast.Show(new ToastOption()
+            {
+                Title = "Tài khoản hoặc mật khẩu không đúng.",
+                Category = ToastCategory.Error,
+                Delay = 30 * 1000,
+                ForceDelay = true
+            });
+        }
+    }
+
+    private void GoBack()
+    {
+        isEmailEntered = false;
+    }
+}

@@ -1,0 +1,45 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapModuleComponentBase
+
+<div @attributes="AdditionalAttributes" data-bb-toggle="confirm" id="@Id">
+    @if (!string.IsNullOrEmpty(Title))
+    {
+        <h3 class="popover-header">@Title</h3>
+    }
+    <div class="popover-body">
+        <div class="popover-confirm-body">
+            @if (ChildContent != null)
+            {
+                <CascadingValue Value="OnCloseClick" Name="PopoverConfirmButtonCloseAsync" IsFixed="true">
+                    <CascadingValue Value="OnConfirmClick" Name="PopoverConfirmButtonConfirmAsync" IsFixed="true">
+                        @ChildContent
+                    </CascadingValue>
+                </CascadingValue>
+            }
+            else
+            {
+                <i class="@IconString"></i>
+                <span>@Content</span>
+            }
+        </div>
+        @if (ShowCloseButton || ShowConfirmButton)
+        {
+            <div class="popover-confirm-buttons">
+                @if (ShowCloseButton)
+                {
+                    <button class="@CloseButtonClass" @onclick="@OnCloseClick">
+                        <i class="@CloseButtonIcon"></i>
+                        <span>@CloseButtonText</span>
+                    </button>
+                }
+                @if (ShowConfirmButton)
+                {
+                    <button class="@ConfirmButtonClass" @onclick="@OnConfirmClick">
+                        <i class="@ConfirmButtonIcon"></i>
+                        <span>@ConfirmButtonText</span>
+                    </button>
+                }
+            </div>
+        }
+    </div>
+</div>

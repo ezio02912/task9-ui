@@ -1,0 +1,11 @@
+.hidden[b-dvg68sxxbo] {
+  display: none;
+}
+
+.notSupported[b-dvg68sxxbo] {
+  padding: 1em;
+  background-color: red;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

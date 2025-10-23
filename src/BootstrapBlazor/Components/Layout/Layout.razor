@@ -1,0 +1,162 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapModuleComponentBase
+@attribute [BootstrapModuleAutoLoader(JSObjectReference = true)]
+
+@if (_init)
+{
+    <CascadingValue Value="this" IsFixed="true">
+        @if (IsAuthenticated)
+        {
+            <section @attributes="AdditionalAttributes" id="@Id" class="@ClassString" style="@StyleString">
+                @if (Side == null)
+                {
+                    if (Header != null)
+                    {
+                        @RenderHeader(false)
+                    }
+                    @RenderMain
+                    @if (ShowFooter && Footer != null)
+                    {
+                        @RenderFooter
+                    }
+                }
+                else if (IsFullSide)
+                {
+                    @RenderSide
+                    <section class="layout-right">
+                        @if (Header != null)
+                        {
+                            @RenderHeader(ShowCollapseBar)
+                        }
+                        @RenderMain
+                        @if (ShowFooter && Footer != null)
+                        {
+                            @RenderFooter
+                        }
+                    </section>
+                }
+                else
+                {
+                    @if (Header != null)
+                    {
+                        @RenderHeader(ShowCollapseBar)
+                    }
+                    <section class="has-sidebar">
+                        @RenderSide
+                        @RenderMain
+                    </section>
+                    @if (ShowFooter && Footer != null)
+                    {
+                        @RenderFooter
+                    }
+                }
+            </section>
+        }
+        else if (NotAuthorized != null)
+        {
+            @NotAuthorized
+        }
+        else
+        {
+            @RenderMain
+        }
+    </CascadingValue>
+}
+
+@code {
+    RenderFragment<bool> RenderHeader => collapse =>
+    @<header class="@HeaderClassString">
+        @if (collapse)
+        {
+            @if (CollapseBarTemplate == null)
+            {
+                <div data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="@TooltipText" class="layout-header-bar" @onclick="ToggleSidebar">
+                    <i class="@MenuBarIcon"></i>
+                </div>
+            }
+            else
+            {
+                @CollapseBarTemplate
+            }
+        }
+        @if (ShowTabInHeader)
+        {
+            <div class="tabs tabs-chrome" id="@GetId()">
+                @RenderTabHeader()
+            </div>
+        }
+        @Header
+    </header>;
+
+    RenderFragment RenderSide =>
+    @<aside class="@SideClassString" style="@SideStyleString">
+        @if (Side != null)
+        {
+            @Side
+        }
+        @if (ShowSplitBar)
+        {
+            <LayoutSplitBar Min="SidebarMinWidth" Max="SidebarMaxWidth"></LayoutSplitBar>
+        }
+        @if (Menus != null)
+        {
+            @RenderMenu
+        }
+    </aside>;
+
+    RenderFragment RenderMenu =>
+    @<div class="layout-menu">
+        @if (IsFixedTabHeader || IsFullSide)
+        {
+            <Scroll>
+                <Menu Items="@Menus" IsVertical="true" IsAccordion="@IsAccordion" OnClick="ClickMenu"></Menu>
+            </Scroll>
+        }
+        else
+        {
+            <Menu Items="@Menus" IsVertical="true" IsAccordion="@IsAccordion" OnClick="ClickMenu"></Menu>
+        }
+    </div>;
+
+    RenderFragment RenderMain =>
+    @<main class="layout-main">
+        @if (UseTabSet)
+        {
+            @RenderTab
+        }
+        else
+        {
+            <ErrorLogger EnableErrorLogger="@_enableErrorLogger" ShowToast="@_showToast" ToastTitle="@ErrorLoggerToastTitle" 
+                         EnableILogger="@_enableILogger" OnErrorHandleAsync="OnErrorHandleAsync" OnInitializedCallback="OnErrorLoggerInitialized">
+                @HandlerMain()
+            </ErrorLogger>
+        }
+    </main>;
+
+    RenderFragment RenderTab =>
+    @<Tab ClickTabToNavigation="ClickTabToNavigation" AdditionalAssemblies="@AdditionalAssemblies"
+          ShowExtendButtons="ShowTabExtendButtons" ShowClose="ShowTabItemClose" AllowDrag="AllowDragTab"        
+          DefaultUrl="@TabDefaultUrl" ExcludeUrls="@ExcludeUrls" IsOnlyRenderActiveTab="IsOnlyRenderActiveTab"
+          TabStyle="TabStyle.Chrome" ShowToolbar="@ShowToolbar" ToolbarTemplate="@ToolbarTemplate"
+          ShowContextMenu="ShowTabContextMenu"
+          BeforeContextMenuTemplate="@BeforeTabContextMenuTemplate" ContextMenuTemplate="@TabContextMenuTemplate"
+          ContextMenuRefreshIcon="@TabContextMenuRefreshIcon" ContextMenuCloseIcon="@TabContextMenuCloseIcon"
+          ContextMenuCloseOtherIcon="@TabContextMenuCloseOtherIcon" ContextMenuCloseAllIcon="@TabContextMenuCloseAllIcon"
+          OnBeforeShowContextMenu="@OnBeforeShowContextMenu"
+          ShowRefreshToolbarButton="ShowRefreshToolbarButton" ShowFullscreenToolbarButton="ShowFullscreenToolbarButton"
+          RefreshToolbarButtonIcon="@RefreshToolbarButtonIcon" FullscreenToolbarButtonIcon="@FullscreenToolbarButtonIcon"
+          RefreshToolbarTooltipText="@RefreshToolbarTooltipText" FullscreenToolbarTooltipText="@FullscreenToolbarTooltipText"
+          OnToolbarRefreshCallback="OnToolbarRefreshCallback" TabHeader="TabHeader"
+          Body="@Main" NotAuthorized="NotAuthorized!" NotFound="NotFound!" NotFoundTabText="@NotFoundTabText"
+          EnableErrorLogger="@_enableErrorLogger" ErrorLoggerToastTitle="@ErrorLoggerToastTitle">
+    </Tab>;
+
+    RenderFragment RenderFooter =>
+    @<footer class="@FooterClassString">
+        @Footer
+        @if (ShowGotoTop)
+        {
+            <GoTop Target="@GetTargetString()" />
+        }
+    </footer>;
+}

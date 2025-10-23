@@ -1,0 +1,36 @@
+.sum .col-12[b-yghy9rhtmr] {
+    display: flex;
+}
+
+    .sum .col-12 > div[b-yghy9rhtmr] {
+        margin-inline-end: 1rem;
+        min-width: 2rem;
+    }
+
+.none[b-yghy9rhtmr] {
+    color: var(--bb-calendar-cell-disabled-color);
+}
+
+.less[b-yghy9rhtmr] {
+    border-radius: var(--bs-border-radius);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 4px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ch[b-yghy9rhtmr] {
+    background: #28a745;
+    color: #f8f9fa;
+}
+
+.en[b-yghy9rhtmr] {
+    background: #007bff;
+    color: #f8f9fa;
+}

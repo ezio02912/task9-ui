@@ -1,0 +1,62 @@
+@page "/keyword-manager"
+@using BootstrapBlazor.Components
+@using BootstrapBlazor.Server.Data
+@using BootstrapBlazor.Server.Services
+@layout PageLayout
+
+<DemoBlock Title="Quản lý Keyword" Name="KeywordList">
+    <Table TItem="KeywordDto" 
+           PageItemsSource="@PageItemsSource" 
+           AutoGenerateColumns="false"
+           IsPagination="true" 
+           IsStriped="true" 
+           IsBordered="true" 
+           IsMultipleSelect="true"
+           ShowColumnList="true"
+           ShowToolbar="true" 
+           ShowDefaultButtons="false" 
+           ShowExtendButtons="false" 
+           ShowLoading="true" 
+           ShowSearch="true" 
+           ShowCardView="true"
+           OnQueryAsync="@OnQueryAsync"
+           @ref="TableRef">
+        <TableToolbarTemplate>
+            <TableToolbarButton TItem="KeywordDto" 
+                Color="Color.Success" 
+                Icon="fa-solid fa-plus" 
+                Text="Tạo mới"
+                OnClick="@OnCreateClick" />
+        </TableToolbarTemplate>
+        <TableColumns>
+            <TableColumn TItem="KeywordDto" TType="long" @bind-Field="@context.Id" Text="ID" Width="80" />
+            <TableColumn TItem="KeywordDto" TType="string" @bind-Field="@context.KeywordText" Text="Keyword Text" Width="300" />
+            <TableColumn TItem="KeywordDto" TType="int" @bind-Field="@context.BrandId" Text="Brand" Width="200">
+                <Template Context="value">
+                    <span>@GetBrandName(value.Value)</span>
+                </Template>
+            </TableColumn>
+            <TableColumn TItem="KeywordDto" TType="bool" @bind-Field="@context.IsActive" Text="Trạng thái" Width="120">
+                <Template Context="value">
+                    @if (value.Value)
+                    {
+                        <span class="badge bg-success">Hoạt động</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Không hoạt động</span>
+                    }
+                </Template>
+            </TableColumn>
+            <TableColumn TItem="KeywordDto" TType="long" @bind-Field="@context.Id" Text="Hành động" Width="180">
+                <Template Context="value">
+                    <div class="btn-group btn-group-sm">
+                        <Button Color="Color.Primary" Icon="fa-solid fa-edit" Text="Sửa" Size="Size.Small" OnClick="() => OnEditClick(value.Value)" />
+                        <Button Color="Color.Danger" Icon="fa-solid fa-trash" Text="Xóa" Size="Size.Small" OnClick="() => OnDeleteClick(value.Row)" />
+                    </div>
+                </Template>
+            </TableColumn>
+        </TableColumns>
+    </Table>
+</DemoBlock>
+

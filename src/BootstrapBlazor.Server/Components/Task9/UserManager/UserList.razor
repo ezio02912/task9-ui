@@ -1,0 +1,77 @@
+@page "/user-manager"
+@using BootstrapBlazor.Components
+@using BootstrapBlazor.Server.Data
+@using BootstrapBlazor.Server.Services
+@layout PageLayout
+
+<DemoBlock Title="Quản lý người dùng" Name="UserList">
+    <Table TItem="UserWithNavigationPropertiesDto" 
+           PageItemsSource="@PageItemsSource" 
+           AutoGenerateColumns="false"
+           IsPagination="true" 
+           IsStriped="true" 
+           IsBordered="true" 
+           IsMultipleSelect="true"
+           ShowColumnList="true"
+           ShowToolbar="true" 
+           ShowDefaultButtons="false" 
+           ShowExtendButtons="false" 
+           ShowLoading="true" 
+           ShowSearch="true" 
+           ShowCardView="true"
+           OnQueryAsync="@OnQueryAsync"
+           @ref="TableRef">
+        <TableToolbarTemplate>
+            <TableToolbarButton TItem="UserWithNavigationPropertiesDto" 
+                Color="Color.Success" 
+                Icon="fa-solid fa-user-plus" 
+                Text="Tạo mới"
+                OnClick="@OnCreateClick" />
+        </TableToolbarTemplate>
+        <TableColumns>
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="string" @bind-Field="@context.User.UserCode" Text="Mã NV" Width="120" />
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="string" @bind-Field="@context.User.UserName" Text="Tên đăng nhập" Width="150" />
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="string" @bind-Field="@context.User.FirstName" Text="Họ tên" Width="200">
+                <Template Context="value">
+                    <span>@($"{value.Row.User.LastName} {value.Value} ")</span>
+                </Template>
+            </TableColumn>
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="string" @bind-Field="@context.User.Email" Text="Email" Width="200" TextWrap="true" />
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="string" @bind-Field="@context.User.PhoneNumber" Text="Điện thoại" Width="120" />
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="Gender" @bind-Field="@context.User.Gender" Text="Giới tính" Width="100">
+                <Template Context="value">
+                    <span>@GetGenderText(value.Value)</span>
+                </Template>
+            </TableColumn>
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="int" @bind-Field="@context.Index" Text="Chức vụ" Width="150">
+                <Template Context="value">
+                    <span>@(value.Row.Position?.Name ?? "N/A")</span>
+                </Template>
+            </TableColumn>
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="int" @bind-Field="@context.Count" Text="Vai trò" Width="200" TextWrap="true">
+                <Template Context="value">
+                    <span>@string.Join(", ", value.Row.Roles.Select(r => r.Name))</span>
+                </Template>
+            </TableColumn>
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="bool" @bind-Field="@context.User.IsActive" Text="Trạng thái" Width="100">
+                <Template Context="value">
+                    @if (value.Value)
+                    {
+                        <span class="badge bg-success">Hoạt động</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Đã khóa</span>
+                    }
+                </Template>
+            </TableColumn>
+
+            <TableColumn TItem="UserWithNavigationPropertiesDto" TType="int" @bind-Field="@context.User.Id" Text="Hành động" Width="100">
+                <Template Context="value">
+                    <Button Color="Color.Success" Class="badge btn-sm" Icon="fa-solid fa-edit" Text="Sửa" OnClick="() => OnEditClick(value.Value)" />
+                </Template>
+            </TableColumn>
+        </TableColumns>
+    </Table>
+</DemoBlock>
+

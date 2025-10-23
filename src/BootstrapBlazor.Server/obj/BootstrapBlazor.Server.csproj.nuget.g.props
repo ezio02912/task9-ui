@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/admin/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/admin/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.13.2</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/Users/admin/.nuget/packages/" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)sixlabors.imagesharp/3.1.8/build/SixLabors.ImageSharp.props" Condition="Exists('$(NuGetPackageRoot)sixlabors.imagesharp/3.1.8/build/SixLabors.ImageSharp.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets/9.0.0/buildTransitive/net8.0/Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets/9.0.0/buildTransitive/net8.0/Microsoft.Extensions.Configuration.UserSecrets.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.winbox/9.0.7/buildTransitive/BootstrapBlazor.WinBox.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.winbox/9.0.7/buildTransitive/BootstrapBlazor.WinBox.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.videoplayer/9.0.3/buildTransitive/BootstrapBlazor.VideoPlayer.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.videoplayer/9.0.3/buildTransitive/BootstrapBlazor.VideoPlayer.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.vditor/9.0.0/buildTransitive/BootstrapBlazor.Vditor.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.vditor/9.0.0/buildTransitive/BootstrapBlazor.Vditor.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.universheet/9.0.5/buildTransitive/BootstrapBlazor.UniverSheet.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.universheet/9.0.5/buildTransitive/BootstrapBlazor.UniverSheet.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.univericon/9.0.1/buildTransitive/BootstrapBlazor.UniverIcon.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.univericon/9.0.1/buildTransitive/BootstrapBlazor.UniverIcon.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.topology/9.0.0/buildTransitive/BootstrapBlazor.Topology.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.topology/9.0.0/buildTransitive/BootstrapBlazor.Topology.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.svgeditor/9.0.3/buildTransitive/BootstrapBlazor.SvgEditor.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.svgeditor/9.0.3/buildTransitive/BootstrapBlazor.SvgEditor.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.summernote/9.0.4/buildTransitive/BootstrapBlazor.SummerNote.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.summernote/9.0.4/buildTransitive/BootstrapBlazor.SummerNote.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.splitting/9.0.3/buildTransitive/BootstrapBlazor.Splitting.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.splitting/9.0.3/buildTransitive/BootstrapBlazor.Splitting.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.sortable/9.0.2/buildTransitive/BootstrapBlazor.Sortable.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.sortable/9.0.2/buildTransitive/BootstrapBlazor.Sortable.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.smilesdrawer/9.0.2/buildTransitive/BootstrapBlazor.SmilesDrawer.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.smilesdrawer/9.0.2/buildTransitive/BootstrapBlazor.SmilesDrawer.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.signaturepad/9.0.1/buildTransitive/BootstrapBlazor.SignaturePad.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.signaturepad/9.0.1/buildTransitive/BootstrapBlazor.SignaturePad.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.rdkit/9.0.2/buildTransitive/BootstrapBlazor.RDKit.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.rdkit/9.0.2/buildTransitive/BootstrapBlazor.RDKit.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.player/9.0.1/buildTransitive/BootstrapBlazor.Player.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.player/9.0.1/buildTransitive/BootstrapBlazor.Player.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.pdfviewer/9.0.3/buildTransitive/BootstrapBlazor.PdfViewer.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.pdfviewer/9.0.3/buildTransitive/BootstrapBlazor.PdfViewer.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.pdfreader/9.0.1/buildTransitive/BootstrapBlazor.PdfReader.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.pdfreader/9.0.1/buildTransitive/BootstrapBlazor.PdfReader.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.onscreenkeyboard/9.0.1/buildTransitive/BootstrapBlazor.OnScreenKeyboard.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.onscreenkeyboard/9.0.1/buildTransitive/BootstrapBlazor.OnScreenKeyboard.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.officeviewer/9.0.0/buildTransitive/BootstrapBlazor.OfficeViewer.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.officeviewer/9.0.0/buildTransitive/BootstrapBlazor.OfficeViewer.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.octicon/9.0.4/buildTransitive/BootstrapBlazor.OctIcon.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.octicon/9.0.4/buildTransitive/BootstrapBlazor.OctIcon.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.mousefollower/9.0.1/buildTransitive/BootstrapBlazor.MouseFollower.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.mousefollower/9.0.1/buildTransitive/BootstrapBlazor.MouseFollower.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.mindmap/9.1.6/buildTransitive/BootstrapBlazor.MindMap.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.mindmap/9.1.6/buildTransitive/BootstrapBlazor.MindMap.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.mermaid/9.0.4/buildTransitive/BootstrapBlazor.Mermaid.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.mermaid/9.0.4/buildTransitive/BootstrapBlazor.Mermaid.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.meilisearch/9.1.9/buildTransitive/BootstrapBlazor.MeiliSearch.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.meilisearch/9.1.9/buildTransitive/BootstrapBlazor.MeiliSearch.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.materialdesign/9.0.1/buildTransitive/BootstrapBlazor.MaterialDesign.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.materialdesign/9.0.1/buildTransitive/BootstrapBlazor.MaterialDesign.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.markdown/9.0.2/buildTransitive/BootstrapBlazor.Markdown.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.markdown/9.0.2/buildTransitive/BootstrapBlazor.Markdown.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.live2ddisplay/9.0.1/buildTransitive/BootstrapBlazor.Live2DDisplay.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.live2ddisplay/9.0.1/buildTransitive/BootstrapBlazor.Live2DDisplay.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.jitsimeet/9.0.0/buildTransitive/BootstrapBlazor.JitsiMeet.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.jitsimeet/9.0.0/buildTransitive/BootstrapBlazor.JitsiMeet.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.imagecropper/9.0.3/buildTransitive/BootstrapBlazor.ImageCropper.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.imagecropper/9.0.3/buildTransitive/BootstrapBlazor.ImageCropper.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.iconpark/9.0.3/buildTransitive/BootstrapBlazor.IconPark.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.iconpark/9.0.3/buildTransitive/BootstrapBlazor.IconPark.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.html2image/9.0.2/buildTransitive/BootstrapBlazor.Html2Image.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.html2image/9.0.2/buildTransitive/BootstrapBlazor.Html2Image.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.gantt/9.0.2/buildTransitive/BootstrapBlazor.Gantt.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.gantt/9.0.2/buildTransitive/BootstrapBlazor.Gantt.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.fontawesome/9.0.2/buildTransitive/BootstrapBlazor.FontAwesome.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.fontawesome/9.0.2/buildTransitive/BootstrapBlazor.FontAwesome.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.elementicon/9.0.3/buildTransitive/BootstrapBlazor.ElementIcon.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.elementicon/9.0.3/buildTransitive/BootstrapBlazor.ElementIcon.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.driverjs/9.0.3/buildTransitive/BootstrapBlazor.DriverJs.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.driverjs/9.0.3/buildTransitive/BootstrapBlazor.DriverJs.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.dockview/9.1.17/buildTransitive/BootstrapBlazor.DockView.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.dockview/9.1.17/buildTransitive/BootstrapBlazor.DockView.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.dock/9.0.0/buildTransitive/BootstrapBlazor.Dock.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.dock/9.0.0/buildTransitive/BootstrapBlazor.Dock.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.cherrymarkdown/9.0.3/buildTransitive/BootstrapBlazor.CherryMarkdown.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.cherrymarkdown/9.0.3/buildTransitive/BootstrapBlazor.CherryMarkdown.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.chart/9.0.0/buildTransitive/BootstrapBlazor.Chart.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.chart/9.0.0/buildTransitive/BootstrapBlazor.Chart.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.bootstrapicon/9.0.2/buildTransitive/BootstrapBlazor.BootstrapIcon.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.bootstrapicon/9.0.2/buildTransitive/BootstrapBlazor.BootstrapIcon.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.barcodegenerator/9.0.0/buildTransitive/BootstrapBlazor.BarcodeGenerator.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.barcodegenerator/9.0.0/buildTransitive/BootstrapBlazor.BarcodeGenerator.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.barcode/9.0.1/buildTransitive/BootstrapBlazor.BarCode.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.barcode/9.0.1/buildTransitive/BootstrapBlazor.BarCode.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.baiduspeech/9.0.0/buildTransitive/BootstrapBlazor.BaiduSpeech.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.baiduspeech/9.0.0/buildTransitive/BootstrapBlazor.BaiduSpeech.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.antdesignicon/9.0.3/buildTransitive/BootstrapBlazor.AntDesignIcon.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.antdesignicon/9.0.3/buildTransitive/BootstrapBlazor.AntDesignIcon.props')" />
+  </ImportGroup>
+</Project>

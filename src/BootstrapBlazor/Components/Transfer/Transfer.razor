@@ -1,0 +1,30 @@
+﻿@namespace BootstrapBlazor.Components
+@typeparam TValue
+@inherits ValidateBase<TValue>
+
+@if (IsShowLabel)
+{
+    <BootstrapLabel required="@Required" ShowLabelTooltip="ShowLabelTooltip" Value="@DisplayText" />
+}
+<div @attributes="@AdditionalAttributes" class="@ClassString" style="@StyleString">
+    <TransferPanel Items="@LeftItems" Text="@LeftPanelText" IsDisabled="@IsDisabled"
+                   ShowSearch="@ShowSearch" SearchPlaceHolderString="@LeftPanelSearchPlaceHolderString"
+                   OnSelectedItemsChanged="@SelectedItemsChanged" OnSetItemClass="OnSetItemClass"
+                   HeaderTemplate="LeftHeaderTemplate!" ItemTemplate="LeftItemTemplate!">
+    </TransferPanel>
+    <div class="transfer-buttons">
+        <Button Color="@Color.Primary" IsDisabled="@GetButtonState(RightItems)" OnClick="() => TransferItems(RightItems, LeftItems, false)">
+            <i class="@LeftIcon"></i>
+            <span class="@LeftButtonClassName">@LeftButtonText</span>
+        </Button>
+        <Button Color="@Color.Primary" IsDisabled="@GetButtonState(LeftItems)" OnClick="() => TransferItems(LeftItems, RightItems, true)">
+            <span class="@RightButtonClassName">@RightButtonText</span>
+            <i class="@RightIcon"></i>
+        </Button>
+    </div>
+    <TransferPanel Items="@RightItems" Text="@RightPanelText" IsDisabled="@IsDisabled" class="@ValidateClass" Id="@Id"
+                   ShowSearch="@ShowSearch" SearchPlaceHolderString="@RightPanelSearchPlaceHolderString"
+                   OnSelectedItemsChanged="@SelectedItemsChanged" OnSetItemClass="OnSetItemClass"
+                   HeaderTemplate="RightHeaderTemplate!" ItemTemplate="RightItemTemplate!">
+    </TransferPanel>
+</div>

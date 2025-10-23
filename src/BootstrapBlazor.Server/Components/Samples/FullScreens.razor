@@ -1,0 +1,14 @@
+﻿@page "/fullscreen"
+@inject IStringLocalizer<FullScreens> Localizer
+@inject FullScreenService FullScreenService
+
+<h3>@Localizer["FullScreensTitle"]</h3>
+
+<h4>@((MarkupString)Localizer["FullScreensDescription"].Value)</h4>
+
+<DemoBlock Title="@Localizer["FullScreenNormalTitle"]" Introduction="@Localizer["FullScreenNormalIntro"]" Name="Normal">
+    <section ignore>
+        <div>@((MarkupString)Localizer["FullScreenOptionDesc"].Value)</div>
+    </section>
+    <Button Text="@Localizer["FullScreenNormalButtonText1"]" OnClick="() => FullScreenService.Toggle()"></Button>
+</DemoBlock>

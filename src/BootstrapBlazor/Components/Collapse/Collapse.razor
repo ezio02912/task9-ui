@@ -1,0 +1,37 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits IdComponentBase
+
+<div @attributes="@AdditionalAttributes" class="@ClassString" id="@Id">
+    <CascadingValue Value="this" IsFixed="true">
+        @CollapseItems
+    </CascadingValue>
+    <RenderTemplate>
+        @foreach (var item in Items)
+        {
+            <div @key="item" class="@GetItemClassString(item)">
+                <div class="@GetHeaderClassString(item)">
+                    @if (item.HeaderTemplate != null)
+                    {
+                        <div class="accordion-header-body">
+                            @item.HeaderTemplate
+                        </div>
+                    }
+                    <div class="@GetHeaderButtonClassString(item)"
+                         data-bs-toggle="collapse" data-bs-target="@GetTargetIdString(item)"
+                         aria-expanded="@(item.IsCollapsed ? "false" : "true")" @onclick="() => OnClickItem(item)">
+                        @if(!string.IsNullOrEmpty(item.Icon))
+                        {
+                            <i class="@GetItemIconString(item)"></i>
+                        }
+                        <span>@item.Text</span>
+                    </div>
+                </div>
+                <div class="@GetClassString(item.IsCollapsed)" id="@GetTargetId(item)" data-bs-parent="@ParentIdString">
+                    <div class="accordion-body">
+                        @item.ChildContent
+                    </div>
+                </div>
+            </div>
+        }
+    </RenderTemplate>
+</div>

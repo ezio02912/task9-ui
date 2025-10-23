@@ -1,0 +1,24 @@
+﻿@page "/facebook-group-manager"
+@layout PageLayout
+
+<DemoBlock Title="Quản lý nhóm facebook"Name="ShowLoading">
+    <Table TItem="FacebookGroupDto" PageItemsSource="@PageItemsSource" AutoGenerateColumns="false"
+           IsPagination="true" IsStriped="true" IsBordered="true" IsMultipleSelect="true"
+           ShowColumnList="true"
+           ShowToolbar="true" ShowDefaultButtons="true" ShowExtendButtons="true" ShowLoading="true" 
+           ShowSearch="true" ShowCardView="true" ShowAdvancedSearch="false" 
+           OnQueryAsync="@OnQueryAsync"
+           OnSaveAsync="@OnSaveAsync"
+           OnDeleteAsync="@OnDeleteAsync"
+           @ref="TableRef">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.Name" Text="Tên nhóm" Width="300" TextWrap="true" />
+            <TableColumn @bind-Field="@context.GroupUrl" Text="Link nhóm" Width="300" TextWrap="true" />
+            <TableColumn IsVisibleWhenAdd="false" IsVisibleWhenEdit="false" Width="150" @bind-Field="@context.CreatedAt" Text="Ngày tạo" >
+                <Template Context="value">
+                    <span>@value.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                </Template>
+            </TableColumn>
+        </TableColumns>
+    </Table>
+</DemoBlock>

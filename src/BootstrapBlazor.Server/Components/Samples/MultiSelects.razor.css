@@ -1,0 +1,7 @@
+﻿.mul-select-item {
+    display: flex;
+}
+
+    .mul-select-item span {
+        margin-inline-start: 0.5rem;
+    }

@@ -1,0 +1,518 @@
+﻿@page "/evaluate-seo-performance"
+@layout PageLayout
+@using BootstrapBlazor.Components
+
+<h3>Đánh giá performance</h3>
+
+<DemoBlock Title="Bộ lọc báo cáo">
+    <div class="row g-3">
+        <div class="col-12 col-sm-4">
+           <DateTimeRange @bind-value="@MonthRangeValue"
+            ViewMode="DatePickerViewMode.Month"
+            DateFormat="MM-yyyy"
+            ShowLabel="true"
+            DisplayText="Thời gian"
+            ShowSidebar="true"
+            AutoCloseClickSideBar="true" >
+            </DateTimeRange>
+        </div>
+        <div class="col-12 col-sm-4">
+            @* <MultiSelect
+            Items="PicItems"
+            @bind-Value="SelectedPics"
+            OnSelectedItemsChanged="OnSelectedPicsChanged"
+            ShowSearch="true"
+            IsClearable="true"
+            ShowLabel="true"
+            DisplayText="Nhân viên">
+            </MultiSelect> *@
+			 <Select
+            Items="PicItems"
+            @bind-Value="SelectedPic"
+            ShowSearch="true"
+            IsClearable="@(Role != "SEO")"
+            ShowLabel="true"
+            DisplayText="Nhân viên">
+            </Select>
+        </div>
+        <div class="col-12 col-sm-4">
+            <Select @bind-Value="SelectedEmployeeType" ShowLabel="true" DisplayText="Trạng thái nhân viên">
+            </Select>
+        </div>
+		<div class="col-12 col-sm-4">
+			@if (ReportKeywordDatas != null && ReportKeywordDatas.Count > 0)
+			{
+				<Button IsBlock="true" Color="Color.Warning" Icon="fa-solid fa-edit" OnClick="@SwitchToManualMode">
+					<i class="fa-solid fa-database me-1"></i>Đang dùng dữ liệu từ API - Chuyển sang Thủ công
+				</Button>
+			}
+			else
+			{
+				<div class="alert alert-info mb-0 py-2">
+					<i class="fa-solid fa-keyboard me-1"></i>Chế độ nhập thủ công
+				</div>
+			}
+		</div>
+		<div class="col-12 col-sm-4"><Button IsBlock="true" Color="Color.Success" OnClick="OnViewReport">Kết quả</Button></div>
+		<div class="col-12 col-sm-4"><Button IsBlock="true" Color="Color.Primary" OnClick="ResetAllInputs">Reset</Button></div>
+    </div>
+</DemoBlock>
+
+<DemoBlock Title="Bảng tính nhanh">
+    <Tab IsCard="true" ShowClose="false"
+     TabStyle="TabStyle.Chrome"
+     AllowDrag="true"
+     ShowToolbar="false"
+     IsOnlyRenderActiveTab="true"
+     ShowExtendButtons="false"
+	 @ref="TabRef"
+	 
+	 >
+		<TabItem Text="Junior" Icon="fa-solid fa-gauge-high">
+			@RenderQuickCalc(EmployeeLevel.Junior, "Junior", DataJuniorKpis)
+		</TabItem>
+		<TabItem Text="Middle" Icon="fa-solid fa-gauge-high">
+			@RenderQuickCalc(EmployeeLevel.Middle, "Middle", DataMiddleKpis)
+		</TabItem>
+		<TabItem Text="Senior" Icon="fa-solid fa-gauge-high">
+			@RenderQuickCalc(EmployeeLevel.Senior, "Senior", DataSeniorKpis)
+		</TabItem>
+		<TabItem Text="Leader" Icon="fa-solid fa-gauge-high">
+			@RenderQuickCalc(EmployeeLevel.Leader, "Leader", DataLeadKpis)
+		</TabItem>
+    </Tab>
+</DemoBlock>
+
+
+<DemoBlock Title="KPIs">
+    <Tab IsCard="true" ShowClose="false"
+     TabStyle="TabStyle.Chrome"
+     AllowDrag="true"
+     ShowToolbar="true"
+     IsOnlyRenderActiveTab="true"
+     ShowExtendButtons="true"
+	 @ref="TabRef2"
+	 >
+		<TabItem Text="Junior" Icon="fa-solid fa-gauge-high">
+			@RenderKpiMatrix( "Junior", DataJuniorKpis)
+		</TabItem>
+		<TabItem Text="Middle" Icon="fa-solid fa-gauge-high">
+			@RenderKpiMatrix( "Middle", DataMiddleKpis)
+		</TabItem>
+		<TabItem Text="Senior" Icon="fa-solid fa-gauge-high">
+			@RenderKpiMatrix("Senior", DataSeniorKpis)
+		</TabItem>
+		<TabItem Text="Leader" Icon="fa-solid fa-gauge-high">
+			@RenderKpiMatrix( "Leader", DataLeadKpis)
+		</TabItem>
+    </Tab>
+</DemoBlock>
+
+@code {
+	// ========== QUICK CALC ========== 
+	private enum DifficultyRow
+	{
+		VeryEasy,
+		Easy,
+		Medium,
+		Hard1,
+		Hard2,
+		Hard3,
+		Hard4,
+		Hard5
+	}
+	private sealed class QuickCalcRowInput
+	{
+		public decimal Top1 { get; set; }
+		public decimal Top23 { get; set; }
+		public decimal Top45 { get; set; }
+		public decimal Top67 { get; set; }
+		public decimal Top810 { get; set; }
+	}
+	private sealed class QuickCalcModel
+	{
+		public Dictionary<DifficultyRow, QuickCalcRowInput> Rows { get; } = new()
+		{
+			[DifficultyRow.VeryEasy] = new QuickCalcRowInput(),
+			[DifficultyRow.Easy] = new QuickCalcRowInput(),
+			[DifficultyRow.Medium] = new QuickCalcRowInput(),
+			[DifficultyRow.Hard1] = new QuickCalcRowInput(),
+			[DifficultyRow.Hard2] = new QuickCalcRowInput(),
+			[DifficultyRow.Hard3] = new QuickCalcRowInput(),
+			[DifficultyRow.Hard4] = new QuickCalcRowInput(),
+			[DifficultyRow.Hard5] = new QuickCalcRowInput()
+		};
+		
+	}
+	private readonly Dictionary<EmployeeLevel, QuickCalcModel> _quickCalcByLevel = new();
+
+	// Auto-fill inputs from SeoPerformanceDetailDto list
+	private void FillQuickCalcFromData(QuickCalcModel model, List<SeoPerformanceDetailDto> data)
+	{
+		// Only fill from data if data is available
+		if (data == null || data.Count == 0) return;
+		
+		// Aggregate all rows (you can filter by current PIC if needed)
+		int Sum(Func<SeoPerformanceDetailDto, int> s) => data.Sum(s);
+		model.Rows[DifficultyRow.VeryEasy].Top1 = Sum(x => x.VeryEasyTop1);
+		model.Rows[DifficultyRow.VeryEasy].Top23 = Sum(x => x.VeryEasyTop2 + x.VeryEasyTop3);
+		model.Rows[DifficultyRow.VeryEasy].Top45 = Sum(x => x.VeryEasyTop4 + x.VeryEasyTop5);
+		model.Rows[DifficultyRow.VeryEasy].Top67 = Sum(x => x.VeryEasyTop6 + x.VeryEasyTop7);
+		model.Rows[DifficultyRow.VeryEasy].Top810 = Sum(x => x.VeryEasyTop8 + x.VeryEasyTop9 + x.VeryEasyTop10);
+
+		model.Rows[DifficultyRow.Easy].Top1 = Sum(x => x.EasyTop1);
+		model.Rows[DifficultyRow.Easy].Top23 = Sum(x => x.EasyTop2 + x.EasyTop3);
+		model.Rows[DifficultyRow.Easy].Top45 = Sum(x => x.EasyTop4 + x.EasyTop5);
+		model.Rows[DifficultyRow.Easy].Top67 = Sum(x => x.EasyTop6 + x.EasyTop7);
+		model.Rows[DifficultyRow.Easy].Top810 = Sum(x => x.EasyTop8 + x.EasyTop9 + x.EasyTop10);
+
+		model.Rows[DifficultyRow.Medium].Top1 = Sum(x => x.MediumTop1);
+		model.Rows[DifficultyRow.Medium].Top23 = Sum(x => x.MediumTop2 + x.MediumTop3);
+		model.Rows[DifficultyRow.Medium].Top45 = Sum(x => x.MediumTop4 + x.MediumTop5);
+		model.Rows[DifficultyRow.Medium].Top67 = Sum(x => x.MediumTop6 + x.MediumTop7);
+		model.Rows[DifficultyRow.Medium].Top810 = Sum(x => x.MediumTop8 + x.MediumTop9 + x.MediumTop10);
+
+		model.Rows[DifficultyRow.Hard1].Top1 = Sum(x => x.HardTop1);
+		model.Rows[DifficultyRow.Hard1].Top23 = Sum(x => x.HardTop2 + x.HardTop3);
+		model.Rows[DifficultyRow.Hard1].Top45 = Sum(x => x.HardTop4 + x.HardTop5);
+		model.Rows[DifficultyRow.Hard1].Top67 = Sum(x => x.HardTop6 + x.HardTop7);
+		model.Rows[DifficultyRow.Hard1].Top810 = Sum(x => x.HardTop8 + x.HardTop9 + x.HardTop10);
+
+		model.Rows[DifficultyRow.Hard2].Top1 = Sum(x => x.VeryHardTop1);
+		model.Rows[DifficultyRow.Hard2].Top23 = Sum(x => x.VeryHardTop2 + x.VeryHardTop3);
+		model.Rows[DifficultyRow.Hard2].Top45 = Sum(x => x.VeryHardTop4 + x.VeryHardTop5);
+		model.Rows[DifficultyRow.Hard2].Top67 = Sum(x => x.VeryHardTop6 + x.VeryHardTop7);
+		model.Rows[DifficultyRow.Hard2].Top810 = Sum(x => x.VeryHardTop8 + x.VeryHardTop9 + x.VeryHardTop10);
+
+		model.Rows[DifficultyRow.Hard3].Top1 = Sum(x => x.ExtremeHardTop1);
+		model.Rows[DifficultyRow.Hard3].Top23 = Sum(x => x.ExtremeHardTop2 + x.ExtremeHardTop3);
+		model.Rows[DifficultyRow.Hard3].Top45 = Sum(x => x.ExtremeHardTop4 + x.ExtremeHardTop5);
+		model.Rows[DifficultyRow.Hard3].Top67 = Sum(x => x.ExtremeHardTop6 + x.ExtremeHardTop7);
+		model.Rows[DifficultyRow.Hard3].Top810 = Sum(x => x.ExtremeHardTop8 + x.ExtremeHardTop9 + x.ExtremeHardTop10);
+
+		model.Rows[DifficultyRow.Hard4].Top1 = Sum(x => x.HardLevel4Top1);
+		model.Rows[DifficultyRow.Hard4].Top23 = Sum(x => x.HardLevel4Top2 + x.HardLevel4Top3);
+		model.Rows[DifficultyRow.Hard4].Top45 = Sum(x => x.HardLevel4Top4 + x.HardLevel4Top5);
+		model.Rows[DifficultyRow.Hard4].Top67 = Sum(x => x.HardLevel4Top6 + x.HardLevel4Top7);
+		model.Rows[DifficultyRow.Hard4].Top810 = Sum(x => x.HardLevel4Top8 + x.HardLevel4Top9 + x.HardLevel4Top10);
+
+		model.Rows[DifficultyRow.Hard5].Top1 = Sum(x => x.HardLevel5Top1);
+		model.Rows[DifficultyRow.Hard5].Top23 = Sum(x => x.HardLevel5Top2 + x.HardLevel5Top3);
+		model.Rows[DifficultyRow.Hard5].Top45 = Sum(x =>  x.HardLevel5Top4 + x.HardLevel5Top5);
+		model.Rows[DifficultyRow.Hard5].Top67 = Sum(x => x.HardLevel5Top6 + x.HardLevel5Top7);
+		model.Rows[DifficultyRow.Hard5].Top810 = Sum(x => x.HardLevel5Top8 + x.HardLevel5Top9 + x.HardLevel5Top10);
+	}
+
+	private static readonly (DifficultyRow Key, string Label)[] DifficultyDefs = new[]
+	{
+		(DifficultyRow.VeryEasy, "Rất Dễ (1 - 100K)"),
+		(DifficultyRow.Easy, "Dễ (100K - 500K)"),
+		(DifficultyRow.Medium, "Trung bình khó (500K - 1M)"),
+		(DifficultyRow.Hard1, "Khó (1M - 2M)"),
+		(DifficultyRow.Hard2, "Khó cao (2M - 3M)"),
+		(DifficultyRow.Hard3, "Rất Khó (3M - 5M)"),
+		(DifficultyRow.Hard4, "Siêu Khó (5M - 100M)")
+	};
+
+	private QuickCalcModel GetQuickCalcModel(EmployeeLevel level)
+	{
+		if (!_quickCalcByLevel.TryGetValue(level, out var model))
+		{
+			model = new QuickCalcModel();
+			_quickCalcByLevel[level] = model;
+		}
+		return model;
+	}
+
+	private void ResetAllInputs()
+	{
+		ReportKeywordDatas = new();
+		SelectedPic = null;
+		foreach (var key in new[] { EmployeeLevel.Junior, EmployeeLevel.Middle, EmployeeLevel.Senior, EmployeeLevel.Leader })
+		{
+			var model = GetQuickCalcModel(key);
+			foreach (var row in model.Rows.Values)
+			{
+				row.Top1 = 0;
+				row.Top23 = 0;
+				row.Top45 = 0;
+				row.Top67 = 0;
+				row.Top810 = 0;
+			}
+			Months = MonthRangeValue.End.Month - MonthRangeValue.Start.Month + 1;
+		}
+		TabRef?.ActiveTab(TabRef.Items?.FirstOrDefault());
+		TabRef2?.ActiveTab(TabRef2.Items?.FirstOrDefault());
+	}
+
+	private void SwitchToManualMode()
+	{
+		// Clear API data để chuyển sang chế độ nhập thủ công
+		ReportKeywordDatas = new();
+		StateHasChanged();
+	}
+
+	private RenderFragment RenderQuickCalc(EmployeeLevel level, string title, List<SeoKpiWeightDto> kpis) => @<div class="kpi-card">
+		<div class="kpi-header-bar d-flex align-items-center justify-content-between">
+			<h6 class="mb-0">@title</h6>
+			<div class="d-flex align-items-center gap-3">
+				<label class="form-label mb-0">Số tháng</label>
+				@{
+					var modelTmp = GetQuickCalcModel(level);
+				}
+				<InputNumber TValue="int" @bind-Value="Months" Min="1" Step="1" ShowLabel="false" Size="Size.Small" Class="beautiful-input"></InputNumber>
+			</div>
+		</div>
+		@{
+			var model = GetQuickCalcModel(level);
+			// Auto-fill from report data if available; otherwise keep manual inputs
+			FillQuickCalcFromData(model, ReportKeywordDatas);
+			var byTop = kpis?.ToDictionary(x => x.ranking, x => x) ?? new Dictionary<TopRange, SeoKpiWeightDto>();
+			Func<TopRange, Func<SeoKpiWeightDto, decimal>, decimal> Weight = (top, selector) => byTop.TryGetValue(top, out var dto) ? selector(dto) : 0m;
+			Func<DifficultyRow, Func<SeoKpiWeightDto, decimal>> Selector = row => row switch
+			{
+				DifficultyRow.VeryEasy => x => x.searchVolumeVeryEasyRange,
+				DifficultyRow.Easy => x => x.searchVolumeEasyRange,
+				DifficultyRow.Medium => x => x.searchVolumeMediumRange,
+				DifficultyRow.Hard1 => x => x.searchVolumeHardLevel1Range,
+				DifficultyRow.Hard2 => x => x.searchVolumeHardLevel2Range,
+				DifficultyRow.Hard3 => x => x.searchVolumeHardLevel3Range,
+				DifficultyRow.Hard4 => x => x.searchVolumeHardLevel4Range,
+				_ => x => 0m
+			};
+			decimal CellResult(DifficultyRow row, decimal input, TopRange top)
+			{
+				var sel = Selector(row);
+				var w = Weight(top, sel);
+				return input * w; // NOTE: adjust if w is percentage
+			}
+			decimal SumRow(QuickCalcRowInput r, DifficultyRow row)
+			{
+				return CellResult(row, r.Top1, TopRange.Top1)
+					+ CellResult(row, r.Top23, TopRange.Top2ToTop3)
+					+ CellResult(row, r.Top45, TopRange.Top4ToTop5)
+					+ CellResult(row, r.Top67, TopRange.Top6ToTop7)
+					+ CellResult(row, r.Top810, TopRange.Top8ToTop10);
+			}
+			decimal grandTotal = 0m;
+			var divisor = SelectedEmployeeType == EmployeeType.Official ? Math.Max(1, Months) : 1;
+		}
+
+		<!-- INPUT TABLE -->
+		<div class="table-responsive kpi-align kpi-input mb-3">
+		<table class="table table-bordered table-sm align-middle text-center">
+			
+			<thead class="table-primary">
+				<tr>
+					<th class="text-start" style="min-width:220px">Hạng mục</th>
+					<th>Top 1</th>
+					<th>Top 2 &amp; 3</th>
+					<th>Top 4 &amp; 5</th>
+					<th>Top 6 &amp; 7</th>
+					<th>Top 8 - 10</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var def in DifficultyDefs)
+				{
+					var row = model.Rows[def.Key];
+					<tr>
+						<th class="text-start">@def.Label</th>
+					<td class="@(row.Top1 > 0 ? "kpi-pos" : null)"><InputNumber TValue="decimal" @bind-Value="row.Top1" Min="0" Step="1" ShowLabel="false" Size="Size.Small" Class="beautiful-input"></InputNumber></td>
+					<td class="@(row.Top23 > 0 ? "kpi-pos" : null)"><InputNumber TValue="decimal" @bind-Value="row.Top23" Min="0" Step="1" ShowLabel="false" Size="Size.Small" Class="beautiful-input"></InputNumber></td>
+					<td class="@(row.Top45 > 0 ? "kpi-pos" : null)"><InputNumber TValue="decimal" @bind-Value="row.Top45" Min="0" Step="1" ShowLabel="false" Size="Size.Small" Class="beautiful-input"></InputNumber></td>
+					<td class="@(row.Top67 > 0 ? "kpi-pos" : null)"><InputNumber TValue="decimal" @bind-Value="row.Top67" Min="0" Step="1" ShowLabel="false" Size="Size.Small" Class="beautiful-input"></InputNumber></td>
+					<td class="@(row.Top810 > 0 ? "kpi-pos" : null)"><InputNumber TValue="decimal" @bind-Value="row.Top810" Min="0" Step="1" ShowLabel="false" Size="Size.Small" Class="beautiful-input"></InputNumber></td>
+					</tr>
+				}
+			</tbody>
+		</table>
+		</div>
+
+
+        <br />
+
+		<!-- RESULT TABLE -->
+		<div class="table-responsive kpi-align kpi-result">
+		<table class="table table-bordered table-sm align-middle text-center">
+			<thead class="table-danger">
+				<tr>
+					<th class="text-start">Hạng mục</th>
+					<th>Top 1</th>
+					<th>Top 2 &amp; 3</th>
+					<th>Top 4 &amp; 5</th>
+					<th>Top 6 &amp; 7</th>
+					<th>Top 8 - 10</th>
+					<th>Tổng</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var def in DifficultyDefs)
+				{
+					var row = model.Rows[def.Key];
+					decimal r1 = CellResult(def.Key, row.Top1, TopRange.Top1) / divisor;
+					decimal r23 = CellResult(def.Key, row.Top23, TopRange.Top2ToTop3) / divisor;
+					decimal r45 = CellResult(def.Key, row.Top45, TopRange.Top4ToTop5) / divisor;
+					decimal r67 = CellResult(def.Key, row.Top67, TopRange.Top6ToTop7) / divisor;
+					decimal r810 = CellResult(def.Key, row.Top810, TopRange.Top8ToTop10) / divisor;
+					decimal rowSum = r1 + r23 + r45 + r67 + r810;
+					grandTotal += rowSum;
+					<tr>
+						<th class="text-start">@def.Label</th>
+						<td>@(r1.ToString("0.00") +"%")</td>
+						<td>@(r23.ToString("0.00") +"%")</td>
+						<td>@(r45.ToString("0.00") +"%")</td>
+						<td>@(r67.ToString("0.00") +"%")</td>
+						<td>@(r810.ToString("0.00") +"%")</td>
+						<td class="fw-bold">@(rowSum.ToString("0.00") +"%")</td>
+					</tr>
+				}
+				<tr class="kpi-total-row">
+					<th class="text-start">KẾT QUẢ</th>
+					<td colspan="6" class="kpi-total-value text-center">@(grandTotal.ToString("0.00") +"%")</td>
+				</tr>
+				<tr class="kpi-classification-row">
+					<th class="text-start">XẾP LOẠI</th>
+					<td colspan="6" class="kpi-classification-value text-center">
+						<span class="badge @GetClassificationBadgeClass(grandTotal) fs-6">@GetEmployeeClassification(grandTotal)</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>;
+
+	// Build a reusable table as a RenderFragment so we can reuse across tabs
+	private RenderFragment RenderKpiMatrix( string title, List<SeoKpiWeightDto> items) => @<div class="kpi-card">
+		<div class="kpi-header-bar">
+			<h6 class="mb-0">@title</h6>
+		</div>
+		<div class="table-responsive">
+		<table class="table table-bordered table-sm align-middle text-center">
+			<thead class="table-light">
+				<tr>
+					<th class="text-start" style="min-width:220px">Hạng mục</th>
+					<th>Top 1</th>
+					<th>Top 2 &amp; 3</th>
+					<th>Top 4 &amp; 5</th>
+					<th>Top 6 &amp; 7</th>
+					<th>Top 8 - 10</th>
+				</tr>
+			</thead>
+			<tbody>
+				@{
+					var byTop = items?.ToDictionary(x => x.ranking, x => x) ?? new Dictionary<TopRange, SeoKpiWeightDto>();
+					decimal Cell(TopRange t, Func<SeoKpiWeightDto, decimal> selector)
+					{
+						return byTop.TryGetValue(t, out var dto) ? selector(dto) : 0m;
+					}
+					decimal veryEasyTop1 = Cell(TopRange.Top1, x => x.searchVolumeVeryEasyRange);
+					decimal veryEasyTop23 = Cell(TopRange.Top2ToTop3, x => x.searchVolumeVeryEasyRange);
+					decimal veryEasyTop45 = Cell(TopRange.Top4ToTop5, x => x.searchVolumeVeryEasyRange);
+					decimal veryEasyTop67 = Cell(TopRange.Top6ToTop7, x => x.searchVolumeVeryEasyRange);
+					decimal veryEasyTop810 = Cell(TopRange.Top8ToTop10, x => x.searchVolumeVeryEasyRange);
+				}
+				<tr>
+					<th class="text-start">Rất Dễ (1 - 100K)</th>
+					<td>@(veryEasyTop1 +"%")</td>
+					<td>@(veryEasyTop23 +"%")</td>
+					<td>@(veryEasyTop45 +"%")</td>
+					<td>@(veryEasyTop67 +"%")</td>
+					<td>@(veryEasyTop810 +"%")</td>
+				</tr>
+				@{
+					decimal easyTop1 = Cell(TopRange.Top1, x => x.searchVolumeEasyRange);
+					decimal easyTop23 = Cell(TopRange.Top2ToTop3, x => x.searchVolumeEasyRange);
+					decimal easyTop45 = Cell(TopRange.Top4ToTop5, x => x.searchVolumeEasyRange);
+					decimal easyTop67 = Cell(TopRange.Top6ToTop7, x => x.searchVolumeEasyRange);
+					decimal easyTop810 = Cell(TopRange.Top8ToTop10, x => x.searchVolumeEasyRange);
+				}
+				<tr>
+					<th class="text-start">Dễ (100K - 500K)</th>
+					<td>@(easyTop1 +"%")</td>
+					<td>@(easyTop23 +"%")</td>
+					<td>@(easyTop45 +"%")</td>
+					<td>@(easyTop67 +"%")</td>
+					<td>@(easyTop810 +"%")</td>
+				</tr>
+				@{
+					decimal mediumTop1 = Cell(TopRange.Top1, x => x.searchVolumeMediumRange);
+					decimal mediumTop23 = Cell(TopRange.Top2ToTop3, x => x.searchVolumeMediumRange);
+					decimal mediumTop45 = Cell(TopRange.Top4ToTop5, x => x.searchVolumeMediumRange);
+					decimal mediumTop67 = Cell(TopRange.Top6ToTop7, x => x.searchVolumeMediumRange);
+					decimal mediumTop810 = Cell(TopRange.Top8ToTop10, x => x.searchVolumeMediumRange);
+				}
+				<tr>
+					<th class="text-start">Trung bình khó (500K - 1M)</th>
+					<td>@(mediumTop1 +"%")</td>
+					<td>@(mediumTop23 +"%")</td>
+					<td>@(mediumTop45 +"%")</td>
+					<td>@(mediumTop67 +"%")</td>
+					<td>@(mediumTop810 +"%")</td>
+				</tr>
+				@{
+					decimal hard1Top1 = Cell(TopRange.Top1, x => x.searchVolumeHardLevel1Range);
+					decimal hard1Top23 = Cell(TopRange.Top2ToTop3, x => x.searchVolumeHardLevel1Range);
+					decimal hard1Top45 = Cell(TopRange.Top4ToTop5, x => x.searchVolumeHardLevel1Range);
+					decimal hard1Top67 = Cell(TopRange.Top6ToTop7, x => x.searchVolumeHardLevel1Range);
+					decimal hard1Top810 = Cell(TopRange.Top8ToTop10, x => x.searchVolumeHardLevel1Range);
+				}
+				<tr>
+					<th class="text-start">Khó (1M - 2M)</th>
+					<td>@(hard1Top1 +"%")</td>
+					<td>@(hard1Top23 +"%")</td>
+					<td>@(hard1Top45 +"%")</td>
+					<td>@(hard1Top67 +"%")</td>
+					<td>@(hard1Top810 +"%")</td>
+				</tr>
+				@{
+					decimal hard2Top1 = Cell(TopRange.Top1, x => x.searchVolumeHardLevel2Range);
+					decimal hard2Top23 = Cell(TopRange.Top2ToTop3, x => x.searchVolumeHardLevel2Range);
+					decimal hard2Top45 = Cell(TopRange.Top4ToTop5, x => x.searchVolumeHardLevel2Range);
+					decimal hard2Top67 = Cell(TopRange.Top6ToTop7, x => x.searchVolumeHardLevel2Range);
+					decimal hard2Top810 = Cell(TopRange.Top8ToTop10, x => x.searchVolumeHardLevel2Range);
+				}
+				<tr>
+					<th class="text-start">Khó cao (2M - 3M)</th>
+					<td>@(hard2Top1 +"%")</td>
+					<td>@(hard2Top23 +"%")</td>
+					<td>@(hard2Top45 +"%")</td>
+					<td>@(hard2Top67 +"%")</td>
+					<td>@(hard2Top810 +"%")</td>
+				</tr>
+				@{
+					decimal hard3Top1 = Cell(TopRange.Top1, x => x.searchVolumeHardLevel3Range);
+					decimal hard3Top23 = Cell(TopRange.Top2ToTop3, x => x.searchVolumeHardLevel3Range);
+					decimal hard3Top45 = Cell(TopRange.Top4ToTop5, x => x.searchVolumeHardLevel3Range);
+					decimal hard3Top67 = Cell(TopRange.Top6ToTop7, x => x.searchVolumeHardLevel3Range);
+					decimal hard3Top810 = Cell(TopRange.Top8ToTop10, x => x.searchVolumeHardLevel3Range);
+				}
+				<tr>
+					<th class="text-start">Rất Khó (3M - 5M)</th>
+					<td>@(hard3Top1 +"%")</td>
+					<td>@(hard3Top23 +"%")</td>
+					<td>@(hard3Top45 +"%")</td>
+					<td>@(hard3Top67 +"%")</td>
+					<td>@(hard3Top810 +"%")</td>
+				</tr>
+				@{
+					decimal hard4Top1 = Cell(TopRange.Top1, x => x.searchVolumeHardLevel4Range);
+					decimal hard4Top23 = Cell(TopRange.Top2ToTop3, x => x.searchVolumeHardLevel4Range);
+					decimal hard4Top45 = Cell(TopRange.Top4ToTop5, x => x.searchVolumeHardLevel4Range);
+					decimal hard4Top67 = Cell(TopRange.Top6ToTop7, x => x.searchVolumeHardLevel4Range);
+					decimal hard4Top810 = Cell(TopRange.Top8ToTop10, x => x.searchVolumeHardLevel4Range);
+				}
+				<tr>
+					<th class="text-start">Siêu Khó (5M - 100M)</th>
+					<td>@(hard4Top1 +"%")</td>
+					<td>@(hard4Top23 +"%")</td>
+					<td>@(hard4Top45 +"%")</td>
+					<td>@(hard4Top67 +"%")</td>
+					<td>@(hard4Top810 +"%")</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>;
+
+}

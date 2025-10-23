@@ -1,0 +1,81 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapModuleComponentBase
+@attribute [BootstrapModuleAutoLoader("TreeView/TreeView.razor.js")]
+
+@if (Items == null)
+{
+    if (ShowSkeleton)
+    {
+        <SkeletonTree AdditionalAttributes="AdditionalAttributes"></SkeletonTree>
+    }
+    else
+    {
+        <div class="@LoadingClassString">
+            <Spinner Color="Color.Primary" />
+        </div>
+    }
+}
+else
+{
+    <div @attributes="AdditionalAttributes" id="@Id" tabindex="0" role="tree" class="@ClassString">
+        <ul class="tree-root" role="tree">
+            @foreach (var item in Items)
+            {
+                @RenderTreeItem(item)
+            }
+        </ul>
+    </div>
+}
+
+@code {
+    private RenderFragment<TreeItem> RenderTreeNode => item =>
+    @<ul class="@GetTreeNodeClassString(item)" role="group">
+        @foreach (var node in item.Items)
+        {
+            @RenderTreeItem(node)
+        }
+    </ul>;
+
+    private RenderFragment<TreeItem> RenderTreeItem => item =>
+    @<li role="treeitem" class="@GetItemClassString(item)">
+        <div class="tree-content">
+            <i class="@GetCaretClassString(item)" @onclick="() => OnExpandRowAsync(item)"></i>
+            @if (ShowCheckbox)
+            {
+                <Checkbox @bind-Value="@item.Checked" IsDisabled="@item.IsDisabled" SkipValidate="true"
+                          ShowLabel="false" ShowAfterLabel="false"
+                          OnStateChanged="(state, v) => OnStateChanged(state, item)" />
+            }
+            else if (ShowRadio)
+            {
+                <Radio @bind-Value="@item.Checked" IsDisabled="@item.IsDisabled" SkipValidate="true"
+                       ShowLabel="false" ShowAfterLabel="false" GroupName="@GroupName"
+                       OnClick="p => OnRadioClick(item)" State="@Tree.CheckState(item)" />
+            }
+            <div class="tree-node" @onclick="() => OnClick(item)">
+                @if (ShowIcon)
+                {
+                    <i class="@GetIconClassString(item)"></i>
+                }
+                @if (item.Template == null)
+                {
+                    <span class="@item.CssClass">@item.Text</span>
+                }
+                else
+                {
+                    @item.Template    
+                }
+            </div>
+        </div>
+        @if (item.ShowLoading)
+        {
+            <ul class="tree-ul show">
+                <Spinner Size="Size.Small" Color="Color.Primary" />
+            </ul>
+        }
+        else if (item.Items.Any())
+        {
+            @RenderTreeNode(item)
+        }
+    </li>;
+}

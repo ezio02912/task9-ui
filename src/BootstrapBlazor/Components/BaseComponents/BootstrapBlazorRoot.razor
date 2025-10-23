@@ -1,0 +1,24 @@
+﻿@inherits ComponentBase
+@namespace BootstrapBlazor.Components
+
+<CascadingValue Value="this" IsFixed="true">
+    <ErrorLogger EnableErrorLogger="EnableErrorLoggerValue" ShowToast="ShowToastValue" ToastTitle="@ToastTitle"
+                 OnErrorHandleAsync="OnErrorHandleAsync">
+        @ChildContent
+
+        <Dialog></Dialog>
+        <DrawerContainer></DrawerContainer>
+        <SweetAlert></SweetAlert>
+        <Message @ref="MessageContainer"></Message>
+        <ToastContainer @ref="ToastContainer"></ToastContainer>
+
+        <Download></Download>
+        <Mask></Mask>
+        <ConnectionHub></ConnectionHub>
+        <BootstrapBlazorRootOutlet></BootstrapBlazorRootOutlet>
+        @foreach (var com in Generators)
+        {
+            @com.Generator()
+        }
+    </ErrorLogger>
+</CascadingValue>

@@ -1,0 +1,76 @@
+﻿@inject IOptionsMonitor<WebsiteOptions> WebsiteOption
+
+<Reconnector>
+    <ReconnectingTemplate>
+        <div class="connection-mask"></div>
+        <div class="connection-body">
+            <div class="row g-3">
+                @RenderBootstrapBlazor
+                @* <div class="col-12 col-sm-5">
+                    <h5>Reconnector 组件</h5>
+                    <p><b>正在尝试Kết nối lại服务器</b></p>
+                    <p>服务器正在更新新版本，稍等一会儿即可提供服务，或者 <kbd>F12</kbd> 打开 <b>Developer tools</b> 查看 <b>控制台</b> 是否有错误输出，请扫描左侧二维码加群与管理员联系</p>
+                </div> *@
+                <div class="col-12 col-sm-2">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+                        <a href="javascript:window.Blazor.reconnect()" class="btn btn-primary">Kết nối lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ReconnectingTemplate>
+    <ReconnectFailedTemplate>
+        <div class="connection-mask"></div>
+        <div class="connection-body">
+            <div class="row g-3">
+                @RenderBootstrapBlazor
+                @* <div class="col-12 col-sm-5">
+                    <h5>Reconnector 组件</h5>
+                    <p><b>与服务器连接失败</b></p>
+                    <div>请确认网络是否正常，或者 <kbd>F12</kbd> 打开 <b>Developer tools</b> 查看 <b>控制台</b> 是否有错误输出，请扫描左侧二维码加群与管理员联系</div>
+                </div> *@
+                <div class="col-12 col-sm-2">
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <a href="javascript:window.Blazor.reconnect()" class="btn btn-primary mb-3">Kết nối lại</a>
+                        <a href="javascript:location.reload()" class="btn btn-info">Tải lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ReconnectFailedTemplate>
+    <ReconnectRejectedTemplate>
+        <div class="connection-mask"></div>
+        <div class="connection-body">
+            <div class="row g-3">
+                @RenderBootstrapBlazor
+                @* <div class="col-12 col-sm-5">
+                    <h5>Reconnector 组件</h5>
+                    <p><b>服务器拒绝连接</b></p>
+                    <div>所有的连接尝试都被拒绝了，这很有可能是由于网络问题或者服务器问题引起的，请扫描左侧二维码加群与管理员联系</div>
+                </div> *@
+                <div class="col-12 col-sm-2">
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <a href="javascript:location.reload()" class="btn btn-info">Tải lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ReconnectRejectedTemplate>
+</Reconnector>
+
+@code {
+    private string TemplateUrl => $"{WebsiteOption.CurrentValue.GiteeRepositoryUrl}/wikis/%E9%A1%B9%E7%9B%AE%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B";
+
+    RenderFragment RenderBootstrapBlazor =>
+    @<div class="col-12 col-sm-10">
+        <h5>Hệ thống đang cố gắng kết nối lại</h5>
+        <div class="d-flex">
+            <div class="flex-fill">
+                <p>Lỗi kết nối tới server</p>
+                <p>Vui lòng kiểm tra lại kết nối internet</p>
+                <p>Nếu vẫn không kết nối được, vui lòng liên hệ với NKaisel để được hỗ trợ</p>
+            </div>
+            <div class="connection-body-tail d-none d-sm-block"></div>
+        </div>
+    </div>;
+}

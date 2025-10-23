@@ -1,0 +1,7 @@
+.card[b-nmb4plo4a3] {
+    transition: box-shadow .3s linear;
+}
+
+    .card:hover[b-nmb4plo4a3] {
+        box-shadow: var(--bs-box-shadow);
+    }

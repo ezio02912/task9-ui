@@ -1,0 +1,536 @@
+@page "/seo-daily-data"
+@using BootstrapBlazor.Components
+@using BootstrapBlazor.Server.Data
+@using BootstrapBlazor.Server.Services.DomainCheckDaily
+@using BootstrapBlazor.Server.Identity
+@using Microsoft.AspNetCore.Components.Authorization
+@inject ToastService Toast
+@inject DialogService DialogService
+@inject ISeoDailyDataService SeoDailyDataService
+@inject AuthenticationStateProvider AuthStateProvider
+@layout PageLayout
+
+<PageTitle>SEO Daily Data</PageTitle>
+
+<DemoBlock Title="SEO Daily Data" Name="SeoDailyData">
+    <Tab IsCard="true" ShowClose="false"
+         TabStyle="TabStyle.Chrome"
+         ShowToolbar="true"
+         ShowExtendButtons="true">
+        <TabItem Text="Danh sách" Icon="fa-solid fa-list">
+            <!-- Filter Section -->
+            <div class="row g-3 mb-3">
+                <div class="col-12 col-sm-4">
+                    <DateTimePicker @bind-Value="SelectedMonth"
+                                    ShowLabel="true" 
+                                    DisplayText="Chọn tháng" 
+                                    ViewMode="DatePickerViewMode.Month" 
+                                    DateFormat="MM/yyyy" />
+                </div>
+                <div class="col-12 col-sm-4">
+                    <BootstrapInput @bind-Value="FilterRequest.Domain" 
+                                  LabelText="Domain" 
+                                  DisplayText="Tìm kiếm domain"
+            ShowLabel="true"
+                                  Placeholder="Tìm kiếm domain" />
+                </div>
+                <div class="col-12 col-sm-4">
+                        <BootstrapInput @bind-Value="FilterRequest.Keyword" 
+                                  LabelText="Từ khóa" 
+                                  DisplayText="Tìm kiếm từ khóa"
+            ShowLabel="true"
+                                  Placeholder="Tìm kiếm từ khóa..." />
+                </div> 
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                    <Button Color="Color.Success" 
+                                       OnClick="LoadData" 
+                            IsAsync="true"
+                            ShowLoading="@IsLoading">
+                        <i class="fa-solid fa-search"></i> Tải dữ liệu
+                    </Button>
+                    @* <Button Color="Color.Info" 
+                                       OnClick="ExportExcel" 
+                            IsAsync="true"
+                            ShowLoading="@IsExporting"
+                                       class="ms-2">
+                        <i class="fa-solid fa-file-excel"></i> Xuất Excel
+                    </Button> *@
+                </div>
+            </div>
+
+            <!-- Multiple Tables - One per Day -->
+            @if (SeoDataList.Any())
+            {
+                // Sort by date descending, then by Brand.Odx ascending (lowest first), then by keyword
+                var sortedData = SeoDataList
+                    .OrderByDescending(x => x.DataDate)
+                    .ThenBy(x => x.BrandOdx ?? int.MaxValue) // Brands with lowest Odx first, nulls last
+                    .ThenBy(x => x.Keyword)
+                    .ToList();
+                var groupedByDate = sortedData.GroupBy(x => x.DataDate.Date).ToList();
+                
+                @foreach (var dayGroup in groupedByDate)
+                {
+                    var dayItems = dayGroup.ToList();
+                    var dayDate = dayGroup.Key;
+                    
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color: #dc3545; color: white;">
+                            <h6 class="mb-0">
+                                <i class="fa-solid fa-calendar-day me-2"></i>
+                                Ngày: @dayDate.ToString("dd/MM/yyyy") - @dayDate.ToString("dddd", new System.Globalization.CultureInfo("vi-VN"))
+                                <span class="badge bg-light text-dark ms-2">@dayItems.Count bản ghi</span>
+                            </h6>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered mb-0">
+                                    <thead style="background-color: #f8f9fa;">
+                                        <tr>
+                                            <th class="text-center" style="width: 250px; padding: 4px;">
+                                                <i class="fa-solid fa-key me-1"></i>Keyword
+                                            </th>
+                                            <th class="text-center" style="width: 100px; padding: 4px;">
+                                                <i class="fa-solid fa-chart-line me-1"></i>SV Tháng Trước
+                                            </th>
+                                            <th class="text-center" style="width: 100px; padding: 4px;">
+                                                <i class="fa-solid fa-chart-line me-1"></i>SV Tháng Hiện Tại
+                                            </th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 1</th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 2</th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 3</th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 4</th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 5</th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 6</th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 7</th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 8</th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 9</th>
+                                            <th class="text-center" style="width: 70px; padding: 4px;">Top 10</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @{
+                                            var groupedByBrand = dayItems.GroupBy(x => new { x.BrandId, x.BrandName, x.BrandOdx })
+                                                .OrderBy(g => g.Key.BrandOdx ?? int.MaxValue);
+                                        }
+                                        
+                                        @foreach (var brandGroup in groupedByBrand)
+                                        {
+                                            <!-- Brand Header Row -->
+                                            <tr style="background-color: #e3f2fd;">
+                                                <td colspan="3" class="fw-bold" style="padding: 8px; border-left: 4px solid #2196f3;">
+                                                    <i class="fa-solid fa-copyright me-2"></i>
+                                                    @if (!string.IsNullOrEmpty(brandGroup.Key.BrandName))
+                                                    {
+                                                        <span>@brandGroup.Key.BrandName</span>
+                                                        <span class="badge bg-info ms-2" style="font-size: 0.75em;">Odx: @(brandGroup.Key.BrandOdx ?? 0)</span>
+                                                        <span class="badge bg-secondary ms-1" style="font-size: 0.75em;">@brandGroup.Count() keywords</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted">Chưa phân loại Brand</span>
+                                                        <span class="badge bg-secondary ms-1" style="font-size: 0.75em;">@brandGroup.Count() keywords</span>
+                                                    }
+                                                </td>
+                                                <td colspan="10" style="background-color: #e3f2fd;"></td>
+                                            </tr>
+                                            
+                                            <!-- Keyword Rows -->
+                                            @foreach (var item in brandGroup)
+                                            {
+                                                <tr>
+                                                    <td class="fw-medium" style="padding: 4px 8px; padding-left: 20px;">
+                                                        @item.Keyword
+                                                    </td>
+                                                <td class="text-end" style="padding: 4px 8px;">
+                                                    @if (item.SearchVolumePreviousMonth.HasValue)
+                                                    {
+                                                        <span>@item.SearchVolumePreviousMonth.Value.ToString("N0")</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted">-</span>
+                                                    }
+                                                </td>
+                                                <td class="text-end" style="padding: 4px 8px;">
+                                                    @if (item.SearchVolumeCurrentMonth.HasValue)
+                                                    {
+                                                        <span>@item.SearchVolumeCurrentMonth.Value.ToString("N0")</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted">-</span>
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top1))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top1) && item.IsManagedDomain[item.Top1];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top1
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top2))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top2) && item.IsManagedDomain[item.Top2];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top2
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top3))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top3) && item.IsManagedDomain[item.Top3];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top3
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top4))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top4) && item.IsManagedDomain[item.Top4];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top4
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top5))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top5) && item.IsManagedDomain[item.Top5];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top5
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top6))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top6) && item.IsManagedDomain[item.Top6];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top6
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top7))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top7) && item.IsManagedDomain[item.Top7];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top7
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top8))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top8) && item.IsManagedDomain[item.Top8];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top8
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top9))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top9) && item.IsManagedDomain[item.Top9];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top9
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="text-center" style="padding: 4px 2px;">
+                                                    @if (!string.IsNullOrEmpty(item.Top10))
+                                                    {
+                                                        var isManaged = item.IsManagedDomain.ContainsKey(item.Top10) && item.IsManagedDomain[item.Top10];
+                                                        @if (isManaged)
+                                                        {
+                                                            <span class="badge bg-danger text-white" title="Domain được quản lý" style="font-size: 0.7em; padding: 2px 4px;">
+                                                                @item.Top10
+                                                            </span>
+                                                        }
+                                                    }
+                                                </td>
+                                            </tr>
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="fa-solid fa-database fa-3x text-muted mb-3"></i>
+                    <h5 class="text-muted">Không có dữ liệu</h5>
+                    <p class="text-muted">Không có domain được phụ trách trong khoảng thời gian đã chọn</p>
+                </div>
+            }
+        </TabItem>
+
+        @if (IsAdmin)
+        {
+            <TabItem Text="Upload" Icon="fa-solid fa-upload">
+                <!-- Upload Section -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="mb-0">
+                                    <i class="fa-solid fa-upload me-2"></i>Upload SEO Daily Data
+                                </h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <BootstrapInput @bind-Value="UploadRequest.DataDate" 
+                                                      InputType="InputType.Date" 
+                                                      LabelText="Ngày dữ liệu" />
+                                    </div>
+                                </div>
+                                <DropUpload OnChange="@OnDropSeoDailyDataUpload" 
+                                            FooterText="Kéo thả file Excel vào đây hoặc click để chọn file"
+                                            IsDisabled="false"
+                                            IsMultiple="false"
+                                            ShowProgress="true"
+                                            ShowUploadFileList="true"
+                                            ShowFooter="true">
+                                </DropUpload>
+                            </div>
+                        </div>
+    </div>
+</div>
+            </TabItem>
+        }
+    </Tab>
+</DemoBlock>
+
+@code {
+    private UploadSeoDailyDataRequest UploadRequest = new() { DataDate = DateTime.Today };
+    private GetSeoDailyDataRequest FilterRequest = new() 
+    { 
+        UserId = 1 // Will be set from current user in OnInitializedAsync
+    };
+
+    private List<SeoDailyDataWithManagedDomainsDto> SeoDataList = new();
+    private bool IsLoading = false;
+    private bool IsExporting = false;
+    private bool IsAdmin = false;
+    
+    // Selected month - automatically calculates FromDate and ToDate
+    private DateTime _selectedMonth = DateTime.Today;
+    private DateTime SelectedMonth 
+    { 
+        get => _selectedMonth;
+        set
+        {
+            _selectedMonth = value;
+            // Auto calculate FromDate (first day of month) and ToDate (last day of month)
+            FilterRequest.FromDate = new DateTime(value.Year, value.Month, 1);
+            FilterRequest.ToDate = new DateTime(value.Year, value.Month, DateTime.DaysInMonth(value.Year, value.Month));
+        }
+    }
+
+    private async Task OnDropSeoDailyDataUpload(UploadFile file)
+    {
+        if (file is null || file.File is null)
+        {
+            await Toast.Error("Lỗi", "Vui lòng chọn file");
+            return;
+        }
+
+        if (file.File is { Size: > 20 * 1024 * 1024 })
+        {
+            file.Code = 1004;
+            await Toast.Information("Lỗi", "Kích thước file vượt quá 20MB");
+            return;
+        }
+
+        try
+        {
+            using var stream = new MemoryStream();
+            // Read file and save to stream
+            await file.File.OpenReadStream(maxAllowedSize: 20 * 1024 * 1024).CopyToAsync(stream);
+            UploadRequest.ExcelBytes = stream.ToArray();
+            UploadRequest.FileName = file.OriginFileName;
+
+            if (UploadRequest.ExcelBytes == null || UploadRequest.ExcelBytes.Length == 0)
+            {
+                await Toast.Error("Lỗi", "Lỗi đọc file");
+                return;
+            }
+
+            // Call service to upload
+            var result = await SeoDailyDataService.UploadAsync(UploadRequest);
+            
+            if (result?.Status == true)
+            {
+                // Reset request
+                UploadRequest = new() { DataDate = DateTime.Today };
+                await Toast.Success("Thành công", $"Upload thành công: {result.Data.SuccessRecords} bản ghi");
+                
+                // Reload data after successful upload
+                await LoadData();
+            }
+            else
+            {
+                await Toast.Error("Lỗi", $"Upload thất bại. {result?.Message}");
+            }
+        }
+        catch (Exception ex)
+        {
+            await Toast.Error("Lỗi", $"Lỗi upload: {ex.Message}");
+        }
+    }
+
+    private async Task LoadData()
+    {
+        IsLoading = true;
+        try
+        {
+            // FromDate and ToDate are already set by SelectedMonth property
+            
+            // Set pagination to get all data (no limit)
+            FilterRequest.Skip = 0;
+            FilterRequest.Take = 0; // 0 means no limit
+            
+            // Enable backend filtering for managed domains only
+            FilterRequest.OnlyManagedDomains = true;
+
+            var result = await SeoDailyDataService.GetDataAsync(FilterRequest);
+            
+            if (result?.Status == true)
+            {
+                SeoDataList = result.Data ?? new List<SeoDailyDataWithManagedDomainsDto>();
+                var dayCount = SeoDataList.GroupBy(x => x.DataDate.Date).Count();
+                await Toast.Success("Thành công", $"Tải dữ liệu thành công: {SeoDataList.Count} bản ghi có domain phụ trách từ {dayCount} ngày");
+            }
+            else
+            {
+                await Toast.Error("Lỗi", result?.Message ?? "Không thể tải dữ liệu");
+            }
+        }
+        catch (Exception ex)
+        {
+            await Toast.Error("Lỗi", $"Lỗi tải dữ liệu: {ex.Message}");
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+
+    private async Task ExportExcel()
+    {
+        IsExporting = true;
+        try
+        {
+            // FromDate and ToDate are already set by SelectedMonth property
+            
+            var content = await SeoDailyDataService.ExportExcelAsync(FilterRequest);
+            
+            if (content != null && content.Length > 0)
+            {
+                var fileName = $"SEO_Daily_Data_{DateTime.Now:yyyyMMdd_HHmmss}.xlsx";
+                
+                // Trigger download
+                await DownloadFile(content, fileName);
+                
+                await Toast.Success("Thành công", "Xuất Excel thành công");
+            }
+            else
+            {
+                await Toast.Error("Lỗi", "Xuất Excel thất bại");
+            }
+        }
+        catch (Exception ex)
+        {
+            await Toast.Error("Lỗi", $"Lỗi xuất Excel: {ex.Message}");
+        }
+        finally
+        {
+            IsExporting = false;
+        }
+    }
+
+
+    private async Task DownloadFile(byte[] content, string fileName)
+    {
+        // This would need to be implemented based on your download mechanism
+        // For now, we'll just show a message
+        await Toast.Information("Thông tin", $"File {fileName} sẵn sàng để tải xuống");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Get current user ID from authentication state provider
+        var apiAuthProvider = (ApiAuthenticationStateProvider)AuthStateProvider;
+        var currentUserIdStr = await apiAuthProvider.GetCurrentUserId();
+        
+        // Parse userId and set to FilterRequest
+        if (int.TryParse(currentUserIdStr, out var userId))
+        {
+            FilterRequest.UserId = userId;
+        }
+        
+        // Check if current user is admin
+        IsAdmin = await CheckAdminRole();
+        
+        // Initialize SelectedMonth to current month (will auto-set FromDate and ToDate)
+        SelectedMonth = DateTime.Today;
+        
+        await LoadData();
+    }
+
+    private async Task<bool> CheckAdminRole()
+    {
+        try
+        {
+            // For now, we'll hardcode to true for testing
+            // This should be implemented based on your authentication system
+            return true; // TODO: Implement actual role checking
+        }
+        catch
+        {
+            // If there's an error checking roles, default to false
+            return false;
+        }
+    }
+}

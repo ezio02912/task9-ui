@@ -1,0 +1,51 @@
+﻿@page "/"
+@layout PageLayout
+@attribute [TabItemOption(Text = "Cấu hình", Icon = "fa-fw fa-solid fa-gear")]
+@inject IOptionsMonitor<WebsiteOptions> WebsiteOption
+<div style="@StyleString">
+    <div class="page-layout-demo-option">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <Switch Value="@ShowFooter" OnText="Hiển thị chân trang (footer)" OffText="Hiển thị chân trang (footer)" OnColor="@Color.Success" OffColor="@Color.Secondary"  OnValueChanged="OnFooterChanged"></Switch>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <Switch Value="@UseTabSet" OnText="Hiển thị trang dạng tab" OffText="Hiển thị trang dạng tab" OnColor="@Color.Success" OffColor="@Color.Secondary"  OnValueChanged="OnUseTabSetChanged"></Switch>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* Show upload sections only for specific roles *@
+@if (Role == "ADMIN" || Role == "QC" || Role == "SEO")
+{
+    <DemoBlock Title="Tải lên file File Group" Name="UploadGroup">
+        <DropUpload OnChange="@OnDropGroupUpload" FooterText="Upload file Group"
+                    IsDisabled="false"
+                    IsMultiple="false"
+                    ShowProgress="true"
+                    ShowUploadFileList="true"
+                    ShowFooter="true"></DropUpload>
+    </DemoBlock>
+    <DemoBlock Title="Tải lên file Group Keyword" Name="UploadGroupKeyword">
+        <DropUpload OnChange="@OnDropGroupKeywordUpload" FooterText="Upload file Group keyword"
+                    IsDisabled="false"
+                    IsMultiple="false"
+                    ShowProgress="true"
+                    ShowUploadFileList="true"
+                    ShowFooter="true"></DropUpload>
+    </DemoBlock>
+
+    <DemoBlock Title="Tải lên file KeywordRangking" Name="UploadKeyword">
+        <DropUpload OnChange="@OnDropKeywordUpload" FooterText="Upload file keyword"
+                    IsDisabled="false"
+                    IsMultiple="false"
+                    ShowProgress="true"
+                    ShowUploadFileList="true"
+                    ShowFooter="true"></DropUpload>
+    </DemoBlock>
+}

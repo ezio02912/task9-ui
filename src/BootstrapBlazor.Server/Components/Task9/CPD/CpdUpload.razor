@@ -1,0 +1,106 @@
+@page "/cpd-upload"
+@layout PageLayout
+@using BootstrapBlazor.Components
+@namespace BootstrapBlazor.Server.Components.Task9.CPD
+
+<h3>📊 CPD - Content Performance Dashboard</h3>
+
+<DemoBlock Title="Tải lên file CPD Excel" Name="CpdUpload">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <BootstrapInput @bind-Value="DateKey" 
+                           ShowLabel="true" 
+                           DisplayText="Ngày dữ liệu" 
+                           Type="InputType.Date" 
+                           IsDisabled="@IsUploading" />
+        </div>
+        <div class="col-12 col-md-6">
+            <BootstrapInput @bind-Value="FileName" 
+                           ShowLabel="true" 
+                           DisplayText="Tên file" 
+                           Placeholder="Tên file Excel (tùy chọn)"
+                           IsDisabled="@IsUploading" />
+        </div>
+    </div>
+    
+    <div class="mt-3">
+        <DropUpload OnChange="@OnDropCpdUpload" 
+                    FooterText="Upload file CPD Excel (.xlsx)"
+                    IsDisabled="@IsUploading"
+                    IsMultiple="false"
+                    ShowProgress="true"
+                    ShowUploadFileList="true"
+                    ShowFooter="true"
+                    Accept=".xlsx">
+        </DropUpload>
+    </div>
+    
+    @if (IsUploading)
+    {
+        <div class="mt-3">
+            <Spinner Size="Size.Large" />
+            <span class="ms-2">Đang xử lý file...</span>
+        </div>
+    }
+</DemoBlock>
+
+@if (LastImportResult != null)
+{
+    <DemoBlock Title="Kết quả Import" Name="ImportResult">
+        <div class="alert alert-success">
+            <h5>✅ Import thành công!</h5>
+            <p><strong>Ngày:</strong> @LastImportResult.DateKey.ToString("dd/MM/yyyy")</p>
+            <p><strong>Tổng số dòng:</strong> @LastImportResult.TotalRows</p>
+            <p><strong>Dòng mới:</strong> @LastImportResult.Inserted</p>
+            <p><strong>Dòng cập nhật:</strong> @LastImportResult.Updated</p>
+        </div>
+        
+        @if (LastImportResult.Diff != null)
+        {
+            <div class="mt-3">
+                <h6>📈 Thay đổi so với ngày trước (@LastImportResult.Diff.PreviousDate.ToString("dd/MM/yyyy")):</h6>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">@LastImportResult.Diff.NewCount</h5>
+                                <p class="card-text">Mới</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">@LastImportResult.Diff.ChangedCount</h5>
+                                <p class="card-text">Thay đổi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">@LastImportResult.Diff.RemovedCount</h5>
+                                <p class="card-text">Bị xóa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </DemoBlock>
+}
+
+@if (ImportErrors?.Any() == true)
+{
+    <DemoBlock Title="Lỗi Import" Name="ImportErrors">
+        <div class="alert alert-danger">
+            <h5>❌ Có lỗi xảy ra:</h5>
+            <ul>
+                @foreach (var error in ImportErrors)
+                {
+                    <li>@error</li>
+                }
+            </ul>
+        </div>
+    </DemoBlock>
+}

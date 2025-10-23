@@ -1,0 +1,337 @@
+﻿@page "/report-detail-seo-performance"
+@layout PageLayout
+
+<h3>Báo cáo SEO chi tiết</h3>
+
+
+
+
+<DemoBlock Title="Bộ lọc báo cáo">
+    <div class="row g-3">
+        <div class="col-12 col-sm-6">
+            <DateTimeRange @bind-Value="@MonthRangeValue"
+            ViewMode="DatePickerViewMode.Month"
+            DateFormat="MM-yyyy"
+            ShowLabel="true"
+            DisplayText="Thời gian"
+            ShowSidebar="true"
+            AutoCloseClickSideBar="true" >
+            </DateTimeRange>
+        </div>
+        <div class="col-12 col-sm-6">
+            <Select
+            Items="PicItems"
+            @bind-Value="SelectedPic"
+            ShowSearch="true"
+            IsClearable="@(Role != "SEO")"
+            ShowLabel="true"
+            DisplayText="Người phụ trách">
+            </Select>
+        </div>
+        <div class="col-12 col-sm-6"><Button IsBlock="true" Color="Color.Primary" OnClick="OnViewReport">Xem báo cáo</Button></div>
+        <div class="col-12 col-sm-6"><Button IsBlock="true" Color="Color.Success" OnClick="OnExportExcel">Xuất Excel</Button></div>
+    </div>
+</DemoBlock>
+
+<DemoBlock>
+    <Tab IsCard="true" ShowClose="true"
+     TabStyle="TabStyle.Chrome"
+     AllowDrag="true"
+     ShowToolbar="true"
+     IsOnlyRenderActiveTab="true"
+     ShowExtendButtons="true">
+        <TabItem Text="Tổng hợp" Icon="fa-solid fa-gauge-high">
+            @if (!IsLoading)
+            {
+                @if(Data.ReportByBrand != null &&  Data.ReportByBrand.Count > 0)
+                {
+                    foreach (var brand in Data.ReportByBrand)
+                    {
+                        var value = brand.Value;
+                        var total = Data.TotalByBrandTotal[brand.Key];
+                        var classColor = brand.Key == "All" ? "blue" : brand.Key.Contains("S") ? "green" : "red";
+                        int startMonth = Filter.FromDate?.Month ?? 1;
+                        int endMonth = Filter.ToDate?.Month ?? DateTime.UtcNow.Month;
+                        <div class="title rz-mt-2">
+                            <h1>@(Data.Brands[brand.Key])</h1>
+                        </div>
+                        <div class="table-container">
+                            <table class="table-freeze @(classColor)">
+                                <thead>
+                                <tr>
+                                    <th class="sticky" rowspan="2">Top</th>
+                                    <th class="sticky2" rowspan="2">Độ khó keyword<br /><small>(theo Search Volume)</small></th>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <th colspan="3">Tháng @month/@Filter.FromDate?.Year</th>
+                                    }
+                                </tr>
+                                <tr>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <th>Số keyword</th>
+                                        <th>Số domain</th>
+                                        <th>Số lần</th>
+                                    }
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="sticky" rowspan="5">1-5</td>
+                                    <td class="sticky2">Dễ (0-100k)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @(value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryEasy)?.KeyWords ?? 0 + value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Easy)?.KeyWords ?? 0)</td>
+                                        <td> @(value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryEasy)?.Domains ?? 0 + value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Easy)?.Domains ?? 0)</td>
+                                        <td> @(value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryEasy)?.Count ?? 0 + value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Easy)?.Count ?? 0)</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">Trung bình (100k-500k)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Medium)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Medium)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Medium)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">Khó 1(>500k - 1M)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">Khó 2(>1M - 1,5M)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">Khó 3(>1,5M)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky" rowspan="5">6-10</td>
+                                    <td class="sticky2">Dễ (0-100k)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Easy)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Easy)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Easy)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">Trung bình (100k-500k)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Medium)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Medium)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Medium)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">Khó 1(>500k - 1M)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Hard)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Hard)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Hard)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">Khó 2(>1M - 1,5M)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">Khó 3(>1,5M)</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky" colspan="2">Tổng</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @total[month].TotalKeyWord</td>
+                                        <td> @total[month].TotalDomain</td>
+                                        <td> @total[month].CountAll</td>
+                                    }
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                }
+            }
+            else
+            {
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <i class="fa-solid fa-spinner fa-spin-pulse fa-2x"></i>
+                        <p class="mt-2">Đang khởi tạo bảng dữ liệu mới...</p>
+                    </div>
+                </div>
+            }
+        </TabItem>
+    </Tab>
+</DemoBlock>
+
+
+@code {
+    RenderFragment RenderTr(Dictionary<string, Dictionary<int, int>>  item) => __builder =>
+    {
+        <!-- Domain/Keyword detail column -->
+        int countKey = item.Count;
+        <td style="width: 200px; padding: 0px;" class="td-inner">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@result.Key</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(1) ? result.Value[1].ToString() : "0")</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(2) || result.Value.ContainsKey(3) ? (result.Value[2] + result.Value[3]).ToString() : "0")</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(4) || result.Value.ContainsKey(5) ? (result.Value[4] + result.Value[5]).ToString() : "0")</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(6) || result.Value.ContainsKey(7) ? (result.Value[6] + result.Value[7]).ToString() : "0")</div>
+            }
+        </td>
+        
+        <td class="w-50px text-center td-inner" style="padding: 0px;">
+            @foreach (var result in item)
+            {
+                <div style="@(countKey > 1 ? "border-bottom: 1px solid #0095e8;" : "") padding: 4px 0;">@(result.Value.ContainsKey(8) || result.Value.ContainsKey(9) || result.Value.ContainsKey(10) ? (result.Value[8] + result.Value[9] + result.Value[10]).ToString() : "0")</div>
+            }
+        </td>
+    };
+
+        
+    private string GetTitleByType(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item.VeryEasyTitle,
+            "Easy" => item.EasyTitle,
+            "Medium" => item.MediumTitle,
+            "Hard" => item.HardTitle,
+            "VeryHard" => item.VeryHardTitle,
+            "ExtremeHard" => item.ExtremeHardTitle,
+            "HardLevel4" => item.HardLevel4Title,
+            _ => string.Empty
+        };
+    }
+
+    private double GetTop1Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop1 : 0,
+            "Easy" => item != null ? (double)item.EasyTop1 : 0,
+            "Medium" => item != null ? (double)item.MediumTop1 : 0,
+            "Hard" => item != null ? (double)item.HardTop1 : 0,
+            "VeryHard" => item != null ? (double)item.VeryHardTop1 : 0,
+            "ExtremeHard" => item != null ? (double)item.ExtremeHardTop1 : 0,
+            "HardLevel4" => item != null ? (double)item.HardLevel4Top1 : 0,
+            _ => 0
+        };
+    }
+
+    private double GetTop2To3Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop2 + (double)item.VeryEasyTop3 : 0,
+            "Easy" => item != null ? (double)item.EasyTop2 + (double)item.EasyTop3 : 0,
+            "Medium" => item != null ? (double)item.MediumTop2 + (double)item.MediumTop3 : 0,
+            "Hard" => item != null ? (double)item.HardTop2 + (double)item.HardTop3 : 0,
+            "VeryHard" => item != null ? (double)item.VeryHardTop2 + (double)item.VeryHardTop3 : 0,
+            "ExtremeHard" => item != null ? (double)item.ExtremeHardTop2 + (double)item.ExtremeHardTop3 : 0,
+            "HardLevel4" => item != null ? (double)item.HardLevel4Top2 + (double)item.HardLevel4Top3 : 0,
+            _ => 0
+        };
+    }
+
+    private double GetTop4To5Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop4 + (double)item.VeryEasyTop5 : 0,
+            "Easy" => item != null ? (double)item.EasyTop4 + (double)item.EasyTop5 : 0,
+            "Medium" => item != null ? (double)item.MediumTop4 + (double)item.MediumTop5 : 0,
+            "Hard" => item != null ? (double)item.HardTop4 + (double)item.HardTop5 : 0,
+            "VeryHard" => item != null ? (double)item.VeryHardTop4 + (double)item.VeryHardTop5 : 0,
+            "ExtremeHard" => item != null ? (double)item.ExtremeHardTop4 + (double)item.ExtremeHardTop5 : 0,
+            "HardLevel4" => item != null ? (double)item.HardLevel4Top4 + (double)item.HardLevel4Top5 : 0,
+            _ => 0
+        };
+    }
+
+    private double GetTop6To7Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop6 + (double)item.VeryEasyTop7 : 0,
+            "Easy" => item != null ? (double)item.EasyTop6 + (double)item.EasyTop7  : 0,
+            "Medium" => item != null ? (double)item.MediumTop6 + (double)item.MediumTop7 : 0,
+            "Hard" => item != null ? (double)item.HardTop6 + (double)item.HardTop7 : 0,
+            "VeryHard" => item != null ? (double)item.VeryHardTop6 + (double)item.VeryHardTop7 : 0,
+            "ExtremeHard" => item != null ? (double)item.ExtremeHardTop6 + (double)item.ExtremeHardTop7 : 0,
+            "HardLevel4" => item != null ? (double)item.HardLevel4Top6 + (double)item.HardLevel4Top7 : 0,
+            _ => 0
+        };
+    }
+    private double GetTop8To10Value(SeoPerformanceDetailDto item, string type)
+    {
+        return type switch
+        {
+            "VeryEasy" => item != null ? (double)item.VeryEasyTop8 + (double)item.VeryEasyTop9 + (double)item.VeryEasyTop10 : 0,
+            "Easy" => item != null ?  (double)item.EasyTop8 + (double)item.EasyTop9 + (double)item.EasyTop10 : 0,
+            "Medium" => item != null ? (double)item.MediumTop8 + (double)item.MediumTop9 + (double)item.MediumTop10 : 0,
+            "Hard" => item != null ? (double)item.HardTop8 + (double)item.HardTop9 + (double)item.HardTop10 : 0,
+            "VeryHard" => item != null ?  (double)item.VeryHardTop8 + (double)item.VeryHardTop9 + (double)item.VeryHardTop10 : 0,
+            "ExtremeHard" => item != null ?  (double)item.ExtremeHardTop8 + (double)item.ExtremeHardTop9 + (double)item.ExtremeHardTop10 : 0,
+            "HardLevel4" => item != null ?  (double)item.HardLevel4Top8 + (double)item.HardLevel4Top9 + (double)item.HardLevel4Top10 : 0,
+            _ => 0
+        };
+    }
+}

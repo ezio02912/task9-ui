@@ -1,0 +1,214 @@
+@page "/cpd-changes"
+@layout PageLayout
+@using BootstrapBlazor.Components
+@namespace BootstrapBlazor.Server.Components.Task9.CPD
+
+<h3>📈 Thay đổi CPD - Content Performance Dashboard</h3>
+
+<DemoBlock Title="Theo dõi thay đổi CPD" Name="CpdChanges">
+    <Table TItem="ChangeRow"
+           AutoGenerateColumns="false"
+           IsPagination="true"
+           IsStriped="true"
+           IsBordered="true"
+           IsMultipleSelect="false"
+           ShowColumnList="true"
+           ShowToolbar="true"
+           ShowDefaultButtons="false"
+           ShowExtendButtons="false"
+           ShowLoading="true"
+           SearchMode="SearchMode.Top"
+           CustomerSearchModel="@CustomerSearchModel" 
+           ShowSearch="true"
+           ShowCardView="true"
+           OnQueryAsync="@OnQueryFilterAsync"
+           @ref="TableRef">
+        
+        <TableColumns>
+            <TableColumn Text="Publink" @bind-Field="@context.Publink">
+                <Template Context="item">
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold">@item.Row.Publink</span>
+                        <small class="text-muted">@item.Row.Brand</small>
+                    </div>
+                </Template>
+            </TableColumn>
+            
+            <TableColumn Text="Loại thay đổi" @bind-Field="@context.ChangeType">
+                <Template Context="item">
+                    <Badge Color="@GetChangeTypeColor(item.Row.ChangeType)" class="fw-bold">
+                        @GetChangeTypeText(item.Row.ChangeType)
+                    </Badge>
+                </Template>
+            </TableColumn>
+            
+            <TableColumn Text="Mức độ quan trọng" @bind-Field="@context.Importance">
+                <Template Context="item">
+                    <Badge Color="@GetImportanceColor(item.Row.Importance)" class="fw-bold">
+                        @GetImportanceText(item.Row.Importance)
+                    </Badge>
+                </Template>
+            </TableColumn>
+            
+            <TableColumn Text="Các trường thay đổi" @bind-Field="@context.ChangeFlags">
+                <Template Context="item">
+                    <div class="d-flex flex-wrap gap-1">
+                        @if (!string.IsNullOrEmpty(item.Row.ChangeFlags))
+                        {
+                            <Badge Color="Color.Info" class="small">
+                                @item.Row.ChangeFlags
+                            </Badge>
+                        }
+                    </div>
+                </Template>
+            </TableColumn>
+            
+            <TableColumn Text="Chi tiết thay đổi" @bind-Field="@context.ChangedColumns">
+                <Template Context="item">
+                    @if (item.Row.ChangedColumns != null)
+                    {
+                        <Button Color="Color.Primary" 
+                                Size="Size.Small" 
+                                Icon="fa-solid fa-eye"
+                                OnClick="@(() => ShowChangeDetails(item.Row))"
+                                title="Xem chi tiết thay đổi">
+                        </Button>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Không có chi tiết</span>
+                    }
+                </Template>
+            </TableColumn>
+            
+            <TableColumn @bind-Field="@context.Position" Text="Position">
+                <Template Context="item">
+                    @item.Row.Position
+                </Template>
+            </TableColumn>
+        </TableColumns>
+        
+        <CustomerSearchTemplate>
+            @if (context is CpdChangesSearchFilterDto model)
+            {
+                <div class="row form-inline g-3">
+                    <div class="col-12 col-sm-6">
+                        <DateTimeRange @bind-Value="@model.DateRange"
+                                       ViewMode="DatePickerViewMode.Date"
+                                       DateFormat="dd/MM/yyyy"
+                                       ShowLabel="true"
+                                       DisplayText="Khoảng thời gian"
+                                       ShowSidebar="true"
+                                       AutoCloseClickSideBar="true">
+                        </DateTimeRange>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <Select Items="ChangeTypeItems"
+                                @bind-Value="model.ChangeType"
+                                ShowSearch="false"
+                                IsClearable="true"
+                                ShowLabel="true"
+                                DisplayText="Loại thay đổi">
+                        </Select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <Select Items="ImportanceItems"
+                                @bind-Value="model.Importance"
+                                ShowSearch="false"
+                                IsClearable="true"
+                                ShowLabel="true"
+                                DisplayText="Mức độ quan trọng">
+                        </Select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <BootstrapInput @bind-Value="model.BusinessKeyHash" 
+                                       ShowLabel="true" 
+                                       DisplayText="Business Key Hash"
+                                       Placeholder="Tìm theo hash"/>
+                    </div>
+                    <div class="col-12 col-sm-12 btn-toolbar btn-group d-sm-inline-flex">
+                        <Button OnClick="OnTriggerFilterQueryAsync" 
+                                Text="Tìm kiếm" 
+                                Icon="fa-solid fa-search" 
+                                class="btn btn-success">
+                        </Button>
+                        <Button OnClick="OnResetFilter" 
+                                Text="Reset" 
+                                Icon="fa-solid fa-refresh" 
+                                class="btn btn-secondary ms-2">
+                        </Button>
+                    </div>
+                </div>
+            }
+        </CustomerSearchTemplate>
+    </Table>
+</DemoBlock>
+
+<!-- Change Details Modal -->
+<Modal @ref="ChangeDetailsModal" Size="Size.Large" IsCentered="true">
+    <ModalDialog>
+        <ModalHeader>
+            <ModalTitle>Chi tiết thay đổi</ModalTitle>
+        </ModalHeader>
+        <ModalBody>
+            @if (SelectedChangeItem != null)
+            {
+                <div class="change-details">
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <strong>Publink:</strong> @SelectedChangeItem.Publink
+                        </div>
+                        <div class="col-6">
+                            <strong>Brand:</strong> @SelectedChangeItem.Brand
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <strong>Loại thay đổi:</strong> 
+                            <Badge Color="@GetChangeTypeColor(SelectedChangeItem.ChangeType)">
+                                @GetChangeTypeText(SelectedChangeItem.ChangeType)
+                            </Badge>
+                        </div>
+                        <div class="col-6">
+                            <strong>Mức độ:</strong> 
+                            <Badge Color="@GetImportanceColor(SelectedChangeItem.Importance)">
+                                @GetImportanceText(SelectedChangeItem.Importance)
+                            </Badge>
+                        </div>
+                    </div>
+                    
+                    @if (SelectedChangeItem.ChangedColumns != null)
+                    {
+                        <h6>Chi tiết các trường thay đổi:</h6>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Trường</th>
+                                        <th>Giá trị</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>ChangeFlags</strong></td>
+                                        <td>@SelectedChangeItem.ChangeFlags</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>ChangedColumns</strong></td>
+                                        <td>@SelectedChangeItem.ChangedColumns?.ToString()</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            }
+        </ModalBody>
+        <ModalFooter>
+            <Button Color="Color.Secondary" OnClick="CloseChangeDetailsModal">
+                Đóng
+            </Button>
+        </ModalFooter>
+    </ModalDialog>
+</Modal>

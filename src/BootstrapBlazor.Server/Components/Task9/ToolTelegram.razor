@@ -1,0 +1,53 @@
+﻿@page "/telegram-bot"
+@layout PageLayout
+
+<DemoBlock Title="Quản lý nội dung telegram"Name="ShowLoading">
+    <Table TItem="TelegramContentGroupDto" PageItemsSource="@PageItemsSource" AutoGenerateColumns="false"
+           IsPagination="true" IsStriped="true" IsBordered="true" IsMultipleSelect="false"
+           ShowToolbar="true" ShowDefaultButtons="false" ShowExtendButtons="false" ShowLoading="true" 
+           ShowSearch="true" ShowCardView="true" ShowAdvancedSearch="false" 
+           OnQueryAsync="@OnQueryAsync">
+        <TableColumns>
+            @* <TableColumn @bind-Field="@context.ChatId" /> *@
+            <TableColumn @bind-Field="@context.ChatTitle" Text="Tên channel" Width="250" TextWrap="true" />
+            <TableColumn @bind-Field="@context.Caption" Text="Tiêu đề" Width="300" TextWrap="true" />
+            <TableColumn @bind-Field="@context.PhotoUrl" Text="Ảnh" Width="270">
+                <Template Context="value">
+                    <div class="images img-ph">
+                        <div class="images-item">
+                            <ImageViewer Url="@value.Value" PreviewList="new List<string> { value.Value }" ZoomSpeed="0.5" >
+                                <ErrorTemplate>
+                                    <div class="bb-img-holder">
+                                        <div class="bb-img-loading">Load failed</div>
+                                    </div>
+                                </ErrorTemplate>
+                            </ImageViewer>
+                        </div>
+                    </div>
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.Message" Text="Nội dung" Width="400" TextWrap="true" />
+            <TableColumn @bind-Field="@context.Status" Text="Trạng thái" Width="100">
+                 <Template Context="value">
+                    @if(value.Value == TelegramPostContentStatus.Good)
+                    {
+                        <Badge Color="Color.Success">Good</Badge>
+                    }
+                    else if(value.Value == TelegramPostContentStatus.Bad)
+                    {
+                        <Badge Color="Color.Danger">Bad</Badge>
+                    }
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.CreatedAt" Text="Ngày tạo" Width="150">
+                <Template Context="value">
+                    <div class="d-flex">
+                        <div>
+                            <span>@value.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                        </div>
+                    </div>
+                </Template>
+            </TableColumn>
+        </TableColumns>
+    </Table>
+</DemoBlock>

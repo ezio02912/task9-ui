@@ -1,0 +1,17 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits ValidateBase<string>
+@attribute [BootstrapModuleAutoLoader]
+
+@if (IsShowLabel)
+{
+    <BootstrapLabel required="@Required" for="@Id" ShowLabelTooltip="ShowLabelTooltip" Value="@DisplayText" />
+}
+<div @attributes="@AdditionalAttributes" id="@Id" class="@ClassName">
+    <input type="text" class="ipv4-cell" disabled="@Disabled" value="@Value1" @onchange="ValueChanged1" />
+    <span>.</span>
+    <input type="text" class="ipv4-cell" disabled="@Disabled" value="@Value2" @onchange="ValueChanged2" />
+    <span>.</span>
+    <input type="text" class="ipv4-cell" disabled="@Disabled" value="@Value3" @onchange="ValueChanged3" />
+    <span>.</span>
+    <input type="text" class="ipv4-cell" disabled="@Disabled" value="@Value4" @onchange="ValueChanged4" />
+</div>

@@ -1,0 +1,124 @@
+@page "/upload-top-domain-daily"
+@using BootstrapBlazor.Components
+@using BootstrapBlazor.Server.Data
+@using BootstrapBlazor.Server.Services.DomainCheckDaily
+@using BootstrapBlazor.Server.Identity
+@using Microsoft.AspNetCore.Components.Authorization
+@inject ToastService Toast
+@inject DialogService DialogService
+@inject ISeoDailyDataService SeoDailyDataService
+@inject AuthenticationStateProvider AuthStateProvider
+@layout PageLayout
+
+<PageTitle>Tải lên file domain daily</PageTitle>
+
+<DemoBlock Title="Tải lên file domain daily" Name="UploadTopDomainDaily">
+    <Tab IsCard="true" ShowClose="false"
+         TabStyle="TabStyle.Chrome"
+         ShowToolbar="true"
+         ShowExtendButtons="true">
+            <TabItem Text="Tải lên" Icon="fa-solid fa-upload">
+                <!-- Upload Section -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="mb-0">
+                                    <i class="fa-solid fa-upload me-2"></i>Tải file lên
+                                </h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <BootstrapInput @bind-Value="UploadRequest.DataDate" 
+                                                      InputType="InputType.Date" 
+                                                      LabelText="Ngày dữ liệu" />
+                                    </div>
+                                </div>
+                                <DropUpload OnChange="@OnDropSeoDailyDataUpload" 
+                                            FooterText="Kéo thả file Excel vào đây hoặc click để chọn file"
+                                            IsDisabled="false"
+                                            IsMultiple="false"
+                                            ShowProgress="true"
+                                            ShowUploadFileList="true"
+                                            ShowFooter="true">
+                                </DropUpload>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </TabItem>
+    </Tab>
+</DemoBlock>
+
+@code {
+    private UploadSeoDailyDataRequest UploadRequest = new() { DataDate = DateTime.Today.AddDays(-1) };
+    private GetSeoDailyDataRequest FilterRequest = new() 
+    { 
+        FromDate = DateTime.Today.AddDays(-7), 
+        ToDate = DateTime.Today,
+        UserId = 1 
+    };
+
+    private bool IsLoading = false;
+    
+
+    private async Task OnDropSeoDailyDataUpload(UploadFile file)
+    {
+        if (file is null || file.File is null)
+        {
+            await Toast.Error("Lỗi", "Vui lòng chọn file");
+            return;
+        }
+
+        if (file.File is { Size: > 20 * 1024 * 1024 })
+        {
+            file.Code = 1004;
+            await Toast.Information("Lỗi", "Kích thước file vượt quá 20MB");
+            return;
+        }
+
+        try
+        {
+            using var stream = new MemoryStream();
+            // Read file and save to stream
+            await file.File.OpenReadStream(maxAllowedSize: 20 * 1024 * 1024).CopyToAsync(stream);
+            UploadRequest.ExcelBytes = stream.ToArray();
+            UploadRequest.FileName = file.OriginFileName;
+
+            if (UploadRequest.ExcelBytes == null || UploadRequest.ExcelBytes.Length == 0)
+            {
+                await Toast.Error("Lỗi", "Lỗi đọc file");
+                return;
+            }
+
+            // Call service to upload
+            var result = await SeoDailyDataService.UploadAsync(UploadRequest);
+            
+            if (result?.Status == true)
+            {
+                // Reset request
+                UploadRequest = new() { DataDate = DateTime.Today.AddDays(-1) };
+                await Toast.Success("Thành công", $"Upload thành công: {result.Data.SuccessRecords} bản ghi");
+            }
+            else
+            {
+                await Toast.Error("Lỗi", $"Upload thất bại. {result?.Message}");
+            }
+        }
+        catch (Exception ex)
+        {
+            await Toast.Error("Lỗi", $"Lỗi upload: {ex.Message}");
+        }
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        // Get current user ID from authentication state provider
+        var apiAuthProvider = (ApiAuthenticationStateProvider)AuthStateProvider;
+        var currentUserIdStr = await apiAuthProvider.GetCurrentUserId();
+        if (int.TryParse(currentUserIdStr, out var userId))
+        {
+            FilterRequest.UserId = userId;
+        }
+    }
+}

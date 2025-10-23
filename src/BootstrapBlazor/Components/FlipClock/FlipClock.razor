@@ -1,0 +1,74 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits BootstrapModuleComponentBase
+@attribute [BootstrapModuleAutoLoader(JSObjectReference = true, AutoInvokeDispose = false)]
+
+<div @attributes="@AdditionalAttributes" class="@ClassString" style="@StyleString" id="@Id">
+    @if (ShowYear)
+    {
+        <div class="bb-flip-clock-list year">
+            @RenderItem(10)
+            @RenderItem(10)
+            @RenderItem(10)
+            @RenderItem(10)
+        </div>
+    }
+
+    @if (ShowMonth)
+    {
+        <div class="bb-flip-clock-list month">
+            @RenderItem(3)
+            @RenderItem(10)
+        </div>
+    }
+
+    @if (ShowDay)
+    {
+        <div class="bb-flip-clock-list day">
+            @RenderItem(10)
+            @RenderItem(10)
+        </div>
+    }
+
+    @if (ShowHour)
+    {
+        <div class="bb-flip-clock-list hour">
+            @RenderItem(3)
+            @RenderItem(10)
+        </div>
+    }
+
+    @if (ShowMinute)
+    {
+        <div class="bb-flip-clock-list minute">
+            @RenderItem(6)
+            @RenderItem(10)
+        </div>
+    }
+
+    @if (ShowSecond)
+    {
+        <div class="bb-flip-clock-list second">
+            @RenderItem(6)
+            @RenderItem(10)
+        </div>
+    }
+</div>
+
+@code {
+    RenderFragment<int> RenderItem => count =>
+    @<ul class="bb-flip-clock-item">
+        @foreach (var index in Enumerable.Range(0, count))
+        {
+            <li>
+                <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">@index</div>
+                </div>
+                <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">@index</div>
+                </div>
+            </li>
+        }
+    </ul>;
+}

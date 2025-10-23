@@ -1,0 +1,192 @@
+﻿@page "/layout"
+@inject IStringLocalizer<Layouts> Localizer
+@inject IStringLocalizer<Menus> LocalizerMenu
+
+<h3>@Localizer["LayoutsTitle"]</h3>
+
+<h4>@Localizer["LayoutsDescription1"]</h4>
+
+<p>
+    <code>Container</code>：@((MarkupString)Localizer["LayoutsDescription1_Container"].Value)<br />
+    <code>Header</code>：@Localizer["LayoutsDescription1_Header"]<br />
+    <code>Side</code>：@Localizer["LayoutsDescription1_Side"]<br />
+    <code>Main</code>：@Localizer["LayoutsDescription1_Main"]<br />
+    <code>Footer</code>：@Localizer["LayoutsDescription1_Footer"]
+</p>
+
+<h4>@Localizer["LayoutsDescription2"]</h4>
+
+<p>
+    <code>Layout</code>：@((MarkupString)Localizer["LayoutsDescription2_Layout"].Value)<br />
+    <code>Header</code>：@Localizer["LayoutsDescription2_Header"]<br />
+    <code>Side</code>：@Localizer["LayoutsDescription2_Side"]<br />
+    <code>Main</code>：@Localizer["LayoutsDescription2_Main"]<br />
+    <code>Footer</code>：@Localizer["LayoutsDescription2_Footer"]
+</p>
+
+<Tips>
+    <p>
+        @((MarkupString)Localizer["LayoutsTips1"].Value)
+    </p>
+
+    <b>@Localizer["LayoutsTips2"]</b>
+
+    <p>@((MarkupString)Localizer["LayoutsTips3"].Value)</p>
+</Tips>
+
+<h4>@Localizer["LayoutsDemosTitle"]</h4>
+
+<DemoBlock Title="@Localizer["LayoutsUpAndDownTitle"]"
+           Introduction="@Localizer["LayoutsUpAndDownIntro"]"
+           Name="UpAndDown">
+    <div class="layout-demo">
+        <Layout ShowFooter="true" AdditionalAssemblies="[typeof(MainLayout).Assembly]">
+            <Header>
+                <div>Header</div>
+            </Header>
+            <Main>
+                <div>Main</div>
+            </Main>
+            <Footer>
+                <div>Footer</div>
+            </Footer>
+        </Layout>
+    </div>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["LayoutsMiddleLeftRightTitle"]"
+           Introduction="@Localizer["LayoutsMiddleLeftRightIntro"]"
+           Name="MiddleLeftRight">
+    <div class="layout-demo">
+        <Layout ShowFooter="true" AdditionalAssemblies="[typeof(MainLayout).Assembly]">
+            <Header>
+                <div>Header</div>
+            </Header>
+            <Side>
+                <div>Side</div>
+            </Side>
+            <Main>
+                <div>Main</div>
+            </Main>
+            <Footer>
+                <div>Footer</div>
+            </Footer>
+        </Layout>
+    </div>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["LayoutsLeftRightTitle"]"
+           Introduction="@Localizer["LayoutsLeftRightIntro"]"
+           Name="LeftRight">
+    <div class="layout-demo">
+        <Layout ShowFooter="true" IsFullSide="true" AdditionalAssemblies="[typeof(MainLayout).Assembly]">
+            <Header>
+                <div>Header</div>
+            </Header>
+            <Side>
+                <div>Side</div>
+            </Side>
+            <Main>
+                <div>Main</div>
+            </Main>
+            <Footer>
+                <div>Footer</div>
+            </Footer>
+        </Layout>
+    </div>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["LayoutsCustomPercentTitle"]"
+           Introduction="@Localizer["LayoutsCustomPercentIntro"]"
+           Name="CustomPercent">
+    <div class="layout-demo">
+        <Layout ShowFooter="true" SideWidth="200" AdditionalAssemblies="[typeof(MainLayout).Assembly]">
+            <Header>
+                <div>Header</div>
+            </Header>
+            <Side>
+                <div>Side</div>
+            </Side>
+            <Main>
+                <div>Main</div>
+            </Main>
+            <Footer>
+                <div>Footer</div>
+            </Footer>
+        </Layout>
+    </div>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["LayoutsAppTitle"]"
+           Introduction="@Localizer["LayoutsAppIntro"]"
+           Name="App">
+    <div>@Localizer["LayoutsAppTips1"]</div>
+    <ul class="mt-2">
+        <li>
+            <div>@Localizer["LayoutsAppTips2"]</div>
+        </li>
+        <li>
+            <div>@Localizer["LayoutsAppTips3"]</div>
+        </li>
+    </ul>
+    <div>@Localizer["LayoutsAppTips4"]</div>
+    <p>
+        @((MarkupString)Localizer["LayoutsAppTips5"].Value)
+    </p>
+    <p>
+        @Localizer["LayoutsAppTips6"]
+    </p>
+    <Tips>
+        @((MarkupString)Localizer["LayoutsAppTips7"].Value)
+    </Tips>
+    <div class="layout-demo1">
+        <Layout ShowFooter="true" SideWidth="160px" Menus="IconSideMenuItems1" AdditionalAssemblies="[typeof(MainLayout).Assembly]">
+            <Header>
+                <div>Header</div>
+            </Header>
+            <Side>
+            </Side>
+            <Main>
+                <div>Main</div>
+            </Main>
+            <Footer>
+                <div>Footer</div>
+            </Footer>
+        </Layout>
+    </div>
+    <p class="mt-3">
+        @Localizer["LayoutsAppTips8"]
+    </p>
+    <div class="layout-demo2">
+        <Layout ShowFooter="true" SideWidth="160px" Menus="IconSideMenuItems2" AdditionalAssemblies="[typeof(MainLayout).Assembly]">
+            <Header>
+                <div>Header</div>
+            </Header>
+            <Side>
+            </Side>
+            <Main>
+                <div>Main</div>
+            </Main>
+            <Footer>
+                <div>Footer</div>
+            </Footer>
+        </Layout>
+    </div>
+    <p class="mt-3">
+        @((MarkupString)Localizer["LayoutsAppTips9"].Value)
+    </p>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["LayoutsPageTitle"]"
+           Introduction="@Localizer["LayoutsPageIntro"]"
+           Name="Page">
+    <Tips>@((MarkupString)Localizer["LayoutsPageTips1"].Value)</Tips>
+
+    <ul class="page-layout-demo-list">
+        <li>
+            <a href="layout-page" target="_blank">@Localizer["LayoutsPageHrefTitle"]</a>
+        </li>
+    </ul>
+</DemoBlock>
+
+<AttributeTable Items="@GetAttributes()" />

@@ -1,0 +1,8 @@
+﻿img {
+    margin-bottom: 1rem;
+    border-radius: var(--bs-border-radius);
+}
+
+.lv-demo-desc {
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+.auto-complete {
+    --bb-ac-padding-right: #{$bb-ac-padding-right};
+    --bb-select-append-width: #{$bb-select-append-width};
+    --bb-select-append-color: #{$bb-select-append-color};
+    position: relative;
+
+    .form-control {
+        background-image: none;
+        padding-right: var(--bb-ac-padding-right);
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .ac-loading {
+        display: none;
+    }
+
+    &.is-loading {
+        .ac-loading {
+            display: flex;
+        }
+
+        .form-select-append:not(.ac-loading) {
+            display: none;
+        }
+    }
+}

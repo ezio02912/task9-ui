@@ -1,0 +1,230 @@
+@page "/cpd-reports"
+@layout PageLayout
+@using BootstrapBlazor.Components
+@namespace BootstrapBlazor.Server.Components.Task9.CPD
+
+<h3>📊 Báo cáo CPD - Content Performance Dashboard</h3>
+
+<DemoBlock Title="Báo cáo thống kê CPD" Name="CpdReports">
+    <div class="row mb-4">
+        <div class="col-12 col-md-6">
+            <DateTimeRange @bind-Value="DateRange"
+                           ViewMode="DatePickerViewMode.Date"
+                           DateFormat="dd/MM/yyyy"
+                           ShowLabel="true"
+                           DisplayText="Khoảng thời gian báo cáo"
+                           ShowSidebar="true"
+                           AutoCloseClickSideBar="true"
+                           IsDisabled="@IsLoading">
+            </DateTimeRange>
+        </div>
+    </div>
+    
+    <div class="row mb-4">
+        <div class="col-12">
+            <Button OnClick="LoadReportData" 
+                    Text="Tải báo cáo" 
+                    Icon="fa-solid fa-chart-bar" 
+                    Color="Color.Primary"
+                    IsDisabled="@IsLoading">
+            </Button>
+        </div>
+    </div>
+    
+    @if (IsLoading)
+    {
+        <div class="text-center py-4">
+            <Spinner Size="Size.Large" />
+            <p class="mt-2">Đang tải dữ liệu báo cáo...</p>
+        </div>
+    }
+    
+    @if (ReportData != null)
+    {
+        <!-- Summary Cards -->
+        <div class="row mb-4">
+            <div class="col-12 col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">@GetTotalItemsCount()</h5>
+                        <p class="card-text">Tổng số items</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">@GetTotalChangesCount()</h5>
+                        <p class="card-text">Tổng số thay đổi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">@GetNewItemsCount()</h5>
+                        <p class="card-text">Items mới</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">@GetRemovedItemsCount()</h5>
+                        <p class="card-text">Items bị xóa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Changes by Type Table -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="mb-0">Chi tiết thay đổi theo loại</h6>
+                    </div>
+                    <div class="card-body">
+                        <Table TItem="CpdChangeTypeItem"
+                               Items="@ChangeTypeItems"
+                               AutoGenerateColumns="false"
+                               IsPagination="false"
+                               IsStriped="true"
+                               IsBordered="true"
+                               ShowToolbar="false"
+                               ShowLoading="false">
+                            <TableColumns>
+                                <TableColumn Text="Loại thay đổi" @bind-Field="context.ChangeType">
+                                    <Template Context="item">
+                                        <Badge Color="@GetChangeTypeColor(item.Row.ChangeType)" class="fw-bold">
+                                            @GetChangeTypeText(item.Row.ChangeType)
+                                        </Badge>
+                                    </Template>
+                                </TableColumn>
+                                <TableColumn @bind-Field="context.Count" Text="Số lượng"/>
+                                <TableColumn Text="Tỷ lệ" @bind-Field="context.Count">
+                                    <Template Context="item">
+                                        @{
+                                            var percentage = ReportData != null && GetTotalChangesCount() > 0 ? (item.Row.Count * 100.0 / GetTotalChangesCount()) : 0;
+                                        }
+                                        <Progress Value="@((int)percentage)" 
+                                                  Color="@GetChangeTypeProgressColor(item.Row.ChangeType)" 
+                                                  IsShowValue="true"
+                                                  Height="32"
+                                                  ShowLabel="false">
+                                        </Progress>
+                                    </Template>
+                                </TableColumn>
+                            </TableColumns>
+                        </Table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Changes by PIC Table -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="mb-0">Chi tiết thay đổi theo PIC</h6>
+                    </div>
+                    <div class="card-body">
+                        <Table TItem="CpdPicItem"
+                               Items="@PicItems"
+                               AutoGenerateColumns="false"
+                               IsPagination="false"
+                               IsStriped="true"
+                               IsBordered="true"
+                               ShowToolbar="false"
+                               ShowLoading="false">
+                            <TableColumns>
+                                <TableColumn @bind-Field="context.Pic" Text="PIC"/>
+                                <TableColumn @bind-Field="context.Count" Text="Số lượng thay đổi"/>
+                                <TableColumn Text="Tỷ lệ" @bind-Field="context.Count">
+                                    <Template Context="item">
+                                        @{
+                                            var percentage = ReportData != null && GetTotalChangesCount() > 0 ? (item.Row.Count * 100.0 / GetTotalChangesCount()) : 0;
+                                        }
+                                        <Progress Value="@((int)percentage)" 
+                                                  Color="Color.Info" 
+                                                  IsShowValue="true"
+                                                  Height="32"
+                                                  ShowLabel="false">
+                                        </Progress>
+                                    </Template>
+                                </TableColumn>
+                            </TableColumns>
+                        </Table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</DemoBlock>
+
+@* JavaScript for charts *@
+<script>
+    window.renderCpdCharts = function(changesByType, changesByPic) {
+        // Changes by Type Chart
+        const ctx1 = document.getElementById('changesByTypeChart');
+        if (ctx1) {
+            new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(changesByType),
+                    datasets: [{
+                        data: Object.values(changesByType),
+                        backgroundColor: [
+                            '#28a745', // Green for NEW
+                            '#ffc107', // Yellow for CHANGED
+                            '#dc3545'  // Red for REMOVED
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Changes by PIC Chart
+        const ctx2 = document.getElementById('changesByPicChart');
+        if (ctx2) {
+            new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(changesByPic),
+                    datasets: [{
+                        label: 'Số lượng thay đổi',
+                        data: Object.values(changesByPic),
+                        backgroundColor: '#17a2b8',
+                        borderColor: '#17a2b8',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+    };
+</script>

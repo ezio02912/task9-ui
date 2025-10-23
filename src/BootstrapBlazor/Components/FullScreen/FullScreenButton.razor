@@ -1,0 +1,14 @@
+﻿@namespace BootstrapBlazor.Components
+@inherits ButtonBase
+
+<a @attributes="AdditionalAttributes" id="@Id" class="@ClassString" data-bs-placement="@PlacementString" @onclick="ToggleFullScreen">
+    <i class="@ButtonIconString"></i>
+    <i class="@FullScreenExitIconString"></i>
+    @if (!string.IsNullOrEmpty(Text))
+    {
+        <span>@Text</span>
+    }
+    <CascadingValue Value="this" IsFixed="true">
+        @ChildContent
+    </CascadingValue>
+</a>

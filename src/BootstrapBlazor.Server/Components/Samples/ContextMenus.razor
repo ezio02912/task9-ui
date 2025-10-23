@@ -1,0 +1,90 @@
+﻿@page "/context-menu"
+@inject IStringLocalizer<ContextMenus> Localizer
+@inject IStringLocalizer<Foo> LocalizerFoo
+
+<h3>@Localizer["ContextMenuTitle"]</h3>
+
+<h4>@Localizer["ContextMenuDescription"]</h4>
+
+<DemoBlock Title="@Localizer["ContextMenuNormalTitle"]" Introduction="@Localizer["ContextMenuNormalIntro"]" Name="Normal">
+    <ContextMenuZone>
+        <ContextMenuTrigger ContextItem="Foo">
+            <span>@Foo.Name - @Foo.Address</span>
+        </ContextMenuTrigger>
+        <ContextMenu>
+            <ContextMenuItem Icon="fa-solid fa-copy" Text="@Localizer["ContextMenuItemCopy"]" OnClick="OnCopy"></ContextMenuItem>
+            <ContextMenuItem Icon="fa-solid fa-paste" Text="@Localizer["ContextMenuItemPast"]" OnClick="OnPaste"></ContextMenuItem>
+        </ContextMenu>
+    </ContextMenuZone>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["ContextMenuCustomUITitle"]" Introduction="@Localizer["ContextMenuCustomUIIntro"]" Name="CustomUI">
+    <ContextMenuZone>
+        <ContextMenuList></ContextMenuList>
+        <ContextMenu>
+            <ContextMenuItem Icon="fa-solid fa-copy" Text="@Localizer["ContextMenuItemCopy"]" OnClick="OnCopy"></ContextMenuItem>
+            <ContextMenuItem Icon="fa-solid fa-paste" Text="@Localizer["ContextMenuItemPast"]" OnClick="OnPaste"></ContextMenuItem>
+        </ContextMenu>
+    </ContextMenuZone>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["ContextMenuTableTitle"]" Introduction="@Localizer["ContextMenuTableIntro"]" Name="Table">
+    <ContextMenuZone>
+        <Table TItem="Foo" Items="@Items.Take(3)">
+            <TableColumns>
+                <TableColumn @bind-Field="@context.DateTime" Width="180" />
+                <TableColumn @bind-Field="@context.Name" />
+                <TableColumn @bind-Field="@context.Address" />
+            </TableColumns>
+        </Table>
+        <ContextMenu>
+            <ContextMenuItem Icon="fa-solid fa-copy" Text="@Localizer["ContextMenuItemCopy"]" OnClick="OnCopy"></ContextMenuItem>
+            <ContextMenuItem Icon="fa-solid fa-paste" Text="@Localizer["ContextMenuItemPast"]" OnClick="OnPaste"></ContextMenuItem>
+        </ContextMenu>
+    </ContextMenuZone>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["ContextMenuTreeTitle"]" Introduction="@Localizer["ContextMenuTreeIntro"]" Name="Tree">
+    <ContextMenuZone>
+        <TreeView TItem="TreeFoo" Items="@TreeItems" />
+        <ContextMenu>
+            <ContextMenuItem Icon="fa-solid fa-copy" Text="@Localizer["ContextMenuItemCopy"]" OnClick="OnCopy"></ContextMenuItem>
+            <ContextMenuItem Icon="fa-solid fa-paste" Text="@Localizer["ContextMenuItemPast"]" OnClick="OnPaste"></ContextMenuItem>
+        </ContextMenu>
+    </ContextMenuZone>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["ContextMenuCallbackTitle"]" Introduction="@Localizer["ContextMenuCallbackIntro"]" Name="Callback">
+    <ContextMenuZone>
+        <TreeView TItem="TreeFoo" Items="@TreeItems" />
+        <ContextMenu OnBeforeShowCallback="OnBeforeShowCallback">
+            @if (SelectModel?.Id == "1020")
+            {
+                <ContextMenuItem Icon="fa-solid fa-copy" Text="@Localizer["ContextMenuItemCopy"]" OnClick="OnCopy"></ContextMenuItem>
+                <ContextMenuItem Icon="fa-solid fa-paste" Text="@Localizer["ContextMenuItemPast"]" OnClick="OnPaste"></ContextMenuItem>
+            }
+            else
+            {
+                <ContextMenuItem Icon="fa-solid fa-copy" Text="CopySub" OnClick="OnCopySub"></ContextMenuItem>
+            }
+        </ContextMenu>
+    </ContextMenuZone>
+    <ConsoleLogger @ref="_callbackLogger"></ConsoleLogger>
+</DemoBlock>
+
+<DemoBlock Title="@Localizer["ContextMenuDisabledTitle"]" Introduction="@Localizer["ContextMenuDisabledIntro"]" Name="DisabledCallback">
+    <ContextMenuZone>
+        <Table TItem="Foo" Items="@Items.Take(3)">
+            <TableColumns>
+                <TableColumn @bind-Field="@context.DateTime" Width="180" />
+                <TableColumn @bind-Field="@context.Name" />
+                <TableColumn @bind-Field="@context.Address" />
+            </TableColumns>
+        </Table>
+        <ContextMenu>
+            <ContextMenuItem Icon="fa-solid fa-copy" Text="@Localizer["ContextMenuItemCopy"]" OnClick="OnCopy" OnDisabledCallback="OnDisabledCallback"></ContextMenuItem>
+            <ContextMenuItem Icon="fa-solid fa-paste" Text="@Localizer["ContextMenuItemPast"]" OnDisabledCallback="OnDisabledCallback" OnClick="OnPaste"></ContextMenuItem>
+        </ContextMenu>
+    </ContextMenuZone>
+    <ConsoleLogger @ref="_disabledLogger"></ConsoleLogger>
+</DemoBlock>

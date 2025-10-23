@@ -1,0 +1,175 @@
+@page "/cpd-data"
+@layout PageLayout
+@using BootstrapBlazor.Components
+@namespace BootstrapBlazor.Server.Components.Task9.CPD
+
+<h3>📊 Dữ liệu CPD - Content Performance Dashboard</h3>
+
+<DemoBlock Title="Dữ liệu CPD" Name="CpdData">
+    <Table TItem="CpdDaily"
+           AutoGenerateColumns="false"
+           IsPagination="true"
+           IsStriped="true"
+           IsBordered="true"
+           IsMultipleSelect="false"
+           ShowColumnList="true"
+           ShowToolbar="true"
+           ShowDefaultButtons="false"
+           ShowExtendButtons="false"
+           ShowLoading="true"
+           SearchMode="SearchMode.Top"
+           CustomerSearchModel="@CustomerSearchModel" 
+           ShowSearch="true"
+           ShowCardView="true"
+           OnQueryAsync="@OnQueryFilterAsync"
+           @ref="TableRef">
+        
+        <TableColumns>
+            <TableColumn @bind-Field="@context.DateKey" Text="Ngày">
+                <Template Context="item">
+                    @item.Row.DateKey.ToString("dd/MM/yyyy")
+                </Template>
+            </TableColumn>
+            
+            <TableColumn @bind-Field="@context.Pic" Text="PIC"/>
+            
+            <TableColumn @bind-Field="@context.Brand" Text="Brand"/>
+            
+            <TableColumn @bind-Field="@context.Position" Text="Vị trí"/>
+            
+            <TableColumn Text="Publink" @bind-Field="@context.Publink">
+                <Template Context="item">
+                    @if (!string.IsNullOrEmpty(item.Row.Publink))
+                    {
+                        <a href="@item.Row.Publink" target="_blank" class="text-decoration-none">
+                            @(item.Row.Publink.Length > 50 ? item.Row.Publink.Substring(0, 50) + "..." : item.Row.Publink)
+                        </a>
+                    }
+                    else
+                    {
+                        <span></span>
+                    }
+                </Template>
+            </TableColumn>
+            
+            <TableColumn Text="Original Link" @bind-Field="@context.OriginalLink">
+                <Template Context="item">
+                    @if (!string.IsNullOrEmpty(item.Row.OriginalLink))
+                    {
+                        <a href="@item.Row.OriginalLink" target="_blank" class="text-decoration-none">
+                            @(item.Row.OriginalLink.Length > 30 ? item.Row.OriginalLink.Substring(0, 30) + "..." : item.Row.OriginalLink)
+                        </a>
+                    }
+                    else
+                    {
+                        <span></span>
+                    }
+                </Template>
+            </TableColumn>
+            
+            <TableColumn Text="Short Link" @bind-Field="@context.ShortLink">
+                <Template Context="item">
+                    @if (!string.IsNullOrEmpty(item.Row.ShortLink))
+                    {
+                        <a href="@item.Row.ShortLink" target="_blank" class="text-decoration-none">
+                            @(item.Row.ShortLink.Length > 30 ? item.Row.ShortLink.Substring(0, 30) + "..." : item.Row.ShortLink)
+                        </a>
+                    }
+                    else
+                    {
+                        <span></span>
+                    }
+                </Template>
+            </TableColumn>
+            
+            <TableColumn @bind-Field="@context.FileNameBanner" Text="File Banner"/>
+            
+            <TableColumn @bind-Field="@context.Dimension" Text="Kích thước"/>
+            
+            <TableColumn Text="Trạng thái" @bind-Field="@context.Status">
+                <Template Context="item">
+                    <div class="d-flex flex-column gap-1">
+                        @if (!string.IsNullOrEmpty(item.Row.Status))
+                        {
+                            <Badge Color="@GetStatusColor(item.Row.Status)" class="small">
+                                @item.Row.Status
+                            </Badge>
+                        }
+                        @if (!string.IsNullOrEmpty(item.Row.AltStatus))
+                        {
+                            <Badge Color="@GetStatusColor(item.Row.AltStatus)" class="small">
+                                Alt: @item.Row.AltStatus
+                            </Badge>
+                        }
+                        @if (!string.IsNullOrEmpty(item.Row.TitleStatus))
+                        {
+                            <Badge Color="@GetStatusColor(item.Row.TitleStatus)" class="small">
+                                Title: @item.Row.TitleStatus
+                            </Badge>
+                        }
+                    </div>
+                </Template>
+            </TableColumn>
+            
+            <TableColumn Text="Ghi chú" @bind-Field="@context.BannerCheckNote">
+                <Template Context="item">
+                    @if (!string.IsNullOrEmpty(item.Row.BannerCheckNote))
+                    {
+                        <Tooltip Title="@item.Row.BannerCheckNote" Placement="Placement.Top">
+                            <i class="fa-solid fa-info-circle text-info"></i>
+                        </Tooltip>
+                    }
+                    else
+                    {
+                        <span></span>
+                    }
+                </Template>
+            </TableColumn>
+        </TableColumns>
+        
+        <CustomerSearchTemplate>
+            @if (context is CpdSearchFilterDto model)
+            {
+                <div class="row form-inline g-3">
+                    <div class="col-12 col-sm-6">
+                        <DateTimeRange @bind-Value="@model.DateRange"
+                                       ViewMode="DatePickerViewMode.Date"
+                                       DateFormat="dd/MM/yyyy"
+                                       ShowLabel="true"
+                                       DisplayText="Khoảng thời gian"
+                                       ShowSidebar="true"
+                                       AutoCloseClickSideBar="true">
+                        </DateTimeRange>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <BootstrapInput @bind-Value="model.Pic" 
+                                       ShowLabel="true" 
+                                       DisplayText="PIC"/>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <BootstrapInput @bind-Value="model.Brand" 
+                                       ShowLabel="true" 
+                                       DisplayText="Brand"/>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <BootstrapInput @bind-Value="model.Position" 
+                                       ShowLabel="true" 
+                                       DisplayText="Vị trí"/>
+                    </div>
+                    <div class="col-12 col-sm-12 btn-toolbar btn-group d-sm-inline-flex">
+                        <Button OnClick="OnTriggerFilterQueryAsync" 
+                                Text="Tìm kiếm" 
+                                Icon="fa-solid fa-search" 
+                                class="btn btn-success">
+                        </Button>
+                        <Button OnClick="OnResetFilter" 
+                                Text="Reset" 
+                                Icon="fa-solid fa-refresh" 
+                                class="btn btn-secondary ms-2">
+                        </Button>
+                    </div>
+                </div>
+            }
+        </CustomerSearchTemplate>
+    </Table>
+</DemoBlock>

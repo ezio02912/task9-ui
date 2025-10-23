@@ -1,0 +1,43 @@
+﻿@page "/check-redirect"
+@layout PageLayout
+
+
+<DemoBlock Title="Bộ lọc báo cáo">
+    <div class="row g-3">
+        <div class="col-12">
+            <Textarea rows="4"  @bind-Value="DomainListTextArea" ShowLabel="true" DisplayText="Nhập danh sách tên miền" />
+        </div>
+        <div class="col-12"><Button IsBlock="true" Icon="fa-solid fa-copy" class="icon-css" Color="Color.Warning" OnClick="CopyData">Copy</Button></div>
+        <div class="col-12"><Button IsBlock="true" Color="Color.Primary" OnClick="OnCheckRedirect">Check tên miền redirect</Button></div>
+    </div>
+</DemoBlock>
+<DemoBlock Name="Check redirect">
+    <Tab IsCard="true" ShowClose="false"
+     TabStyle="TabStyle.Chrome"
+     ShowToolbar="true"
+     ShowExtendButtons="true">
+        <TabItem Text="Danh sách miền" Icon="fa-solid fa-chart">
+            <Table TItem="DomainCheckerDto" 
+                Items="Datas" AutoGenerateColumns="false"
+           IsPagination="false" IsStriped="true" IsBordered="true" IsMultipleSelect="false"
+           ShowToolbar="true" ShowDefaultButtons="false" ShowExtendButtons="false" ShowLoading="true" 
+           ShowSearch="false" ShowCardView="true" ShowAdvancedSearch="false" 
+            @ref="TableRef">
+                <TableColumns>
+                    <TableColumn @bind-Field="@context.Domain" Text="Tên miền" TextWrap="true" />
+                    <TableColumn @bind-Field="@context.FinalDomain" Text="Tên miền cuối" TextWrap="true" />
+                    <TableColumn @bind-Field="@context.RedirectLogs" Text="Logs redirect" Width="500"  TextWrap="true" >
+                        <Template Context="value">  
+                            <ul>
+                                @foreach(var log in value.Value.Split("||"))
+                                {
+                                    <li >@log</li>  
+                                }
+                            </ul>
+                        </Template>
+                    </TableColumn>
+                </TableColumns>
+            </Table>
+        </TabItem>
+    </Tab>
+</DemoBlock>

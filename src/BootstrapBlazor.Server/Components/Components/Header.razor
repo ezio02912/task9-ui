@@ -1,0 +1,31 @@
+﻿@inherits WebSiteModuleComponentBase
+@attribute [JSModuleAutoLoader("Components/Header.razor.js")]
+
+<header class="navbar-header navbar navbar-expand flex-column flex-md-row px-3">
+    <div class="header-img navbar-brand">
+        <BBLogo />
+        <span>Bootstrap Blazor</span>
+    </div>
+    <div class="navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+            @* <li class="nav-item">
+                <a class="nav-link" href="index">@HomeText</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="introduction">@IntroductionText</a>
+            </li> *@
+            <li class="nav-item">
+                <a class="nav-link" href="main">@TutorialsText</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-fill"></div>
+    <GlobalSearch />
+    <CultureChooser class="flex-md" />
+    <ul class="navbar-nav nav-repo ms-3">
+        <li class="nav-item">
+            <FullScreenButton class="nav-link p-2" TooltipText="@Localizer["FullScreenTooltipText"]" />
+        </li>
+    </ul>
+    <ThemeProvider class="ms-2 d-none d-lg-block"></ThemeProvider>
+</header>

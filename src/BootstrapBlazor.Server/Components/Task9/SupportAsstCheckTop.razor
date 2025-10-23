@@ -1,0 +1,37 @@
+﻿@page "/support-asst-file-check-top"
+@layout PageLayout
+<DemoBlock Title="Hỗ trợ xử lý phiếu">
+    <div class="row g-3">
+        <div class="col-12">
+            <DropUpload 
+                @ref="DropUpload1"
+                FooterText="Kéo thả file vào đây để tải lên"
+                IsDisabled="false"
+                IsMultiple="false"
+                ShowProgress="true"
+                ShowUploadFileList="true"
+                ShowDeleteButton="true"
+                ShowFooter="true"></DropUpload>
+        </div>
+        <div class="col-12">
+            <Button IsBlock="true" Icon="fa-solid fa-upload" class="icon-css" Color="Color.Success" OnClick="OnUpload">Tải lên và xử lý file</Button>
+        </div>
+    </div>
+</DemoBlock>
+
+<div id="div-mask-loading" class="mb-3" style="height: 160px; padding: 1rem; border: 1px solid var(--bs-border-color); border-radius: var(--bs-border-radius);">Test</div>
+
+<script>
+    window.__downloadCsv = function (fileName, contentBase64) {
+        try {
+            var link = document.createElement('a');
+            link.href = 'data:text/csv;charset=utf-8;base64,' + contentBase64;
+            link.download = fileName || 'data.csv';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } catch (e) {
+            console.error('Download CSV failed', e);
+        }
+    };
+</script>

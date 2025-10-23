@@ -1,0 +1,55 @@
+﻿@inject IOptionsMonitor<WebsiteOptions> WebsiteOption
+@inject IStringLocalizer<Video> Localizer
+
+<p><b>@Localizer["H1"]</b></p>
+
+@if (VideoUrl.Any())
+{
+    foreach (var url in VideoUrl)
+    {
+        <div class="mb-3">
+            <a class="fa-solid fa-video" href="@url" target="_blank"><span class="ms-2">@Localizer["L1"]</span></a>
+        </div>
+    }
+}
+else
+{
+    <div class="mb-3">@Localizer["L2"]</div>
+}
+
+@code {
+    [Inject]
+    [NotNull]
+    private NavigationManager? Navigator { get; set; }
+
+    private List<string> VideoUrl { get; } = [];
+
+    /// <summary>
+    /// 获得/设置 视频键值
+    /// </summary>
+    [Parameter]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// <inheritdoc />
+    /// </summary>
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        if (string.IsNullOrEmpty(Name))
+        {
+            var path = Navigator.ToBaseRelativePath(Navigator.Uri);
+            var comNameWithHash = path.Split('#').First();
+            Name = comNameWithHash.Split('?').First();
+        }
+
+        if (!string.IsNullOrEmpty(Name) && WebsiteOption.CurrentValue.Videos.TryGetValue(Name, out var url))
+        {
+            if (!string.IsNullOrEmpty(url))
+            {
+                VideoUrl.AddRange(url.Split(';').Select(a => $"{WebsiteOption.CurrentValue.VideoUrl}{a}"));
+            }
+        }
+    }
+}

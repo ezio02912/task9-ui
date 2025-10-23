@@ -1,0 +1,28 @@
+.bb-color-picker {
+    .form-control-color {
+        max-width: 3rem;
+
+        &.disabled {
+            background-color: var(--bs-secondary-bg);
+        }
+
+        .bb-color-picker-body {
+            height: 100%;
+            background-color: var(--bb-color-pick-val);
+            border-radius: var(--bs-border-radius);
+        }
+    }
+
+    input[type="text"] {
+        text-transform: uppercase;
+    }
+}
+
+.input-group > .bb-color-picker {
+    flex: 1;
+
+    > .form-control-color {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}

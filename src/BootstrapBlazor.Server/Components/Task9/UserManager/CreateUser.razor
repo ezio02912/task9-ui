@@ -1,0 +1,160 @@
+@page "/user-manager/create"
+@using BootstrapBlazor.Components
+@using BootstrapBlazor.Server.Data
+@using BootstrapBlazor.Server.Services
+@layout PageLayout
+
+<DemoBlock Title="Tạo người dùng mới" Name="CreateUser">
+    <ValidateForm Model="@Model" OnValidSubmit="@OnValidSubmit">
+        <div class="row g-3">
+            <div class="col-12 col-sm-6">
+                <BootstrapInput @bind-Value="@Model.UserName" 
+                    DisplayText="Tên đăng nhập" 
+                    ShowLabel="true"
+                    placeholder="Nhập tên đăng nhập" />
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <BootstrapInput @bind-Value="@Model.UserCode" 
+                    DisplayText="Mã nhân viên" 
+                    ShowLabel="true"
+                    placeholder="Nhập mã nhân viên" />
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <BootstrapInput @bind-Value="@Model.FirstName" 
+                    DisplayText="Họ" 
+                    ShowLabel="true"
+                    placeholder="Nhập họ" />
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <BootstrapInput @bind-Value="@Model.LastName" 
+                    DisplayText="Tên" 
+                    ShowLabel="true"
+                    placeholder="Nhập tên" />
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <BootstrapInput @bind-Value="@Model.Email" 
+                    DisplayText="Email" 
+                    ShowLabel="true"
+                    placeholder="Nhập email" />
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <BootstrapInput @bind-Value="@Model.PhoneNumber" 
+                    DisplayText="Số điện thoại" 
+                    ShowLabel="true"
+                    placeholder="Nhập số điện thoại" />
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <Select @bind-Value="@Model.Gender" 
+                    DisplayText="Giới tính" 
+                    ShowLabel="true">
+                    <Options>
+                        <SelectOption Value="1" Text="Nam" />
+                        <SelectOption Value="0" Text="Nữ" />
+                        <SelectOption Value="2" Text="Không xác định" />
+                    </Options>
+                </Select>
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <DateTimePicker @bind-Value="@Model.DOB" 
+                    DisplayText="Ngày sinh" 
+                    ShowLabel="true"
+                    DateFormat="dd/MM/yyyy" />
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <MultiSelect @bind-Value="@SelectedRoles" 
+                    DisplayText="Vai trò (*)" 
+                    ShowLabel="true"
+                    Items="@RoleItems"
+                    placeholder="Chọn vai trò" />
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <Select @bind-Value="@Model.PositionId" 
+                    DisplayText="Chức vụ" 
+                    ShowLabel="true"
+                    Items="@PositionItems"
+                    placeholder="Chọn chức vụ" />
+            </div>
+            
+            <div class="col-12">
+                <BootstrapInput @bind-Value="@Model.Address" 
+                    DisplayText="Địa chỉ" 
+                    ShowLabel="true"
+                    placeholder="Nhập địa chỉ" />
+            </div>
+            
+            <div class="col-12">
+                <div class="alert alert-info">
+                    <i class="fa-solid fa-key"></i> 
+                    <strong>Mật khẩu tự động:</strong> 
+                    <code class="password-display">@GeneratedPassword</code>
+                    <div class="password-actions mt-2">
+                        <Button Size="Size.Small" 
+                            Color="Color.Primary" 
+                            Icon="fa-solid fa-copy"
+                            OnClick="@CopyPasswordToClipboard">
+                            Copy mật khẩu
+                        </Button>
+                        <Button Size="Size.Small" 
+                            Color="Color.Secondary" 
+                            Icon="fa-solid fa-refresh"
+                            OnClick="@RegeneratePassword">
+                            Tạo mật khẩu mới
+                        </Button>
+                    </div>
+                    <small class="d-block mt-2">
+                        <i class="fa-solid fa-info-circle"></i> 
+                        Mật khẩu sẽ được tạo tự động cho mỗi user mới. Hãy copy và gửi cho người dùng.
+                    </small>
+                </div>
+            </div>
+            
+            @if (ShowPassword)
+            {
+                <div class="col-12">
+                    <div class="alert alert-success">
+                        <h5><i class="fa-solid fa-check-circle"></i> Tạo user thành công!</h5>
+                        <p><strong>Username:</strong> @Model.UserName</p>
+                        <p><strong>Mật khẩu:</strong> <code class="password-display-large">@GeneratedPassword</code></p>
+                        <Button Size="Size.Small" 
+                            Color="Color.Success" 
+                            Icon="fa-solid fa-copy"
+                            OnClick="@CopyPasswordToClipboard">
+                            Copy mật khẩu
+                        </Button>
+                    </div>
+                </div>
+            }
+            
+            <div class="col-12">
+                <div class="d-flex gap-2">
+                    <Button ButtonType="ButtonType.Submit" 
+                        Color="Color.Primary" 
+                        Icon="fa-solid fa-save"
+                        IsDisabled="@IsLoading">
+                        @if (IsLoading)
+                        {
+                            <span class="spinner-border spinner-border-sm me-1"></span>
+                        }
+                        Tạo mới
+                    </Button>
+                    <Button Color="Color.Secondary" 
+                        Icon="fa-solid fa-times"
+                        OnClick="@OnCancel"
+                        IsDisabled="@IsLoading">
+                        Hủy
+                    </Button>
+                </div>
+            </div>
+        </div>
+    </ValidateForm>
+</DemoBlock>
+

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <Version>9.8.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Locales\*.json" />
+    <EmbeddedResource Include="Locales\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="sasscompiler.json" />
+    <Content Remove="wwwroot\core\**\*.*" />
+    <Content Remove="wwwroot\lib\**\*.css" />
+    <Content Remove="wwwroot\scss\**\*.*" />
+    <Content Remove="wwwroot\src\**\*.*" />
+    <None Include="sasscompiler.json" />
+    <None Include="wwwroot\core\**\*.*" />
+    <None Include="wwwroot\lib\**\*.css" />
+    <None Include="wwwroot\scss\**\*.*" />
+    <None Include="wwwroot\src\**\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="BootstrapBlazor.Components" />
+    <Using Include="Microsoft.AspNetCore.Components" />
+    <Using Include="Microsoft.Extensions.Options" />
+    <Using Include="Microsoft.JSInterop" />
+    <Using Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+
+</Project>

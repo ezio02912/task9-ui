@@ -1,0 +1,23 @@
+﻿@namespace BootstrapBlazor.Components
+@typeparam TValue
+@inherits UploadBase<TValue>
+
+@if (IsShowLabel)
+{
+    <BootstrapLabel required="@Required" for="@Id" ShowLabelTooltip="ShowLabelTooltip" Value="@DisplayText" />
+}
+<div @attributes="@AdditionalAttributes" class="@ClassString" id="@Id">
+    <div class="input-group upload-drop-body">
+        <input type="text" class="@InputValueClassString" disabled="@Disabled" readonly
+               placeholder="@PlaceHolder" value="@CurrentValueAsString" />
+        @if (ShowDeleteButton)
+        {
+            <Button class="@RemoveButtonClassString" IsDisabled="@IsDeleteButtonDisabled"
+                    Icon="@DeleteButtonIcon" Text="@DeleteButtonText" Color="Color.None"
+                    OnClick="@TriggerDeleteFile"></Button>
+        }
+        <Button class="@BrowserButtonClassString" IsDisabled="@CheckStatus()" Icon="@BrowserButtonIcon"
+                Text="@BrowserButtonText" Color="Color.None"></Button>
+    </div>
+    <InputFile AdditionalAttributes="@GetUploadAdditionalAttributes()" OnChange="OnFileChange"></InputFile>
+</div>

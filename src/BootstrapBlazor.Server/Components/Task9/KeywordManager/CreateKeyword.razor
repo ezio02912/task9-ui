@@ -1,0 +1,60 @@
+@page "/keyword-manager/create"
+@using BootstrapBlazor.Components
+@using BootstrapBlazor.Server.Data
+@using BootstrapBlazor.Server.Services
+@layout PageLayout
+
+<DemoBlock Title="Tạo Keyword mới" Name="CreateKeyword">
+    <ValidateForm Model="@Model" OnValidSubmit="@OnValidSubmit">
+        <div class="row g-3">
+            <div class="col-12 col-sm-6">
+                <Select @bind-Value="@Model.BrandId" 
+                    DisplayText="Brand (*)" 
+                    ShowLabel="true"
+                    Items="@BrandItems"
+                    placeholder="Chọn brand">
+                    <RequiredValidator ErrorMessage="Vui lòng chọn brand" />
+                </Select>
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <BootstrapInput @bind-Value="@Model.KeywordText" 
+                    DisplayText="Keyword Text (*)" 
+                    ShowLabel="true"
+                    placeholder="Nhập keyword text">
+                    <RequiredValidator ErrorMessage="Vui lòng nhập keyword text" />
+                </BootstrapInput>
+            </div>
+            
+            <div class="col-12 col-sm-6">
+                <Switch @bind-Value="@Model.IsActive" 
+                    DisplayText="Trạng thái hoạt động" 
+                    ShowLabel="true"
+                    OnColor="Color.Success"
+                    OffColor="Color.Secondary" />
+            </div>
+            
+            <div class="col-12">
+                <div class="d-flex gap-2">
+                    <Button ButtonType="ButtonType.Submit" 
+                        Color="Color.Primary" 
+                        Icon="fa-solid fa-save"
+                        IsDisabled="@IsLoading">
+                        @if (IsLoading)
+                        {
+                            <span class="spinner-border spinner-border-sm me-1"></span>
+                        }
+                        Tạo mới
+                    </Button>
+                    <Button Color="Color.Secondary" 
+                        Icon="fa-solid fa-times"
+                        OnClick="@OnCancel"
+                        IsDisabled="@IsLoading">
+                        Hủy
+                    </Button>
+                </div>
+            </div>
+        </div>
+    </ValidateForm>
+</DemoBlock>
+

@@ -1,0 +1,19 @@
+﻿@page "/barcode-generator"
+@inject IStringLocalizer<BarcodeGenerators> Localizer
+
+<h3>@Localizer["Title"]</h3>
+
+<PackageTips Name="BootstrapBlazor.BarcodeGenerator" />
+
+<DemoBlock Title="@Localizer["BarcodeGeneratorNormalText"]" Introduction="@Localizer["BarcodeGeneratorNormalIntro"]" Name="Normal">
+    <div class="text-center">
+        <BarcodeGenerator Value="@Value" Options="Options" OnCompletedAsync="OnCompletedAsync"></BarcodeGenerator>
+    </div>
+    <section ignore>
+        <BarcodeGenerateSettings @bind-Value="Value" @bind-Options="Options" SvgString="@_svgString"></BarcodeGenerateSettings>
+    </section>
+</DemoBlock>
+
+<AttributeTable Items="@GetAttributes()" />
+
+<AttributeTable Title="BarcodeGeneratorOption" Items="@GetOptionsAttributes()" />

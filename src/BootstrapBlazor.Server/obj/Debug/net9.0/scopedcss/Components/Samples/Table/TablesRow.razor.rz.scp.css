@@ -1,0 +1,8 @@
+[b-8xvffoei6d] + .table-container .highlight {
+    background-color: #409eff;
+    color: #fff;
+}
+
+[b-8xvffoei6d] + .table-row-template td:has(.datetime-picker) {
+    padding: 1px;
+}

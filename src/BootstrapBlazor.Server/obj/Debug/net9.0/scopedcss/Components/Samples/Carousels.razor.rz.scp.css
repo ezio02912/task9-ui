@@ -1,0 +1,28 @@
+.carousel-item-demo2[b-f2q4a7r7re] {
+    display: flex;
+}
+
+    .carousel-item-demo2 .demo-item[b-f2q4a7r7re] {
+        background-color: rgba(var(--bs-body-color-rgb),.08);
+        border-radius: var(--bs-border-radius);
+        padding: 1rem 2rem;
+    }
+
+        .carousel-item-demo2 .demo-item:not(:last-child)[b-f2q4a7r7re] {
+            margin-inline-end: 1rem;
+        }
+
+        .carousel-item-demo2 .demo-item img[b-f2q4a7r7re] {
+            border-radius: var(--bs-border-radius);
+            margin: 1rem 0;
+            height: auto;
+        }
+
+        .carousel-item-demo2 .demo-item .top[b-f2q4a7r7re],
+        .carousel-item-demo2 .demo-item .bottom[b-f2q4a7r7re] {
+            text-align: center;
+        }
+
+            .carousel-item-demo2 .demo-item .top > div:first-child[b-f2q4a7r7re] {
+                font-size: 1.5rem;
+            }

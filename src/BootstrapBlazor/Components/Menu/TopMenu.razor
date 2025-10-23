@@ -1,0 +1,43 @@
+﻿@namespace BootstrapBlazor.Components
+
+<ul class="nav">
+    @foreach (var menu in Items)
+    {
+        @if (menu.Items.Any())
+        {
+            <li class="@GetDropdownClassString(menu)">
+                <a data-bs-toggle="dropdown" class="@GetDropdownClassString(menu, "nav-link dropdown-toggle")">
+                    @if (!string.IsNullOrEmpty(menu.Icon))
+                    {
+                        <i class="@GetIconString(menu.Icon)"></i>
+                    }
+                    <span class="menu-text">@menu.Text</span>
+                </a>
+                @if (!menu.IsDisabled)
+                {
+                    <div class="dropdown-menu shadow">
+                        @foreach (var item in menu.Items)
+                        {
+                            @if (item.Items.Any())
+                            {
+                                <SubMenu Item="@item" DropdownIcon="@DropdownIcon" ArrowIcon="@ArrowIcon" OnClick="OnClickItem" class="dropdown-item"></SubMenu>
+                            }
+                            else
+                            {
+                                <div class="nav-item" @onclick:stopPropagation @onclick="() => OnClickItem(item)">
+                                    <MenuLink Item="@item" ArrowIcon="@ArrowIcon" class="dropdown-item" />
+                                </div>
+                            }
+                        }
+                    </div>
+                }
+            </li>
+        }
+        else
+        {
+            <li class="@GetDropdownClassString(menu)" @onclick:stopPropagation @onclick="() => OnClickItem(menu)">
+                <MenuLink Item="@menu" ArrowIcon="@ArrowIcon" />
+            </li>
+        }
+    }
+</ul>

@@ -1,0 +1,16 @@
+.circle-demo[b-hkm9lj132f] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+    .circle-demo h1[b-hkm9lj132f] {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .circle-demo i[b-hkm9lj132f] {
+        font-style: normal;
+        color: #3f414d;
+    }

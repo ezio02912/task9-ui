@@ -1,0 +1,90 @@
+﻿@namespace BootstrapBlazor.Components
+@typeparam TValue
+@inherits FileListUploadBase<TValue>
+
+@if (IsShowLabel)
+{
+    <BootstrapLabel required="@Required" ShowLabelTooltip="ShowLabelTooltip" Value="@DisplayText"></BootstrapLabel>
+}
+<div @attributes="@AdditionalAttributes" class="@ClassString" id="@Id" data-bb-previewer-id="@PreviewerId">
+    <div class="@BodyClassString">
+        @if (IsUploadButtonAtFirst && ShowAddButton())
+        {
+            @RenderAdd
+        }
+        @foreach (var item in Files)
+        {
+            <div @key="@item" class="@GetItemClassString(item)">
+                <div class="upload-item-body">
+                    @if (item.IsImage(AllowExtensions, CanPreviewCallback))
+                    {
+                        <img class="upload-item-body-image" alt="prevUrl" src="@item.PrevUrl" @onclick="() => OnClickZoom(item)" />
+                    }
+                    else if (IconTemplate != null)
+                    {
+                        @IconTemplate(item)
+                    }
+                    else
+                    {
+                        <FileIcon Extension="@item.GetExtension()"></FileIcon>
+                    }
+                </div>
+                <div class="upload-item-size"><span>@item.GetFileName()</span> (@item.Size.ToFileSizeString())</div>
+                <div class="upload-item-actions">
+                    <div class="btn-group">
+                        @if (ShowZoomButton)
+                        {
+                            <button type="button" class="btn btn-sm btn-secondary btn-zoom" disabled="@GetDisabledString(item)" @onclick="() => OnClickZoom(item)" aria-label="zoom">
+                                <i class="@ZoomIcon"></i>
+                            </button>
+                        }
+                        @if (ShowDownloadButton)
+                        {
+                            <button type="button" class="btn btn-sm btn-secondary btn-download" disabled="@GetDisabledString(item)" @onclick="() => OnClickDownload(item)" aria-label="download">
+                                <i class="@DownloadIcon"></i>
+                            </button>
+                        }
+                        @if (GetShowProgress(item))
+                        {
+                            <button type="button" class="btn btn-sm btn-secondary btn-cancel" @onclick="() => OnClickCancel(item)" aria-label="cancel">
+                                <i class="@CancelIcon"></i>
+                            </button>
+                        }
+                    </div>
+                    @if (ShowDeleteButton)
+                    {
+                        <DynamicElement TagName="button" type="button" class="btn btn-sm btn-outline-danger"
+                                        disabled="@GetDeleteButtonDisabledString(item)" aria-label="delete"
+                                        TriggerClick="@(!IsDisabled)" OnClick="@(() => OnCardFileDelete(item))">
+                            <i class="@RemoveIcon"></i>
+                        </DynamicElement>
+                    }
+                </div>
+                @if (GetShowProgress(item))
+                {
+                    <Progress Color="Color.Success" Height="4" Value="@item.ProgressPercent"></Progress>
+                }
+                <span class="upload-item-label">
+                    <i class="@StatusIconString"></i>
+                    <i class="@DeleteIconString"></i>
+                </span>
+            </div>
+        }
+        @if (!IsUploadButtonAtFirst && ShowAddButton())
+        {
+            @RenderAdd
+        }
+    </div>
+    @if (ShowPreviewList)
+    {
+        <ImagePreviewer Id="@PreviewerId" PreviewList="PreviewList"></ImagePreviewer>
+    }
+    <InputFile AdditionalAttributes="@GetUploadAdditionalAttributes()" OnChange="OnFileChange"></InputFile>
+</div>
+
+@code {
+    RenderFragment RenderAdd =>
+    @<div class="@CardItemClass">
+        <i class="@AddIcon"></i>
+    </div>;
+}

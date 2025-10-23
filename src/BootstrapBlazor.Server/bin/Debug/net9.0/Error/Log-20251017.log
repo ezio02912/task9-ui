@@ -1,0 +1,560 @@
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 09:00:32
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'kU3mEEJlJO5oJrkgmPw88SqODcVj8aTr4Wray6d9BHU'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: BootstrapBlazor.Server.Exceptions.UnauthorizedException
+      TargetSite: Void MoveNext()
+      Message: 
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: BootstrapBlazor.Server
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at BootstrapBlazor.Server.Http.RequestClient.ReturnApiResponse[T](HttpResponseMessage httpResponseMessage) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 209
+         at BootstrapBlazor.Server.Http.RequestClient.PostAPIAsync[T](String URL, Object input, Boolean notifyOk) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 75
+         at BootstrapBlazor.Server.Services.SeoKpiWeightService.GetListAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Services/SeoKpiWeightService/SeoKpiWeightService.cs:line 14
+         at BootstrapBlazor.Server.Components.Task9.EvaluateSeoPerformance.LoadKPIs() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/EvaluateSeoPerformance.razor.cs:line 149
+         at BootstrapBlazor.Server.Components.Task9.EvaluateSeoPerformance.OnInitializedAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/EvaluateSeoPerformance.razor.cs:line 99
+         at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager[4]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 09:00:37
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Navigation failed when changing the location to /login
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSDisconnectedException
+      TargetSite: Void BeginInvokeJS(Int64, System.String, System.String, Microsoft.JSInterop.JSCallResultType, Int64)
+      Message: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: Microsoft.AspNetCore.Components.Server
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime.BeginInvokeJS(Int64 asyncHandle, String identifier, String argsJson, JSCallResultType resultType, Int64 targetInstanceId)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager.<>c__DisplayClass13_0.<<NavigateToCore>g__PerformNavigationAsync|0>d.MoveNext()
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 09:00:37
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'kU3mEEJlJO5oJrkgmPw88SqODcVj8aTr4Wray6d9BHU'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSDisconnectedException
+      TargetSite: Void BeginInvokeJS(Int64, System.String, System.String, Microsoft.JSInterop.JSCallResultType, Int64)
+      Message: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: Microsoft.AspNetCore.Components.Server
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime.BeginInvokeJS(Int64 asyncHandle, String identifier, String argsJson, JSCallResultType resultType, Int64 targetInstanceId)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager.<>c__DisplayClass13_0.<<NavigateToCore>g__PerformNavigationAsync|0>d.MoveNext()
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 09:00:59
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'Rrlw3SADthHWuVlQ4bv5ynLKWI0FE3i31y9c7GIqhyk'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSException
+      TargetSite: Void Throw()
+      Message: Cannot read properties of null (reading 'classList')
+      TypeError: Cannot read properties of null (reading 'classList')
+          at Module.init (https://localhost:5053/_content/BootstrapBlazor/Components/Modal/ModalDialog.razor.js:12:27)
+          at https://localhost:5053/_framework/blazor.web.js:1:2900
+          at new Promise (<anonymous>)
+          at w.beginInvokeJSFromDotNet (https://localhost:5053/_framework/blazor.web.js:1:2857)
+          at vn._invokeClientMethod (https://localhost:5053/_framework/blazor.web.js:1:65750)
+          at vn._processIncomingData (https://localhost:5053/_framework/blazor.web.js:1:63139)
+          at connection.onreceive (https://localhost:5053/_framework/blazor.web.js:1:56780)
+          at i.onmessage (https://localhost:5053/_framework/blazor.web.js:1:80728)
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Private.CoreLib
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.JSInterop.JSObjectReferenceExtensions.InvokeVoidAsync(IJSObjectReference jsObjectReference, String identifier, CancellationToken cancellationToken, Object[] args)
+         at BootstrapBlazor.Components.JSModule.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Utils/JSModule.cs:line 54
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 145
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.OnAfterRenderAsync(Boolean firstRender) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 73
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 11:25:46
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'f0ojOJzWDRz2-RUKzbEpznGhCyEoIGxxr1mWYw1jHvA'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: System.Net.Http.HttpRequestException
+      HttpRequestError: ResponseEnded
+      StatusCode: 
+      TargetSite: Void MoveNext()
+      Message: An error occurred while sending the request.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Net.Http
+      HResult: -2146232800
+      
+      StackTrace Information
+      *********************************************
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+         at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+         at BootstrapBlazor.Server.Http.RequestClient.PostAPIAsync[T](String URL, Object input, Boolean notifyOk) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 72
+         at BootstrapBlazor.Server.Services.KeywordRankingService.GetSeoPerformanceReportAsync(KeywordRankingFilter filter) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Services/KeywordRankings/KeywordRankingService.cs:line 72
+         at BootstrapBlazor.Server.Components.Task9.EvaluateSeoPerformance.OnViewReport() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/EvaluateSeoPerformance.razor.cs:line 108
+         at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+         at BootstrapBlazor.Components.Button.HandlerClick() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/Button.razor.cs:line 85
+         at BootstrapBlazor.Components.Button.OnClickButton() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/Button.razor.cs:line 53
+         at BootstrapBlazor.Components.BootstrapComponentBase.CallStateHasChangedOnAsyncCompletion(Task task) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapComponentBase.cs:line 45
+         at BootstrapBlazor.Components.BootstrapComponentBase.CallStateHasChangedOnAsyncCompletion(Task task) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapComponentBase.cs:line 63
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      2) Exception Information
+      ---------------------------------------------
+      Exception Type: System.Net.Http.HttpIOException
+      HttpRequestError: ResponseEnded
+      Message: The response ended prematurely. (ResponseEnded)
+      TargetSite: Void MoveNext()
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Net.Http
+      HResult: -2146232800
+      
+      StackTrace Information
+      *********************************************
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 11:30:40
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit '3NuV_5eoqS5MtC8YmTS3VKUX_4NaP0TxvT8ctJRrtos'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: System.NullReferenceException
+      TargetSite: Void MoveNext()
+      Message: Object reference not set to an instance of an object.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: BootstrapBlazor.Server
+      HResult: -2147467261
+      
+      StackTrace Information
+      *********************************************
+         at BootstrapBlazor.Server.Http.RequestClient.ReturnApiResponse[T](HttpResponseMessage httpResponseMessage) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 198
+         at BootstrapBlazor.Server.Http.RequestClient.GetAPIAsync[T](String URL) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 62
+         at BootstrapBlazor.Server.Services.UserManagerService.GetBasicSeoUserInfoAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Services/Users/UserManagerService.cs:line 90
+         at BootstrapBlazor.Server.Components.Task9.EvaluateSeoPerformance.LoadPics() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/EvaluateSeoPerformance.razor.cs:line 163
+         at BootstrapBlazor.Server.Components.Task9.EvaluateSeoPerformance.OnInitializedAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/EvaluateSeoPerformance.razor.cs:line 99
+         at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 11:31:04
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'Npc2WtUqgwPtiAkErD1Aegwt195wdRJfDX_mXLaDGus'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSException
+      TargetSite: Void Throw()
+      Message: Cannot read properties of null (reading 'classList')
+      TypeError: Cannot read properties of null (reading 'classList')
+          at Module.init (https://localhost:5053/_content/BootstrapBlazor/Components/Modal/ModalDialog.razor.js:12:27)
+          at https://localhost:5053/_framework/blazor.web.js:1:2900
+          at new Promise (<anonymous>)
+          at w.beginInvokeJSFromDotNet (https://localhost:5053/_framework/blazor.web.js:1:2857)
+          at vn._invokeClientMethod (https://localhost:5053/_framework/blazor.web.js:1:65750)
+          at vn._processIncomingData (https://localhost:5053/_framework/blazor.web.js:1:63139)
+          at connection.onreceive (https://localhost:5053/_framework/blazor.web.js:1:56780)
+          at i.onmessage (https://localhost:5053/_framework/blazor.web.js:1:80728)
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Private.CoreLib
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.JSInterop.JSObjectReferenceExtensions.InvokeVoidAsync(IJSObjectReference jsObjectReference, String identifier, CancellationToken cancellationToken, Object[] args)
+         at BootstrapBlazor.Components.JSModule.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Utils/JSModule.cs:line 54
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 145
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.OnAfterRenderAsync(Boolean firstRender) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 73
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 14:04:39
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'W72d3pL3a5CahgbmxvcxddHDdk7N3c05ZOCHd8gfHaA'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSException
+      TargetSite: Void Throw()
+      Message: Cannot read properties of null (reading 'dispose')
+      TypeError: Cannot read properties of null (reading 'dispose')
+          at Module.dispose (https://localhost:5053/_content/BootstrapBlazor.UniverSheet/Components/UniverSheet.razor.js:37:32)
+          at https://localhost:5053/_framework/blazor.web.js:1:2900
+          at new Promise (<anonymous>)
+          at w.beginInvokeJSFromDotNet (https://localhost:5053/_framework/blazor.web.js:1:2857)
+          at vn._invokeClientMethod (https://localhost:5053/_framework/blazor.web.js:1:65750)
+          at vn._processIncomingData (https://localhost:5053/_framework/blazor.web.js:1:63139)
+          at Rn.onreceive (https://localhost:5053/_framework/blazor.web.js:1:56780)
+          at WebSocket.<anonymous> (https://localhost:5053/_framework/blazor.web.js:1:80728)
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Private.CoreLib
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.JSInterop.JSObjectReferenceExtensions.InvokeVoidAsync(IJSObjectReference jsObjectReference, String identifier, CancellationToken cancellationToken, Object[] args)
+         at BootstrapBlazor.Components.JSModule.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Utils/JSModule.cs:line 54
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.DisposeAsync(Boolean disposing) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 208
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.DisposeAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 223
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<ProcessDisposalQueueInExistingBatch>g__GetHandledAsynchronousDisposalErrorsTask|87_0(Task result)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 14:06:46
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'ZPLTYzFzJQDQYbAH0_GillGlKan7Ju6iIjQoqGeYMsg'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: System.NullReferenceException
+      TargetSite: Void MoveNext()
+      Message: Object reference not set to an instance of an object.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: BootstrapBlazor.Server
+      HResult: -2147467261
+      
+      StackTrace Information
+      *********************************************
+         at BootstrapBlazor.Server.Http.RequestClient.ReturnApiResponse[T](HttpResponseMessage httpResponseMessage) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 198
+         at BootstrapBlazor.Server.Http.RequestClient.GetAPIAsync[T](String URL) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 62
+         at BootstrapBlazor.Server.Services.UserManagerService.GetBasicSeoUserInfoAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Services/Users/UserManagerService.cs:line 90
+         at BootstrapBlazor.Server.Components.Task9.EvaluateSeoPerformance.LoadPics() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/EvaluateSeoPerformance.razor.cs:line 167
+         at BootstrapBlazor.Server.Components.Task9.EvaluateSeoPerformance.OnInitializedAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/EvaluateSeoPerformance.razor.cs:line 103
+         at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 14:12:21
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'mr2qeT-KnPB433U1SliHuBclPosNwIdvZT-BuNis1hg'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: System.NullReferenceException
+      TargetSite: Void MoveNext()
+      Message: Object reference not set to an instance of an object.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: BootstrapBlazor.Server
+      HResult: -2147467261
+      
+      StackTrace Information
+      *********************************************
+         at BootstrapBlazor.Server.Http.RequestClient.ReturnApiResponse[T](HttpResponseMessage httpResponseMessage) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 198
+         at BootstrapBlazor.Server.Http.RequestClient.GetAPIAsync[T](String URL) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 62
+         at BootstrapBlazor.Server.Services.PicDomainAssignmentService.GetPicListAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Services/PicDomainAssignments/PicDomainAssignmentService.cs:line 29
+         at BootstrapBlazor.Server.Components.Task9.BaoCaoSEOTong.LoadPics() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/BaoCaoSEOTong.razor.cs:line 190
+         at BootstrapBlazor.Server.Components.Task9.BaoCaoSEOTong.OnInitializedAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/BaoCaoSEOTong.razor.cs:line 59
+         at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 14:12:29
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'P-q46VNMjnWbm7oRiDbb14XhqbNNQtPee26EZgQ-Aiw'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: System.NullReferenceException
+      TargetSite: Void MoveNext()
+      Message: Object reference not set to an instance of an object.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: BootstrapBlazor.Server
+      HResult: -2147467261
+      
+      StackTrace Information
+      *********************************************
+         at BootstrapBlazor.Server.Http.RequestClient.ReturnApiResponse[T](HttpResponseMessage httpResponseMessage) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 198
+         at BootstrapBlazor.Server.Http.RequestClient.GetAPIAsync[T](String URL) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Http/HttpClientService.cs:line 62
+         at BootstrapBlazor.Server.Services.BrandService.GetListAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Services/Brands/BrandService.cs:line 14
+         at BootstrapBlazor.Server.Components.Task9.BaoCaoSEOTheoPIC.LoadBrands() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/BaoCaoSEOTheoPIC.razor.cs:line 106
+         at BootstrapBlazor.Server.Components.Task9.BaoCaoSEOTheoPIC.OnInitializedAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor.Server/Components/Task9/BaoCaoSEOTheoPIC.razor.cs:line 54
+         at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager[4]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 14:12:29
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Navigation failed when changing the location to /login
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSDisconnectedException
+      TargetSite: System.Threading.Tasks.ValueTask`1[TValue] InvokeAsync[TValue](Int64, System.String, System.Threading.CancellationToken, System.Object[])
+      Message: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: Microsoft.JSInterop
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager.<>c__DisplayClass13_0.<<NavigateToCore>g__PerformNavigationAsync|0>d.MoveNext()
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 14:12:29
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'P-q46VNMjnWbm7oRiDbb14XhqbNNQtPee26EZgQ-Aiw'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSDisconnectedException
+      TargetSite: System.Threading.Tasks.ValueTask`1[TValue] InvokeAsync[TValue](Int64, System.String, System.Threading.CancellationToken, System.Object[])
+      Message: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: Microsoft.JSInterop
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager.<>c__DisplayClass13_0.<<NavigateToCore>g__PerformNavigationAsync|0>d.MoveNext()
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 14:19:56
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'CgNGYB084U1hllZ6B0QWudUd_fc0GEF9wr8i0qtyflw'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSException
+      TargetSite: Void Throw()
+      Message: Cannot read properties of null (reading 'dispose')
+      TypeError: Cannot read properties of null (reading 'dispose')
+          at Module.dispose (https://localhost:5053/_content/BootstrapBlazor.UniverSheet/Components/UniverSheet.razor.js:37:32)
+          at https://localhost:5053/_framework/blazor.web.js:1:2900
+          at new Promise (<anonymous>)
+          at w.beginInvokeJSFromDotNet (https://localhost:5053/_framework/blazor.web.js:1:2857)
+          at vn._invokeClientMethod (https://localhost:5053/_framework/blazor.web.js:1:65750)
+          at vn._processIncomingData (https://localhost:5053/_framework/blazor.web.js:1:63139)
+          at Rn.onreceive (https://localhost:5053/_framework/blazor.web.js:1:56780)
+          at WebSocket.<anonymous> (https://localhost:5053/_framework/blazor.web.js:1:80728)
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Private.CoreLib
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.JSInterop.JSObjectReferenceExtensions.InvokeVoidAsync(IJSObjectReference jsObjectReference, String identifier, CancellationToken cancellationToken, Object[] args)
+         at BootstrapBlazor.Components.JSModule.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Utils/JSModule.cs:line 54
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.DisposeAsync(Boolean disposing) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 208
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.DisposeAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 223
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<ProcessDisposalQueueInExistingBatch>g__GetHandledAsynchronousDisposalErrorsTask|87_0(Task result)
+      
+      
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      General Information 
+      *********************************************
+      Additional Info
+      TimeStamp: 17/10/2025 14:37:52
+      MachineName: N-Dais-MacBook-Pro
+      AppDomainName: BootstrapBlazor.Server
+      OS: Darwin 25.0.0 Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:50 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6030
+      Framework: .NET 9.0.4
+      UserName: admin
+      EnvironmentName: Development
+      Message: Unhandled exception in circuit 'HJuD_BQxltH7PhG41ZzQILKthe0xdqBRn-su67O29gY'.
+      
+      1) Exception Information
+      ---------------------------------------------
+      Exception Type: Microsoft.JSInterop.JSException
+      TargetSite: Void Throw()
+      Message: System.ArgumentException: There is no tracked object with id '3'. Perhaps the DotNetObjectReference instance was already disposed. (Parameter 'dotNetObjectId')
+         at Microsoft.JSInterop.JSRuntime.GetObjectReference(Int64 dotNetObjectId)
+         at Microsoft.JSInterop.Infrastructure.DotNetDispatcher.BeginInvokeDotNet(JSRuntime jsRuntime, DotNetInvocationInfo invocationInfo, String argsJson)
+      Error: System.ArgumentException: There is no tracked object with id '3'. Perhaps the DotNetObjectReference instance was already disposed. (Parameter 'dotNetObjectId')
+         at Microsoft.JSInterop.JSRuntime.GetObjectReference(Int64 dotNetObjectId)
+         at Microsoft.JSInterop.Infrastructure.DotNetDispatcher.BeginInvokeDotNet(JSRuntime jsRuntime, DotNetInvocationInfo invocationInfo, String argsJson)
+          at w.endInvokeDotNetFromJS (https://localhost:5053/_framework/blazor.web.js:1:3158)
+          at vn._invokeClientMethod (https://localhost:5053/_framework/blazor.web.js:1:65750)
+          at vn._processIncomingData (https://localhost:5053/_framework/blazor.web.js:1:63139)
+          at Rn.onreceive (https://localhost:5053/_framework/blazor.web.js:1:56780)
+          at WebSocket.<anonymous> (https://localhost:5053/_framework/blazor.web.js:1:80728)
+      Data: System.Collections.ListDictionaryInternal
+      HelpLink: 
+      Source: System.Private.CoreLib
+      HResult: -2146233088
+      
+      StackTrace Information
+      *********************************************
+         at Microsoft.JSInterop.JSObjectReferenceExtensions.InvokeVoidAsync(IJSObjectReference jsObjectReference, String identifier, CancellationToken cancellationToken, Object[] args)
+         at BootstrapBlazor.Components.JSModule.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Utils/JSModule.cs:line 54
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.InvokeVoidAsync(String identifier, CancellationToken cancellationToken, Object[] args) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 145
+         at BootstrapBlazor.Components.ConnectionHub.InvokeInitAsync() in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ConnectionHub/ConnectionHub.cs:line 48
+         at BootstrapBlazor.Components.BootstrapModuleComponentBase.OnAfterRenderAsync(Boolean firstRender) in /Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/BaseComponents/BootstrapModuleComponentBase.cs:line 73
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+      
+      

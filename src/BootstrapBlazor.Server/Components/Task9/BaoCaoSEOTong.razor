@@ -1,0 +1,166 @@
+﻿@page "/report-seo-performance"
+@layout PageLayout
+
+@inherits WebSiteModuleComponentBase
+<h3>Báo cáo SEO tổng quan</h3>
+
+<DemoBlock Title="Bộ lọc báo cáo">
+    <div class="row g-3">
+        <div class="col-12 col-sm-4">
+            <DateTimeRange @bind-Value="@MonthRangeValue"
+            ViewMode="DatePickerViewMode.Month"
+            DateFormat="MM-yyyy"
+            ShowLabel="true"
+            DisplayText="Thời gian"
+            ShowSidebar="true"
+            AutoCloseClickSideBar="true" >
+            </DateTimeRange>
+        </div>
+        <div class="col-12 col-sm-4">
+            <Select @bind-Value="SelectedReportType" ShowLabel="true" DisplayText="Loại báo cáo">
+            </Select>
+        </div>
+        <div class="col-12 col-sm-4">
+            <SelectGeneric
+            Items="Brands"
+            @bind-Value="SelectedBrand"
+            ShowLabel="true"
+            DisplayText="Key brand/ngành"
+            OnSelectedItemChanged="OnBrandSelectedItemChanged">
+            <ItemTemplate>
+                @{
+                    var brand = context.Value!;
+                }
+                <div class="dropdown-item-demo">
+                    <div class="select-custom-header">
+                        <div class="name">@brand.Name</div>
+                    </div>
+                </div>
+            </ItemTemplate>
+            </SelectGeneric>
+        </div>
+        <div class="col-12 col-sm-4">
+            <MultiSelectGeneric
+                    @bind-Value="SelectedGroups"
+                    Items="Groups"
+                    IsPopover="true"
+                    ShowSearch="true"
+                    ShowToolbar="true"
+                    IsClearable="true"
+                    ShowLabel="true"
+                    DisplayText="Nhóm keyword">
+            </MultiSelectGeneric>
+        </div>
+        <div class="col-12 col-sm-4">
+            <Select
+            Items="PicItems"
+            @bind-Value="SelectedPic"
+            ShowSearch="true"
+            IsClearable="@(Role != "SEO")"
+            ShowLabel="true"
+            DisplayText="Người phụ trách">
+            </Select>
+        </div>
+        <div class="col-12 col-sm-4">
+            <Select @bind-Value="SelectedLevelSearchVolumne" ShowLabel="true" DisplayText="Mức độ tìm kiếm">
+            </Select>
+        </div>
+
+        <div class="col-12"><Button IsBlock="true" Color="Color.Primary" OnClick="OnViewReport">Xem báo cáo</Button></div>
+    </div>
+</DemoBlock>
+
+
+<DemoBlock>
+    <Tab IsCard="true" ShowClose="false"
+     TabStyle="TabStyle.Chrome"
+     ShowToolbar="true"
+     ShowExtendButtons="true"
+     OnClickTabItemAsync="OnClickTabItemAsync">
+        <TabItem Text="Biểu đồ" Icon="fa-solid fa-chart">
+
+            <div style="height:600px; width:100%; position: relative;">
+                <canvas id="@Id" style="width: 100% !important; height: 100% !important; max-width: 100%;"></canvas>
+            </div>
+
+        </TabItem>
+        <TabItem Text="Tổng hợp" Icon="fa-solid fa-gauge-high">
+            <div class="table-container">
+                <table class="table-domain red">
+                        <thead>
+                            <tr>
+                                <th>NGƯỜI PHỤ TRÁCH</th>
+                                <th>KEYWORD</th>
+                                <th>VOLUME</th>
+                                <th>SỐ LẦN LÊN TOP KEYWORD</th>
+                                <th>DOMAINS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var picGroup in SummaryData.RawData.GroupBy(x => x.PicName))
+                            {
+                                var firstItem = picGroup.First();
+                                <tr>
+                                    <td rowspan="@picGroup.Count()" class="pic-name">@picGroup.Key</td>
+                                    @RenderKeywordRow(firstItem, true)
+                                </tr>
+
+                                @foreach (var item in picGroup.Skip(1))
+                                {
+                                    <tr>
+                                        @RenderKeywordRow(item, false)
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                </table>
+            </div>
+        </TabItem>
+    </Tab>
+
+</DemoBlock>
+
+
+
+@code {
+    private RenderFragment RenderKeywordRow(ByKeywordsSummaryDto item, bool isFirstRow) => __builder =>
+    {
+        <td class="keyword">@item.Keyword</td>
+        <td class="volume">@item.Volume.ToString("N0")</td>
+        <td class="domains">@item.TotalOnTop</td>
+        <td style="padding: 0;">
+            <table class="inner-table">
+                @foreach (var domain in item.Domains)
+                {
+                    var topRanks = item.DomainTops[domain];
+                    var domainClass = Mainsites.Contains(domain) ? "main-site" : "";
+                    var topFirst = topRanks.FirstOrDefault();
+                    bool isLastDomain = !isFirstRow && item.Domains.Last() == domain;
+                    <tr class="domains">
+                        <td rowspan="@topRanks.Count" style="width: 50%;" class="@domainClass last-domain">
+                            <a href="https://@domain" target="_blank">@domain</a>
+                        </td>
+                        <td rowspan="@topRanks.Count" style="width: 20%; text-align: center;" class="@domainClass last-domain">
+                            @(item.DomainDays.TryGetValue(domain, out var days) ? days : 0) ngày
+                        </td>
+                        @if (topFirst.Key != default)
+                        {
+                            <td style="width: 30%;" class="@domainClass top-entry">
+                                @topFirst.Key: @topFirst.Value
+                            </td>
+                        }
+                    </tr>
+
+                    @foreach (var top in topRanks.Skip(1))
+                    {
+                        <tr class="domains">
+                            <td style="width: 30%;" class="@domainClass top-entry">
+                                @top.Key: @top.Value
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </td>
+    };
+}

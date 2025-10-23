@@ -1,0 +1,178 @@
+@page "/quy-trinh-doi-domain"
+@layout PageLayout
+@inject IJSRuntime JS
+
+<h3>Quy trình đổi domain</h3>
+
+<!-- Section navigation - Keep markup flat to preserve file indentation style -->
+<div class="mb-3">
+<div class="alert alert-info fw-bold mb-2">Mục lục
+<ul class="list-unstyled mb-0">
+<li><a href="#brand-s" class="link-primary fw-semibold" @onclick:preventDefault="true" @onclick="() => ScrollToAsync(1)">1) Quy trình đổi domain brand S</a></li>
+<li><a href="#brand-g" class="link-primary fw-semibold" @onclick:preventDefault="true" @onclick="() => ScrollToAsync(2)">2) Quy trình đổi domain brand G</a></li>
+<li><a href="#ios-app" class="link-primary fw-semibold" @onclick:preventDefault="true" @onclick="() => ScrollToAsync(3)">3) Quy trình lên app cho iOS / APK</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Brand S -->
+<hr class="my-4" />
+<h4 id="brand-s" class="text-primary">1) Quy trình đổi domain brand <span class="fw-bold">S</span></h4>
+<p class="text-muted fst-italic">Áp dụng khi có yêu cầu từ BOSS hoặc domain bị chặn.</p>
+<ol class="mb-3">
+ <li class="mb-2"><span class="fw-bold">Dig</span> làm request <span class="fw-semibold">mở domain mới</span> hoặc <span class="fw-semibold">tắt redirect</span> nếu domain cũ đang redirect, sau đó <span class="text-decoration-underline">đem đi check chặn (QC thực hiện)</span>.
+  </li>
+<li class="mb-2">Sau khi có kết quả check chặn, <span class="fw-bold">process request tới SA</span> để đổi domain và ghi rõ <em>lý do đổi</em> (Dig thực hiện).
+
+<br/> 
+  <img src="QuyTrinhDoiDomain/S1.png" /> 
+
+  <br/>
+</li>
+<li class="mb-2">Khi <span class="fw-bold">SA thông báo domain đã done</span> → <span class="fw-bold">tag QC nhánh (Dig hoặc QC thực hiện đều được)</span> tương ứng để họ check nhanh (file có note QC nhánh nào cho brand nào).
+<br/>
+<img src="QuyTrinhDoiDomain/S2.png" />
+<br/>
+</li>
+<li class="mb-2">Sau khi <span class="fw-bold">QC nhánh Report</span> check xong và báo <span class="text-success fw-semibold">OK / Done</span>.</li>
+<li class="mb-2"><span class="fw-bold">Dig process redirect</span> các domain cũ về domain mới. <span class="text-muted">(QC có sẵn list redirect nên có thể tự request nếu không thấy Dig)</span>
+<br/>
+<img src="QuyTrinhDoiDomain/S3.png" />
+<br/>
+</li>
+<li class="mb-2">Khi <span class="fw-bold">SA báo DONE redirect</span> → <span class="fw-bold text-decoration-underline">QC check lại redirect tại link (https://task9.pro/check-redirect) toàn bộ domain cũ + www. </span> xem đã đúng chưa sau đó (QC hoặc DIG) <span class="fw-bold">báo lên nhóm</span> <span class="badge bg-secondary">DOMAIN NOTI_ALL</span> về domain mới đã đổi.
+<br/>
+<img src="QuyTrinhDoiDomain/S4.png" />
+<br/>
+</li>
+ </ol>
+
+<!-- Brand G -->
+<hr class="my-4" />
+<h4 id="brand-g" class="text-primary">2) Quy trình đổi domain brand <span class="fw-bold">G</span></h4>
+<p class="text-muted fst-italic">Tương tự brand S ở khâu mở/tắt redirect và process request, nhưng lưu ý <span class="fw-bold">bộ 3 domain</span>.</p>
+<div class="alert alert-warning py-2">Lưu ý: Con G có <span class="fw-bold">1 bộ 3 domain</span>, khi request phải ghi đủ cả 3.</div>
+<div class="bg-light border rounded p-3 mb-3">
+<div class="fw-semibold mb-2">Ví dụ bộ 3 domain:</div>
+<pre class="mb-0"><code>iwin.net
+play.iwin.net
+dangky.iwin.net</code></pre>
+ </div>
+<ol class="mb-3">
+<li class="mb-2">Thao tác request tương tự brand S:DIG yêu cầu tắt redirect hoặc mở domain backup OFF để check chặn. <span class="text-danger">QC Follow kỹ để tránh thiếu 1 trong 3 domain.</span></li>
+<li class="mb-2"><span class="fw-bold">Webgame</span> (<code>play.iwin.net</code>) khi <span class="fw-bold">QC bên G</span> test xong sẽ báo done. <span class="text-muted">(Follow group QC & GB để nắm thông báo)</span> </li>
+<li class="mb-2"> <span class="fw-bold">QC Test các LDP</span> đã dựng cho <code>iwin.net</code> và <code>dangky.iwin.net</code> theo <span class="fw-bold">checklist</span> bên dưới:</li>
+<ul class="list-group mb-3">
+ <li class="list-group-item">Test <span class="fw-bold">content</span> đã đổi đúng chưa (text phù hợp site mới).</li>
+ <li class="list-group-item">Test <span class="fw-bold">link social</span> (Facebook / Telegram / Live Chat) mở được không.</li>
+ <li class="list-group-item">Test <span class="fw-bold">nút CNBW</span> trên PC / Mobile trỏ đúng link chưa.</li>
+ <li class="list-group-item">Test <span class="fw-bold">Tải app / Link tải app / APK</span> trên Android, iOS: tải đúng app, mở và load ổn.</li>
+</ul>
+ <li class="mb-2">QC Process request <span class="fw-bold">Dev.MarT</span> để <span class="fw-semibold">trỏ login vào webgame mới</span>.</li>
+ </ol>
+
+<ol start="5" class="mb-3">
+ <li class="mb-2">Sau khi trỏ xong và báo <span class="text-success fw-semibold">done</span> → <span class="fw-bold">QC báo cho Dig process redirect</span> cả cụm domain cũ (các domain cũ đang trỏ redirect tới). </li>
+ <li class="mb-2">Khi <span class="fw-bold">SA báo DONE redirect</span> → <span class="fw-bold text-decoration-underline">QC check lại redirect</span> đã đúng chưa và <span class="fw-bold">báo nhóm</span> <span class="badge bg-secondary">DOMAIN NOTI_ALL</span> về domain mới.
+ <br/>
+<img src="QuyTrinhDoiDomain/G1.png" />
+ <br/>
+<img src="QuyTrinhDoiDomain/G2.png" />
+<br/>
+ 
+ 
+ </li>
+</ol>
+
+<!-- iOS / APK App Flow -->
+<hr class="my-4" />
+<h4 id="ios-app" class="text-primary">3) Quy trình lên app cho <span class="fw-bold">iOS</span> (APK tương tự)</h4>
+<p class="text-muted">APK thường dễ hơn: chỉ cần upload APK.</p>
+<ol class="mb-3">
+<li class="mb-2">Khi app die hoặc cần đổi, <span class="fw-bold">QC nhánh</span> sẽ request <span class="fw-semibold">làm trang trung gian (trang đệm)</span>. <span class="text-muted">(Follow group QC & GB để nắm thông tin)</span></li>
+<li class="mb-2">Ghi nhớ <span class="fw-bold">mã team</span>: <span class="badge bg-dark">BC119070</span>, <span class="badge bg-dark">BC115105</span>. Thường họ chỉ nêu <em>070</em> hoặc <em>105</em> không nhắc tên brand.</li>
+<li class="mb-2">Lấy <span class="fw-bold">ID</span> của app để gắn link. Ví dụ iOS: <code>https://apps.apple.com/vn/app/6741064379</code> → khi truy cập sẽ ra link đầy đủ:
+<div class="bg-light border rounded p-2 my-2"><code>https://apps.apple.com/vn/app/maearik-qitat-alniynja/id6741064379</code></div>
+Lấy phần rút gọn: <span class="fw-semibold">maearik-qitat-alniynja/id6741064379</span> →QC gửi cho <span class="fw-bold">dev MARK TASK (group F Mark Tasks M2 hoặc fix domain G0 tag anh ACE)</span> để request làm trang trung gian.</li>
+<li class="mb-2"><span class="text-warning fw-bold">Lưu ý</span>: Chờ <span class="fw-bold">QC G</span> (anh <span class="fw-semibold">Sin.LeadQC.GB</span>) confirm <em>lên LDP (LDP = upload app) luôn</em> hay <em>chỉ làm trang đệm trước và chờ confirm</em> (họ cần test xong mới cho lên).</li>
+<li class="mb-2">Khi dev báo <span class="fw-bold">Link trung gian</span> xong + Sin.LeadQC.GB (hoặc QC GB) confirm lên app thì <span class="fw-bold">process lên app</span> luôn hoặc chờ phía QC GB tiếp.</li>
+ </ol>
+
+<div class="alert alert-primary">Cách lên app trên hệ thống <span class="fw-bold">BO tool</span></div>
+<ul class="mb-3">
+<li>Vào <span class="fw-semibold">BO</span>: <code>https://upamz.click2app.xyz/login</code></li>
+<li>Tài khoản:</li>
+ </ul>
+<div class="row g-3 mb-3">
+<div class="col-12 col-md-6">
+<div class="card h-100">
+<div class="card-header bg-success text-white fw-bold">Fa88</div>
+<div class="card-body">
+<div><span class="fw-semibold">Email:</span> <code>admin@fa88.club</code></div>
+<div><span class="fw-semibold">Password:</span> <code>F488^club@2020.$</code></div>
+ </div>
+ </div>
+ </div>
+<div class="col-12 col-md-6">
+<div class="card h-100">
+<div class="card-header bg-primary text-white fw-bold">IWIN</div>
+<div class="card-body">
+<div><span class="fw-semibold">Email:</span> <code>admin@iwin.club</code></div>
+<div><span class="fw-semibold">Password:</span> <code>Iw1n@Clu3.2021$</code></div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+<ol class="mb-3">
+<li class="mb-2">Đổi <span class="fw-bold">layout</span> phù hợp đang có của LDP (ví dụ app có cả APK và iOS thì chọn đúng content).</li>
+<li class="mb-2">Sau khi đổi layout, <span class="fw-bold">update link</span> theo hướng dẫn (ảnh trong file hoặc xem trực tiếp trong tool).</li>
+<li class="mb-2">Gửi <span class="fw-bold">report</span> vào group G hoặc group QC để các team nắm thông tin. <span class="text-muted">(Mẫu tham khảo bên dưới)</span></li>
+ </ol>
+
+<div class="bg-light border rounded p-3 mb-3">
+<div class="fw-semibold mb-2">Mẫu report</div>
+<pre class="mb-0"><code>Em gửi thông tin app iwin, đã lên lúc 22:56 ngày 11/05/2025
+- Tên app: EclipseLight
+- Link app: eclipselight/id6743651190
+- Link trung gian: https://trangphuccongso.vip/caidat.php?t=1746978966000 >> https://dongphuchocsinh.vip/caidat.php
+- Nội dung trang đệm: https://dongphuchocsinh.vip (EclipseLight)</code></pre>
+ </div>
+
+<ul class="list-group mb-3">
+<li class="list-group-item">Check app đi qua <span class="fw-bold">tối thiểu 2 link trung gian</span> (bắt buộc).</li>
+<li class="list-group-item">Check <span class="fw-bold">tải app</span> thành công.</li>
+<li class="list-group-item">Mở app, kiểm tra <span class="fw-bold">load</span> ổn định.</li>
+<li class="list-group-item">Kiểm tra <span class="fw-bold">Đăng ký / Đăng nhập</span> hoạt động bình thường.</li>
+ </ul>
+
+<div class="alert alert-success">Hoàn tất quy trình: khi mọi bước <span class="fw-bold">OK</span>, cập nhật trạng thái và nhắc nhở trên các group liên quan.</div>
+
+
+<script>
+window.qcScrollToId = function(id) {
+ try {
+  var el = document.getElementById(id);
+  if (el) {
+   el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+ } catch (e) { }
+};
+</script>
+
+@code {
+    // Smoothly scroll to an element id using JS interop
+    private async Task ScrollToAsync(int id)
+    {
+        await JS.InvokeVoidAsync("qcScrollToId", id switch
+        {
+            1 => "brand-s",
+            2 => "brand-g",
+            3 => "ios-app",
+            _ => throw new ArgumentException("Invalid id")
+        });
+    }
+}
+
+
+

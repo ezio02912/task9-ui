@@ -1,0 +1,9 @@
+.table-cache-list[b-hy8wxvptho] {
+    height: calc(100vh - 180px);
+}
+
+[b-hy8wxvptho] .table-cache-value {
+    max-height: 80px;
+    overflow: auto;
+    align-items: flex-start;
+}

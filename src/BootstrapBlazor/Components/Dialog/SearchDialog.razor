@@ -1,0 +1,25 @@
+﻿@namespace BootstrapBlazor.Components
+@typeparam TModel
+@inherits DialogBase<TModel>
+
+@if (BodyTemplate != null)
+{
+    <div class="form-body">
+        @BodyTemplate.Invoke(Model)
+    </div>
+    <div class="form-footer">
+        <DialogCloseButton Icon="@ClearIcon" Text="@ResetButtonText" OnClickWithoutRender="@OnResetSearchClick" />
+        <DialogCloseButton Color="Color.Primary" Icon="@SearchIcon" Text="@QueryButtonText" OnClickWithoutRender="@OnSearchClick" />
+    </div>
+}
+else
+{
+    <CascadingValue Value="true" IsFixed="true" Name="IsSearch">
+        <EditorForm TModel="TModel" Model="Model" Items="Items" RowType="RowType" ItemsPerRow="ItemsPerRow" LabelAlign="LabelAlign" ShowLabel="ShowLabel" ShowUnsetGroupItemsOnTop="ShowUnsetGroupItemsOnTop">
+            <Buttons>
+                <DialogCloseButton Icon="@ClearIcon" Text="@ResetButtonText" OnClickWithoutRender="@OnResetSearchClick" />
+                <DialogCloseButton Color="Color.Primary" Icon="@SearchIcon" Text="@QueryButtonText" OnClickWithoutRender="@OnSearchClick" />
+            </Buttons>
+        </EditorForm>
+    </CascadingValue>
+}

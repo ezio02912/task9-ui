@@ -1,0 +1,41 @@
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: #{$bb-accordion-btn-focus-box-shadow};
+    --bs-accordion-btn-padding-x: 1rem;
+    --bs-accordion-btn-padding-y: .5rem;
+
+    .accordion-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+
+        &:not(.collapsed) {
+            background-color: var(--bs-accordion-active-bg);
+        }
+
+        .accordion-button {
+            --bs-accordion-inner-border-radius: 0;
+            flex: 1 1 auto;
+            width: 1%;
+            cursor: pointer;
+
+            .accordion-item-icon {
+                margin-inline-end: .5rem;
+            }
+        }
+    }
+
+    .accordion-item:first-of-type {
+        .accordion-header {
+            border-top-left-radius: var(--bs-accordion-inner-border-radius);
+            border-top-right-radius: var(--bs-accordion-inner-border-radius);
+        }
+    }
+
+    .accordion-item:last-of-type {
+        .accordion-header.collapsed {
+            border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+            border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+        }
+    }
+}

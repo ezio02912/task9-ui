@@ -1,0 +1,212 @@
+﻿.bb-flip-clock {
+    --bb-flip-clock-height: #{$bb-flip-clock-height};
+    --bb-flip-clock-bg: #{$bb-flip-clock-bg};
+    --bb-flip-clock-font-size: #{$bb-flip-clock-font-size};
+    --bb-flip-clock-text-shadow: #{$bb-flip-clock-text-shadow};
+    --bb-flip-clock-justify-content: #{$bb-flip-clock-justify-content};
+    --bb-flip-clock-list-margin-right: #{$bb-flip-clock-list-margin-right};
+    --bb-flip-clock-item-margin: #{$bb-flip-clock-item-margin};
+    --bb-flip-clock-item-width: #{$bb-flip-clock-item-width};
+    --bb-flip-clock-item-height: #{$bb-flip-clock-item-height};
+    --bb-flip-clock-item-box-shadow: #{$bb-flip-clock-item-box-shadow};
+    --bb-flip-clock-number-color: #{$bb-flip-clock-number-color};
+    --bb-flip-clock-number-bg: #{$bb-flip-clock-number-bg};
+    --bb-flip-clock-number-line-bg: #{$bb-flip-clock-number-line-bg};
+    --bb-flip-clock-number-line-height: #{$bb-flip-clock-number-line-height};
+    font: normal var(--bb-flip-clock-font-size) "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    background: var(--bb-flip-clock-bg);
+    border-radius: var(--bs-border-radius);
+    display: flex;
+    justify-content: var(--bb-flip-clock-justify-content);
+    align-items: center;
+    height: var(--bb-flip-clock-height);
+    user-select: none;
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+    overflow: auto;
+
+    .bb-flip-clock-list {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-inline-end: var(--bb-flip-clock-list-margin-right);
+        }
+    }
+}
+
+.bb-flip-clock-item {
+    position: relative;
+    list-style: none;
+    border-radius: var(--bs-border-radius);
+    box-shadow: var(--bb-flip-clock-item-box-shadow);
+    margin: var(--bb-flip-clock-item-margin);
+    width: var(--bb-flip-clock-item-width);
+    height: var(--bb-flip-clock-item-height);
+    line-height: calc(var(--bb-flip-clock-item-height) - 3px);
+
+    > li {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        perspective: 200px;
+
+        &:first-child {
+            z-index: 2;
+        }
+
+        > div {
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+
+            &.up {
+                transform-origin: 50% 100%;
+                top: 0;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: calc(var(--bb-flip-clock-item-height) / 2 - var(--bb-flip-clock-number-line-height));
+                    left: 0;
+                    z-index: 5;
+                    width: 100%;
+                    height: var(--bb-flip-clock-number-line-height);
+                    background-color: var(--bb-flip-clock-number-line-bg);
+                }
+
+                > .inn {
+                    top: 0;
+                }
+            }
+
+            &.down {
+                transform-origin: 50% 0%;
+                bottom: 0;
+
+                > .inn {
+                    bottom: 0;
+                }
+            }
+
+            .shadow {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+            }
+
+            .inn {
+                position: absolute;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                height: 200%;
+                text-align: center;
+                color: var(--bb-flip-clock-number-color);
+                background-color: var(--bb-flip-clock-number-bg);
+                border-radius: var(--bs-border-radius);
+            }
+        }
+    }
+}
+
+.flip .before {
+    z-index: 3;
+}
+
+.flip .active {
+    animation: animation-bb-flip-clock-index .5s .5s linear both;
+    z-index: 2;
+}
+
+@keyframes animation-bb-flip-clock-index {
+    0% {
+        z-index: 2;
+    }
+
+    5% {
+        z-index: 4;
+    }
+
+    100% {
+        z-index: 4;
+    }
+}
+
+.flip .active .down {
+    z-index: 2;
+    animation: animation-bb-flip-clock-turn-down .5s .5s linear both;
+}
+
+@keyframes animation-bb-flip-clock-turn-down {
+    0% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.flip .before .up {
+    z-index: 2;
+    animation: animation-bb-flip-clock-turn-up .5s linear both;
+}
+
+@keyframes animation-bb-flip-clock-turn-up {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+
+.flip .before .up .shadow {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
+    animation: animation-bb-flip-clock-shadown-show .5s linear both;
+}
+
+.flip .active .up .shadow {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
+    animation: animation-bb-flip-clock-shadown-hide .5s .3s linear both;
+}
+
+.flip .before .down .shadow {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
+    animation: animation-bb-flip-clock-shadown-show .5s linear both;
+}
+
+.flip .active .down .shadow {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
+    animation: animation-bb-flip-clock-shadown-hide .5s .3s linear both;
+}
+
+@keyframes animation-bb-flip-clock-shadown-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-bb-flip-clock-shadown-hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

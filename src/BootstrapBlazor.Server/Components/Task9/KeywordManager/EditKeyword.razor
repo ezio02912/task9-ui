@@ -1,0 +1,90 @@
+@page "/keyword-manager/edit/{id:long}"
+@using BootstrapBlazor.Components
+@using BootstrapBlazor.Server.Data
+@using BootstrapBlazor.Server.Services
+@layout PageLayout
+
+<DemoBlock Title="Chỉnh sửa Keyword" Name="EditKeyword">
+    @if (IsLoadingData)
+    {
+        <div class="text-center p-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Đang tải...</span>
+            </div>
+            <p class="mt-2">Đang tải dữ liệu...</p>
+        </div>
+    }
+    else if (Model == null)
+    {
+        <div class="alert alert-warning">
+            <i class="fa-solid fa-exclamation-triangle"></i> Không tìm thấy keyword
+        </div>
+    }
+    else
+    {
+        <ValidateForm Model="@Model" OnValidSubmit="@OnValidSubmit">
+            <div class="row g-3">
+                <div class="col-12">
+                    <BootstrapInput TValue="string" 
+                        Value="@KeywordId" 
+                        DisplayText="ID" 
+                        ShowLabel="true"
+                        readonly="true"
+                        Disabled="true" />
+                </div>
+                
+                <div class="col-12 col-sm-6">
+                    <Select @bind-Value="@Model.BrandId" 
+                        DisplayText="Brand (*)" 
+                        ShowLabel="true"
+                        Items="@BrandItems"
+                        placeholder="Chọn brand">
+                        <RequiredValidator ErrorMessage="Vui lòng chọn brand" />
+                    </Select>
+                </div>
+                
+                <div class="col-12 col-sm-6">
+                    <BootstrapInput @bind-Value="@Model.KeywordText" 
+                        DisplayText="Keyword Text (*)" 
+                        ShowLabel="true"
+                        placeholder="Nhập keyword text">
+                        <RequiredValidator ErrorMessage="Vui lòng nhập keyword text" />
+                    </BootstrapInput>
+                </div>
+                
+                <div class="col-12 col-sm-6">
+                    <Switch @bind-Value="@Model.IsActive" 
+                        DisplayText="Trạng thái hoạt động" 
+                        ShowLabel="true"
+                        OnColor="Color.Success"
+                        OffColor="Color.Secondary" />
+                </div>
+                
+                <div class="col-12">
+                    <div class="d-flex gap-2">
+                        <Button ButtonType="ButtonType.Submit" 
+                            Color="Color.Primary" 
+                            Icon="fa-solid fa-save"
+                            IsDisabled="@IsLoading">
+                            @if (IsLoading)
+                            {
+                                <span class="spinner-border spinner-border-sm me-1"></span>
+                            }
+                            Cập nhật
+                        </Button>
+                        <Button Color="Color.Secondary" 
+                            Icon="fa-solid fa-times"
+                            OnClick="@OnCancel"
+                            IsDisabled="@IsLoading">
+                            Hủy
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        </ValidateForm>
+
+        @* Monthly Metrics Manager *@
+        <MonthlyMetricsManager KeywordId="@Id" />
+    }
+</DemoBlock>
+
