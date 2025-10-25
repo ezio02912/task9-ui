@@ -1,0 +1,473 @@
+﻿{
+  "locale": "zhCN",
+  "styles": {
+    "1ynFmq": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "tl_br": null,
+        "tl_bc": null,
+        "tl_mr": null,
+        "bl_tr": null,
+        "ml_tr": null,
+        "bc_tr": null
+      }
+    },
+    "XZZLUW": {
+      "ht": 2,
+      "fs": null
+    },
+    "4mjUil": {
+      "ht": 2,
+      "fs": 16
+    },
+    "MZbpZM": {
+      "ht": 2,
+      "fs": 14,
+      "cl": null
+    },
+    "hMI3p5": {
+      "ht": 2,
+      "fs": 14,
+      "cl": {
+        "rgb": "#1e222b"
+      },
+      "bl": null
+    },
+    "MXNXUn": {
+      "ht": 2,
+      "fs": 14,
+      "cl": {
+        "rgb": "#1e222b"
+      },
+      "bl": 1,
+      "bd": {
+        "b": null
+      }
+    },
+    "EOXA_p": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "n": null,
+      "bg": null
+    },
+    "6FeTLv": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "n": {
+        "pattern": "yyyy-mm-dd"
+      },
+      "bg": null
+    },
+    "SVOYhJ": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "bg": {
+        "rgb": "#84e1bc"
+      }
+    },
+    "x9Ss3A": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "n": {
+        "pattern": "yyyy-mm-dd"
+      },
+      "bg": {
+        "rgb": "#84e1bc"
+      }
+    },
+    "jVBP03": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "bg": {
+        "rgb": "#def7ec"
+      }
+    },
+    "luIpWI": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "n": {
+        "pattern": "yyyy-mm-dd"
+      },
+      "bg": {
+        "rgb": "#def7ec"
+      }
+    },
+    "xaV6CX": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "bg": {
+        "rgb": "#f8b4d9"
+      }
+    },
+    "BoUbfK": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "n": {
+        "pattern": "yyyy-mm-dd"
+      },
+      "bg": {
+        "rgb": "#f8b4d9"
+      }
+    },
+    "jzMwFT": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "bg": {
+        "rgb": "#fce8f3"
+      }
+    },
+    "-0QQon": {
+      "bd": {
+        "r": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "b": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "t": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        },
+        "l": {
+          "s": 1,
+          "cl": {
+            "rgb": "#000000"
+          }
+        }
+      },
+      "n": {
+        "pattern": "yyyy-mm-dd"
+      },
+      "bg": {
+        "rgb": "#fce8f3"
+      }
+    }
+  },
+  "sheets": {
+    "vyLXWbsaP7Bhvavak3pyeiE-CX": {
+      "id": "vyLXWbsaP7Bhvavak3pyeiE-CX",
+      "name": "Domains",
+      "tabColor": "",
+      "hidden": 0,
+      "rowCount": 1000,
+      "columnCount": 20,
+      "zoomRatio": 1,
+      "freeze": {
+        "xSplit": 0,
+        "ySplit": 0,
+        "startRow": -1,
+        "startColumn": -1
+      },
+      "scrollTop": 0,
+      "scrollLeft": 0,
+      "defaultColumnWidth": 88,
+      "defaultRowHeight": 24,
+      "mergeData": [
+        {
+          "startRow": 0,
+          "startColumn": 0,
+          "endRow": 0,
+          "endColumn": 7,
+          "rangeType": 0,
+          "unitId": "pUGmq0",
+          "sheetId": "vyLXWbsaP7Bhvavak3pyeiE-CX"
+        }
+      ],
+      "cellData": {
+        "0": {
+          "0": {
+            "s": "EOXA_p",
+            "v": "Domain",
+            "t": 1
+          },
+          "1": {
+            "s": "EOXA_p",
+            "v": "Team",
+            "t": 1
+          },
+          "2": {
+            "s": "EOXA_p",
+            "v": "Pic",
+            "t": 1
+          }
+        }
+      },
+      "rowData": {
+        "1": {
+          "ah": 24
+        },
+        "2": {
+          "ah": 24
+        },
+        "3": {
+          "ah": 24
+        },
+        "4": {
+          "ah": 24
+        },
+        "5": {
+          "ah": 24
+        }
+      },
+      "columnData": {
+      },
+      "showGridlines": 1,
+      "rowHeader": {
+        "width": 46,
+        "hidden": 0
+      },
+      "columnHeader": {
+        "height": 20,
+        "hidden": 0
+      },
+      "rightToLeft": 0
+    }
+  }
+}

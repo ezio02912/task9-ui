@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/BootstrapBlazor.Server.props" />
+</Project>

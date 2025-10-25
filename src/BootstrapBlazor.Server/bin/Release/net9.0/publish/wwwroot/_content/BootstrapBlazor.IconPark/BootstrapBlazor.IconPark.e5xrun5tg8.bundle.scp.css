@@ -1,0 +1,11 @@
+/* _content/BootstrapBlazor.IconPark/ByteDanceIcon.razor.rz.scp.css */
+.bb-iconpark-icon[b-puzjgdy4vf] {
+    --bb-svg-icon-width: 12px;
+    display: inline-flex;
+}
+
+    .bb-iconpark-icon > svg[b-puzjgdy4vf] {
+        width: var(--bb-svg-icon-width);
+        height: var(--bb-svg-icon-width);
+        fill: none;
+    }

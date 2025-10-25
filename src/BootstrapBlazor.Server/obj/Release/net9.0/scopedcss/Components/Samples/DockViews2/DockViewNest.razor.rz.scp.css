@@ -1,0 +1,8 @@
+[b-0qkgpljy97] + .select {
+    margin-bottom: 1rem;
+}
+
+[b-0qkgpljy97] ~ .dockview-demo {
+    height: calc(100% - 119px);
+    margin-top: 1rem;
+}

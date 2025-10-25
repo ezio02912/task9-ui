@@ -1,0 +1,10 @@
+.popover-demo[b-8p0sij0atu] {
+    height: 240px;
+}
+
+@media (min-width: 576px) {
+    .popover-demo input[b-8p0sij0atu] {
+        width: 144px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,9 @@
+.bb-sheet-demo[b-ax5frt4kd7] {
+    height: 60vh;
+    width: 100%;
+    border: 1px solid var(--bs-border-color);
+}
+
+.univer-theme[b-ax5frt4kd7] {
+    z-index: 10 !important;
+}

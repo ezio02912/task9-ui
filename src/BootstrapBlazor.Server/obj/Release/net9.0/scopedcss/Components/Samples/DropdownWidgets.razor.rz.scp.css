@@ -1,0 +1,20 @@
+.widget-demo[b-cv76xe6kam] {
+    background-color: rgba(var(--bs-body-color-rgb), .12);
+    border-radius: var(--bs-border-radius);
+}
+
+.dropdown-item-center[b-cv76xe6kam] {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item-progress[b-cv76xe6kam] {
+    position: relative;
+    min-width: 190px;
+    margin-bottom: .5rem;
+}
+
+.dropdown-item small[b-cv76xe6kam] {
+    position: absolute;
+    right: 0;
+}

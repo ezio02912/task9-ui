@@ -1,0 +1,31 @@
+.navbar[b-zqke9w0byp] {
+    background-color: var(--bb-sidebar-navbar-bg);
+}
+
+.navbar-toggler[b-zqke9w0byp] {
+    background-color: var(--bb-sidebar-navbar-bar-bg);
+}
+
+[b-zqke9w0byp] .arrow {
+    width: 1rem;
+}
+
+@media (min-width: 768px) {
+    .sidebar-content[b-zqke9w0byp] {
+        height: calc(100vh - var(--bs-header-height));
+    }
+
+        .sidebar-content.collapse[b-zqke9w0byp] {
+            display: flex;
+            flex-direction: column;
+        }
+
+    [b-zqke9w0byp] .scroll {
+        overflow-x: hidden;
+        padding: 5px 0;
+    }
+
+        [b-zqke9w0byp] .scroll .menu {
+            width: var(--bb-sidebar-width);
+        }
+}

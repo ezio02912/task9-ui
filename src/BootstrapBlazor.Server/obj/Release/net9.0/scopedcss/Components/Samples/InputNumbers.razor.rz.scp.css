@@ -1,0 +1,7 @@
+.demo-input-number[b-09lw45xhi9] {
+    width: 160px;
+}
+
+    .demo-input-number[b-09lw45xhi9] >  .form-control {
+        width: inherit;
+    }

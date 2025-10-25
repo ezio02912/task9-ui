@@ -1,0 +1,15 @@
+[b-7fadrv2v0a] .jstip-pre > pre {
+    max-height: 100%;
+}
+
+[b-7fadrv2v0a] .label-width {
+    min-width: 200px;
+}
+
+[b-7fadrv2v0a] > .input-group {
+    margin-bottom: 0.5rem;
+}
+
+    [b-7fadrv2v0a] > .input-group > .form-control {
+        min-width: 200px;
+    }

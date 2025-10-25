@@ -10,5 +10,4 @@ public class SeoKpiWeightDto
     public decimal searchVolumeHardLevel2Range { get; set; }
     public decimal searchVolumeHardLevel3Range { get; set; }
     public decimal searchVolumeHardLevel4Range { get; set; }
-    public decimal searchVolumeHardLevel5Range { get; set; }
 }

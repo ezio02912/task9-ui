@@ -3652,6 +3652,51 @@
       ]
     },
     {
+      "Route": "js/bootstrap.blazor.bundle.min.bshnfozfav.js",
+      "AssetFile": "js/bootstrap.blazor.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80743"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 01:57:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bshnfozfav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs="
+        },
+        {
+          "Name": "label",
+          "Value": "js/bootstrap.blazor.bundle.min.js"
+        }
+      ]
+    },
+    {
       "Route": "js/bootstrap.blazor.bundle.min.js",
       "AssetFile": "js/bootstrap.blazor.bundle.min.js",
       "Selectors": [],
@@ -3666,7 +3711,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "207857"
+          "Value": "80743"
         },
         {
           "Name": "Content-Type",
@@ -3674,7 +3719,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4=\""
+          "Value": "\"y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs=\""
         },
         {
           "Name": "Last-Modified",
@@ -3684,52 +3729,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4="
-        }
-      ]
-    },
-    {
-      "Route": "js/bootstrap.blazor.bundle.min.uhabfa1lb8.js",
-      "AssetFile": "js/bootstrap.blazor.bundle.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "207857"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 15 Jul 2025 01:57:51 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uhabfa1lb8"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4="
-        },
-        {
-          "Name": "label",
-          "Value": "js/bootstrap.blazor.bundle.min.js"
+          "Value": "sha256-y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs="
         }
       ]
     },

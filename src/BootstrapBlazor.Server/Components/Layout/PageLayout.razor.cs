@@ -131,7 +131,7 @@ public sealed partial class PageLayout
                     new() { Text = "Tool Telegram", Icon = "fa-fw fa-brands fa-telegram", Url = "telegram-bot" },
                     new() { Text = "Báo cáo brand keyword", Icon = "fa-fw fa-solid fa-list-check", Url = "report-brand-keyword" },
                     new() { Text = "Quản lý ảnh", Icon = "fa-fw fa-solid fa-images", Url = "cpd-banners" },
-                    new() { Text = "Quản lý top domain", Icon = "fa-fw fa-solid fa-images", Url = "upload-top-domain-daily" },
+                    new() { Text = "Upload top domain daily", Icon = "fa-fw fa-solid fa-images", Url = "upload-top-domain-daily" },
                 } });
             }
 

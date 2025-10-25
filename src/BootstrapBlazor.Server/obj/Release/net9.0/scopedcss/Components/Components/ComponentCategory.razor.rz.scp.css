@@ -1,0 +1,46 @@
+.coms-cate[b-dtgpegyrri] {
+    position: relative;
+}
+
+    .coms-cate:not(:first-child)[b-dtgpegyrri] {
+        margin-top: 1rem;
+    }
+
+    .coms-cate[b-dtgpegyrri]  .badge {
+        position: absolute;
+        top: 0;
+        margin-inline-start: 1rem;
+        font-size: .65rem;
+    }
+
+.coms-demo[b-dtgpegyrri] {
+    margin-top: 1rem;
+}
+
+    .coms-demo[b-dtgpegyrri]  .card {
+        width: 100%;
+        height: 100%;
+        transition: box-shadow .3s linear;
+    }
+
+        .coms-demo[b-dtgpegyrri]  .card img {
+            max-width: calc(100%);
+        }
+
+        .coms-demo[b-dtgpegyrri]  .card .card-header {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .coms-demo[b-dtgpegyrri]  .card .card-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+
+    .coms-demo[b-dtgpegyrri]  a {
+        width: calc(100%);
+        height: calc(100%);
+        color: inherit;
+    }

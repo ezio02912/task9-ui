@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Argo Zhang")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Bootstrap UI components for Blazor and Razor Components")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("9.8.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("9.8.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("9.8.1+1da3ee2d211ff3473dd99a28fb926baaa9bf0ffe")]
 [assembly: System.Reflection.AssemblyProductAttribute("BootstrapBlazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BootstrapBlazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("9.8.1.0")]

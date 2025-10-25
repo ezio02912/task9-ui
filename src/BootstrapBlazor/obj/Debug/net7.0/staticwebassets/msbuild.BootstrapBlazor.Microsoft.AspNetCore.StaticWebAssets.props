@@ -1434,8 +1434,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uhabfa1lb8</Fingerprint>
-      <Integrity>Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4=</Integrity>
+      <Fingerprint>bshnfozfav</Fingerprint>
+      <Integrity>y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.blazor.bundle.min.js'))</OriginalItemSpec>

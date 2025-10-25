@@ -225,6 +225,7 @@ public class VolumeChartData
         public string Brand { get; set; }
         public TopRange TopRange { get; set; }
         public LevelSearchVolumne VolumeRange { set; get; }
+        public string VolumeRangeTitle { get; set; } = string.Empty;
         public int Month { get; set; }
         public List<string> ListKeyWord { get; set; }
         public List<string> ListDomain { get; set; }
@@ -272,7 +273,6 @@ public class SeoPerformanceDetailDto
     public string VeryHardTitle  { get; set; } = string.Empty;
     public string ExtremeHardTitle  { get; set; } = string.Empty;
     public string HardLevel4Title  { get; set; } = string.Empty;
-    public string HardLevel5Title  { get; set; } = string.Empty;
 
     public int VeryEasy { get; set; } = 0;
     public int VeryEasyTop1 { get; set; } = 0;
@@ -354,17 +354,6 @@ public class SeoPerformanceDetailDto
     public int HardLevel4Top10 { get; set; } = 0;
 
 
-    public int HardLevel5 { get; set; } = 0;
-    public int HardLevel5Top1 { get; set; } = 0;
-    public int HardLevel5Top2 { get; set; } = 0;
-    public int HardLevel5Top3 { get; set; } = 0;
-    public int HardLevel5Top4 { get; set; } = 0;
-    public int HardLevel5Top5 { get; set; } = 0;
-    public int HardLevel5Top6 { get; set; } = 0;
-    public int HardLevel5Top7 { get; set; } = 0;
-    public int HardLevel5Top8 { get; set; } = 0;
-    public int HardLevel5Top9 { get; set; } = 0;
-    public int HardLevel5Top10 { get; set; } = 0;
 }
 
     public class SeoPerformanceDetailByResultDto
@@ -377,7 +366,6 @@ public class SeoPerformanceDetailDto
     public string VeryHardTitle  { get; set; } = string.Empty;
     public string ExtremeHardTitle  { get; set; } = string.Empty;
     public string HardLevel4Title  { get; set; } = string.Empty;
-    public string HardLevel5Title  { get; set; } = string.Empty;
     public Dictionary<string, Dictionary<int, int>> VeryEasyResults { get; set; } = new(); 
     public Dictionary<string, Dictionary<int, int>> EasyResults { get; set; } = new(); 
     public Dictionary<string, Dictionary<int, int>> MediumResults { get; set; } = new(); 
@@ -385,7 +373,6 @@ public class SeoPerformanceDetailDto
     public Dictionary<string, Dictionary<int, int>> VeryHardResults { get; set; } = new(); 
     public Dictionary<string, Dictionary<int, int>> ExtremeHardResults { get; set; } = new(); 
     public Dictionary<string, Dictionary<int, int>> HardLevel4Results { get; set; } = new(); 
-    public Dictionary<string, Dictionary<int, int>> HardLevel5Results { get; set; } = new(); 
 }
 
 

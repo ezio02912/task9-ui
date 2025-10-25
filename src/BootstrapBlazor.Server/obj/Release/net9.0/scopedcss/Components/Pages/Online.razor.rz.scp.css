@@ -1,0 +1,16 @@
+[b-by3cgd6lum] .table-container {
+    --bb-table-row-active-bg: rgba(var(--bb-primary-color-rgb), 0.8);
+    --bb-table-row-hover-bg: rgba(var(--bb-primary-color-rgb), 0.8);
+}
+
+    [b-by3cgd6lum] .table-container .table tr.active > td {
+        color: #fff !important;
+    }
+
+        [b-by3cgd6lum] .table-container .table tr.active > td a {
+            --bs-link-color-rgb: #fff;
+        }
+
+[b-by3cgd6lum] .table-striped .table-row.active {
+    background-color: var(--bb-table-row-active-bg);
+}

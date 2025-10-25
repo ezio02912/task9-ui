@@ -1,0 +1,44 @@
+/* Keyword List Styling */
+
+[b-k7rd03z6vr] .table-toolbar {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.375rem 0.375rem 0 0;
+}
+
+[b-k7rd03z6vr] .btn-group-sm .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+[b-k7rd03z6vr] .badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+[b-k7rd03z6vr] .table {
+    font-size: 0.875rem;
+}
+
+[b-k7rd03z6vr] .table td {
+    vertical-align: middle;
+}
+
+[b-k7rd03z6vr] .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+[b-k7rd03z6vr] .table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Action buttons */
+[b-k7rd03z6vr] .btn-group .btn {
+    border-radius: 0.25rem;
+}
+
+[b-k7rd03z6vr] .btn-group .btn + .btn {
+    margin-left: 0.25rem;
+}
+

@@ -73,6 +73,7 @@
             });
             var userModel = new UserModel() {UserName = email, Password = password};
             var result = await  UserManagerService.SignInAsync(userModel);
+            
             if(!string.IsNullOrEmpty(result.AccessToken))
             {
                 NavigationManager.NavigateTo("/",true);

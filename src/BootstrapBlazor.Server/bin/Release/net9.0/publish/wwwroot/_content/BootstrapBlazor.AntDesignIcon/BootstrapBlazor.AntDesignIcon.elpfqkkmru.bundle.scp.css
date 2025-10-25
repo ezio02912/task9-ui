@@ -1,0 +1,11 @@
+/* _content/BootstrapBlazor.AntDesignIcon/AntDesignIcon.razor.rz.scp.css */
+.bb-ant-icon[b-fm6q001lqi] {
+    --bb-svg-icon-width: 16px;
+    display: inline-flex;
+}
+
+    .bb-ant-icon > svg[b-fm6q001lqi] {
+        width: var(--bb-svg-icon-width);
+        height: var(--bb-svg-icon-width);
+        fill: currentColor;
+    }

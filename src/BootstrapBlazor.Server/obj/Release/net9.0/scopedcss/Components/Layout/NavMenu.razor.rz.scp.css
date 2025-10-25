@@ -1,0 +1,55 @@
+.sidebar-switch[b-9kv2lyed0w] {
+    display: flex;
+    border-bottom: solid 1px var(--bs-border-color);
+    justify-content: center;
+    align-items: center;
+}
+
+    .sidebar-switch[b-9kv2lyed0w]  .form-label {
+        margin: 0 0.5rem 0 0;
+    }
+
+    .sidebar-switch[b-9kv2lyed0w]  .switch {
+        width: auto;
+    }
+
+.navbar[b-9kv2lyed0w] {
+    background-color: var(--bb-sidebar-navbar-bg);
+}
+
+.navbar-toggler[b-9kv2lyed0w] {
+    background-color: var(--bb-sidebar-navbar-bar-bg);
+}
+
+.sidebar-content[b-9kv2lyed0w] {
+    position: relative;
+}
+
+[b-9kv2lyed0w] .badge-menu {
+    background-color: var(--bb-primary-color);
+}
+
+[b-9kv2lyed0w] .icon-summary {
+    color: var(--bb-primary-color);
+}
+
+@media (min-width: 768px) {
+    .sidebar-content[b-9kv2lyed0w] {
+        height: calc(100vh - var(--bs-header-height));
+    }
+
+        .sidebar-content.collapse[b-9kv2lyed0w] {
+            display: flex;
+            flex-direction: column;
+        }
+
+    [b-9kv2lyed0w] .scroll {
+        overflow-x: hidden;
+        max-height: calc(100% - 36px);
+        padding: 5px 0;
+    }
+
+        [b-9kv2lyed0w] .scroll .menu {
+            width: var(--bb-sidebar-width);
+        }
+}

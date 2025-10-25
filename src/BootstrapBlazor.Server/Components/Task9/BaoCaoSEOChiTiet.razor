@@ -77,8 +77,8 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td class="sticky" rowspan="5">1-5</td>
-                                    <td class="sticky2">Dễ (0-100k)</td>
+                                    <td class="sticky" rowspan="7">1-5</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryEasy)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
                                         <td> @(value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryEasy)?.KeyWords ?? 0 + value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Easy)?.KeyWords ?? 0)</td>
@@ -87,7 +87,16 @@
                                     }
                                 </tr>
                                 <tr>
-                                    <td class="sticky2">Trung bình (100k-500k)</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Easy)?.VolumeRangeTitle ?? "")</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Easy)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Easy)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Easy)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Medium)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Medium)?.KeyWords</td>
@@ -96,16 +105,16 @@
                                     }
                                 </tr>
                                 <tr>
-                                    <td class="sticky2">Khó 1(>500k - 1M)</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
-                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.KeyWords</td>
-                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.Domains</td>
-                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.Count</td>
+                                        <td> @(value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.KeyWords ?? 0 + value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.KeyWords ?? 0)</td>
+                                        <td> @(value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.Domains ?? 0 + value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.Domains ?? 0)</td>
+                                        <td> @(value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.Hard)?.Count ?? 0 + value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.Count ?? 0)</td>
                                     }
                                 </tr>
                                 <tr>
-                                    <td class="sticky2">Khó 2(>1M - 1,5M)</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.KeyWords</td>
@@ -114,7 +123,7 @@
                                     }
                                 </tr>
                                 <tr>
-                                    <td class="sticky2">Khó 3(>1,5M)</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.KeyWords</td>
@@ -123,8 +132,26 @@
                                     }
                                 </tr>
                                 <tr>
-                                    <td class="sticky" rowspan="5">6-10</td>
-                                    <td class="sticky2">Dễ (0-100k)</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.HardLevel4)?.VolumeRangeTitle ?? "")</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.HardLevel4)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.HardLevel4)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top1ToTop5 && x.VolumeRange == LevelSearchVolumne.HardLevel4)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky" rowspan="7">6-10</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.VeryEasy)?.VolumeRangeTitle ?? "")</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.VeryEasy)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.VeryEasy)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.VeryEasy)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Easy)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Easy)?.KeyWords</td>
@@ -133,7 +160,7 @@
                                     }
                                 </tr>
                                 <tr>
-                                    <td class="sticky2">Trung bình (100k-500k)</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Medium)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Medium)?.KeyWords</td>
@@ -141,8 +168,9 @@
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Medium)?.Count</td>
                                     }
                                 </tr>
+                          
                                 <tr>
-                                    <td class="sticky2">Khó 1(>500k - 1M)</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Hard)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.Hard)?.KeyWords</td>
@@ -151,7 +179,7 @@
                                     }
                                 </tr>
                                 <tr>
-                                    <td class="sticky2">Khó 2(>1M - 1,5M)</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.VeryHard)?.KeyWords</td>
@@ -160,12 +188,21 @@
                                     }
                                 </tr>
                                 <tr>
-                                    <td class="sticky2">Khó 3(>1,5M)</td>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.VolumeRangeTitle ?? "")</td>
                                     @for (int month = startMonth; month <= endMonth; month++)
                                     {
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.KeyWords</td>
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.Domains</td>
                                         <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.ExtremeHard)?.Count</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td class="sticky2">@(value[startMonth].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.HardLevel4)?.VolumeRangeTitle ?? "")</td>
+                                    @for (int month = startMonth; month <= endMonth; month++)
+                                    {
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.HardLevel4)?.KeyWords</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.HardLevel4)?.Domains</td>
+                                        <td> @value[month].FirstOrDefault(x => x.TopRange == TopRange.Top6ToTop10 && x.VolumeRange == LevelSearchVolumne.HardLevel4)?.Count</td>
                                     }
                                 </tr>
                                 <tr>

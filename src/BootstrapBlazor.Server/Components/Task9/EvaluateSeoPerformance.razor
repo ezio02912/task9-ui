@@ -196,11 +196,6 @@
 		model.Rows[DifficultyRow.Hard4].Top67 = Sum(x => x.HardLevel4Top6 + x.HardLevel4Top7);
 		model.Rows[DifficultyRow.Hard4].Top810 = Sum(x => x.HardLevel4Top8 + x.HardLevel4Top9 + x.HardLevel4Top10);
 
-		model.Rows[DifficultyRow.Hard5].Top1 = Sum(x => x.HardLevel5Top1);
-		model.Rows[DifficultyRow.Hard5].Top23 = Sum(x => x.HardLevel5Top2 + x.HardLevel5Top3);
-		model.Rows[DifficultyRow.Hard5].Top45 = Sum(x =>  x.HardLevel5Top4 + x.HardLevel5Top5);
-		model.Rows[DifficultyRow.Hard5].Top67 = Sum(x => x.HardLevel5Top6 + x.HardLevel5Top7);
-		model.Rows[DifficultyRow.Hard5].Top810 = Sum(x => x.HardLevel5Top8 + x.HardLevel5Top9 + x.HardLevel5Top10);
 	}
 
 	private static readonly (DifficultyRow Key, string Label)[] DifficultyDefs = new[]

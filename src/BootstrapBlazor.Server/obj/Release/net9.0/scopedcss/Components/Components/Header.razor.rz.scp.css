@@ -1,0 +1,95 @@
+.navbar-header[b-7q6iuh5eh7] {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(var(--bb-primary-color-rgb), 1), rgba(var(--bb-primary-color-rgb), 0.9));
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+    transition: transform .3s ease;
+    font-size: var(--bb-header-font-size);
+}
+
+.nav-repo[b-7q6iuh5eh7] {
+    display: none;
+}
+
+.navbar-brand span[b-7q6iuh5eh7] {
+    color: var(--bs-navbar-color);
+}
+
+.header-img[b-7q6iuh5eh7] {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-inline-end: 0;
+}
+
+[b-7q6iuh5eh7] .btn-fs {
+    margin-top: 2px;
+}
+
+.btn-bd-download[b-7q6iuh5eh7] {
+    font-weight: 600;
+    color: var(--bb-bd-download-color);
+    border-color: var(--bb-bd-download-border-color);
+}
+
+    .btn-bd-download:active[b-7q6iuh5eh7],
+    .btn-bd-download:hover[b-7q6iuh5eh7] {
+        color: var(--bb-bd-download-hover-color);
+        background-color: var(--bb-bd-download-hover-bg-color);
+        border-color: var(--bb-bd-download-hover-border-color);
+    }
+
+.nav-link img[b-7q6iuh5eh7] {
+    height: 24px;
+    width: auto;
+}
+
+.navbar-version[b-7q6iuh5eh7] {
+    color: var(--bs-navbar-color);
+    border-right: 1px solid #dddddd40;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+    display: none;
+}
+
+[b-7q6iuh5eh7] .bb-theme-mode .dropdown-toggle {
+    color: var(--bs-navbar-color);
+}
+
+[b-7q6iuh5eh7] .bb-theme-mode .dropdown-menu li {
+    padding: 0 4px;
+}
+
+    [b-7q6iuh5eh7] .bb-theme-mode .dropdown-menu li button {
+        border-radius: var(--bs-border-radius);
+    }
+
+[b-7q6iuh5eh7] .bb-g-search {
+    width: var(--bb-header-select-width);
+    margin-bottom: var(--bb-header-search-margin-bottom);
+}
+
+@media (min-width: 768px) {
+    .navbar-header[b-7q6iuh5eh7] {
+        position: sticky;
+        top: 0;
+        z-index: 15;
+        height: var(--bs-header-height);
+    }
+
+    [b-7q6iuh5eh7] .bb-g-search {
+        margin-bottom: 0;
+        margin-inline-end: .5rem;
+    }
+}
+
+@media (min-width: 1140px) {
+    .nav-repo[b-7q6iuh5eh7] {
+        display: flex;
+    }
+}
+
+@media (min-width: 1240px) {
+    .navbar-version[b-7q6iuh5eh7] {
+        display: block;
+    }
+}

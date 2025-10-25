@@ -1,0 +1,10 @@
+.textarea-demo[b-s7wqaxr9zl] {
+    min-height: var(--bb-height);
+}
+
+@media (min-width: 576px) {
+    .textarea-demo[b-s7wqaxr9zl] {
+        word-break: break-all;
+        height: auto;
+    }
+}

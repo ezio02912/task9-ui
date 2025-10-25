@@ -1,0 +1,22 @@
+.dial-buttons[b-66xl7wnbvo] {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+}
+
+    .dial-buttons .col-4[b-66xl7wnbvo] {
+        height: 140px;
+        display: flex;
+    }
+
+.dial-mode[b-66xl7wnbvo] {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: 0 var(--bs-border-radius) var(--bs-border-radius) 0;
+    padding: 0.25rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+    .dial-mode[b-66xl7wnbvo]  .form-check:not(.first-child) {
+        margin-inline-start: .5rem;
+    }

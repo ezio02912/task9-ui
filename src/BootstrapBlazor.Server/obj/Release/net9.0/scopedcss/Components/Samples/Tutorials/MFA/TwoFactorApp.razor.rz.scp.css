@@ -1,0 +1,42 @@
+.bb-sign[b-bllgrtgwh4] {
+    margin: 0 auto;
+    width: 406px;
+    padding: 0 1rem;
+}
+
+    .bb-sign img[b-bllgrtgwh4] {
+        background-color: var(--bb-primary-color);
+        border-radius: 50%;
+        margin-block: 2rem;
+    }
+
+    .bb-sign h1[b-bllgrtgwh4] {
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        margin-block-end: 1rem;
+    }
+
+.bb-sign-body[b-bllgrtgwh4] {
+    background-color: #f6f8fa;
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    padding: 1rem;
+}
+
+    .bb-sign-body img[b-bllgrtgwh4] {
+        width: 32px;
+        height: auto;
+        margin: 0;
+        margin-block-end: 1rem;
+    }
+
+    .bb-sign-body h3[b-bllgrtgwh4] {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+[b-bllgrtgwh4] .bb-otp-input .bb-otp-item {
+    --bb-otp-item-width: 50px;
+    --bb-otp-font-size: 2em;
+}

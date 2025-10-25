@@ -1,0 +1,132 @@
+/* CPD Upload Component Styles */
+.cpd-upload-container[b-ln76701jpf] {
+    padding: 1rem;
+}
+
+.upload-progress[b-ln76701jpf] {
+    margin-top: 1rem;
+}
+
+.import-result-card[b-ln76701jpf] {
+    margin-top: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+}
+
+.result-stats[b-ln76701jpf] {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.stat-card[b-ln76701jpf] {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    background-color: #f8f9fa;
+}
+
+.stat-number[b-ln76701jpf] {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label[b-ln76701jpf] {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.error-list[b-ln76701jpf] {
+    margin-top: 1rem;
+}
+
+.error-list ul[b-ln76701jpf] {
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+}
+
+.error-list li[b-ln76701jpf] {
+    margin-bottom: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .result-stats[b-ln76701jpf] {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .stat-card[b-ln76701jpf] {
+        padding: 0.75rem;
+    }
+    
+    .stat-number[b-ln76701jpf] {
+        font-size: 1.25rem;
+    }
+}
+
+/* Loading spinner styles */
+.upload-loading[b-ln76701jpf] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.upload-loading .spinner-border[b-ln76701jpf] {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* File upload area styles */
+.drop-upload-area[b-ln76701jpf] {
+    border: 2px dashed #dee2e6;
+    border-radius: 0.375rem;
+    padding: 2rem;
+    text-align: center;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.drop-upload-area:hover[b-ln76701jpf] {
+    border-color: #007bff;
+}
+
+.drop-upload-area.dragover[b-ln76701jpf] {
+    border-color: #007bff;
+    background-color: #f8f9ff;
+}
+
+/* Alert styles */
+.alert[b-ln76701jpf] {
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+.alert-success[b-ln76701jpf] {
+    background-color: #d1edff;
+    border-color: #b8daff;
+    color: #0c5460;
+}
+
+.alert-danger[b-ln76701jpf] {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert h5[b-ln76701jpf] {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.alert p[b-ln76701jpf] {
+    margin-bottom: 0.25rem;
+}
+
+.alert p:last-child[b-ln76701jpf] {
+    margin-bottom: 0;
+}

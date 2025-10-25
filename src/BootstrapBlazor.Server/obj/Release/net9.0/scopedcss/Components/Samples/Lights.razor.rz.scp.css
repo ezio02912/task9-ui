@@ -1,0 +1,11 @@
+.light-xs[b-mt4j1jdsv2], .light-sm[b-mt4j1jdsv2] {
+    margin-top: 1rem;
+}
+
+    .light-sm[b-mt4j1jdsv2]  .light {
+        --bb-light-width: 12px;
+    }
+
+    .light-xs[b-mt4j1jdsv2]  .light {
+        --bb-light-width: 6px;
+    }

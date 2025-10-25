@@ -1,0 +1,72 @@
+.translator[b-jxek8yuh8m] {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 82px);
+}
+
+[b-jxek8yuh8m] .console {
+    flex: 1;
+}
+
+[b-jxek8yuh8m] .card-body-wrapper {
+    position: relative;
+}
+
+    [b-jxek8yuh8m] .card-body-wrapper .btn i {
+        width: 18px;
+    }
+
+[b-jxek8yuh8m] .progress {
+    height: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.table-language[b-jxek8yuh8m] {
+    flex: 1;
+    overflow: auto;
+    margin-top: 1rem;
+}
+
+[b-jxek8yuh8m] tbody td {
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+[b-jxek8yuh8m] textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+[b-jxek8yuh8m] textarea::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+    [b-jxek8yuh8m] textarea::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0,0,0,0.3);
+    }
+
+[b-jxek8yuh8m] .col-section textarea {
+    background-color: #e9ecef;
+}
+
+[b-jxek8yuh8m] .col-key textarea {
+    background-color: #e9ecef;
+}
+
+[b-jxek8yuh8m] .col-lang textarea {
+    background-color: #aed29c;
+}
+
+[b-jxek8yuh8m] .col-not-save textarea {
+    background-color: #e3ed9c;
+}
+
+[b-jxek8yuh8m] .col-miss textarea {
+    background-color: #edcbcb;
+}
+
+[b-jxek8yuh8m] .col-temp textarea {
+    background-color: #e5bfe3;
+}

@@ -1,0 +1,5 @@
+main[b-10vux9su1q] {
+    min-height: calc(100vh - var(--bs-header-height));
+    position: relative;
+    z-index: 10;
+}

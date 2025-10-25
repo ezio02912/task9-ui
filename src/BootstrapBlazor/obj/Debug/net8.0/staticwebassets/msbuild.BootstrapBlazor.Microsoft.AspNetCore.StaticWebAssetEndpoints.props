@@ -534,17 +534,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ky58muc6zp"},{"Name":"integrity","Value":"sha256-1OGVBunZTgn9dXn1Q/mTjq7aXQvSngeNfqkterKu7Zg="},{"Name":"label","Value":"_content/BootstrapBlazor/css/sweetalert2.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28457"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221OGVBunZTgn9dXn1Q/mTjq7aXQvSngeNfqkterKu7Zg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Jul 2025 01:57:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.bshnfozfav.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.blazor.bundle.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bshnfozfav"},{"Name":"integrity","Value":"sha256-y3ibfOyBqlgBd\u002BGzwFYQEVOZdNJD06HeDXihongBXKs="},{"Name":"label","Value":"_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"80743"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022y3ibfOyBqlgBd\u002BGzwFYQEVOZdNJD06HeDXihongBXKs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Jul 2025 01:57:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.blazor.bundle.min.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"207857"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Jul 2025 01:57:51 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.uhabfa1lb8.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.blazor.bundle.min.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uhabfa1lb8"},{"Name":"integrity","Value":"sha256-Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4="},{"Name":"label","Value":"_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"207857"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Jul 2025 01:57:51 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-y3ibfOyBqlgBd\u002BGzwFYQEVOZdNJD06HeDXihongBXKs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"80743"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022y3ibfOyBqlgBd\u002BGzwFYQEVOZdNJD06HeDXihongBXKs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Jul 2025 01:57:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BootstrapBlazor/lib/countUp/countUp.min.0aztznbnrr.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\countUp\countUp.min.js'))</AssetFile>

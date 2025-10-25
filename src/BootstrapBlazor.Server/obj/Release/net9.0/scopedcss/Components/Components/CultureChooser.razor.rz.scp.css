@@ -1,0 +1,37 @@
+.culture-selector[b-uyubftu2on] {
+    --bs-border-color: var(--bb-header-dropdown-border-color);
+    --bb-border-hover-color: var(--bb-header-dropdown-border-hover-color);
+    --bb-select-color: var(--bb-header-dropdown-color);
+    display: flex;
+    align-items: center;
+    color: var(--bb-select-color);
+}
+
+    .culture-selector span[b-uyubftu2on] {
+        margin: 0;
+        color: var(--bs-navbar-color);
+        display: none;
+    }
+
+    .culture-selector[b-uyubftu2on]  .select {
+        width: var(--bb-header-select-width);
+    }
+
+[b-uyubftu2on] .form-control {
+    transition: border-color .3s linear;
+}
+
+[b-uyubftu2on] .dropdown-toggle {
+    --bs-body-bg: transparent;
+}
+
+
+[b-uyubftu2on] .form-select {
+    color: var(--bb-select-color);
+}
+
+@media (min-width: 768px) {
+    .culture-selector span[b-uyubftu2on] {
+        display: block;
+    }
+}

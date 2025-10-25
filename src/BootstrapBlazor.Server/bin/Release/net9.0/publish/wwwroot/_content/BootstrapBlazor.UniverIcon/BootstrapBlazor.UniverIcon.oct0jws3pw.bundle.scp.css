@@ -1,0 +1,12 @@
+/* _content/BootstrapBlazor.UniverIcon/UniverIcon.razor.rz.scp.css */
+.bb-univer-icon[b-mxbreq13gq] {
+    --bb-svg-icon-width: 16px;
+    display: inline-flex;
+    color: var(--bb-univer-icon-color);
+}
+
+    .bb-univer-icon > svg[b-mxbreq13gq] {
+        width: var(--bb-svg-icon-width);
+        height: var(--bb-svg-icon-width);
+        fill: none;
+    }

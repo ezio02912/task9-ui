@@ -1,0 +1,16 @@
+.login-item-avatar h4[b-1fazvz6k64] {
+    margin: 1rem 0 3rem 0;
+}
+
+.login-item-avatar[b-1fazvz6k64]  .avatar {
+    margin-top: 3rem;
+}
+
+.login-item-avatar .d-flex[b-1fazvz6k64] {
+    justify-content: space-between;
+}
+
+    .login-item-avatar .d-flex[b-1fazvz6k64]  .btn {
+        margin-bottom: 1rem;
+        max-width: 46%;
+    }

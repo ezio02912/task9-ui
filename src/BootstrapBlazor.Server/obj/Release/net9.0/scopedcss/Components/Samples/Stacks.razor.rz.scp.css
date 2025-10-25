@@ -1,0 +1,32 @@
+.stack-demo[b-az3zqh2cty] {
+    border: 1px solid var(--bs-border-color);
+    height: 400px;
+    border-radius: var(--bs-border-radius);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+[b-az3zqh2cty] .bb-stack {
+    height: 100%;
+}
+
+[b-az3zqh2cty] .input-group-text {
+    width: 120px;
+}
+
+[b-az3zqh2cty] .bb-stack-item:nth-child(1) {
+    background-color: var(--bs-primary);
+}
+
+[b-az3zqh2cty] .bb-stack-item:nth-child(2) {
+    background-color: var(--bs-success);
+}
+
+[b-az3zqh2cty] .bb-stack-item:nth-child(3) {
+    background-color: var(--bs-danger);
+}
+
+.stack-item-demo[b-az3zqh2cty] {
+    padding: .5rem;
+    margin: .5rem;
+}

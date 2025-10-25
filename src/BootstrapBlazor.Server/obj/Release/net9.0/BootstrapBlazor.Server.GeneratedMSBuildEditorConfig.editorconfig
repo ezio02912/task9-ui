@@ -1,0 +1,1809 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BootstrapBlazor.Server
+build_property.RootNamespace = BootstrapBlazor.Server
+build_property.ProjectDir = /Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/AttributeTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0F0dHJpYnV0ZVRhYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/BarcodeGenerateSettings.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0JhcmNvZGVHZW5lcmF0ZVNldHRpbmdzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/BlazorReconnector.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0JsYXpvclJlY29ubmVjdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CacheCounter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NhY2hlQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CacheExpiration.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NhY2hlRXhwaXJhdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CalendarBodyTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NhbGVuZGFyQm9keVRlbXBsYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CalendarChildContent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NhbGVuZGFyQ2hpbGRDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CalendarHeaderTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NhbGVuZGFySGVhZGVyVGVtcGxhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CommitItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NvbW1pdEl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ContextMenuList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NvbnRleHRNZW51TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NvdW50ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CustomerFilter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0N1c3RvbWVyRmlsdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CustomerSelectDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0N1c3RvbWVyU2VsZWN0RGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CustomPopConfirmContent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0N1c3RvbVBvcENvbmZpcm1Db250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CustomTableRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0N1c3RvbVRhYmxlUm93LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CustomWinBoxContent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0N1c3RvbVdpbkJveENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DataDialogComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RhdGFEaWFsb2dDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DemoComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RlbW9Db21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DemoHobbyTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RlbW9Ib2JieVRlbXBsYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DemoTabItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RlbW9UYWJJdGVtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DemoTabItemSetText.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RlbW9UYWJJdGVtU2V0VGV4dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DemoTableEditTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RlbW9UYWJsZUVkaXRUZW1wbGF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DialogBodyFoo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RpYWxvZ0JvZHlGb28ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DialogDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RpYWxvZ0RlbW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DialogHeaderFoo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RpYWxvZ0hlYWRlckZvby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DialogSaveDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RpYWxvZ1NhdmVEZXRhaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ErrorCounter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0Vycm9yQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/EventTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0V2ZW50VGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0ZldGNoRGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/FooSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0Zvb1NlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/FooterCounter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0Zvb3RlckNvdW50ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/FormInlineSwitch.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0Zvcm1JbmxpbmVTd2l0Y2gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/GlobalSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0dsb2JhbFNlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/InstallContent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0luc3RhbGxDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/MergeTableRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL01lcmdlVGFibGVSb3cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/MethodTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL01ldGhvZFRhYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/MockError.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL01vY2tFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/PackageTips.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1BhY2thZ2VUaXBzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/QQGroup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1FRR3JvdXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ResultDialogDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1Jlc3VsdERpYWxvZ0RlbW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ResultDialogDemo2.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1Jlc3VsdERpYWxvZ0RlbW8yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/SearchButtonTemplateDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1NlYXJjaEJ1dHRvblRlbXBsYXRlRGVtby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ShownCallbackDummy.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1Nob3duQ2FsbGJhY2tEdW1teS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/State.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1N0YXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/SwalFooter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1N3YWxGb290ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/TabItemContentDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1RhYkl0ZW1Db250ZW50RGVtby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ThemeMode.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1RoZW1lTW9kZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/Tips.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1RpcHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ValueCounter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1ZhbHVlQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/Video.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1ZpZGVvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/VideoDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1ZpZGVvRGVtby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/Widget.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1dpZGdldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/WinButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1dpbkJ1dHRvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/Wwads.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1d3YWRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/DockLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvRG9ja0xheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/IconLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvSWNvbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/PageLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUGFnZUxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/PrintLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUHJpbnRMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/ErrorPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvclBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Globalization.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9HbG9iYWxpemF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/GlobalOption.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9HbG9iYWxPcHRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Install_Maui.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnN0YWxsX01hdWkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Install_Server.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnN0YWxsX1NlcnZlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Install_wasm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnN0YWxsX3dhc20ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Install_WebApp.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnN0YWxsX1dlYkFwcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Introduction.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnRyb2R1Y3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Layout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Template.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9UZW1wbGF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Theme.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9UaGVtZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Affixs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0FmZml4cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Ajaxs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0FqYXhzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Alerts.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0FsZXJ0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/AnchorLinks.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0FuY2hvckxpbmtzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Anchors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0FuY2hvcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/AutoCompletes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0F1dG9Db21wbGV0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/AutoFills.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0F1dG9GaWxscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/AutoRedirects.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0F1dG9SZWRpcmVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Avatars.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0F2YXRhcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/BaiduOcr.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0JhaWR1T2NyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/BarcodeGenerators.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0JhcmNvZGVHZW5lcmF0b3JzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/BarcodeReaders.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0JhcmNvZGVSZWFkZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Blocks.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Jsb2Nrcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/BootstrapBlazorIcons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Jvb3RzdHJhcEJsYXpvckljb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Breadcrumbs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0JyZWFkY3J1bWJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/BrowserFingers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Jyb3dzZXJGaW5nZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Buttons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0J1dHRvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Cameras.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NhbWVyYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Captchas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NhcHRjaGFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Cards.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NhcmRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Cascaders.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Nhc2NhZGVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Charts/Bar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NoYXJ0cy9CYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Charts/Bubble.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NoYXJ0cy9CdWJibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Charts/Doughnut.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NoYXJ0cy9Eb3VnaG51dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Charts/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NoYXJ0cy9JbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Charts/Line.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NoYXJ0cy9MaW5lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Charts/Pie.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NoYXJ0cy9QaWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/CheckboxLists.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NoZWNrYm94TGlzdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Checkboxs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NoZWNrYm94cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/CherryMarkdowns.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NoZXJyeU1hcmtkb3ducy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Client.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NsaWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Clipboards.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NsaXBib2FyZHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ClockPickers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Nsb2NrUGlja2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/CodeEditors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NvZGVFZGl0b3JzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Collapses.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NvbGxhcHNlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ColorPickers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NvbG9yUGlja2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ConnectionServices.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Nvbm5lY3Rpb25TZXJ2aWNlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Consoles.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NvbnNvbGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ContextMenus.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NvbnRleHRNZW51cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/CountButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NvdW50QnV0dG9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DateTimeRanges.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RhdGVUaW1lUmFuZ2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Dialogs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RpYWxvZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Dispatches.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Rpc3BhdGNoZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Displays.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Rpc3BsYXlzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Dividers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RpdmlkZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Downloads.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Rvd25sb2Fkcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DragDrops.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RyYWdEcm9wcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Drawers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RyYXdlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DriverDotnetJs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RyaXZlckRvdG5ldEpzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Dropdowns.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Ryb3Bkb3ducy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/EditDialogs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0VkaXREaWFsb2dzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/EditorForms.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0VkaXRvckZvcm1zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Editors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0VkaXRvcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Empties.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0VtcHRpZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ExportPdfButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0V4cG9ydFBkZkJ1dHRvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/EyeDroppers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0V5ZURyb3BwZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Festivals.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Zlc3RpdmFscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/FileViewers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ZpbGVWaWV3ZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/FlipClocks.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ZsaXBDbG9ja3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/FloatingLabels.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Zsb2F0aW5nTGFiZWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Footers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Zvb3RlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/FullScreenButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Z1bGxTY3JlZW5CdXR0b25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/FullScreens.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Z1bGxTY3JlZW5zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Gantts.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0dhbnR0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Geolocations.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0dlb2xvY2F0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/GlobalException.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0dsb2JhbEV4Y2VwdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/GoTops.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0dvVG9wcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/GroupBoxes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0dyb3VwQm94ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Handwrittens.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0hhbmR3cml0dGVucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Holidays.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0hvbGlkYXlzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Html2Images.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0h0bWwySW1hZ2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Html2Pdfs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0h0bWwyUGRmcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/HtmlRenderers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0h0bWxSZW5kZXJlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/AntDesign/AntDesignIconListFilled.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0FudERlc2lnbi9BbnREZXNpZ25JY29uTGlzdEZpbGxlZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/AntDesign/AntDesignIconListOutlined.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0FudERlc2lnbi9BbnREZXNpZ25JY29uTGlzdE91dGxpbmVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/AntDesign/AntDesignIconListTwoTone.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0FudERlc2lnbi9BbnREZXNpZ25JY29uTGlzdFR3b1RvbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/AntDesign/AntDesignIcons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0FudERlc2lnbi9BbnREZXNpZ25JY29ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/BootstrapIconBase.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0Jvb3RzdHJhcEljb25CYXNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/BootstrapIcons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0Jvb3RzdHJhcEljb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/ElementIcon/ElementIconList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0VsZW1lbnRJY29uL0VsZW1lbnRJY29uTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/ElementIcon/ElementIcons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0VsZW1lbnRJY29uL0VsZW1lbnRJY29ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/FAIcons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0ZBSWNvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/IconPark/IconParkList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0ljb25QYXJrL0ljb25QYXJrTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/IconPark/IconParks.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL0ljb25QYXJrL0ljb25QYXJrcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/MaterialDesignIcons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL01hdGVyaWFsRGVzaWduSWNvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/OctIcon/OcticonIconList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL09jdEljb24vT2N0aWNvbkljb25MaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/OctIcon/OctIcons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL09jdEljb24vT2N0SWNvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/UniverIcon/UniverIconList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL1VuaXZlckljb24vVW5pdmVySWNvbkxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/UniverIcon/UniverIcons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL1VuaXZlckljb24vVW5pdmVySWNvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Icons/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ljb25zL19JbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/IFrames.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0lGcmFtZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ImageCroppers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ltYWdlQ3JvcHBlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/InputGroups.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0lucHV0R3JvdXBzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Inputs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0lucHV0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Ips.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0lwcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Labels.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xhYmVscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/LayoutDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xheW91dERlbW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/LayoutPages.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xheW91dFBhZ2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/LinkButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xpbmtCdXR0b25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Live2DDisplays.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xpdmUyRERpc3BsYXlzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Locators.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xvY2F0b3JzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Lookup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xvb2t1cC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Markdowns.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01hcmtkb3ducy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Masks.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01hc2tzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Meets.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01lZXRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Mermaids.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01lcm1haWRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Messages.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01lc3NhZ2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/MindMaps.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01pbmRNYXBzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Modals.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01vZGFscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/MouseFollowers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01vdXNlRm9sbG93ZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Navigation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL05hdmlnYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Notifications.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL05vdGlmaWNhdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/OfficeViewers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL09mZmljZVZpZXdlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/OtpInputs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL090cElucHV0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/OtpServices.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL090cFNlcnZpY2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Paginations.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1BhZ2luYXRpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/PdfReaders.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1BkZlJlYWRlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/PdfViewers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1BkZlZpZXdlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Players.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1BsYXllcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/PopoverConfirms.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1BvcG92ZXJDb25maXJtcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Print.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1ByaW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/PrintServices.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1ByaW50U2VydmljZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Progress.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1Byb2dyZXNzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/PulseButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1B1bHNlQnV0dG9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/QRCodes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1FSQ29kZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/QueryBuilders.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1F1ZXJ5QnVpbGRlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Radios.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1JhZGlvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Rates.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1JhdGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/RDKits.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1JES2l0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Reconnectors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1JlY29ubmVjdG9ycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Repeaters.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1JlcGVhdGVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Responsives.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1Jlc3BvbnNpdmVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/RibbonTabs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1JpYmJvblRhYnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Rows.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1Jvd3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SearchDialogs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NlYXJjaERpYWxvZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Segmenteds.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NlZ21lbnRlZHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SelectObjects.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NlbGVjdE9iamVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SelectTrees.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NlbGVjdFRyZWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ShieldBadges.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NoaWVsZEJhZGdlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SignaturePadPageResponsive.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NpZ25hdHVyZVBhZFBhZ2VSZXNwb25zaXZlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SignaturePads.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NpZ25hdHVyZVBhZHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SmilesDrawers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NtaWxlc0RyYXdlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SocketFactories.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NvY2tldEZhY3Rvcmllcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Sockets/Adapters.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NvY2tldHMvQWRhcHRlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Sockets/AutoReceives.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NvY2tldHMvQXV0b1JlY2VpdmVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Sockets/AutoReconnects.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NvY2tldHMvQXV0b1JlY29ubmVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Sockets/ManualReceives.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NvY2tldHMvTWFudWFsUmVjZWl2ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Sockets/Notice.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NvY2tldHMvTm90aWNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Speeches/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NwZWVjaGVzL0luZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Speeches/Recognizers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NwZWVjaGVzL1JlY29nbml6ZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Speeches/SpeechWaves.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NwZWVjaGVzL1NwZWVjaFdhdmVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Speeches/Synthesizers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NwZWVjaGVzL1N5bnRoZXNpemVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Spinners.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NwaW5uZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SvgEditors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1N2Z0VkaXRvcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SweetAlerts.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1N3ZWV0QWxlcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SwitchButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1N3aXRjaEJ1dHRvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Switches.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1N3aXRjaGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/Tables.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesAttribute.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0F0dHJpYnV0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesAutoRefresh.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0F1dG9SZWZyZXNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesCell.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0NlbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesColumnDrag.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0NvbHVtbkRyYWcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesColumnList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0NvbHVtbkxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesColumnResizing.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0NvbHVtblJlc2l6aW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesColumnTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0NvbHVtblRlbXBsYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesDetailRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0RldGFpbFJvdy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0RpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesDynamic.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0R5bmFtaWMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesDynamicExcel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0R5bmFtaWNFeGNlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesDynamicObject.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0R5bmFtaWNPYmplY3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0VkaXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesExcel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0V4Y2VsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesExport.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0V4cG9ydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesFilter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0ZpbHRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesFixedColumn.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0ZpeGVkQ29sdW1uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesFixedHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0ZpeGVkSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0hlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesLoading.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0xvYWRpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesLookup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0xvb2t1cC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesNameDrop.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc05hbWVEcm9wLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesPages.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc1BhZ2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc1NlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesToolbar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc1Rvb2xiYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesTracking.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc1RyYWNraW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesTree.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc1RyZWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesVirtualization.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc1ZpcnR1YWxpemF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesWrap.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc1dyYXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tags.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ThemeProviders.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RoZW1lUHJvdmlkZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Timelines.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RpbWVsaW5lcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/TimePickers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RpbWVQaWNrZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Timers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RpbWVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Titles.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RpdGxlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Toggles.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RvZ2dsZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Transfers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RyYW5zZmVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Transitions.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RyYW5zaXRpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Translators.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RyYW5zbGF0b3JzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/TreeViews.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RyZWVWaWV3cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/LoginAndRegister/Template2.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9Mb2dpbkFuZFJlZ2lzdGVyL1RlbXBsYXRlMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/Memorial.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9NZW1vcmlhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Typeds.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R5cGVkcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/UploadAvatars.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1VwbG9hZEF2YXRhcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/UploadButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1VwbG9hZEJ1dHRvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/UploadCards.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1VwbG9hZENhcmRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/UploadDrops.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1VwbG9hZERyb3BzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/UploadInputs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1VwbG9hZElucHV0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ValidateForms.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1ZhbGlkYXRlRm9ybXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Vditors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1ZkaXRvcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/VideoPlayers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1ZpZGVvUGxheWVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Watermarks.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1dhdGVybWFya3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/WebSerials.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1dlYlNlcmlhbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/WinBoxes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1dpbkJveGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ZipArchives.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1ppcEFyY2hpdmVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL19JbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/DomainChecker.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9Eb21haW5DaGVja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/FacebookComment.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9GYWNlYm9va0NvbW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/FacebookGroup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9GYWNlYm9va0dyb3VwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/KeywordManager/CreateKeyword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9LZXl3b3JkTWFuYWdlci9DcmVhdGVLZXl3b3JkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/KeywordManager/EditKeyword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9LZXl3b3JkTWFuYWdlci9FZGl0S2V5d29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/KeywordManager/MonthlyMetricsManager.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9LZXl3b3JkTWFuYWdlci9Nb250aGx5TWV0cmljc01hbmFnZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/SeoDailyData/SeoDailyDataPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9TZW9EYWlseURhdGEvU2VvRGFpbHlEYXRhUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/SeoDailyData/UploadTopDomainDaily.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9TZW9EYWlseURhdGEvVXBsb2FkVG9wRG9tYWluRGFpbHkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/SupportAsst.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9TdXBwb3J0QXNzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/SupportAsstCheckTop.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9TdXBwb3J0QXNzdENoZWNrVG9wLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/ToolTelegram.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9Ub29sVGVsZWdyYW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/UserKeywordSelection/ConfirmDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9Vc2VyS2V5d29yZFNlbGVjdGlvbi9Db25maXJtRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/UserKeywordSelection/SelectUserDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9Vc2VyS2V5d29yZFNlbGVjdGlvbi9TZWxlY3RVc2VyRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/UserKeywordSelection/UserKeywordSelections.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9Vc2VyS2V5d29yZFNlbGVjdGlvbi9Vc2VyS2V5d29yZFNlbGVjdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/BBLogo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0JCTG9nby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-z1sm4wyg3i
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CalendarCrewCell.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NhbGVuZGFyQ3Jld0NlbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1k092vwfqj
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CalendarCrewDialogBody.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NhbGVuZGFyQ3Jld0RpYWxvZ0JvZHkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-w4c6noxl09
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ComponentCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NvbXBvbmVudENhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-8gv0f33iu1
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ComponentCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0NvbXBvbmVudENhdGVnb3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-dtgpegyrri
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/CultureChooser.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0N1bHR1cmVDaG9vc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-uyubftu2on
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DemoBlock.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RlbW9CbG9jay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ly73j11e4q
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/DockViewTitleTemplateDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0RvY2tWaWV3VGl0bGVUZW1wbGF0ZURlbW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-tdz1elqn6u
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/FooSortableListItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0Zvb1NvcnRhYmxlTGlzdEl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-2jvorr418z
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/FooSortableListRightItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0Zvb1NvcnRhYmxlTGlzdFJpZ2h0SXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-d0bsxtym25
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0hlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-7q6iuh5eh7
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/Pre.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1ByZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-2ar0kbmvzo
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/RebootCountDown.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1JlYm9vdENvdW50RG93bi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-6fwo80rm3p
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/ThemeChooser.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1RoZW1lQ2hvb3Nlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-w6oa3n515g
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Components/UpdateIntro.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL1VwZGF0ZUludHJvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-fhgx7p9f6s
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/BaseLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvQmFzZUxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-10vux9su1q
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/ComponentLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvQ29tcG9uZW50TGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-qku1zgorpy
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/HomeLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvSG9tZUxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-lvbg8sxgrl
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ldmpzqdm7s
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-9kv2lyed0w
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/TutorialsLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvVHV0b3JpYWxzTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-745pr8sll4
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/TutorialsLoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvVHV0b3JpYWxzTG9naW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hp98512u38
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Layout/TutorialsNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvVHV0b3JpYWxzTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zqke9w0byp
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Breakpoints.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9CcmVha3BvaW50cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-yy4wmz9ti6
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/CacheList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DYWNoZUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hy8wxvptho
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Chats.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGF0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0r0wd0xslk
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Coms.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db21zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ab27m8c9qt
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-6m8jcqg1z7
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Install.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnN0YWxsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-cq8kpqfmzb
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Localization.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Mb2NhbGl6YXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-khyfb1dgw6
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Login/Template1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Mb2dpbi9UZW1wbGF0ZTEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uz76vusocr
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Online.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PbmxpbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-by3cgd6lum
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Pages/Tutorials.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9UdXRvcmlhbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jf7wt4w2rn
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/AudioDevices.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0F1ZGlvRGV2aWNlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-6ohallvlm8
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Badges.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0JhZGdlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-nmhqw7jh27
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Bluetooth.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0JsdWV0b290aC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-dvg68sxxbo
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Calendars.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NhbGVuZGFycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-yghy9rhtmr
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Carousels.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Nhcm91c2Vscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-f2q4a7r7re
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Circles.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NpcmNsZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hkm9lj132f
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/CountUps.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0NvdW50VXBzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-lth1f9h3dn
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DateTimePickers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RhdGVUaW1lUGlja2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-inqt8v9eua
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DialButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RpYWxCdXR0b25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-66xl7wnbvo
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DialogServices.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RpYWxvZ1NlcnZpY2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-2grvvgrn0z
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/DockViewCol.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9Eb2NrVmlld0NvbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-1iy56esu2j
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/DockViewComplex.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9Eb2NrVmlld0NvbXBsZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-iar8n6xua8
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/DockViewLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9Eb2NrVmlld0xheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-at1jktkmg9
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/DockViewLock.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9Eb2NrVmlld0xvY2sucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qwzkux52js
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/DockViewNest.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9Eb2NrVmlld05lc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6vl5b8j607
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/DockViewRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9Eb2NrVmlld1Jvdy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-bizt7r2nkk
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/DockViewStack.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9Eb2NrVmlld1N0YWNrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-qh3bwp98g6
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/DockViewVisible.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9Eb2NrVmlld1Zpc2libGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-123smgfo15
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3cy9JbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-9a3xwx4rd9
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/DockViewCol.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvRG9ja1ZpZXdDb2wucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jl0diabvao
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/DockViewComplex.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvRG9ja1ZpZXdDb21wbGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-lkbtqrnqn3
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/DockViewGroup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvRG9ja1ZpZXdHcm91cC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-x8ui1k7jrx
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/DockViewLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvRG9ja1ZpZXdMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ebm11p1io7
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/DockViewLock.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvRG9ja1ZpZXdMb2NrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-hrdhl1u4bh
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/DockViewNest.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvRG9ja1ZpZXdOZXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-0qkgpljy97
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/DockViewRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvRG9ja1ZpZXdSb3cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-j19qe8tv4u
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/DockViewTitle.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvRG9ja1ZpZXdUaXRsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-4e15tcp0f1
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/DockViewVisible.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvRG9ja1ZpZXdWaXNpYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-w19uhae4dn
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DockViews2/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RvY2tWaWV3czIvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ea1nc1m13p
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DrawerServices.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0RyYXdlclNlcnZpY2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-pd3b73odwl
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/DropdownWidgets.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0Ryb3Bkb3duV2lkZ2V0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-cv76xe6kam
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/FileIcons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ZpbGVJY29ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mujesi7fiv
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ImageViewers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ltYWdlVmlld2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-17ipkq66el
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/InputNumbers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0lucHV0TnVtYmVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-09lw45xhi9
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/IntersectionObservers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0ludGVyc2VjdGlvbk9ic2VydmVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-7oyxcnflld
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/JSRuntimeExtensions.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0pTUnVudGltZUV4dGVuc2lvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-7fadrv2v0a
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Layouts.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xheW91dHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-g7x5ruanuf
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Lights.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xpZ2h0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mt4j1jdsv2
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ListGroups.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xpc3RHcm91cHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-cc7swrndwo
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/ListViews.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xpc3RWaWV3cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zd5c2cmvpp
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Logouts.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL0xvZ291dHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-lglofuy8pl
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Marquees.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01hcnF1ZWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-g92wwgmjvg
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Menus.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL01lbnVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-vr8u5nii6z
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/MultiSelects.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL011bHRpU2VsZWN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-p61o6421os
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/NetworkMonitors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL05ldHdvcmtNb25pdG9ycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-fbnwkoowtz
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/OnScreenKeyboards.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL09uU2NyZWVuS2V5Ym9hcmRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-s7wqaxr9zl
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Popovers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1BvcG92ZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-8p0sij0atu
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/PrintView.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1ByaW50Vmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-z2xzlwvjwx
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Scrolls.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1Njcm9sbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-k37lvtvdxn
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Searches.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NlYXJjaGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-0y0jw5i896
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SelectGenerics.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NlbGVjdEdlbmVyaWNzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-hwaamq0dh3
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Selects.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NlbGVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-pwjf6aonpu
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SelectTables.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NlbGVjdFRhYmxlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-rfhtr3927l
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Skeletons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NrZWxldG9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-aezfkovcbi
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SlideButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NsaWRlQnV0dG9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-o0xhwpz7xj
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Sliders.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NsaWRlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-h227llwx48
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/SortableLists.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NvcnRhYmxlTGlzdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-oddk1ekxxl
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Speeches/WebSpeeches.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NwZWVjaGVzL1dlYlNwZWVjaGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-qu0zwk5qcq
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Splits.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NwbGl0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-dwtryptqi0
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Splittings.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1NwbGl0dGluZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-eep4qqrk2h
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Stacks.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1N0YWNrcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-az3zqh2cty
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Steps.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1N0ZXBzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-tjjdhupztw
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesColumn.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0NvbHVtbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-t1l62erpio
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesFooter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc0Zvb3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0vaob0zh53
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc1Jvdy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8xvffoei6d
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Table/TablesSelection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYmxlL1RhYmxlc1NlbGVjdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-7kc4t46o4g
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tabs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RhYnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0hy1p7nl4l
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/TextAreas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RleHRBcmVhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-atel3vrm1m
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Toasts.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RvYXN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-7t7s5nrt1r
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tooltips.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1Rvb2x0aXBzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-74o9db4j4s
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Topologies.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1RvcG9sb2dpZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-a0tr2n5fs3
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/Admin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9BZG1pbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-nmb4plo4a3
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/BarCodeGenerator/BarCodeGenerator.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9CYXJDb2RlR2VuZXJhdG9yL0JhckNvZGVHZW5lcmF0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-v187atps39
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9EYXNoYm9hcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-z3ugn8aoh4
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/DrawingApp.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9EcmF3aW5nQXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-prslyig21t
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/LoginAndRegister/Template1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9Mb2dpbkFuZFJlZ2lzdGVyL1RlbXBsYXRlMS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-6xix42vx57
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/LoginAndRegister/Template3.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9Mb2dpbkFuZFJlZ2lzdGVyL1RlbXBsYXRlMy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-1fazvz6k64
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/LoginAndRegister/Template4.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9Mb2dpbkFuZFJlZ2lzdGVyL1RlbXBsYXRlNC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-3sbudd0xi4
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/LoginAndRegister/Template5.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9Mb2dpbkFuZFJlZ2lzdGVyL1RlbXBsYXRlNS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-fwwm0lapn5
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/MFA/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9NRkEvTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ymg4h0ozhy
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/MFA/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9NRkEvUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-txiioowq73
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/MFA/TwoFactor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9NRkEvVHdvRmFjdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-08rk2pl0rg
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/MFA/TwoFactorApp.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9NRkEvVHdvRmFjdG9yQXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-bllgrtgwh4
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/OnlineSheet/OnlineContributor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9PbmxpbmVTaGVldC9PbmxpbmVDb250cmlidXRvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-d9lekaqpzg
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/OnlineSheet/OnlineSheet.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9PbmxpbmVTaGVldC9PbmxpbmVTaGVldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-1arix46z86
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/Translation/Translator.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9UcmFuc2xhdGlvbi9UcmFuc2xhdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-jxek8yuh8m
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/Tutorials/Waterfall.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1R1dG9yaWFscy9XYXRlcmZhbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4zwmi3whu3
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/UniverSheets.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1VuaXZlclNoZWV0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-sbsx5m7b0z
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Samples/VideoDevices.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVzL1ZpZGVvRGV2aWNlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ocv2aisk1b
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/AIChats.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9BSUNoYXRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-v6o0hpztwu
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/BannerUpload.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9CYW5uZXJVcGxvYWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-knuny59hni
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/BaoCaoSEOChiTiet.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9CYW9DYW9TRU9DaGlUaWV0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-fjcqcfad5y
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/BaoCaoSEOChiTietBOD.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9CYW9DYW9TRU9DaGlUaWV0Qk9ELnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-9h8uxtjlox
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/BaoCaoSEOTheoPIC.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9CYW9DYW9TRU9UaGVvUElDLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-4eoon4stve
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/BaoCaoSEOTong.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9CYW9DYW9TRU9Ub25nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-4tg0x5u19v
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/CPD/CpdChanges.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9DUEQvQ3BkQ2hhbmdlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-bwhy2bsqdb
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/CPD/CpdDataView.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9DUEQvQ3BkRGF0YVZpZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-u72eqkbcxa
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/CPD/CpdManagement.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9DUEQvQ3BkTWFuYWdlbWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-pc1nyit08z
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/CPD/CpdReports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9DUEQvQ3BkUmVwb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-4noz20dhql
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/CPD/CpdUpload.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9DUEQvQ3BkVXBsb2FkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ln76701jpf
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/CpdCheckerTool.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9DcGRDaGVja2VyVG9vbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-plsg9l0e6y
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/DomainByPic.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9Eb21haW5CeVBpYy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ax5frt4kd7
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/EvaluateSeoPerformance.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9FdmFsdWF0ZVNlb1BlcmZvcm1hbmNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-888s7c7x33
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/KeywordManager/KeywordList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9LZXl3b3JkTWFuYWdlci9LZXl3b3JkTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-k7rd03z6vr
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/LayoutPages.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9MYXlvdXRQYWdlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-sr6ekb6ifr
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/QCs/QuyTrinhDoiDomain.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9RQ3MvUXV5VHJpbmhEb2lEb21haW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ah8z5q26n4
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/ReportBrandKeyword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9SZXBvcnRCcmFuZEtleXdvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3gqxxohout
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/UserManager/CreateUser.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9Vc2VyTWFuYWdlci9DcmVhdGVVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-gf12k4qz40
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/UserManager/EditUser.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9Vc2VyTWFuYWdlci9FZGl0VXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-fbsbq2rupw
+
+[/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor.Server/Components/Task9/UserManager/UserList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UYXNrOS9Vc2VyTWFuYWdlci9Vc2VyTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8o2j67hg0g

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mN8TAQOlbN29iFie6NO/T7QQhcttx0bYBCRJjQ0TNh4=",
+  "Hash": "WPTVfVUTxCu2j/tlQW5zlISHbb6ZU2KYB9QyjAmhomM=",
   "Source": "BootstrapBlazor",
   "BasePath": "_content/BootstrapBlazor",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BootstrapBlazor/wwwroot",
       "Source": "BootstrapBlazor",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Anchor/Anchor.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Anchor/Anchor.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Anchor/Anchor.razor.js",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "Components/Anchor/Anchor.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/AnchorLink/AnchorLink.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/AnchorLink/AnchorLink.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/AnchorLink/AnchorLink.razor.js",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "Components/AnchorLink/AnchorLink.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/AutoComplete/AutoComplete.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/AutoComplete/AutoComplete.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/AutoComplete/AutoComplete.razor.js",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "Components/AutoComplete/AutoComplete.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/Button.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/Button.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Button/Button.razor.js",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "Components/Button/Button.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/DialButton.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/DialButton.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Button/DialButton.razor.js",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "Components/Button/DialButton.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/PopConfirmButton.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/PopConfirmButton.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Button/PopConfirmButton.razor.js",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "Components/Button/PopConfirmButton.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/PopConfirmButtonContent.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/PopConfirmButtonContent.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Button/PopConfirmButtonContent.razor.js",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "Components/Button/PopConfirmButtonContent.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/SlideButton.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/SlideButton.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Button/SlideButton.razor.js",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "Components/Button/SlideButton.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Camera/Camera.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Camera/Camera.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Camera/Camera.razor.js",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "Components/Camera/Camera.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Captcha/Captcha.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Captcha/Captcha.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Captcha/Captcha.razor.js",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "Components/Captcha/Captcha.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Card/Card.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Card/Card.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Card/Card.razor.js",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "Components/Card/Card.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Carousel/Carousel.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Carousel/Carousel.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Carousel/Carousel.razor.js",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "Components/Carousel/Carousel.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Checkbox/Checkbox.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Checkbox/Checkbox.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Checkbox/Checkbox.razor.js",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "Components/Checkbox/Checkbox.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ClockPicker/ClockPicker.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ClockPicker/ClockPicker.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/ClockPicker/ClockPicker.razor.js",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "Components/ClockPicker/ClockPicker.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ColorPicker/ColorPicker.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ColorPicker/ColorPicker.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/ColorPicker/ColorPicker.razor.js",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "Components/ColorPicker/ColorPicker.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Console/Console.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Console/Console.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Console/Console.razor.js",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "Components/Console/Console.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ContextMenu/ContextMenu.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ContextMenu/ContextMenu.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/ContextMenu/ContextMenu.razor.js",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "Components/ContextMenu/ContextMenu.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/CountUp/CountUp.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/CountUp/CountUp.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/CountUp/CountUp.razor.js",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "Components/CountUp/CountUp.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/DateTimePicker/DateTimePicker.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/DateTimePicker/DateTimePicker.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/DateTimePicker/DateTimePicker.razor.js",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "Components/DateTimePicker/DateTimePicker.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Dialog/EditDialog.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Dialog/EditDialog.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Dialog/EditDialog.razor.js",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "Components/Dialog/EditDialog.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Dialog/IconDialog.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Dialog/IconDialog.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Dialog/IconDialog.razor.js",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "Components/Dialog/IconDialog.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Drawer/Drawer.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Drawer/Drawer.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Drawer/Drawer.razor.js",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "Components/Drawer/Drawer.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Dropdown/Dropdown.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Dropdown/Dropdown.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Dropdown/Dropdown.razor.js",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "Components/Dropdown/Dropdown.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/DropdownWidget/DropdownWidget.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/DropdownWidget/DropdownWidget.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/DropdownWidget/DropdownWidget.razor.js",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "Components/DropdownWidget/DropdownWidget.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Filters/MultiFilter.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Filters/MultiFilter.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Filters/MultiFilter.razor.js",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "Components/Filters/MultiFilter.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Filters/TableColumnFilter.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Filters/TableColumnFilter.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Filters/TableColumnFilter.razor.js",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "Components/Filters/TableColumnFilter.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/FlipClock/FlipClock.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/FlipClock/FlipClock.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/FlipClock/FlipClock.razor.js",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "Components/FlipClock/FlipClock.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/GoTop/GoTop.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/GoTop/GoTop.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/GoTop/GoTop.razor.js",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "Components/GoTop/GoTop.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Handwritten/Handwritten.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Handwritten/Handwritten.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Handwritten/Handwritten.razor.js",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "Components/Handwritten/Handwritten.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/IFrame/IFrame.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/IFrame/IFrame.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/IFrame/IFrame.razor.js",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "Components/IFrame/IFrame.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ImagePreviewer/ImagePreviewer.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ImagePreviewer/ImagePreviewer.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/ImagePreviewer/ImagePreviewer.razor.js",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "Components/ImagePreviewer/ImagePreviewer.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ImageViewer/ImageViewer.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ImageViewer/ImageViewer.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/ImageViewer/ImageViewer.razor.js",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "Components/ImageViewer/ImageViewer.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Input/BootstrapInput.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Input/BootstrapInput.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Input/BootstrapInput.razor.js",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "Components/Input/BootstrapInput.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Input/OtpInput.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Input/OtpInput.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Input/OtpInput.razor.js",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "Components/Input/OtpInput.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/IntersectionObserver/IntersectionObserver.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/IntersectionObserver/IntersectionObserver.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/IntersectionObserver/IntersectionObserver.razor.js",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "Components/IntersectionObserver/IntersectionObserver.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/IpAddress/IpAddress.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/IpAddress/IpAddress.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/IpAddress/IpAddress.razor.js",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "Components/IpAddress/IpAddress.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Layout/Layout.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Layout/Layout.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Layout/Layout.razor.js",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "Components/Layout/Layout.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Layout/LayoutSplitBar.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Layout/LayoutSplitBar.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Layout/LayoutSplitBar.razor.js",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "Components/Layout/LayoutSplitBar.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Mask/Mask.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Mask/Mask.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Mask/Mask.razor.js",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "Components/Mask/Mask.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Menu/Menu.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Menu/Menu.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Menu/Menu.razor.js",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "Components/Menu/Menu.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Message/Message.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Message/Message.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Message/Message.razor.js",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "Components/Message/Message.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Modal/Modal.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Modal/Modal.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Modal/Modal.razor.js",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "Components/Modal/Modal.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Modal/ModalDialog.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Modal/ModalDialog.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Modal/ModalDialog.razor.js",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "Components/Modal/ModalDialog.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Popover/Popover.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Popover/Popover.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Popover/Popover.razor.js",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "Components/Popover/Popover.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Print/PrintButton.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Print/PrintButton.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Print/PrintButton.razor.js",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "Components/Print/PrintButton.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Reconnector/ReconnectorContent.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Reconnector/ReconnectorContent.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Reconnector/ReconnectorContent.razor.js",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "Components/Reconnector/ReconnectorContent.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/RibbonTab/RibbonTab.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/RibbonTab/RibbonTab.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/RibbonTab/RibbonTab.razor.js",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "Components/RibbonTab/RibbonTab.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Row/Row.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Row/Row.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Row/Row.razor.js",
       "AssetKind": "All",
@@ -1025,10 +1025,10 @@
       "OriginalItemSpec": "Components/Row/Row.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Scroll/Scroll.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Scroll/Scroll.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Scroll/Scroll.razor.js",
       "AssetKind": "All",
@@ -1046,10 +1046,10 @@
       "OriginalItemSpec": "Components/Scroll/Scroll.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Segmented/Segmented.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Segmented/Segmented.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Segmented/Segmented.razor.js",
       "AssetKind": "All",
@@ -1067,10 +1067,10 @@
       "OriginalItemSpec": "Components/Segmented/Segmented.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/MultiSelect.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/MultiSelect.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Select/MultiSelect.razor.js",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "Components/Select/MultiSelect.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/Select.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/Select.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Select/Select.razor.js",
       "AssetKind": "All",
@@ -1109,10 +1109,10 @@
       "OriginalItemSpec": "Components/Select/Select.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/SelectObject.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/SelectObject.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Select/SelectObject.razor.js",
       "AssetKind": "All",
@@ -1130,10 +1130,10 @@
       "OriginalItemSpec": "Components/Select/SelectObject.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/SelectTable.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/SelectTable.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Select/SelectTable.razor.js",
       "AssetKind": "All",
@@ -1151,10 +1151,10 @@
       "OriginalItemSpec": "Components/Select/SelectTable.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/SelectTree.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/SelectTree.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Select/SelectTree.razor.js",
       "AssetKind": "All",
@@ -1172,10 +1172,10 @@
       "OriginalItemSpec": "Components/Select/SelectTree.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Split/Split.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Split/Split.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Split/Split.razor.js",
       "AssetKind": "All",
@@ -1193,10 +1193,10 @@
       "OriginalItemSpec": "Components/Split/Split.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Tab/Tab.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Tab/Tab.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Tab/Tab.razor.js",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "Components/Tab/Tab.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Table/Table.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Table/Table.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Table/Table.razor.js",
       "AssetKind": "All",
@@ -1235,10 +1235,10 @@
       "OriginalItemSpec": "Components/Table/Table.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Textarea/Textarea.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Textarea/Textarea.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Textarea/Textarea.razor.js",
       "AssetKind": "All",
@@ -1256,10 +1256,10 @@
       "OriginalItemSpec": "Components/Textarea/Textarea.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ThemeProvider/ThemeProvider.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ThemeProvider/ThemeProvider.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/ThemeProvider/ThemeProvider.razor.js",
       "AssetKind": "All",
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "Components/ThemeProvider/ThemeProvider.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/TimePicker/TimePickerCell.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/TimePicker/TimePickerCell.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/TimePicker/TimePickerCell.razor.js",
       "AssetKind": "All",
@@ -1298,10 +1298,10 @@
       "OriginalItemSpec": "Components/TimePicker/TimePickerCell.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Toast/Toast.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Toast/Toast.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Toast/Toast.razor.js",
       "AssetKind": "All",
@@ -1319,10 +1319,10 @@
       "OriginalItemSpec": "Components/Toast/Toast.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Tooltip/Tooltip.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Tooltip/Tooltip.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Tooltip/Tooltip.razor.js",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "Components/Tooltip/Tooltip.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Transition/Transition.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Transition/Transition.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Transition/Transition.razor.js",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "Components/Transition/Transition.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/TreeView/TreeView.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/TreeView/TreeView.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/TreeView/TreeView.razor.js",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "Components/TreeView/TreeView.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Typed/Typed.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Typed/Typed.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Typed/Typed.razor.js",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "Components/Typed/Typed.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ValidateForm/ValidateForm.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ValidateForm/ValidateForm.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/ValidateForm/ValidateForm.razor.js",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "Components/ValidateForm/ValidateForm.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Waterfall/Waterfall.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Waterfall/Waterfall.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Waterfall/Waterfall.razor.js",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "Components/Waterfall/Waterfall.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Watermark/Watermark.razor.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Watermark/Watermark.razor.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "Components/Watermark/Watermark.razor.js",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "Components/Watermark/Watermark.razor.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/animate.min.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/animate.min.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/animate.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot/css/animate.min.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.min.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.min.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/bootstrap.blazor.bundle.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap.blazor.bundle.min.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.rtl.min.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.rtl.min.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/bootstrap.blazor.bundle.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap.blazor.bundle.rtl.min.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.min.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.min.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.rtl.min.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.rtl.min.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrapblazor.min.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrapblazor.min.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/bootstrapblazor.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrapblazor.min.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/motronic.min.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/motronic.min.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/motronic.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot/css/motronic.min.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/nano.min.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/nano.min.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/nano.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot/css/nano.min.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/rtl.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/rtl.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot/css/rtl.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/sweetalert2.css",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/sweetalert2.css",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "css/sweetalert2#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot/css/sweetalert2.css"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/js/bootstrap.blazor.bundle.min.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/js/bootstrap.blazor.bundle.min.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "js/bootstrap.blazor.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1690,17 +1690,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uhabfa1lb8",
-      "Integrity": "Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4=",
+      "Fingerprint": "bshnfozfav",
+      "Integrity": "y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/bootstrap.blazor.bundle.min.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/countUp/countUp.min.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/countUp/countUp.min.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "lib/countUp/countUp.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1718,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot/lib/countUp/countUp.min.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.core.esm.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.core.esm.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "lib/floating-ui/floating-ui.core.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1739,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot/lib/floating-ui/floating-ui.core.esm.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.dom.esm.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.dom.esm.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "lib/floating-ui/floating-ui.dom.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1760,10 +1760,10 @@
       "OriginalItemSpec": "wwwroot/lib/floating-ui/floating-ui.dom.esm.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/pickr/pickr.es5.min.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/pickr/pickr.es5.min.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "lib/pickr/pickr.es5.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1781,10 +1781,10 @@
       "OriginalItemSpec": "wwwroot/lib/pickr/pickr.es5.min.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/typedjs/typed.module.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/typedjs/typed.module.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "lib/typedjs/typed.module#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot/lib/typedjs/typed.module.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/ajax.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/ajax.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/ajax#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1823,10 +1823,10 @@
       "OriginalItemSpec": "wwwroot/modules/ajax.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/autoredirect.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/autoredirect.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/autoredirect#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1844,10 +1844,10 @@
       "OriginalItemSpec": "wwwroot/modules/autoredirect.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/base-popover.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/base-popover.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/base-popover#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1865,10 +1865,10 @@
       "OriginalItemSpec": "wwwroot/modules/base-popover.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/base-select.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/base-select.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/base-select#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1886,10 +1886,10 @@
       "OriginalItemSpec": "wwwroot/modules/base-select.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/browser.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/browser.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/browser#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1907,10 +1907,10 @@
       "OriginalItemSpec": "wwwroot/modules/browser.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/bt.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/bt.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/bt#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1928,10 +1928,10 @@
       "OriginalItemSpec": "wwwroot/modules/bt.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/client.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/client.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/client#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1949,10 +1949,10 @@
       "OriginalItemSpec": "wwwroot/modules/client.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/data.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/data.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/data#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1970,10 +1970,10 @@
       "OriginalItemSpec": "wwwroot/modules/data.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/debounce.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/debounce.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/debounce#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1991,10 +1991,10 @@
       "OriginalItemSpec": "wwwroot/modules/debounce.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/download.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/download.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/download#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot/modules/download.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/drag.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/drag.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/drag#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2033,10 +2033,10 @@
       "OriginalItemSpec": "wwwroot/modules/drag.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/event-handler.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/event-handler.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/event-handler#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2054,10 +2054,10 @@
       "OriginalItemSpec": "wwwroot/modules/event-handler.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/eye-dropper.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/eye-dropper.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/eye-dropper#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2075,10 +2075,10 @@
       "OriginalItemSpec": "wwwroot/modules/eye-dropper.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/floating-ui.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/floating-ui.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/floating-ui#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2096,10 +2096,10 @@
       "OriginalItemSpec": "wwwroot/modules/floating-ui.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/fullscreen.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/fullscreen.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/fullscreen#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2117,10 +2117,10 @@
       "OriginalItemSpec": "wwwroot/modules/fullscreen.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/geo.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/geo.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/geo#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2138,10 +2138,10 @@
       "OriginalItemSpec": "wwwroot/modules/geo.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/hub.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/hub.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/hub#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot/modules/hub.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/input.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/input.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/input#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2180,10 +2180,10 @@
       "OriginalItemSpec": "wwwroot/modules/input.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/media.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/media.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/media#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2201,10 +2201,10 @@
       "OriginalItemSpec": "wwwroot/modules/media.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/net.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/net.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/net#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2222,10 +2222,10 @@
       "OriginalItemSpec": "wwwroot/modules/net.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/noti.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/noti.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/noti#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2243,10 +2243,10 @@
       "OriginalItemSpec": "wwwroot/modules/noti.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/recognition.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/recognition.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/recognition#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2264,10 +2264,10 @@
       "OriginalItemSpec": "wwwroot/modules/recognition.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/responsive.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/responsive.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/responsive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2285,10 +2285,10 @@
       "OriginalItemSpec": "wwwroot/modules/responsive.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/serial.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/serial.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/serial#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2306,10 +2306,10 @@
       "OriginalItemSpec": "wwwroot/modules/serial.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/synthesis.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/synthesis.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/synthesis#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2327,10 +2327,10 @@
       "OriginalItemSpec": "wwwroot/modules/synthesis.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/upload.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/upload.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/upload#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2348,10 +2348,10 @@
       "OriginalItemSpec": "wwwroot/modules/upload.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/utility.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/utility.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/utility#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2369,10 +2369,10 @@
       "OriginalItemSpec": "wwwroot/modules/utility.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/validate.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/validate.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2390,10 +2390,10 @@
       "OriginalItemSpec": "wwwroot/modules/validate.js"
     },
     {
-      "Identity": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/viewer.js",
+      "Identity": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/viewer.js",
       "SourceId": "BootstrapBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/",
+      "ContentRoot": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/",
       "BasePath": "_content/BootstrapBlazor",
       "RelativePath": "modules/viewer#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2414,7 +2414,7 @@
   "Endpoints": [
     {
       "Route": "Components/Anchor/Anchor.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Anchor/Anchor.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Anchor/Anchor.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2455,7 +2455,7 @@
     },
     {
       "Route": "Components/AnchorLink/AnchorLink.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/AnchorLink/AnchorLink.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/AnchorLink/AnchorLink.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2496,7 +2496,7 @@
     },
     {
       "Route": "Components/AutoComplete/AutoComplete.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/AutoComplete/AutoComplete.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/AutoComplete/AutoComplete.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2537,7 +2537,7 @@
     },
     {
       "Route": "Components/Button/Button.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/Button.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/Button.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2578,7 +2578,7 @@
     },
     {
       "Route": "Components/Button/DialButton.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/DialButton.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/DialButton.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2619,7 +2619,7 @@
     },
     {
       "Route": "Components/Button/PopConfirmButton.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/PopConfirmButton.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/PopConfirmButton.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2660,7 +2660,7 @@
     },
     {
       "Route": "Components/Button/PopConfirmButtonContent.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/PopConfirmButtonContent.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/PopConfirmButtonContent.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2701,7 +2701,7 @@
     },
     {
       "Route": "Components/Button/SlideButton.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Button/SlideButton.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Button/SlideButton.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2742,7 +2742,7 @@
     },
     {
       "Route": "Components/Camera/Camera.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Camera/Camera.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Camera/Camera.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2783,7 +2783,7 @@
     },
     {
       "Route": "Components/Captcha/Captcha.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Captcha/Captcha.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Captcha/Captcha.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2824,7 +2824,7 @@
     },
     {
       "Route": "Components/Card/Card.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Card/Card.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Card/Card.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2865,7 +2865,7 @@
     },
     {
       "Route": "Components/Carousel/Carousel.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Carousel/Carousel.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Carousel/Carousel.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2906,7 +2906,7 @@
     },
     {
       "Route": "Components/Checkbox/Checkbox.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Checkbox/Checkbox.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Checkbox/Checkbox.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2947,7 +2947,7 @@
     },
     {
       "Route": "Components/ClockPicker/ClockPicker.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ClockPicker/ClockPicker.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ClockPicker/ClockPicker.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2988,7 +2988,7 @@
     },
     {
       "Route": "Components/ColorPicker/ColorPicker.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ColorPicker/ColorPicker.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ColorPicker/ColorPicker.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3029,7 +3029,7 @@
     },
     {
       "Route": "Components/Console/Console.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Console/Console.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Console/Console.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3070,7 +3070,7 @@
     },
     {
       "Route": "Components/ContextMenu/ContextMenu.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ContextMenu/ContextMenu.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ContextMenu/ContextMenu.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3111,7 +3111,7 @@
     },
     {
       "Route": "Components/CountUp/CountUp.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/CountUp/CountUp.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/CountUp/CountUp.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3152,7 +3152,7 @@
     },
     {
       "Route": "Components/DateTimePicker/DateTimePicker.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/DateTimePicker/DateTimePicker.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/DateTimePicker/DateTimePicker.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3193,7 +3193,7 @@
     },
     {
       "Route": "Components/Dialog/EditDialog.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Dialog/EditDialog.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Dialog/EditDialog.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3234,7 +3234,7 @@
     },
     {
       "Route": "Components/Dialog/IconDialog.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Dialog/IconDialog.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Dialog/IconDialog.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3275,7 +3275,7 @@
     },
     {
       "Route": "Components/Drawer/Drawer.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Drawer/Drawer.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Drawer/Drawer.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3316,7 +3316,7 @@
     },
     {
       "Route": "Components/Dropdown/Dropdown.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Dropdown/Dropdown.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Dropdown/Dropdown.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3357,7 +3357,7 @@
     },
     {
       "Route": "Components/DropdownWidget/DropdownWidget.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/DropdownWidget/DropdownWidget.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/DropdownWidget/DropdownWidget.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3398,7 +3398,7 @@
     },
     {
       "Route": "Components/Filters/MultiFilter.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Filters/MultiFilter.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Filters/MultiFilter.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3439,7 +3439,7 @@
     },
     {
       "Route": "Components/Filters/TableColumnFilter.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Filters/TableColumnFilter.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Filters/TableColumnFilter.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3480,7 +3480,7 @@
     },
     {
       "Route": "Components/FlipClock/FlipClock.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/FlipClock/FlipClock.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/FlipClock/FlipClock.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3521,7 +3521,7 @@
     },
     {
       "Route": "Components/GoTop/GoTop.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/GoTop/GoTop.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/GoTop/GoTop.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3562,7 +3562,7 @@
     },
     {
       "Route": "Components/Handwritten/Handwritten.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Handwritten/Handwritten.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Handwritten/Handwritten.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3603,7 +3603,7 @@
     },
     {
       "Route": "Components/IFrame/IFrame.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/IFrame/IFrame.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/IFrame/IFrame.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3644,7 +3644,7 @@
     },
     {
       "Route": "Components/ImagePreviewer/ImagePreviewer.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ImagePreviewer/ImagePreviewer.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ImagePreviewer/ImagePreviewer.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3685,7 +3685,7 @@
     },
     {
       "Route": "Components/ImageViewer/ImageViewer.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ImageViewer/ImageViewer.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ImageViewer/ImageViewer.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3726,7 +3726,7 @@
     },
     {
       "Route": "Components/Input/BootstrapInput.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Input/BootstrapInput.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Input/BootstrapInput.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3767,7 +3767,7 @@
     },
     {
       "Route": "Components/Input/OtpInput.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Input/OtpInput.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Input/OtpInput.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3808,7 +3808,7 @@
     },
     {
       "Route": "Components/IntersectionObserver/IntersectionObserver.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/IntersectionObserver/IntersectionObserver.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/IntersectionObserver/IntersectionObserver.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3849,7 +3849,7 @@
     },
     {
       "Route": "Components/IpAddress/IpAddress.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/IpAddress/IpAddress.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/IpAddress/IpAddress.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3890,7 +3890,7 @@
     },
     {
       "Route": "Components/Layout/Layout.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Layout/Layout.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Layout/Layout.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3931,7 +3931,7 @@
     },
     {
       "Route": "Components/Layout/LayoutSplitBar.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Layout/LayoutSplitBar.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Layout/LayoutSplitBar.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3972,7 +3972,7 @@
     },
     {
       "Route": "Components/Mask/Mask.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Mask/Mask.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Mask/Mask.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4013,7 +4013,7 @@
     },
     {
       "Route": "Components/Menu/Menu.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Menu/Menu.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Menu/Menu.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4054,7 +4054,7 @@
     },
     {
       "Route": "Components/Message/Message.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Message/Message.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Message/Message.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4095,7 +4095,7 @@
     },
     {
       "Route": "Components/Modal/Modal.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Modal/Modal.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Modal/Modal.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4136,7 +4136,7 @@
     },
     {
       "Route": "Components/Modal/ModalDialog.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Modal/ModalDialog.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Modal/ModalDialog.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4177,7 +4177,7 @@
     },
     {
       "Route": "Components/Popover/Popover.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Popover/Popover.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Popover/Popover.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4218,7 +4218,7 @@
     },
     {
       "Route": "Components/Print/PrintButton.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Print/PrintButton.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Print/PrintButton.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4259,7 +4259,7 @@
     },
     {
       "Route": "Components/Reconnector/ReconnectorContent.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Reconnector/ReconnectorContent.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Reconnector/ReconnectorContent.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4300,7 +4300,7 @@
     },
     {
       "Route": "Components/RibbonTab/RibbonTab.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/RibbonTab/RibbonTab.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/RibbonTab/RibbonTab.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4341,7 +4341,7 @@
     },
     {
       "Route": "Components/Row/Row.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Row/Row.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Row/Row.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4382,7 +4382,7 @@
     },
     {
       "Route": "Components/Scroll/Scroll.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Scroll/Scroll.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Scroll/Scroll.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4423,7 +4423,7 @@
     },
     {
       "Route": "Components/Segmented/Segmented.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Segmented/Segmented.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Segmented/Segmented.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4464,7 +4464,7 @@
     },
     {
       "Route": "Components/Select/MultiSelect.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/MultiSelect.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/MultiSelect.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4505,7 +4505,7 @@
     },
     {
       "Route": "Components/Select/Select.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/Select.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/Select.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4546,7 +4546,7 @@
     },
     {
       "Route": "Components/Select/SelectObject.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/SelectObject.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/SelectObject.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4587,7 +4587,7 @@
     },
     {
       "Route": "Components/Select/SelectTable.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/SelectTable.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/SelectTable.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4628,7 +4628,7 @@
     },
     {
       "Route": "Components/Select/SelectTree.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Select/SelectTree.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Select/SelectTree.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4669,7 +4669,7 @@
     },
     {
       "Route": "Components/Split/Split.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Split/Split.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Split/Split.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4710,7 +4710,7 @@
     },
     {
       "Route": "Components/Tab/Tab.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Tab/Tab.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Tab/Tab.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4751,7 +4751,7 @@
     },
     {
       "Route": "Components/Table/Table.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Table/Table.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Table/Table.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4792,7 +4792,7 @@
     },
     {
       "Route": "Components/Textarea/Textarea.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Textarea/Textarea.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Textarea/Textarea.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4833,7 +4833,7 @@
     },
     {
       "Route": "Components/ThemeProvider/ThemeProvider.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ThemeProvider/ThemeProvider.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ThemeProvider/ThemeProvider.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4874,7 +4874,7 @@
     },
     {
       "Route": "Components/TimePicker/TimePickerCell.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/TimePicker/TimePickerCell.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/TimePicker/TimePickerCell.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4915,7 +4915,7 @@
     },
     {
       "Route": "Components/Toast/Toast.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Toast/Toast.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Toast/Toast.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4956,7 +4956,7 @@
     },
     {
       "Route": "Components/Tooltip/Tooltip.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Tooltip/Tooltip.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Tooltip/Tooltip.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4997,7 +4997,7 @@
     },
     {
       "Route": "Components/Transition/Transition.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Transition/Transition.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Transition/Transition.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5038,7 +5038,7 @@
     },
     {
       "Route": "Components/TreeView/TreeView.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/TreeView/TreeView.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/TreeView/TreeView.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5079,7 +5079,7 @@
     },
     {
       "Route": "Components/Typed/Typed.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Typed/Typed.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Typed/Typed.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5120,7 +5120,7 @@
     },
     {
       "Route": "Components/ValidateForm/ValidateForm.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/ValidateForm/ValidateForm.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/ValidateForm/ValidateForm.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5161,7 +5161,7 @@
     },
     {
       "Route": "Components/Waterfall/Waterfall.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Waterfall/Waterfall.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Waterfall/Waterfall.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5202,7 +5202,7 @@
     },
     {
       "Route": "Components/Watermark/Watermark.razor.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/Components/Watermark/Watermark.razor.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/Components/Watermark/Watermark.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5243,7 +5243,7 @@
     },
     {
       "Route": "css/animate.min.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/animate.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/animate.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5280,7 +5280,7 @@
     },
     {
       "Route": "css/animate.min.n2c91dmnm2.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/animate.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/animate.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5325,7 +5325,7 @@
     },
     {
       "Route": "css/bootstrap.blazor.bundle.min.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5362,7 +5362,7 @@
     },
     {
       "Route": "css/bootstrap.blazor.bundle.min.p31tp2duz8.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5407,7 +5407,7 @@
     },
     {
       "Route": "css/bootstrap.blazor.bundle.rtl.min.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.rtl.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5444,7 +5444,7 @@
     },
     {
       "Route": "css/bootstrap.blazor.bundle.rtl.min.jxjdcrp5fl.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.rtl.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.blazor.bundle.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5489,7 +5489,7 @@
     },
     {
       "Route": "css/bootstrap.min.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5526,7 +5526,7 @@
     },
     {
       "Route": "css/bootstrap.min.xb7x6ncoc7.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5571,7 +5571,7 @@
     },
     {
       "Route": "css/bootstrap.rtl.min.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.rtl.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5608,7 +5608,7 @@
     },
     {
       "Route": "css/bootstrap.rtl.min.f6pbo7ldz7.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.rtl.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5653,7 +5653,7 @@
     },
     {
       "Route": "css/bootstrapblazor.min.8m5xp56w26.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrapblazor.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrapblazor.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5698,7 +5698,7 @@
     },
     {
       "Route": "css/bootstrapblazor.min.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/bootstrapblazor.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/bootstrapblazor.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5735,7 +5735,7 @@
     },
     {
       "Route": "css/motronic.min.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/motronic.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/motronic.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5772,7 +5772,7 @@
     },
     {
       "Route": "css/motronic.min.xflpx95y7e.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/motronic.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/motronic.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5817,7 +5817,7 @@
     },
     {
       "Route": "css/nano.min.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/nano.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/nano.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5854,7 +5854,7 @@
     },
     {
       "Route": "css/nano.min.diyq332pj2.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/nano.min.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/nano.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5899,7 +5899,7 @@
     },
     {
       "Route": "css/rtl.5rdup8wcot.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/rtl.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5944,7 +5944,7 @@
     },
     {
       "Route": "css/rtl.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/rtl.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5981,7 +5981,7 @@
     },
     {
       "Route": "css/sweetalert2.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/sweetalert2.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/sweetalert2.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6018,7 +6018,7 @@
     },
     {
       "Route": "css/sweetalert2.ky58muc6zp.css",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/css/sweetalert2.css",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/css/sweetalert2.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6062,8 +6062,8 @@
       ]
     },
     {
-      "Route": "js/bootstrap.blazor.bundle.min.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/js/bootstrap.blazor.bundle.min.js",
+      "Route": "js/bootstrap.blazor.bundle.min.bshnfozfav.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/js/bootstrap.blazor.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6072,7 +6072,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "207857"
+          "Value": "80743"
         },
         {
           "Name": "Content-Type",
@@ -6080,44 +6080,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 15 Jul 2025 01:57:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4="
-        }
-      ]
-    },
-    {
-      "Route": "js/bootstrap.blazor.bundle.min.uhabfa1lb8.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/js/bootstrap.blazor.bundle.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "207857"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4=\""
+          "Value": "\"y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs=\""
         },
         {
           "Name": "Last-Modified",
@@ -6131,7 +6094,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uhabfa1lb8"
+          "Value": "bshnfozfav"
         },
         {
           "Name": "label",
@@ -6139,13 +6102,50 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Hs9HNr1qvi7O6NOns1JmwE2W23yR3C0pkOTJxfEKgA4="
+          "Value": "sha256-y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.blazor.bundle.min.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/js/bootstrap.blazor.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80743"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 01:57:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y3ibfOyBqlgBd+GzwFYQEVOZdNJD06HeDXihongBXKs="
         }
       ]
     },
     {
       "Route": "lib/countUp/countUp.min.0aztznbnrr.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/countUp/countUp.min.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/countUp/countUp.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6190,7 +6190,7 @@
     },
     {
       "Route": "lib/countUp/countUp.min.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/countUp/countUp.min.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/countUp/countUp.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6227,7 +6227,7 @@
     },
     {
       "Route": "lib/floating-ui/floating-ui.core.esm.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.core.esm.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.core.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6264,7 +6264,7 @@
     },
     {
       "Route": "lib/floating-ui/floating-ui.core.esm.yke84nj5tu.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.core.esm.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.core.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6309,7 +6309,7 @@
     },
     {
       "Route": "lib/floating-ui/floating-ui.dom.esm.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.dom.esm.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.dom.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6346,7 +6346,7 @@
     },
     {
       "Route": "lib/floating-ui/floating-ui.dom.esm.v2eztane7t.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.dom.esm.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/floating-ui/floating-ui.dom.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6391,7 +6391,7 @@
     },
     {
       "Route": "lib/pickr/pickr.es5.min.jrmbbzdt2n.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/pickr/pickr.es5.min.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/pickr/pickr.es5.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6436,7 +6436,7 @@
     },
     {
       "Route": "lib/pickr/pickr.es5.min.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/pickr/pickr.es5.min.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/pickr/pickr.es5.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6473,7 +6473,7 @@
     },
     {
       "Route": "lib/typedjs/typed.module.1ilc31n3am.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/typedjs/typed.module.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/typedjs/typed.module.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6518,7 +6518,7 @@
     },
     {
       "Route": "lib/typedjs/typed.module.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/lib/typedjs/typed.module.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/lib/typedjs/typed.module.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6555,7 +6555,7 @@
     },
     {
       "Route": "modules/ajax.5o83qf34y1.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/ajax.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/ajax.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6600,7 +6600,7 @@
     },
     {
       "Route": "modules/ajax.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/ajax.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/ajax.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6637,7 +6637,7 @@
     },
     {
       "Route": "modules/autoredirect.4vw1g7ey23.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/autoredirect.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/autoredirect.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6682,7 +6682,7 @@
     },
     {
       "Route": "modules/autoredirect.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/autoredirect.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/autoredirect.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6719,7 +6719,7 @@
     },
     {
       "Route": "modules/base-popover.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/base-popover.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/base-popover.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6756,7 +6756,7 @@
     },
     {
       "Route": "modules/base-popover.lww7yxhbd6.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/base-popover.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/base-popover.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6801,7 +6801,7 @@
     },
     {
       "Route": "modules/base-select.i4hhvu93t7.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/base-select.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/base-select.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6846,7 +6846,7 @@
     },
     {
       "Route": "modules/base-select.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/base-select.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/base-select.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6883,7 +6883,7 @@
     },
     {
       "Route": "modules/browser.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/browser.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/browser.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6920,7 +6920,7 @@
     },
     {
       "Route": "modules/browser.n66m07jlvf.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/browser.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/browser.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6965,7 +6965,7 @@
     },
     {
       "Route": "modules/bt.dxz7161h8e.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/bt.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/bt.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7010,7 +7010,7 @@
     },
     {
       "Route": "modules/bt.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/bt.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/bt.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7047,7 +7047,7 @@
     },
     {
       "Route": "modules/client.grx7crx7lp.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/client.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/client.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7092,7 +7092,7 @@
     },
     {
       "Route": "modules/client.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/client.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/client.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7129,7 +7129,7 @@
     },
     {
       "Route": "modules/data.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/data.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/data.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7166,7 +7166,7 @@
     },
     {
       "Route": "modules/data.r935zd368v.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/data.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/data.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7211,7 +7211,7 @@
     },
     {
       "Route": "modules/debounce.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/debounce.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/debounce.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7248,7 +7248,7 @@
     },
     {
       "Route": "modules/debounce.nyp9isjqwo.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/debounce.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/debounce.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7293,7 +7293,7 @@
     },
     {
       "Route": "modules/download.4v6rl72039.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/download.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/download.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7338,7 +7338,7 @@
     },
     {
       "Route": "modules/download.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/download.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/download.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7375,7 +7375,7 @@
     },
     {
       "Route": "modules/drag.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/drag.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/drag.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7412,7 +7412,7 @@
     },
     {
       "Route": "modules/drag.rjr28qrrsg.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/drag.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/drag.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7457,7 +7457,7 @@
     },
     {
       "Route": "modules/event-handler.jk0bli5rvs.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/event-handler.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/event-handler.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7502,7 +7502,7 @@
     },
     {
       "Route": "modules/event-handler.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/event-handler.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/event-handler.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7539,7 +7539,7 @@
     },
     {
       "Route": "modules/eye-dropper.aaq9jt0se1.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/eye-dropper.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/eye-dropper.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7584,7 +7584,7 @@
     },
     {
       "Route": "modules/eye-dropper.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/eye-dropper.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/eye-dropper.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7621,7 +7621,7 @@
     },
     {
       "Route": "modules/floating-ui.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/floating-ui.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/floating-ui.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7658,7 +7658,7 @@
     },
     {
       "Route": "modules/floating-ui.ruuh6o00ra.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/floating-ui.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/floating-ui.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7703,7 +7703,7 @@
     },
     {
       "Route": "modules/fullscreen.bzrdz0vyic.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/fullscreen.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/fullscreen.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7748,7 +7748,7 @@
     },
     {
       "Route": "modules/fullscreen.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/fullscreen.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/fullscreen.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7785,7 +7785,7 @@
     },
     {
       "Route": "modules/geo.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/geo.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/geo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7822,7 +7822,7 @@
     },
     {
       "Route": "modules/geo.tphkadi02x.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/geo.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/geo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7867,7 +7867,7 @@
     },
     {
       "Route": "modules/hub.bhuo55d7di.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/hub.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/hub.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7912,7 +7912,7 @@
     },
     {
       "Route": "modules/hub.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/hub.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/hub.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7949,7 +7949,7 @@
     },
     {
       "Route": "modules/input.3jtgefli7x.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/input.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/input.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7994,7 +7994,7 @@
     },
     {
       "Route": "modules/input.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/input.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/input.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8031,7 +8031,7 @@
     },
     {
       "Route": "modules/media.4lvhxds7z6.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/media.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/media.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8076,7 +8076,7 @@
     },
     {
       "Route": "modules/media.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/media.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/media.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8113,7 +8113,7 @@
     },
     {
       "Route": "modules/net.8rocsg2n9q.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/net.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/net.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8158,7 +8158,7 @@
     },
     {
       "Route": "modules/net.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/net.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/net.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8195,7 +8195,7 @@
     },
     {
       "Route": "modules/noti.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/noti.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/noti.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8232,7 +8232,7 @@
     },
     {
       "Route": "modules/noti.masruzcwg2.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/noti.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/noti.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8277,7 +8277,7 @@
     },
     {
       "Route": "modules/recognition.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/recognition.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/recognition.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8314,7 +8314,7 @@
     },
     {
       "Route": "modules/recognition.vhn2xvvli8.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/recognition.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/recognition.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8359,7 +8359,7 @@
     },
     {
       "Route": "modules/responsive.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/responsive.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/responsive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8396,7 +8396,7 @@
     },
     {
       "Route": "modules/responsive.zjr5q1p95q.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/responsive.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/responsive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8441,7 +8441,7 @@
     },
     {
       "Route": "modules/serial.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/serial.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/serial.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8478,7 +8478,7 @@
     },
     {
       "Route": "modules/serial.v8bmqfq8ti.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/serial.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/serial.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8523,7 +8523,7 @@
     },
     {
       "Route": "modules/synthesis.ap541ar1uz.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/synthesis.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/synthesis.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8568,7 +8568,7 @@
     },
     {
       "Route": "modules/synthesis.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/synthesis.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/synthesis.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8605,7 +8605,7 @@
     },
     {
       "Route": "modules/upload.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/upload.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/upload.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8642,7 +8642,7 @@
     },
     {
       "Route": "modules/upload.vir4foehdk.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/upload.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/upload.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8687,7 +8687,7 @@
     },
     {
       "Route": "modules/utility.26ekyy6zzr.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/utility.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/utility.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8732,7 +8732,7 @@
     },
     {
       "Route": "modules/utility.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/utility.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/utility.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8769,7 +8769,7 @@
     },
     {
       "Route": "modules/validate.1580j93j1y.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/validate.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8814,7 +8814,7 @@
     },
     {
       "Route": "modules/validate.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/validate.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8851,7 +8851,7 @@
     },
     {
       "Route": "modules/viewer.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/viewer.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/viewer.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8888,7 +8888,7 @@
     },
     {
       "Route": "modules/viewer.u1j9pvda98.js",
-      "AssetFile": "/Users/admin/Documents/Projects/qc-system-tool-new-ui/src/BootstrapBlazor/wwwroot/modules/viewer.js",
+      "AssetFile": "/Users/admin/Documents/Projects/task9-ui/src/BootstrapBlazor/wwwroot/modules/viewer.js",
       "Selectors": [],
       "ResponseHeaders": [
         {

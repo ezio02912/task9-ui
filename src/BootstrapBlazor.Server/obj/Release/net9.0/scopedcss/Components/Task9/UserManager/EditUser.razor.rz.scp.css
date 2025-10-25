@@ -1,0 +1,46 @@
+.row[b-fbsbq2rupw] {
+    margin-bottom: 1rem;
+}
+
+.d-flex[b-fbsbq2rupw] {
+    display: flex;
+}
+
+.gap-2[b-fbsbq2rupw] {
+    gap: 0.5rem;
+}
+
+.spinner-border-sm[b-fbsbq2rupw] {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.15em;
+}
+
+.me-1[b-fbsbq2rupw] {
+    margin-right: 0.25rem;
+}
+
+.text-center[b-fbsbq2rupw] {
+    text-align: center;
+}
+
+.p-5[b-fbsbq2rupw] {
+    padding: 3rem;
+}
+
+.mt-2[b-fbsbq2rupw] {
+    margin-top: 0.5rem;
+}
+
+.visually-hidden[b-fbsbq2rupw] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+

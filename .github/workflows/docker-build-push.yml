@@ -2,7 +2,7 @@ name: Build and Push Docker Images
 
 on:
   push:
-    branches: [ "main" ]  # Chạy khi push vào branch main
+    branches: [ "main", "test" ]  # Chạy khi push vào branch main hoặc test
   workflow_dispatch:      # Cho phép chạy thủ công
 
 jobs:
@@ -22,11 +22,20 @@ jobs:
       id: commit
       run: echo "message=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
     
+    - name: Set Docker tag based on branch
+      id: docker_tag
+      run: |
+        if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+          echo "tag=net9" >> $GITHUB_OUTPUT
+        elif [ "${{ github.ref }}" == "refs/heads/test" ]; then
+          echo "tag=test" >> $GITHUB_OUTPUT
+        fi
+    
     - name: Build and Push WEB Image
       if: contains(steps.commit.outputs.message, '[WEB]')
       run: |
-        docker build --platform linux/amd64 -t ezio0895/task9ui:net9 -f src/BootstrapBlazor.Server/Dockerfile .
-        docker push ezio0895/task9ui:net9
+        docker build --platform linux/amd64 -t ezio0895/task9ui:${{ steps.docker_tag.outputs.tag }} -f src/BootstrapBlazor.Server/Dockerfile .
+        docker push ezio0895/task9ui:${{ steps.docker_tag.outputs.tag }}
 
     - name: Send Telegram notification on success
       if: success()

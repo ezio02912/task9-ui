@@ -1,0 +1,21 @@
+split-demo[b-dwtryptqi0] {
+    height: 200px;
+    width: 240px;
+    border-color: rgba(0,0,0,.125);
+    border-radius: var(--bs-border-radius);
+}
+
+.split-demo-horizontal[b-dwtryptqi0] {
+    height: 100px;
+}
+
+@media (min-width: 568px) {
+    .split-demo[b-dwtryptqi0] {
+        height: 200px;
+        width: 480px;
+    }
+
+    split-demo-horizontal[b-dwtryptqi0] {
+        height: 100px;
+    }
+}
